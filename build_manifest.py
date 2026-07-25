@@ -137,7 +137,7 @@ def build(root: Path, site_dir: Path):
 
         img_out_dir = site_dir / "data" / "listings" / listing_id / "images"
         image_files = process_images(folder / "images", img_out_dir)
-        image_paths = [f"listings/{listing_id}/images/{name}" for name in image_files]
+        image_paths = [f"data/listings/{listing_id}/images/{name}" for name in image_files]
 
         listings.append({
             "id": listing_id,
