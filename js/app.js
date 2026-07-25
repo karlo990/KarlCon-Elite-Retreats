@@ -89,10 +89,10 @@
     // map that's just already sitting there.
     const map = initSatelliteMap('globe-map', { center: target, zoom: 2.2, scrollWheelZoom: true });
 
-    pinned.forEach(l => {
+    pinned.forEach((l, i) => {
       addAreaCircle(map, l.lat, l.lng, 2200);
       const label = l.price ? l.price : 'POA';
-      const marker = L.marker([l.lat, l.lng], {icon: priceDivIcon(label), zIndexOffset: 500}).addTo(map);
+      const marker = L.marker([l.lat, l.lng], {icon: priceDivIcon(label, {delay: i * 45}), zIndexOffset: 500}).addTo(map);
       marker.bindPopup(`
         <b>${l.title}</b><br>${l.areaLabel || ''}<br>
         <div class="popup-actions">

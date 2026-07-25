@@ -53,15 +53,115 @@ function greenDivIcon(){
   });
 }
 
-// Airbnb/Vrbo-style price bubble marker — anchored at its bottom tip so it
-// sits above the actual coordinate rather than centered on it.
+// Glassmorphic 3D "house bubble" marker — a frosted-glass pill with a
+// gradient house-emoji medallion and a matching glass tail, anchored at
+// its bottom tip so it sits above the actual coordinate rather than
+// centered on it. Styles are injected once at runtime (see
+// injectGlassPinStyles) so this marker never depends on css/style.css.
 function priceDivIcon(label, opts){
   opts = opts || {};
+  injectGlassPinStyles();
   const cls = opts.className ? ' ' + opts.className : '';
+  const emoji = opts.emoji || '🏡';
+  const delay = (opts.delay || 0) + 'ms';
   return L.divIcon({
-    className: '', html: `<div class="price-pin${cls}">${label}</div>`,
+    className: '',
+    html: `
+      <div class="kc-pin-wrap${cls}" style="animation-delay:${delay}">
+        <div class="kc-pin-bubble">
+          <span class="kc-pin-house">${emoji}</span>
+          <span class="kc-pin-label">${label}</span>
+        </div>
+        <div class="kc-pin-tail"></div>
+      </div>`,
     iconSize:[0,0], iconAnchor:[0,0]
   });
+}
+
+let _kcGlassPinStylesInjected = false;
+function injectGlassPinStyles(){
+  if (_kcGlassPinStylesInjected) return;
+  _kcGlassPinStylesInjected = true;
+  const style = document.createElement('style');
+  style.textContent = `
+    .kc-pin-wrap{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      transform:translate(-50%,-100%);
+      transform-origin:bottom center;
+      cursor:pointer;
+      filter:drop-shadow(0 10px 16px rgba(6,40,26,.35));
+      animation:kcPinPop .55s cubic-bezier(.34,1.56,.64,1) backwards;
+      z-index:1;
+    }
+    .kc-pin-wrap:hover{ z-index:1000; }
+    .kc-pin-bubble{
+      position:relative;
+      display:flex;
+      align-items:center;
+      gap:7px;
+      padding:6px 13px 6px 6px;
+      border-radius:20px;
+      background:linear-gradient(155deg, rgba(255,255,255,.78), rgba(255,255,255,.32));
+      backdrop-filter:blur(14px) saturate(180%);
+      -webkit-backdrop-filter:blur(14px) saturate(180%);
+      border:1px solid rgba(255,255,255,.65);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.95),
+        inset 0 -8px 12px rgba(255,255,255,.18),
+        0 8px 18px rgba(14,122,76,.30);
+      transition:transform .28s cubic-bezier(.2,.7,.3,1), box-shadow .28s ease;
+    }
+    .kc-pin-wrap:hover .kc-pin-bubble{
+      transform:translateY(-4px) scale(1.07);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.95),
+        inset 0 -8px 12px rgba(255,255,255,.18),
+        0 16px 28px rgba(14,122,76,.42);
+    }
+    .kc-pin-house{
+      width:26px; height:26px; flex:0 0 auto;
+      display:flex; align-items:center; justify-content:center;
+      font-size:15px; line-height:1;
+      border-radius:50%;
+      background:linear-gradient(155deg,#12a869,#0b5c39 78%);
+      box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.55),
+        inset 0 -3px 5px rgba(0,0,0,.25),
+        0 3px 6px rgba(0,0,0,.28);
+    }
+    .kc-pin-label{
+      font-family:var(--sans, 'Inter', sans-serif);
+      font-weight:700;
+      font-size:12.5px;
+      color:#0b3d26;
+      letter-spacing:-.2px;
+      white-space:nowrap;
+      text-shadow:0 1px 0 rgba(255,255,255,.5);
+    }
+    .kc-pin-tail{
+      width:13px; height:13px;
+      margin-top:-7px;
+      background:linear-gradient(155deg, rgba(255,255,255,.6), rgba(255,255,255,.22));
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+      border:1px solid rgba(255,255,255,.55);
+      border-top:none; border-left:none;
+      border-radius:0 0 5px 0;
+      transform:rotate(45deg);
+    }
+    @keyframes kcPinPop{
+      0%{ transform:translate(-50%,-100%) scale(0); opacity:0; }
+      65%{ transform:translate(-50%,-100%) scale(1.14); opacity:1; }
+      100%{ transform:translate(-50%,-100%) scale(1); }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .kc-pin-wrap{ animation:none; }
+    }
+  `;
+  document.head.appendChild(style);
 }
 
 // Google-Maps-style pulsing blue dot for "you are here".
