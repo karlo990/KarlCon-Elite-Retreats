@@ -329,8 +329,91 @@ function clearRoute(map){
   if (map._kcRouteLine){ map.removeLayer(map._kcRouteLine); map._kcRouteLine = null; }
 }
 
+// Blurred-backdrop "Talk to Karl" WhatsApp nudge — appears once per browser
+// session, exactly 90 seconds (1.5 min) after the page loads, so it only
+// interrupts someone who's actually spent real time browsing, never on
+// first paint. sessionStorage keeps it from firing again on every page
+// nav within the same visit (index.html -> listing.html -> back, etc.).
+function initWhatsAppPopup(){
+  const SHOWN_KEY = 'kcWhatsappPopupShown';
+  const DELAY_MS = 90 * 1000; // exactly 1.5 minutes
+  const REDIRECT_MS = 10 * 1000; // auto-redirect after 10s if untouched
+  const PHONE = '263780563561';
+  const WA_URL = `https://wa.me/${PHONE}`;
+
+  if (sessionStorage.getItem(SHOWN_KEY)) return;
+
+  function build(){
+    const overlay = document.createElement('div');
+    overlay.className = 'kc-wa-overlay';
+    overlay.innerHTML = `
+      <div class="kc-wa-card" role="dialog" aria-modal="true" aria-labelledby="kc-wa-title">
+        <button class="kc-wa-close" aria-label="Close">&times;</button>
+        <div class="kc-wa-icon-wrap">
+          <div class="kc-wa-icon-ring"></div>
+          <div class="kc-wa-icon-ring d2"></div>
+          <div class="kc-wa-icon">💬</div>
+        </div>
+        <div class="kc-wa-title" id="kc-wa-title">Still deciding?</div>
+        <p class="kc-wa-body">Talk to Karl on WhatsApp for quick checkouts — real-time availability, fast answers, no forms.</p>
+        <a class="kc-wa-cta" href="${WA_URL}" target="_blank" rel="noopener">
+          💬 Talk to Karl on WhatsApp
+        </a>
+        <div class="kc-wa-progress-track"><div class="kc-wa-progress-fill"></div></div>
+        <div class="kc-wa-progress-label">Opening WhatsApp automatically in <b id="kc-wa-count">10</b>s…</div>
+      </div>`;
+    document.body.appendChild(overlay);
+
+    requestAnimationFrame(() => overlay.classList.add('in'));
+
+    const fill = overlay.querySelector('.kc-wa-progress-fill');
+    const countEl = overlay.querySelector('#kc-wa-count');
+    let redirectTimer, tickTimer, secondsLeft = 10;
+
+    function startCountdown(){
+      requestAnimationFrame(() => { fill.style.transitionDuration = REDIRECT_MS + 'ms'; fill.style.width = '100%'; });
+      tickTimer = setInterval(() => {
+        secondsLeft -= 1;
+        if (countEl) countEl.textContent = Math.max(secondsLeft, 0);
+        if (secondsLeft <= 3) fill.classList.add('urgent');
+        if (secondsLeft <= 0) clearInterval(tickTimer);
+      }, 1000);
+      redirectTimer = setTimeout(() => {
+        sessionStorage.setItem(SHOWN_KEY, '1');
+        window.location.href = WA_URL;
+      }, REDIRECT_MS);
+    }
+
+    function stopCountdown(){
+      clearTimeout(redirectTimer);
+      clearInterval(tickTimer);
+    }
+
+    function close(){
+      stopCountdown();
+      overlay.classList.remove('in');
+      setTimeout(() => overlay.remove(), 280);
+      sessionStorage.setItem(SHOWN_KEY, '1');
+    }
+    overlay.querySelector('.kc-wa-close').addEventListener('click', close);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+    document.addEventListener('keydown', function onEsc(e){
+      if (e.key === 'Escape'){ close(); document.removeEventListener('keydown', onEsc); }
+    });
+    overlay.querySelector('.kc-wa-cta').addEventListener('click', () => {
+      stopCountdown();
+      sessionStorage.setItem(SHOWN_KEY, '1');
+    });
+
+    startCountdown();
+  }
+
+  setTimeout(build, DELAY_MS);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initNavScroll();
   initReveal();
   mountFooter();
+  initWhatsAppPopup();
 });
