@@ -5,7 +5,7 @@
   const STAR = '<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.5L22 9.3l-5 4.9 1.2 7.1L12 17.8l-6.2 3.5L7 14.2 2 9.3l7.1-.8z"/></svg>';
 
   function fmtPrice(l){
-    return l.price ? l.price : 'Price on request';
+    return cleanPriceLabel(l.price, 'Price on request');
   }
 
   function cardHTML(l){
@@ -91,14 +91,15 @@
 
     pinned.forEach((l, i) => {
       addAreaCircle(map, l.lat, l.lng, 2200);
-      const label = l.price ? l.price : 'POA';
+      const label = cleanPriceLabel(l.price, 'POA');
       const marker = L.marker([l.lat, l.lng], {icon: priceDivIcon(label, {delay: i * 45}), zIndexOffset: 500}).addTo(map);
       marker.bindPopup(`
         <b>${l.title}</b><br>${l.areaLabel || ''}<br>
         <div class="popup-actions">
           <a href="listing.html?id=${encodeURIComponent(l.id)}">View retreat →</a>
           <button class="popup-directions" data-lat="${l.lat}" data-lng="${l.lng}">Directions</button>
-        </div>`);
+        </div>`, { autoPan: false });
+      marker.on('click', () => smartPanToMarker(map, [l.lat, l.lng]));
       marker.on('popupopen', (e) => {
         const btn = e.popup.getElement().querySelector('.popup-directions');
         if (!btn) return;

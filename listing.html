@@ -90,7 +90,7 @@
     document.getElementById('l-area').textContent = l.areaLabel || 'Zimbabwe';
     document.getElementById('l-title').textContent = l.title;
     document.getElementById('l-desc').textContent = l.description || 'Full description not yet available from the source listing — this will populate automatically once the scrape includes it.';
-    document.getElementById('l-price').textContent = l.price ? l.price : 'Price on request';
+    document.getElementById('l-price').textContent = cleanPriceLabel(l.price, 'Price on request');
 
     const hostName = (l.host && l.host.name) || 'Host';
     document.getElementById('l-host-initial').textContent = hostName.charAt(0).toUpperCase();

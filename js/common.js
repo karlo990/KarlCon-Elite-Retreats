@@ -2,6 +2,53 @@
    KARLCON — shared chrome: nav scroll state, reveal, map init
    ═══════════════════════════════════════════════════════════ */
 
+// Some scraped listings have junk in the price field (the scraper grabbed
+// the full "About this space" description instead of a price). A real
+// price is short — "$180", "R1 200", "POA" — so anything long or wordy is
+// almost certainly not a price and should fall back to a safe default
+// rather than blow out a pill/label with a paragraph of text.
+function cleanPriceLabel(raw, fallback){
+  fallback = fallback || 'POA';
+  if (!raw) return fallback;
+  const s = String(raw).trim();
+  if (!s) return fallback;
+  if (s.length > 24) return fallback;
+  if (s.split(/\s+/).length > 4) return fallback;
+  return s;
+}
+
+// Smart pan — when a marker is clicked/tapped, nudge the map by the
+// minimum amount needed to bring it (and the popup that's about to open
+// above it) out from behind the floating UI chrome — the top overlay
+// chips, the locate/route controls top-right, and the legend bottom-right.
+// It's a "grid" of safe-zone margins rather than a fixed recenter: if the
+// marker already has clear space, nothing moves at all. Works identically
+// for mouse clicks on desktop and taps on mobile — Leaflet fires the same
+// 'click' event for both — and margins shrink automatically on narrow
+// viewports where the legend is hidden and controls stack tighter.
+function marginsForViewport(map){
+  const w = map.getSize().x;
+  const mobile = w < 640;
+  return mobile
+    ? {top:130, right:70, bottom:40, left:20}
+    : {top:150, right:190, bottom:90, left:40};
+}
+
+function smartPanToMarker(map, latlng, marginOverride){
+  const margin = marginOverride || marginsForViewport(map);
+  const size = map.getSize();
+  const pt = map.latLngToContainerPoint(latlng);
+  let dx = 0, dy = 0;
+  if (pt.x < margin.left) dx = pt.x - margin.left;
+  else if (pt.x > size.x - margin.right) dx = pt.x - (size.x - margin.right);
+  if (pt.y < margin.top) dy = pt.y - margin.top;
+  else if (pt.y > size.y - margin.bottom) dy = pt.y - (size.y - margin.bottom);
+  if (!dx && !dy) return;
+  const centerPt = map.project(map.getCenter(), map.getZoom()).add([dx, dy]);
+  const target = map.unproject(centerPt, map.getZoom());
+  map.panTo(target, {animate:true, duration:.5, easeLinearity:.25});
+}
+
 function mountFooter(){
   const y = new Date().getFullYear();
   document.querySelectorAll('[data-year]').forEach(el => el.textContent = y);
@@ -73,6 +120,7 @@ function priceDivIcon(label, opts){
           <span class="kc-pin-label">${label}</span>
         </div>
         <div class="kc-pin-tail"></div>
+        <div class="kc-pin-ground"></div>
       </div>`,
     iconSize:[0,0], iconAnchor:[0,0]
   });
@@ -92,7 +140,6 @@ function injectGlassPinStyles(){
       transform:translate(-50%,-100%);
       transform-origin:bottom center;
       cursor:pointer;
-      filter:drop-shadow(0 10px 16px rgba(6,40,26,.35));
       animation:kcPinPop .55s cubic-bezier(.34,1.56,.64,1) backwards;
       z-index:1;
     }
@@ -111,15 +158,17 @@ function injectGlassPinStyles(){
       box-shadow:
         inset 0 1px 0 rgba(255,255,255,.95),
         inset 0 -8px 12px rgba(255,255,255,.18),
-        0 8px 18px rgba(14,122,76,.30);
+        0 10px 20px -4px rgba(14,122,76,.42),
+        0 3px 8px rgba(6,40,26,.22);
       transition:transform .28s cubic-bezier(.2,.7,.3,1), box-shadow .28s ease;
     }
     .kc-pin-wrap:hover .kc-pin-bubble{
-      transform:translateY(-4px) scale(1.07);
+      transform:translateY(-6px) scale(1.07);
       box-shadow:
         inset 0 1px 0 rgba(255,255,255,.95),
         inset 0 -8px 12px rgba(255,255,255,.18),
-        0 16px 28px rgba(14,122,76,.42);
+        0 20px 32px -6px rgba(14,122,76,.55),
+        0 6px 14px rgba(6,40,26,.28);
     }
     .kc-pin-house{
       width:26px; height:26px; flex:0 0 auto;
@@ -139,6 +188,9 @@ function injectGlassPinStyles(){
       color:#0b3d26;
       letter-spacing:-.2px;
       white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:140px;
       text-shadow:0 1px 0 rgba(255,255,255,.5);
     }
     .kc-pin-tail{
@@ -151,6 +203,22 @@ function injectGlassPinStyles(){
       border-top:none; border-left:none;
       border-radius:0 0 5px 0;
       transform:rotate(45deg);
+      transition:transform .28s cubic-bezier(.2,.7,.3,1);
+    }
+    .kc-pin-wrap:hover .kc-pin-tail{ transform:rotate(45deg) translateY(-4px); }
+    .kc-pin-ground{
+      width:30px; height:9px;
+      margin-top:4px;
+      border-radius:50%;
+      background:radial-gradient(ellipse at center, rgba(20,168,104,.55) 0%, rgba(20,168,104,.22) 55%, rgba(20,168,104,0) 78%);
+      filter:blur(1.5px);
+      transform:scaleY(.55);
+      transition:transform .28s cubic-bezier(.2,.7,.3,1), opacity .28s ease;
+      pointer-events:none;
+    }
+    .kc-pin-wrap:hover .kc-pin-ground{
+      transform:scaleY(.4) scaleX(.82);
+      opacity:.55;
     }
     @keyframes kcPinPop{
       0%{ transform:translate(-50%,-100%) scale(0); opacity:0; }
