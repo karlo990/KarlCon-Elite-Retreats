@@ -15,8 +15,8 @@ window.LISTINGS = [
     "description": null,
     "amenities": [],
     "images": [],
-    "lat": null,
-    "lng": null,
+    "lat": -20.209,
+    "lng": 28.5958,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -51,8 +51,8 @@ window.LISTINGS = [
       "data/listings/1054843913930492965/images/image_014.jpg",
       "data/listings/1054843913930492965/images/image_015.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.1613,
+    "lng": 28.6141,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -101,8 +101,8 @@ window.LISTINGS = [
       "data/listings/1075052077649818088/images/image_028.jpg",
       "data/listings/1075052077649818088/images/image_029.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -17.9355,
+    "lng": 25.8163,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -136,8 +136,8 @@ window.LISTINGS = [
       "data/listings/1153692229287647356/images/image_013.jpg",
       "data/listings/1153692229287647356/images/image_014.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.92622,
+    "lng": 18.37767,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -174,8 +174,8 @@ window.LISTINGS = [
       "data/listings/1184020798986018429/images/image_016.jpg",
       "data/listings/1184020798986018429/images/image_017.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.15664,
+    "lng": 28.61919,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -210,8 +210,8 @@ window.LISTINGS = [
       "data/listings/1189063324733424998/images/image_014.jpg",
       "data/listings/1189063324733424998/images/image_015.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -17.9224,
+    "lng": 25.8298,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -239,8 +239,8 @@ window.LISTINGS = [
       "data/listings/1198519366188514758/images/image_007.jpg",
       "data/listings/1198519366188514758/images/image_008.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.1562,
+    "lng": 28.5942,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -261,8 +261,8 @@ window.LISTINGS = [
     "images": [
       "data/listings/1204195298315090369/images/image_001.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -26.07488,
+    "lng": 28.06643,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -300,8 +300,8 @@ window.LISTINGS = [
       "data/listings/1260907815884656452/images/image_017.jpg",
       "data/listings/1260907815884656452/images/image_018.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.2145,
+    "lng": 28.5842,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -322,8 +322,8 @@ window.LISTINGS = [
     "images": [
       "data/listings/1267919462394092429/images/image_001.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.2295,
+    "lng": 28.6212,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -354,8 +354,8 @@ window.LISTINGS = [
       "data/listings/1283185286515173382/images/image_010.jpg",
       "data/listings/1283185286515173382/images/image_011.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.9243,
+    "lng": 18.3812,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -393,8 +393,8 @@ window.LISTINGS = [
       "data/listings/1288844967599033736/images/image_017.jpg",
       "data/listings/1288844967599033736/images/image_018.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -17.9347,
+    "lng": 25.8159,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -429,8 +429,8 @@ window.LISTINGS = [
       "data/listings/1305547299131556756/images/image_014.jpg",
       "data/listings/1305547299131556756/images/image_015.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.9101,
+    "lng": 18.4125,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -451,8 +451,8 @@ window.LISTINGS = [
     "images": [
       "data/listings/1340376158120461429/images/image_001.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.9101,
+    "lng": 18.3942,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -473,8 +473,8 @@ window.LISTINGS = [
     "images": [
       "data/listings/13816247/images/image_001.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -17.93102,
+    "lng": 25.81592,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -506,8 +506,8 @@ window.LISTINGS = [
       "data/listings/1389297759205497942/images/image_011.jpg",
       "data/listings/1389297759205497942/images/image_012.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -26.0602,
+    "lng": 28.0577,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -533,8 +533,8 @@ window.LISTINGS = [
       "data/listings/1390349819574601925/images/image_005.jpg",
       "data/listings/1390349819574601925/images/image_006.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.2141,
+    "lng": 28.585,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -553,8 +553,8 @@ window.LISTINGS = [
     "description": null,
     "amenities": [],
     "images": [],
-    "lat": null,
-    "lng": null,
+    "lat": -33.9103,
+    "lng": 18.3954,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -589,8 +589,8 @@ window.LISTINGS = [
       "data/listings/1392715988494872309/images/image_014.jpg",
       "data/listings/1392715988494872309/images/image_015.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -26.0885,
+    "lng": 28.0627,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -622,8 +622,8 @@ window.LISTINGS = [
       "data/listings/1405370097820659680/images/image_011.jpg",
       "data/listings/1405370097820659680/images/image_012.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.13953101181641,
+    "lng": 28.599575364964622,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -653,8 +653,8 @@ window.LISTINGS = [
       "data/listings/1411591824436140561/images/image_009.jpg",
       "data/listings/1411591824436140561/images/image_010.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.9142,
+    "lng": 18.3913,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -682,8 +682,8 @@ window.LISTINGS = [
       "data/listings/1424076236990383141/images/image_007.jpg",
       "data/listings/1424076236990383141/images/image_008.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.105781633730743,
+    "lng": 28.639382388840744,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -720,8 +720,8 @@ window.LISTINGS = [
       "data/listings/1443430567149229975/images/image_016.jpg",
       "data/listings/1443430567149229975/images/image_017.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -26.1067,
+    "lng": 28.0633,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -740,8 +740,8 @@ window.LISTINGS = [
     "description": null,
     "amenities": [],
     "images": [],
-    "lat": null,
-    "lng": null,
+    "lat": -26.055766365895025,
+    "lng": 28.06274662782904,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -775,8 +775,8 @@ window.LISTINGS = [
       "data/listings/1453143949632917825/images/image_013.jpg",
       "data/listings/1453143949632917825/images/image_014.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -26.0516,
+    "lng": 28.0579,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -808,8 +808,8 @@ window.LISTINGS = [
       "data/listings/1469343994709446140/images/image_011.jpg",
       "data/listings/1469343994709446140/images/image_012.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.91,
+    "lng": 18.398,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -841,8 +841,8 @@ window.LISTINGS = [
       "data/listings/1542712540176311697/images/image_011.jpg",
       "data/listings/1542712540176311697/images/image_012.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.18611,
+    "lng": 28.60783,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -880,8 +880,8 @@ window.LISTINGS = [
       "data/listings/1552125818800826166/images/image_017.jpg",
       "data/listings/1552125818800826166/images/image_018.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -26.070787610197026,
+    "lng": 28.051536135040372,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -908,8 +908,8 @@ window.LISTINGS = [
       "data/listings/1564199098164633818/images/image_006.jpg",
       "data/listings/1564199098164633818/images/image_007.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -26.0989,
+    "lng": 28.0534,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -987,8 +987,8 @@ window.LISTINGS = [
       "data/listings/16623948/images/image_016.jpg",
       "data/listings/16623948/images/image_017.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -17.92617,
+    "lng": 25.81921,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1018,8 +1018,8 @@ window.LISTINGS = [
       "data/listings/1668795774551788542/images/image_009.jpg",
       "data/listings/1668795774551788542/images/image_010.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.1724,
+    "lng": 28.5867,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1049,8 +1049,8 @@ window.LISTINGS = [
       "data/listings/1683291490069987654/images/image_009.jpg",
       "data/listings/1683291490069987654/images/image_010.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -26.0515,
+    "lng": 28.0607,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1109,8 +1109,8 @@ window.LISTINGS = [
       "data/listings/1696194724010320292/images/image_011.jpg",
       "data/listings/1696194724010320292/images/image_012.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.119,
+    "lng": 28.6314,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1149,8 +1149,8 @@ window.LISTINGS = [
       "data/listings/1703616912880322331/images/image_018.jpg",
       "data/listings/1703616912880322331/images/image_019.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.9364,
+    "lng": 18.4056,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1180,8 +1180,8 @@ window.LISTINGS = [
       "data/listings/1711786935080816793/images/image_009.jpg",
       "data/listings/1711786935080816793/images/image_010.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.18,
+    "lng": 28.6286,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1200,8 +1200,8 @@ window.LISTINGS = [
     "description": null,
     "amenities": [],
     "images": [],
-    "lat": null,
-    "lng": null,
+    "lat": -34.04537,
+    "lng": 18.44247,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1232,8 +1232,8 @@ window.LISTINGS = [
       "data/listings/4040223/images/image_010.jpg",
       "data/listings/4040223/images/image_011.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.18823,
+    "lng": 28.58148,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1270,8 +1270,8 @@ window.LISTINGS = [
       "data/listings/52730757/images/image_016.jpg",
       "data/listings/52730757/images/image_017.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.9208,
+    "lng": 18.4238,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1305,8 +1305,8 @@ window.LISTINGS = [
       "data/listings/53778016/images/image_013.jpg",
       "data/listings/53778016/images/image_014.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.089845263006058,
+    "lng": 28.653601465298465,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1325,8 +1325,8 @@ window.LISTINGS = [
     "description": null,
     "amenities": [],
     "images": [],
-    "lat": null,
-    "lng": null,
+    "lat": -33.96438,
+    "lng": 18.38219,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1347,8 +1347,8 @@ window.LISTINGS = [
     "images": [
       "data/listings/611904668168720124/images/image_001.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.196,
+    "lng": 28.6033,
     "areaLabel": "Zimbabwe"
   },
   {
@@ -1382,8 +1382,8 @@ window.LISTINGS = [
       "data/listings/616557195823870303/images/image_013.jpg",
       "data/listings/616557195823870303/images/image_014.jpg"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -20.1476,
+    "lng": 28.6165,
     "areaLabel": "Zimbabwe"
   },
   {

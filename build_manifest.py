@@ -102,8 +102,25 @@ def process_images(images_dir: Path, out_dir: Path):
     return written
 
 
+def load_coordinates_fallback(root: Path):
+    """The location-backfill script (backfill_coordinates.py) writes a flat
+    {listingId: {lat, lng, location}} map to <root>/coordinates.json. If a
+    listing's own info.json still lacks lat/lng (e.g. because the folder path
+    the backfill used didn't line up with where the Share_* folders actually
+    live), fall back to this file instead of leaving the listing unmapped."""
+    coords_path = root / "coordinates.json"
+    if not coords_path.exists():
+        return {}
+    try:
+        return json.loads(coords_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"! could not parse {coords_path}: {e}")
+        return {}
+
+
 def build(root: Path, site_dir: Path):
     listings = []
+    coords_fallback = load_coordinates_fallback(root)
     # Broadened from the original "Share_Save_*" to any "Share_*" prefix so
     # folders exported/renamed slightly differently (e.g. "Share_5636077")
     # still get picked up. Non-folders and folders without info.json are
@@ -134,6 +151,11 @@ def build(root: Path, site_dir: Path):
                 title, tagline = parts[0], " · ".join(parts[1:])
         host = info.get("host") or {}
         lat, lng = find_coords(info)
+        if lat is None or lng is None:
+            fallback = coords_fallback.get(listing_id)
+            if fallback:
+                lat = fallback.get("lat")
+                lng = fallback.get("lng")
 
         img_out_dir = site_dir / "data" / "listings" / listing_id / "images"
         image_files = process_images(folder / "images", img_out_dir)
