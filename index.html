@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>KARLCON Elite Retreats — Private Homes, Zimbabwe</title>
+<meta name="description" content="A private collection of Zimbabwe's finest retreats — curated, verified, and mapped with satellite precision."/>
+<link rel="icon" type="image/png" href="assets/favicon.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-brand">
+    <img src="assets/logo.png" alt="KARLCON" class="nav-logo"/>
+    <span class="nav-word">KARL<b>CON</b> Retreats</span>
+  </div>
+  <div class="nav-links">
+    <a href="#collection">Collection</a>
+    <a href="#map">Map</a>
+    <a href="#about">About</a>
+  </div>
+  <button class="nav-cta" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">Browse Retreats</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg" style="background-image:url('data/listings/demo/images/image_001.jpg');"></div>
+  <div class="eyebrow">Private Collection · Zimbabwe</div>
+  <h1>Homes worth <em>arriving</em> for.</h1>
+  <p>A curated, verified collection of Zimbabwe's finest independent retreats — every listing scouted, every photo real, every location mapped in satellite precision.</p>
+
+  <form class="search-bar" id="search-form">
+    <div class="search-field">
+      <label for="search-where">Where</label>
+      <input id="search-where" type="text" placeholder="Search by area or retreat name" autocomplete="off"/>
+    </div>
+    <div class="search-field">
+      <label for="search-guests">Guests</label>
+      <input id="search-guests" type="text" placeholder="Add guests" autocomplete="off"/>
+    </div>
+    <button class="search-btn" type="submit">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Search
+    </button>
+  </form>
+
+  <div class="hero-actions">
+    <button class="btn-ghost" onclick="document.getElementById('map').scrollIntoView({behavior:'smooth'})">Explore the Map</button>
+  </div>
+
+  <div class="stat-strip">
+    <div class="stat-cell"><div class="stat-val" id="stat-count">–</div><div class="stat-lbl">Retreats</div></div>
+    <div class="stat-cell"><div class="stat-val" id="stat-photos">–</div><div class="stat-lbl">Photos</div></div>
+    <div class="stat-cell"><div class="stat-val" id="stat-mapped">–</div><div class="stat-lbl">Mapped</div></div>
+    <div class="stat-cell"><div class="stat-val" id="stat-super">–</div><div class="stat-lbl">Superhosts</div></div>
+  </div>
+</header>
+
+<section class="section" id="collection">
+  <div class="section-hdr reveal">
+    <div>
+      <div class="section-eyebrow">The Collection</div>
+      <div class="section-title">Every retreat, verified.</div>
+      <div class="section-sub">Generated directly from your source folders — nothing here is invented copy.</div>
+    </div>
+  </div>
+  <div class="grid" id="listing-grid"></div>
+</section>
+
+<section class="section-map" id="map">
+  <div class="section-hdr reveal">
+    <div>
+      <div class="section-eyebrow">Live Cartography</div>
+      <div class="section-title">Find it on the earth.</div>
+      <div class="section-sub">Real satellite imagery, live pricing, coverage radius, and turn-by-turn directions from wherever you are — the same tile pipeline that powers the K1RL telematics fleet map.</div>
+    </div>
+  </div>
+  <div class="map-shell full-bleed reveal">
+    <div id="globe-map"></div>
+
+    <div class="map-overlay">
+      <div class="map-chip"><b id="map-listed-count">0</b>&nbsp; retreats pinned</div>
+      <div class="map-chip">Esri World Imagery · satellite raster</div>
+    </div>
+
+    <div class="map-controls">
+      <button class="map-locate-btn" id="locate-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+        Use my location
+      </button>
+      <div class="route-chip" id="route-chip" style="display:none;">
+        <span id="route-chip-text"></span>
+        <button id="route-clear" aria-label="Clear route">&times;</button>
+      </div>
+      <div class="locate-status" id="locate-status"></div>
+    </div>
+
+    <div class="map-legend">
+      <span><i class="lg-dot lg-green"></i> Retreat &amp; price</span>
+      <span><i class="lg-dot lg-blue-area"></i> Neighbourhood</span>
+      <span><i class="lg-dot lg-blue-user"></i> Your location</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="about-grid">
+    <div class="about-copy reveal">
+      <div class="section-eyebrow">Why KARLCON</div>
+      <div class="section-title" style="margin-bottom:20px;">Built like an instrument, not a listings page.</div>
+      <p>Most booking pages are templates with photos dropped in. This one is a pipeline: a build script reads your real host folders — titles, hosts, photos, coordinates — and regenerates the entire site, so what customers see is always exactly what's on disk.</p>
+      <ul class="about-list">
+        <li><b>1</b> Point the builder at your <code>airbnb_data</code> folder</li>
+        <li><b>2</b> Photos are optimised and copied automatically</li>
+        <li><b>3</b> The site, map pins, and stats rebuild themselves</li>
+      </ul>
+    </div>
+    <div class="about-visual reveal">
+      <svg viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="95" cy="95" r="88" fill="none" stroke="#0E7A4C" stroke-width="1" stroke-dasharray="1 7"/>
+        <circle cx="95" cy="95" r="70" fill="none" stroke="#0E7A4C" stroke-width=".7" opacity=".5" stroke-dasharray="18 6"/>
+        <path d="M50 118 L78 66 L94 92 L108 70 L142 118 Z" fill="none" stroke="#0E7A4C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© <span data-year></span> KARLCON Elite Retreats — a Karl Con Consultancy engineering property.</div>
+  <div>Built on Leaflet · Esri World Imagery · zero synthetic listing data</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+<script src="js/common.js"></script>
+<script src="data/listings.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

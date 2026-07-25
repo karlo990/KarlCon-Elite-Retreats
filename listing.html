@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title id="page-title">Retreat — KARLCON Elite Retreats</title>
+<link rel="icon" type="image/png" href="assets/favicon.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<a class="back-link" href="index.html">&larr; All retreats</a>
+
+<div class="gal-shell reveal in" id="gallery">
+  <div class="gal-viewport">
+    <div class="gal-track"></div>
+  </div>
+  <button class="gal-nav-btn gal-prev" aria-label="Previous photo">&larr;</button>
+  <button class="gal-nav-btn gal-next" aria-label="Next photo">&rarr;</button>
+  <div class="gal-counter"></div>
+  <div class="gal-dots"></div>
+  <div class="gal-thumbs"></div>
+</div>
+
+<div class="listing-body">
+  <div class="listing-top reveal in">
+    <div>
+      <div class="listing-area" id="l-area"></div>
+      <div class="listing-title" id="l-title"></div>
+    </div>
+    <div class="listing-host">
+      <div class="host-avatar" id="l-host-initial"></div>
+      <div>
+        <div class="host-name" id="l-host-name"></div>
+        <div class="host-sub" id="l-host-sub"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="listing-grid">
+    <div class="reveal in">
+      <p class="listing-desc" id="l-desc"></p>
+      <div class="amenities" id="l-amenities"></div>
+    </div>
+    <div class="side-card reveal in">
+      <div class="side-price" id="l-price"></div>
+      <span style="font-family:var(--sans);font-size:12px;color:var(--txt2);">per night, when available</span>
+      <div class="mini-map-wrap">
+        <div class="mini-map" id="mini-map"></div>
+        <button class="map-locate-btn mini-locate-btn" id="mini-locate-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+          Directions from me
+        </button>
+        <div class="route-chip" id="mini-route-chip" style="display:none;">
+          <span id="mini-route-chip-text"></span>
+          <button id="mini-route-clear" aria-label="Clear route">&times;</button>
+        </div>
+      </div>
+      <button class="btn-primary side-cta" id="l-cta">View on Airbnb</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div>© <span data-year></span> KARLCON Elite Retreats — a Karl Con Consultancy engineering property.</div>
+  <div>Photos scroll or drag · arrow keys work too</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+<script src="js/common.js"></script>
+<script src="data/listings.js"></script>
+<script src="js/gallery.js"></script>
+<script>
+(function(){
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id');
+  const LISTINGS = window.LISTINGS || [];
+  const l = LISTINGS.find(x => x.id === id) || LISTINGS[0];
+
+  if (!l){
+    document.querySelector('.listing-body').innerHTML =
+      '<p style="font-family:var(--sans);color:var(--txt2);padding:60px 0;">No listings indexed yet — run build_manifest.py, then come back.</p>';
+  } else {
+    document.getElementById('page-title').textContent = l.title + ' — KARLCON Elite Retreats';
+    document.getElementById('l-area').textContent = l.areaLabel || 'Zimbabwe';
+    document.getElementById('l-title').textContent = l.title;
+    document.getElementById('l-desc').textContent = l.description || 'Full description not yet available from the source listing — this will populate automatically once the scrape includes it.';
+    document.getElementById('l-price').textContent = l.price ? l.price : 'Price on request';
+
+    const hostName = (l.host && l.host.name) || 'Host';
+    document.getElementById('l-host-initial').textContent = hostName.charAt(0).toUpperCase();
+    document.getElementById('l-host-name').textContent = hostName + (l.host && l.host.superhost ? ' · Superhost' : '');
+    document.getElementById('l-host-sub').textContent = (l.host && l.host.yearsHosting) || '';
+
+    const amenEl = document.getElementById('l-amenities');
+    if (l.amenities && l.amenities.length){
+      amenEl.innerHTML = l.amenities.map(a => `<div class="amenity">${a}</div>`).join('');
+    } else {
+      amenEl.style.display = 'none';
+    }
+
+    const cta = document.getElementById('l-cta');
+    if (l.url && l.url !== '#'){ cta.onclick = () => window.open(l.url, '_blank'); }
+    else { cta.textContent = 'Listing link not yet set'; cta.disabled = true; cta.style.opacity = .5; cta.style.cursor = 'default'; }
+
+    const images = (l.images && l.images.length) ? l.images : [];
+    if (images.length){
+      Gallery(document.getElementById('gallery'), images);
+    } else {
+      document.getElementById('gallery').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-family:var(--sans);color:var(--txt2);">No photos found for this retreat yet</div>';
+    }
+
+    if (l.lat && l.lng && typeof L !== 'undefined'){
+      const map = initSatelliteMap('mini-map', {center:[l.lat,l.lng], zoom:13, scrollWheelZoom:false});
+      L.marker([l.lat, l.lng], {icon: greenDivIcon()}).addTo(map);
+      addAreaCircle(map, l.lat, l.lng, 1800);
+
+      const locateBtn = document.getElementById('mini-locate-btn');
+      const chip = document.getElementById('mini-route-chip');
+      const chipText = document.getElementById('mini-route-chip-text');
+      const chipClear = document.getElementById('mini-route-clear');
+
+      locateBtn.addEventListener('click', () => {
+        locateBtn.disabled = true;
+        locateBtn.textContent = 'Locating…';
+        locateUser(map, (userLatLng) => {
+          locateBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg> Directions from me';
+          locateBtn.disabled = false;
+          drawRoute(map, userLatLng, [l.lat, l.lng], {
+            onSummary: (text) => { chip.style.display = 'flex'; chipText.textContent = text; }
+          });
+        }, (msg) => {
+          locateBtn.disabled = false;
+          locateBtn.textContent = 'Location unavailable';
+          setTimeout(() => { locateBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg> Directions from me'; }, 2600);
+        });
+      });
+      chipClear.addEventListener('click', () => {
+        clearRoute(map);
+        chip.style.display = 'none';
+        map.setView([l.lat, l.lng], 13);
+      });
+    } else {
+      document.getElementById('mini-map').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-family:var(--sans);font-size:11px;color:var(--txt3);">No coordinates yet</div>';
+    }
+  }
+})();
+</script>
+</body>
+</html>
