@@ -44,6 +44,7 @@
   <div class="listing-grid">
     <div class="reveal in">
       <p class="listing-desc" id="l-desc"></p>
+      <div class="house-details" id="l-house-details"></div>
       <div class="amenities" id="l-amenities"></div>
     </div>
     <div class="side-card reveal in">
@@ -60,14 +61,14 @@
           <button id="mini-route-clear" aria-label="Clear route">&times;</button>
         </div>
       </div>
-      <button class="btn-primary side-cta" id="l-cta">View on Airbnb</button>
+      <button class="btn-primary side-cta" id="l-cta">💬 Checkout on WhatsApp</button>
     </div>
   </div>
 </div>
 
 <footer class="footer">
   <div>© <span data-year></span> KARLCON Elite Retreats — a Karl Con Consultancy engineering property.</div>
-  <div>Photos scroll or drag · arrow keys work too</div>
+  <a class="footer-whatsapp" href="https://wa.me/263780563561" target="_blank" rel="noopener">💬 Talk to Karl on WhatsApp</a>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
@@ -97,6 +98,15 @@
     document.getElementById('l-host-name').textContent = hostName + (l.host && l.host.superhost ? ' · Superhost' : '');
     document.getElementById('l-host-sub').textContent = (l.host && l.host.yearsHosting) || '';
 
+    const detailsEl = document.getElementById('l-house-details');
+    const detailItems = [
+      {icon: '🛋️', text: l.roomType || 'Entire place'},
+      {icon: '🛏️', text: (l.bedrooms != null) ? (l.bedrooms + (l.bedrooms === 1 ? ' bedroom' : ' bedrooms')) : 'Bedroom count on request'},
+      {icon: '🚿', text: (l.bathrooms != null) ? (l.bathrooms + (l.bathrooms === 1 ? ' bathroom' : ' bathrooms')) : 'Bathroom count on request'},
+      {icon: '👥', text: (l.sleeps != null) ? ('Sleeps ' + l.sleeps) : 'Sleeps — ask host'},
+    ];
+    detailsEl.innerHTML = detailItems.map(d => `<div class="house-detail"><span class="hd-icon">${d.icon}</span>${d.text}</div>`).join('');
+
     const amenEl = document.getElementById('l-amenities');
     if (l.amenities && l.amenities.length){
       amenEl.innerHTML = l.amenities.map(a => `<div class="amenity">${a}</div>`).join('');
@@ -105,8 +115,9 @@
     }
 
     const cta = document.getElementById('l-cta');
-    if (l.url && l.url !== '#'){ cta.onclick = () => window.open(l.url, '_blank'); }
-    else { cta.textContent = 'Listing link not yet set'; cta.disabled = true; cta.style.opacity = .5; cta.style.cursor = 'default'; }
+    const WHATSAPP_NUMBER = '263780563561';
+    const waMessage = `Hi Karl! I'd like to book "${l.title}" (${location.href}). Is it available?`;
+    cta.onclick = () => window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`, '_blank');
 
     const images = (l.images && l.images.length) ? l.images : [];
     if (images.length){
