@@ -1,28 +1,5 @@
 window.LISTINGS = [
-  {
-    "id": "1001064252094468262",
-    "title": "NoorVilla",
-    "tagline": "The Serene Getaway",
-    "url": "https://www.airbnb.com/rooms/1001064252094468262",
-    "host": {
-      "name": "Patience",
-      "superhost": true,
-      "yearsHosting": "3 years hosting"
-    },
-    "price": 188,
-    "rating": null,
-    "reviewsCount": null,
-    "description": null,
-    "amenities": [],
-    "images": [],
-    "lat": -20.209,
-    "lng": 28.5958,
-    "areaLabel": "Zimbabwe",
-    "roomType": "Entire place",
-    "bedrooms": null,
-    "bathrooms": null,
-    "sleeps": null
-  },
+
   {
     "id": "1054843913930492965",
     "title": "Eddiel's Nest, pristine & spacious 3BR w/ pool",
@@ -33,7 +10,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": 80,
+    "price": 82,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -73,7 +50,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": 80,
+    "price": 282,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nYou will love our spacious family-friendly villa, that accommodates 6-8 guests in comfort. Our fully-equipped holiday home features:\nRefreshing private swimming pool you can use anytime\nMaid service (free)\nPool table & board games\nDedicated remote work station with reliable WiFi\nFull kitchen and barbecue/braai facilities & utensils\nadditional paid services\nActivity and restaurant booking assistance\nTransportation\nLocal guide\nWe aim to provide an unforgettable experience!\nMessage us for discounts\n\nThe space\nDiscover this stunning 3-bedroom residence nestled in the prestigious Victoria Falls Estate, just a short 5-minute drive from the town center and merely 8 minutes from the breathtaking Victoria Falls. Enjoy unparalleled convenience and proximity to one of the world's most spectacular natural wonders.\n\nGuest access\nWelcome to The Happy Home, a charming and secure residence featuring a spacious patio, private parking, private backyard, sparkling pool, and barbecue/braai area perfect for outdoor entertaining. Nestled in a tranquil estate, the property boasts a fully walled backyard, ensuring a peaceful and secluded retreat for relaxation and enjoyment.\"\n\nOther things to note\nIndulge in the luxury of a personal chef experience during your stay. Our talented chef is available to prepare a diverse range of mouth-watering cuisines, including Italian, Indian, Chinese, local farm-style, and vegan/vegetarian delights. Let us take care of your culinary needs, so you can focus on relaxation and enjoyment.\n\nBreakfast $10 / person\n3 Course Lunch $25 / Person\n3 Course Dinner $35/ Person\n5 Course Dinner $45 / Person ( includes a bottle of Champagne)\nbeverages are charged separately.",
@@ -127,7 +104,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": 80,
+    "price": 227,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nRenovated in 2018, Seacliffe on Two is a luxury 3-bedroom, 3.5-bathroom apartment in wind-free Bantry Bay, perfectly located between Sea Point and Clifton/Camps Bay. Nestled on a quiet road, it offers breathtaking ocean views and premium comfort where you can see, smell, and hear the sea. Fully furnished with FREE secure parking for 2 vehicles, uncapped high-speed WiFi, and reliable BACKUP POWER during outages, this stylish retreat ensures convenience and relaxation with every stay.\n\nThe space\nRecently renovated Seacliffe on Two is located on the second level and offers exquisite views and sounds of the ocean from the lounge/dining room and two ocean facing bedrooms. The over sized bay window in the lounge frames the view of the Atlantic into a picture you will never forget.\n\nThe three bedroom, three and a half bathroom apartment is larger than most three bedroom apartments as it was converted from two separate apartments and have been finished in a chic retro style with polished curved surfaces, luxurious wood and marbled finishes.\n\nThe kitchen is fully equipped with appliances and all cookware needed for self catering, including a dishwasher, washing machine, dryer, for your convenience. Each of the three bedrooms has an en-suite and all the bedrooms has been decorated in neutral tones with a semi hotel feel.\n\nThe apartment has 24hr security cameras and each entrance/exit point of the complex is accessed with security tags. Two parking spaces is available in the secured complex, one covered and one open. Elevators are accessed from the entrance level to all floors. One elevator has backup power and will be operational during power outages.\n\nLocated on the Bantry Bay beach front, Seacliffe is but minutes away from Clifton and Camps Bay, with the Waterfront and the CBD a 10-15 min drive.\n\nBest Features:\n\n1. Fantastic ocean views\n2. Location is superb\n3. Complex has great security with CCTV\n4. Two secure parking spots – 1 covered, 1 uncovered\n5. Spacious for an apartment\n6. Complex is well managed and maintained\n7. Free WiFi - UNCAPPED 600/600 mbps speed\n8. Stayover cleaning can be arranged for an additional fee.\n9. Backup power during power outages - appliances that generate heat will not be operational during power outages.\n\nGood news: I have inverters and lithium batteries inside my apartment to keep the basics going during power outages.\n\nWhat will work: lights/TV's/wifi/fridges/power outlets (no appliances that generate heat).\n\nWhat will not work: geysers/stove/oven/kettle/coffee maker/heaters - please unplug heaters during power outages.\n\nThe system is automated and will automatically kick in when the power goes out.\n\nApartment Layout:\n\n•Entrance\n•Kitchen\n•Guest Bathroom\n•Lounge/Dining Room\n•Master Bedroom – 2 x Twin Beds or a King Bed with TV and safe – Bathroom with Shower – Ocean Facing\n•2nd Bedroom – Queen Bed with TV and safe – Bathroom with Shower – Ocean Facing\n•3rd Bedroom – 2 x Twin Beds or a King Bed with TV and safe – Bathroom with Bathtub\n\nDistances:\n\nCape Town International Airport 24.7km\nClifton Beaches 2.4km\nCamps Bay Beach 4.5km\nV&A Waterfront 7km\nCape Town Stadium 4.5km\nCape Town International Convention Center 6.3km\nTable Mountain 7.5km\nCape Town International Convention Center 6.3km\nLong Street 6.8km\nUS Consulate General 30.2km\nParliament 7.6km\nCanal Walk Mall 16km\n\nGuest access\nEntire apartment\n\nOther things to note\nThe cost to clean the apartment on DEPARTURE has been included in your quoted rate and is marked as \"Cleaning Fee\".\n\nStayover cleaning can be arranged for an additional fee directly with my cleaning lady and is not included in your booking rate. Although tipping is not customary in South Africa, it is always appreciated should you feel it appropriate.\n\nHeads‑up: On the last Tuesday of each month, between 10:00 and 12:00, window cleaners will be working outside the apartment (weather permitting). If the day falls on a public holiday, cleaning will be skipped.\n\nGuests may see the cleaners during this time, so please be mindful of privacy and close the shutters if you prefer.\n\nElectronic tags and remotes are used to access the building. Please take this in to consideration if you observe any religious days/holidays that limits your use of technology. The building manager/caretaker of the building can not assist with the opening of any door/s during the observance of the days mentioned.\n\nThe elevator undergoes regular servicing and is not operational during that service session (few hours). The staircase must be used during these incidents. One elevator has backup power and will be operational during power outages.\n\nGood news: I have inverters and lithium batteries inside my apartment to keep the basics going during power outages.\n\nWhat will work: lights/TV's/wifi/fridges/power outlets (no appliances that generate heat).\n\nWhat will not work: geysers/stove/oven/kettle/coffee maker/heaters.\n\nThe system is automated and will automatically kick in when the power goes out.",
@@ -166,7 +143,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": 80,
+    "price": 144,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -208,7 +185,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": 80,
+    "price": 271,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -248,7 +225,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": 80,
+    "price": 96,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -281,7 +258,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": 80,
+    "price": 281,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nStylish & comfortable self-catering apartments offer a home away from home in a leafy suburb in Johannesburg.\n\nFully furnished 71 m² two-bedroom units feature a main bedroom with queen-size bed & en-suite bathroom including shower & bathtub.\n\nSecond bedroom has a double bed & second bathroom has a bathtub.\n\nFully equipped kitchen with modern appliances, a lounge, dining area & large balcony. Smart TV, with Netflix, DSTV, Showmax & Amazon Prime Video ready (Own Login), dedicated workspace.\n\nThe space\nA short walk away from The Wedge shopping centre, the apartment is located only 5 km from Sandton City Mall & Nelson Mandela Square Africa’s most iconic shopping centre and Sandton Business Hub.\n\nThe building consists of lift and stairs, 24/7 Security on site and 12-hour reception and concierge services (08h00 – 20h00).\n\nSecure on-site basement parking, Unlimited Wi-Fi, Digital management front door locks, Cleaning services: 3-6 nights once during stay, 7+ nights every third day and long stays 28+ nights twice a week, Backup power & water.\n\nGuest access\nOn arrival inform security you checking in and going to CAG reception.\n\nAt front desk on duty receptionist will provide you with code to enter apartment and Wi-Fi password. Proof of identification (ID/Passport) will be required and sign registration card which includes our house rules.\n\nWe have 24/7 Security on site and 12-hour reception and concierge services (08h00 – 20h00).",
@@ -307,7 +284,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": 80,
+    "price": 273,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -350,7 +327,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": 80,
+    "price": 95,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThis is a spacious 3 bedroomed home with modern finishings. The home boasts of a fully equipped kitchen, complete with washing machine/dryer. There is back up power (solar) and water. The home boasts of a comfortable chic living area that is exquisitely furnished. The space allows you to unwind and relax after a long day.\nGuests have access to the entire home and will be provided with own keys and electric gate remote. The home also has a CCTV outside the house to provide ultimate security.\n\nThe space\nThe unit is one of two units one a one and a half acre lot.The two units are 10m apart.The place runs on solar power with batteries and they is a backup generator as well.Grid power is erratic at best but is also connected.The unit has ceiling fans in the dining areas and standing fans in the bedrooms.The aircon is installed in the bedrooms but is only available only when they is grid electricity.Also the same for the oven.\nThe area is 12km from the Bulawayo Main Post Office using the Hillside Road and Burnside Road.The unit is in a wooded lot with lots of indigenous trees and plenty of birds and squirrels around.They is also a perennial stream that runs through the property and a small natural pond with aquatic life and frogs are a common site,especially in the rainy season.Landscaping is more natural bush garden than pruned lawn and flowers\nPlease take note they are pets on the property,dogs,cats and ducks\n\nOther things to note\nThe booking is for the entire 3 bed house.Please note the price is based on the number of guests who will be staying at the property.Please ensure you put in the correct number of guests who will be sleeping over when making your booking.\nThey are also pets on the property,small dogs,cats and ducks",
@@ -376,7 +353,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 years hosting"
     },
-    "price": 80,
+    "price": 156,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -412,7 +389,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": 80,
+    "price": 115,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nWelcome to Messe Luxe — your peaceful, modern retreat in Victoria Falls, perfect for unwinding after a day exploring one of the world’s greatest natural wonders. Ideally located for both relaxation and adventure, this stylish apartment offers the perfect base for guests looking to explore the breathtaking Victoria Falls while enjoying modern comfort and privacy.\nAfter a day of sightseeing, or river experiences, return to a calm and beautifully designed space where you can truly unwind.\n\nThe space\n🌿 The Space\nThoughtfully curated with comfort in mind, this apartment features:\nBright, modern interiors with a clean, elegant finish\nTwo Comfortable bedrooms designed for restful nights\nA fully equipped kitchen for home-style meals and an icemaker after those hot walks\nA cozy living area perfect for relaxing or entertaining with air conditioning and a wide range of entertainment applications\nWhether you’re traveling as a couple, family, or small group, Messe Luxe offers a peaceful and secure environment to recharge.\n\n🌍 The Experience\nThis is more than just a stay — it’s your personal retreat in Victoria Falls.\nSpend your days exploring nearby attractions, then come back to:\nA quiet, secure setting\nA relaxing atmosphere away from the crowds\nThe comfort and consistency of a premium stay\n\n📍 Location\nConveniently situated near key attractions, restaurants, and activity hubs, making it easy to explore everything Victoria Falls has to offer while enjoying a tranquil place to return to.\n\nGuest access\n🔑 Guest Access\nGuests will have full and exclusive access to the entire apartment during their stay.\nThis includes:\nAll bedrooms\nLiving and dining areas\nFully equipped kitchen\nBathroom(s)\nPrivate outdoor spaces\nYou will not be sharing the space with other guests, ensuring complete privacy, comfort, and a true home-away-from-home experience.",
@@ -455,7 +432,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": 80,
+    "price": 229,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -495,7 +472,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": 80,
+    "price": 245,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\n•Uninterrupted Fast WiFi\n•Rooftop Pool\n•100m to Beach\n\nPerfectly positioned in Sea Point, this bright and airy studio apartment offers a thoughtfully designed space to relax and recharge as you explore all that Cape Town has to offer.\n\nIf you need to recharge, take the elevator up to the rooftop deck, where you can chill by the communal pool with a good book or a cocktail while taking in spectacular panoramic views of Table Mountain and the endless Atlantic Ocean.\n\nThe space\nStep into a luxurious 35m² Studio, where style meets functionality in perfect harmony. These thoughtfully designed spaces are a testament to modern innovation, offering an unparalleled living experience for any stay. that masterfully marries comfort with style, making it the ideal haven for both short and extended stays. The captivating open-plan design seamlessly merges the bedroom, kitchen and living areas, inviting you into a sophisticated yet cozy retreat featuring a plush bed and abundant storage, ensuring restful nights and clutter-free days. Unwind with your favorite shows on the Smart TV or channel your inner chef in the impeccably equipped kitchen. The sleek bathroom, complete with a modern walk-in shower, promises a spa-like experience every day. Nestled within the prestigious EIGHTY2 ON M, this residence not only offers unparalleled luxury but also supports your well-being with exclusive convenience of self-service laundry facilities, A breathtaking Rooftop Pool & Lounging area, and delightful Communal Spaces to socialize and unwind. This is your ultimate sanctuary, where elegance meets tranquility.\n\nGuest access\nEIGHTY2 ON M is exclusively available from Main Road, in Sea Point. Guests can enjoy peace of mind with 24/7 security, a dedicated concierge team and secure access control. Guests have access to their own private unit, as well as all shared spaces in the building, including the building's rooftop deck and pool, offering panoramic views!\n\n*Limited Paid parking Available subject to availability upon request at check-in\n\nOther things to note\nThis property, and all other Airbnb's in Cape Town, experience loadshedding (scheduled power outages) regulated by the national power utility. To help minimise the impact this has on guests, this apartment has some measures in place for comfort:\n\n•A generator which will power all common areas, passage lights and elevators.\n•A portable power station which allow one to connect electrical devices (cell phones, laptops).\n•A UPS which backup the Wi-Fi allowing uninterrupted internet connection.\n•An LED light that will illuminate the apartment.\n•A concierge team to assist with notifications of scheduled power outages using a recommend mobile app.",
@@ -521,7 +498,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": 80,
+    "price": 283,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThe famous Victoria Falls is only 7 mins drive from this cosy apartment set in a wonderfully tranquil suburb.An ideal spot for those requiring a peaceful and relaxing holiday. We are on the Zimbabwean side.\n\nGuest access\nCaretaker Collen is always on-site to ensure your stay is smooth and enjoyable. Host Susan is readily available on the Airbnb platform for any inquiries. Additionally, Pride is on hand to assist with transfers, activities, and recommendations for the best places to visit in Victoria Falls.\n\nOther things to note\nOptional grocery and meal services for added ease. Just let us know what you need and we will take care of the rest.",
@@ -547,7 +524,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": 80,
+    "price": 254,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nOur spacious apartment with two bedrooms is suited for professionals travelling together or families in need of a quiet haven. Centrally located just off Rivonia Boulevard, Sandton.\n\nFeatures:\n- Complimentary high Speed Wi-Fi.\n- Back up water\n- Within walking distance to Rivonia Boulevard.\n- Fully furnished, fully equipped, self catering & serviced.\n- Two bedrooms furnished with Queen size bed and 2 x single.\n- Sofa, TV & dining room table.",
@@ -584,7 +561,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": 80,
+    "price": 194,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nNeat and modest room in Fourwinds , a quiet surbub.\n\nEquipped with:\n\nHot shower\nMini bar fridge\nCloset\nDedicated workspace\nQueen bed\nKitchenette\n*A full kitchen is also available ,though it is shared\nElectricity backup\nWater backup\nMicrowave oven\nCuttlery\nShampoo ,lotion & soap\nWiFi\nKettle\n\nThe space\nThis spacious room with all the basics in place is part of a a series of identical rooms designed motel style.",
@@ -615,7 +592,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": 80,
+    "price": 201,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -639,7 +616,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": 80,
+    "price": 252,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -679,7 +656,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": 80,
+    "price": 199,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -716,7 +693,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": 166,
+    "price": 184,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -751,7 +728,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": 80,
+    "price": 190,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -784,7 +761,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": 80,
+    "price": 284,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -826,7 +803,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": 80,
+    "price": 277,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -850,7 +827,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": 80,
+    "price": 295,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -889,7 +866,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": 80,
+    "price": 157,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThree Anchor Heart is nestled in the heart of Cape Town, offering a central location:\n- V&A Waterfront – 2.3 km\n- Signal Hill – 1.7 km\n- Table Mountain Aerial Cableway – 6.2 km\n- Cape Town Stadium – 1.2 km\n- Sea Point Promenade – 500 m\n- Bo-Kaap– 2.4 km\n- Oceans Aquarium – 2.2 km\n- Company’s Garden & South African Museum – 3.3 km\n- Clifton Beaches – 4.4 km\n- Camps Bay Beach – 6.5 km\n- Robben Island Ferry (from Wate rfront) – 2.3 km\n- Zeitz MOCAA – 2.7 km\n- District Six Museum – 4.2 km\n\nThe space\nThis stylish studio blends comfort and functionality in a clean, contemporary design. There are 8 micro apartments in this newly renovated building.\n\nThe space features:\nA queen bed neatly dressed in crisp white linen with a soft throw, creating a cozy and inviting sleeping area.\n\nGround apartments display modern tiles and suspended bulkhead ceilings.\n\nAn L-shaped kitchenette in the corner is compact yet well-appointed, including:\n\n- A fridge and microwave\n- Sleek cabinetry with ample storage\n- A sink and under-counter lighting\n- Basic appliances such as a 2 plate Smeg stove and kettle.\nEssential cookware included, perfect for preparing simple meals or snacks.\n\nA built-in desk/workspace by the large window provides natural light and is ideal for remote work or casual use.\n\nGenerous wardrobe space with modern black handles, offering both closed storage and open shelving for display or practical use.\n\nWooden features throughout add warmth and elegance, complementing the soft neutral palette of the room.\n\nGuest access\nYour room's front door has a Smart Access Yale lock, which uses biometrics, pin codes and digital tags.\n\nYou'll receive a code before you arrive to enter the building, and a second unique code for your room. The room code changes with each guest visit.",
@@ -926,7 +903,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "7 years hosting"
     },
-    "price": 80,
+    "price": 159,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -963,7 +940,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": 80,
+    "price": 115,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1006,7 +983,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "11 months hosting"
     },
-    "price": 80,
+    "price": 167,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nAn immaculate, fully furnished one-bed en-suite apartment situated on the 9th floor offering stunning views in the heart of the vibrant energy of Sandton. Sandton Skye is perfectly positioned with top-tier amenities at your doorstep offering the ultimate in lifestyle, comfort and convenience.\n\nThe space\nApartment Features\nSpacious open plan main bed en-suite.\nOpen plan seating area with stunning views\nSleek fully equipped modern kitchen\nPremium high end finishes\nFully air-conditioned apartment\nOne basement parking\n\nExclusive amenities include 24-hour concierge, restaurant, cocktail bar, gym, pool, 24hour security & high speed fiber\n\n\nSandton Skye offers the guests\n• 24 hour Concierge\n• The Codfather Restaurant\n• Sushi Bar\n• Indoor/outdoor Cocktail Bar\n• Gym\n• Outdoor Pool\n• 24 hr Guardhouse & Security\n• High Speed Fibre\n• Temperature controlled air-conditioning\n• Housekeeping & laundry available\n• Secure Basement Parking\n\nGuest access\nGuests arrive at the front entrance and can check in at the front desk.\nKey cards will be issued to access their apartment.\nGuests will be directed to the allocated basement parking from which they can take the elevators to the 9th floor to access apartment 910\n\nOther things to note\nSandton Skye is situated in the main hub of Sandton. Ubers are accessible to get anywhere and the main Gautrain is within a 3 min drive.",
@@ -1038,7 +1015,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "7 months hosting"
     },
-    "price": 80,
+    "price": 210,
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nExperience the pinnacle of urban luxury in this designer 2-bedroom apartment with the main bedroom en-suited, located in the upscale suburb of Sandton. The Sandton Royal offers stylish, high-end home designed for comfort, ideal for families, couples, and business travelers.\n\n•Stone away from Sandton City Mall & Nelson Mandela Sq ( 5-10mins dr)\n•Fast WiFi and Netflix\n•Free Bev & Treats\n•Fully equipped on-site gym.\n•Sparkling swimming pool\n• Security:24/7 controlled access and free secure parking\n\nThe space\nI have integrated the floating bed and motorized curtains to emphasize the high-tech, luxury feel of your Sandton apartment.\n\nThe Space:\nUltra-Modern Luxury in Sandton\nStep into a sophisticated sanctuary featuring cutting-edge design and premium comfort. The living area is defined by motorized curtains for effortless light control, while the bedroom features a stunning floating bed for a true high-end aesthetic.\nQuick Amenities Summary\n\n🛏️ Sleeping & Comfort:\n•Floating Queen Bed in the 2nd suite for a modern, airy feel.\n• Luxury Queen bed, both with premium linens.\n• Motorized curtains in the lounge for ultimate convenience.\n• Blackout curtains in bedrooms for a perfect night’s sleep.\n• 🚿 Spa-Style Bathrooms:\n• Main en-suite with a deep soaking tub and luxury rain shower.\n• Second modern bathroom with a premium rain shower.\n• 🍳 Designer Kitchen:\n• State-of-the-art modern appliances (Oven, Fridge, Microwave).\n• Equipped with a dishwasher and full culinary set.\n• 📶 Tech & Entertainment:\n• Top-range, high-speed WiFi (uncapped).\n• Smart TV with Netflix pre-installed.\n• Dedicated workspace for business travelers.\n\n🏢 Building Perks (Free):\n• Access to the on-site gym and swimming pool.\n• 24/7 security and secure parking.\n• Full laundry facilities (Washer/Dryer).\n\nGuest access\nTo ensure a seamless arrival at Unit 128 The Sandton Royal , please follow these simple steps:\n\n1. Entering the Complex\n• Security Gate: Upon arrival, please inform the security personnel at the main gate that you are checking into Unit 128.\n\n• Access Code:\nYou will receive a unique Complex Access Code via SMS/email within 12-24hrs before check in. You will use this code at the gate for both entry and exit throughout your stay.\n\n• Parking:\nAsk Security guard for parking, he will direct you to your free designated secure parking bay reserved specifically for Unit 128.\n\n2. Entering the Apartment\n\n• Smart Lock:\nNo physical keys are required. You will be provided with a Smart Door Lock Code.\nHow to use:\n•Simply tap the WiFi sign button on the door lock(key pad), digital numbers will pop up.\n•Enter your code on the keypad followed by # .\n\n\"Once inside, please help yourself to our complimentary treats! You'll find cold water in the fridge, along with tea and coffee to help you settle in. ☕️\".",
@@ -1083,7 +1060,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "10 years hosting"
     },
-    "price": 80,
+    "price": 97,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1125,7 +1102,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": 80,
+    "price": 148,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1160,7 +1137,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 years hosting"
     },
-    "price": 80,
+    "price": 155,
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 5 out of 5 stars.\n5.0\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 100% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 5.0 out of 5 stars for cleanliness\nCleanliness\n5.0\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 5.0 out of 5 stars for check-in\nCheck-in\n5.0\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 5.0 out of 5 stars for location\nLocation\n5.0\nRated 5.0 out of 5 stars for value\nValue\n5.0\n4 reviews\nRatings sort order: Most relevant\nMost relevant\nThembi\n10 months on Airbnb\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nGroup trip\nThis place was perfect for our trip. It was spacious, clean, and had a lovely atmosphere. The host made sure we had everything we needed and communication was excellent. We truly enjoyed our time and would definitely come back.\nGraeme\nPretoria, South Africa\nRating, 5 stars\n,\n·\n3 weeks ago\n,\n·\nStayed one night\nWilfred was a great host. Finding the apartment as advertised builds my trust in the Airbnb community of hosts. Thank you Wilfred for making this an uncomfortable although short stay. Highly rate you as host and your apartment was what you promised.\nMarc\nPortland, Oregon\nRating, 5 stars\n,\n·\n4 weeks ago\n,\n·\nGroup trip\nWilfred was a good host, and the apartment served us well.\nLindinkosi\nBoksburg, South Africa\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nStayed a few nights\nGood service",
@@ -1195,7 +1172,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": 80,
+    "price": 144,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1226,7 +1203,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 month hosting"
     },
-    "price": 144,
+    "price": 298,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1263,7 +1240,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 month hosting"
     },
-    "price": 80,
+    "price": 206,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1307,7 +1284,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 month hosting"
     },
-    "price": 80,
+    "price": 290,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1342,7 +1319,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "7 years hosting"
     },
-    "price": 80,
+    "price": 245,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1366,7 +1343,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": 92,
+    "price": 155,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1444,7 +1421,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": 80,
+    "price": 193,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1483,7 +1460,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": 80,
+    "price": 292,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1507,7 +1484,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": 80,
+    "price": 207,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1533,7 +1510,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": 80,
+    "price": 181,
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1572,7 +1549,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "9 years hosting"
     },
-    "price": 80,
+    "price": 186,
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.98 out of 5 from 84 reviews.\n4.98\nGuest favorite\nThis home is in the top 10% of eligible listings based on ratings, reviews, and reliability\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 98% of reviews\n5\n4 stars, 2% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 4.9 out of 5 stars for location\nLocation\n4.9\nRated 4.9 out of 5 stars for value\nValue\n4.9\nGuest reviews mention\nPool\n17\nHospitality\n62\nOutdoor spaces\n16\nLocation\n20\nNearby\n11\nIndoor spaces\n15\nCleanliness\n16\nWalkability\n10\nLaundry\n10\nAccuracy\n10\n84 reviews\nRatings sort order: Most relevant\nMost relevant",
