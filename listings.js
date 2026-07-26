@@ -1,28 +1,5 @@
 window.LISTINGS = [
-  {
-    "id": "1001064252094468262",
-    "title": "NoorVilla",
-    "tagline": "The Serene Getaway",
-    "url": "https://www.airbnb.com/rooms/1001064252094468262",
-    "host": {
-      "name": "Patience",
-      "superhost": true,
-      "yearsHosting": "3 years hosting"
-    },
-    "price": 189,
-    "rating": null,
-    "reviewsCount": null,
-    "description": null,
-    "amenities": [],
-    "images": [],
-    "lat": -20.209,
-    "lng": 28.5958,
-    "areaLabel": "Zimbabwe",
-    "roomType": "Entire place",
-    "bedrooms": null,
-    "bathrooms": null,
-    "sleeps": null
-  },
+
   {
     "id": "1054843913930492965",
     "title": "Eddiel's Nest, pristine & spacious 3BR w/ pool",
