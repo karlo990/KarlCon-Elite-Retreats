@@ -38,7 +38,7 @@ try:
 except ImportError:
     sys.exit("Missing dependency. Run:  pip install pillow")
 
-IMAGE_EXT = {".jpg", ".jpeg", ".png", ".webp"}
+IMAGE_EXT = {".jpg", ".jpeg", ".png", ".webp", ".avif"}
 MAX_WIDTH = 1920
 JPEG_QUALITY = 84
 
@@ -102,32 +102,11 @@ def process_images(images_dir: Path, out_dir: Path):
     return written
 
 
-def load_coordinates_fallback(root: Path):
-    """The location-backfill script (backfill_coordinates.py) writes a flat
-    {listingId: {lat, lng, location}} map to <root>/coordinates.json. If a
-    listing's own info.json still lacks lat/lng (e.g. because the folder path
-    the backfill used didn't line up with where the Share_* folders actually
-    live), fall back to this file instead of leaving the listing unmapped."""
-    coords_path = root / "coordinates.json"
-    if not coords_path.exists():
-        return {}
-    try:
-        return json.loads(coords_path.read_text(encoding="utf-8"))
-    except Exception as e:
-        print(f"! could not parse {coords_path}: {e}")
-        return {}
-
-
 def build(root: Path, site_dir: Path):
     listings = []
-    coords_fallback = load_coordinates_fallback(root)
-    # Broadened from the original "Share_Save_*" to any "Share_*" prefix so
-    # folders exported/renamed slightly differently (e.g. "Share_5636077")
-    # still get picked up. Non-folders and folders without info.json are
-    # silently skipped below, so this is safe to broaden.
-    folders = sorted(p for p in root.glob("Share_*") if p.is_dir())
+    folders = sorted(root.glob("Share_Save_*"))
     if not folders:
-        print(f"No Share_* folders found under {root}")
+        print(f"No Share_Save_* folders found under {root}")
         return
 
     for folder in folders:
@@ -151,15 +130,10 @@ def build(root: Path, site_dir: Path):
                 title, tagline = parts[0], " · ".join(parts[1:])
         host = info.get("host") or {}
         lat, lng = find_coords(info)
-        if lat is None or lng is None:
-            fallback = coords_fallback.get(listing_id)
-            if fallback:
-                lat = fallback.get("lat")
-                lng = fallback.get("lng")
 
         img_out_dir = site_dir / "data" / "listings" / listing_id / "images"
         image_files = process_images(folder / "images", img_out_dir)
-        image_paths = [f"data/listings/{listing_id}/images/{name}" for name in image_files]
+        image_paths = [f"listings/{listing_id}/images/{name}" for name in image_files]
 
         listings.append({
             "id": listing_id,
@@ -189,40 +163,12 @@ def build(root: Path, site_dir: Path):
     print(f"\nWrote {out_js}  —  {len(listings)} retreat(s) indexed.")
 
 
-def find_data_root(site_dir: Path):
-    """When no path is passed (e.g. running inside a cloned GitHub repo where
-    the scraped data was committed alongside the site), look for a folder
-    that directly contains Share_* subfolders in a few likely spots instead
-    of forcing a manual absolute path."""
-    candidates = [
-        site_dir / "airbnb_data",
-        site_dir.parent / "airbnb_data",
-        site_dir / "data",   # Karl's layout: Share_Save_* dropped straight into data/
-        site_dir,
-        Path.cwd(),
-    ]
-    for c in candidates:
-        if c.is_dir() and any(p.is_dir() for p in c.glob("Share_*")):
-            return c
-    return None
-
-
 if __name__ == "__main__":
-    site_dir = Path(__file__).parent
-    if len(sys.argv) == 2:
-        root = Path(sys.argv[1]).expanduser()
-        if not root.is_dir():
-            sys.exit(f"Not a folder: {root}")
-    elif len(sys.argv) == 1:
-        root = find_data_root(site_dir)
-        if root is None:
-            sys.exit(
-                "No path given and couldn't auto-find a folder containing "
-                "Share_* subfolders (checked ./airbnb_data, ../airbnb_data, "
-                "this folder, and the current working directory).\n\n" + __doc__
-            )
-        print(f"Auto-detected data folder: {root}")
-    else:
+    if len(sys.argv) != 2:
         print(__doc__)
         sys.exit(1)
+    root = Path(sys.argv[1]).expanduser()
+    if not root.is_dir():
+        sys.exit(f"Not a folder: {root}")
+    site_dir = Path(__file__).parent
     build(root, site_dir)
