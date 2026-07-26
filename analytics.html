@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>KARLCON · Director Analytics</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ── TOKEN SYSTEM ─────────────────────────────────────────── */
+:root{
+  --g:#0E7A4C; --gb:#12A869; --gd:rgba(14,122,76,.15);
+  --bg:#060A0D; --s1:#0A1118; --s2:#0F1921; --s3:#142030;
+  --bd:rgba(14,122,76,.18); --bd2:rgba(255,255,255,.05);
+  --t1:#E4EDE8; --t2:#7B9B87; --t3:#3A5846;
+  --red:#EF4444; --redd:rgba(239,68,68,.12); --redt:#FCA5A5;
+  --amb:#F5A524; --ambd:rgba(245,165,36,.12); --ambt:#FCD34D;
+  --blu:#2F80ED;
+  --sans:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;background:var(--bg);color:var(--t1);font-family:var(--sans);overflow:hidden;}
+:focus-visible{outline:2px solid var(--gb);outline-offset:2px;}
+
+/* ── PIN SCREEN ───────────────────────────────────────────── */
+#pin-screen{
+  position:fixed;inset:0;z-index:9999;background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+}
+.pin-card{
+  background:var(--s1);border:1px solid var(--bd);border-radius:14px;
+  padding:52px 44px 40px;width:min(380px,92vw);text-align:center;
+  box-shadow:0 32px 80px rgba(0,0,0,.6),0 0 0 1px rgba(14,122,76,.1);
+}
+.pin-kc{font-family:var(--mono);font-size:10px;color:var(--gb);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;}
+.pin-h{font-size:22px;font-weight:700;margin-bottom:5px;}
+.pin-sub{font-size:13px;color:var(--t2);margin-bottom:30px;line-height:1.5;}
+.pin-in{
+  width:100%;background:var(--s2);border:1.5px solid var(--bd);border-radius:9px;
+  padding:13px 16px;font-family:var(--mono);font-size:16px;color:var(--t1);
+  text-align:center;letter-spacing:.2em;outline:none;transition:border .15s;margin-bottom:14px;
+}
+.pin-in:focus{border-color:var(--gb);}
+.pin-btn{
+  width:100%;background:linear-gradient(135deg,var(--g),var(--gb));
+  border:none;border-radius:9px;padding:14px;font-family:var(--sans);
+  font-size:14px;font-weight:700;color:#fff;cursor:pointer;letter-spacing:.02em;
+  transition:opacity .15s;
+}
+.pin-btn:hover{opacity:.86;}
+.pin-err{font-family:var(--mono);font-size:11px;color:var(--red);margin-top:10px;min-height:16px;}
+
+/* ── HEADER ───────────────────────────────────────────────── */
+#hdr{
+  height:56px;flex-shrink:0;background:rgba(6,10,13,.97);
+  border-bottom:1px solid var(--bd);display:none;
+  align-items:center;justify-content:space-between;padding:0 24px;gap:12px;
+  position:relative;z-index:100;
+}
+#hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,var(--g) 0%,var(--gb) 30%,transparent 70%);}
+.hdr-l{display:flex;align-items:center;gap:12px;}
+.hdr-mark{
+  width:32px;height:32px;border-radius:7px;flex-shrink:0;font-size:15px;
+  background:linear-gradient(160deg,var(--s3),var(--s2));border:1px solid var(--bd);
+  display:flex;align-items:center;justify-content:center;
+}
+.hdr-t{font-size:14px;font-weight:700;} .hdr-t b{color:var(--gb);}
+.hdr-s{font-family:var(--mono);font-size:8px;color:var(--t2);margin-top:2px;letter-spacing:.06em;text-transform:uppercase;}
+.hdr-r{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.live-chip{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:9px;color:var(--gb);padding-right:10px;border-right:1px solid var(--bd2);}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--gb);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
+.hdr-btn{
+  font-family:var(--mono);font-size:9px;padding:5px 11px;letter-spacing:.04em;
+  border-radius:4px;cursor:pointer;transition:all .15s;border:1px solid var(--bd2);
+  background:rgba(255,255,255,.02);color:var(--t2);
+}
+.hdr-btn:hover{border-color:var(--bd);color:var(--t1);}
+.hdr-btn.active{background:var(--redd);border-color:rgba(239,68,68,.3);color:var(--redt);}
+.hdr-btn.green{border-color:var(--bd);color:var(--gb);background:var(--gd);}
+.hdr-btn.green:hover{background:rgba(14,122,76,.25);}
+
+/* ── DASHBOARD SHELL ──────────────────────────────────────── */
+#dash{
+  height:calc(100vh - 56px);overflow-y:auto;overflow-x:hidden;
+  display:none;flex-direction:column;gap:14px;padding:18px 22px 24px;
+}
+#dash::-webkit-scrollbar{width:3px;}
+#dash::-webkit-scrollbar-thumb{background:var(--bd);}
+
+/* ── CARDS ────────────────────────────────────────────────── */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.kpi{background:var(--s1);border:1px solid var(--bd2);border-radius:8px;padding:15px 18px;transition:border-color .2s,transform .2s;}
+.kpi:hover{border-color:var(--bd);transform:translateY(-1px);}
+.kpi-l{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);margin-bottom:8px;}
+.kpi-v{font-family:var(--mono);font-size:30px;font-weight:700;line-height:1;transition:opacity .25s;}
+.kpi-v.g{color:#6EE7B7;} .kpi-v.r{color:var(--redt);} .kpi-v.a{color:var(--ambt);} .kpi-v.b{color:#93C5FD;}
+.kpi-s{font-family:var(--mono);font-size:9px;color:var(--t2);margin-top:6px;}
+
+/* ── PANELS ───────────────────────────────────────────────── */
+.panel{background:var(--s1);border:1px solid var(--bd2);border-radius:8px;padding:15px 18px;display:flex;flex-direction:column;transition:border-color .2s;}
+.panel:hover{border-color:var(--bd);}
+.ph{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-shrink:0;}
+.pl{font-family:var(--mono);font-size:8.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--t2);}
+.pt{font-family:var(--mono);font-size:7.5px;padding:2px 7px;border-radius:2px;background:var(--gd);color:var(--gb);border:1px solid rgba(14,122,76,.25);}
+.pt.r{background:var(--redd);color:var(--redt);border-color:rgba(239,68,68,.25);}
+.pt.a{background:var(--ambd);color:var(--ambt);border-color:rgba(245,165,36,.25);}
+.cw{flex:1;position:relative;min-height:0;}
+
+/* ── CHART ROWS ───────────────────────────────────────────── */
+.row-2{display:grid;grid-template-columns:2fr 1fr;gap:12px;min-height:220px;}
+.row-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;min-height:200px;}
+.row-4{display:grid;grid-template-columns:1fr 300px;gap:12px;height:280px;}
+
+/* ── VISITOR MAP ──────────────────────────────────────────── */
+.map-shell{border-radius:8px;overflow:hidden;border:1px solid var(--bd2);}
+#visitor-map{height:100%;}
+.leaflet-popup-content-wrapper{background:var(--s2)!important;border:1px solid var(--bd)!important;border-radius:7px!important;color:var(--t1)!important;box-shadow:0 10px 30px rgba(0,0,0,.7)!important;}
+.leaflet-popup-content b{color:var(--gb);}
+.leaflet-popup-tip{background:var(--s2)!important;}
+.leaflet-popup-close-button{color:var(--t2)!important;}
+
+/* ── GEO TABLE ────────────────────────────────────────────── */
+.geo-list{display:flex;flex-direction:column;flex:1;overflow-y:auto;gap:0;}
+.geo-list::-webkit-scrollbar{width:2px;}
+.geo-list::-webkit-scrollbar-thumb{background:var(--bd);}
+.geo-r{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.035);font-family:var(--mono);font-size:10px;}
+.gflag{font-size:14px;flex-shrink:0;width:18px;text-align:center;}
+.gcname{color:var(--t1);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.gbar-w{flex:2;background:var(--s2);border-radius:2px;height:3px;overflow:hidden;}
+.gbar{height:100%;background:linear-gradient(90deg,var(--g),var(--gb));border-radius:2px;transition:width .6s ease;}
+.gcnt{color:var(--gb);font-weight:700;min-width:24px;text-align:right;}
+
+/* ── CHANNEL / DEVICE ROWS ────────────────────────────────── */
+.ch-list{display:flex;flex-direction:column;flex:1;gap:6px;overflow-y:auto;}
+.ch-row{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;}
+.ch-lbl{color:var(--t1);min-width:90px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ch-bar-w{flex:1;background:var(--s2);border-radius:2px;height:5px;}
+.ch-bar{height:100%;border-radius:2px;transition:width .6s ease;}
+.ch-cnt{color:var(--t2);min-width:26px;text-align:right;}
+
+/* ── SESSIONS TABLE ───────────────────────────────────────── */
+.tbl-w{overflow-y:auto;flex:1;min-height:0;}
+.tbl-w::-webkit-scrollbar{width:3px;}
+.tbl-w::-webkit-scrollbar-thumb{background:var(--bd);}
+table.vtbl{width:100%;border-collapse:collapse;}
+.vtbl th{
+  font-family:var(--mono);font-size:7.5px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--t3);padding:6px 10px;text-align:left;border-bottom:1px solid var(--bd2);
+  position:sticky;top:0;background:var(--s1);white-space:nowrap;
+}
+.vtbl td{
+  font-family:var(--mono);font-size:10px;color:var(--t2);
+  padding:6.5px 10px;border-bottom:1px solid rgba(255,255,255,.025);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:200px;
+}
+.vtbl tr:hover td{background:rgba(255,255,255,.012);}
+.badge{font-family:var(--mono);font-size:7px;padding:1px 5px;border-radius:2px;letter-spacing:.04em;}
+.b-h{background:var(--gd);color:var(--gb);border:1px solid rgba(14,122,76,.3);}
+.b-b{background:var(--redd);color:var(--redt);border:1px solid rgba(239,68,68,.3);}
+.b-m{background:rgba(47,128,237,.12);color:#93C5FD;border:1px solid rgba(47,128,237,.3);}
+.b-d{background:rgba(255,255,255,.04);color:var(--t2);border:1px solid var(--bd2);}
+
+/* ── EMPTY STATE ──────────────────────────────────────────── */
+.empty{font-family:var(--mono);font-size:10px;color:var(--t3);text-align:center;padding:36px 0 32px;}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media(max-width:1100px){
+  .row-2{grid-template-columns:1fr;}
+  .row-3{grid-template-columns:1fr 1fr;}
+  .row-4{grid-template-columns:1fr;height:auto;}
+  .map-shell{height:240px;}
+}
+@media(max-width:720px){
+  #dash{padding:12px 14px;}
+  .kpi-row{grid-template-columns:1fr 1fr;}
+  .row-3{grid-template-columns:1fr;}
+  .hdr-r .live-chip{display:none;}
+  #hdr{padding:0 14px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ── PIN LOCK SCREEN ────────────────────────────────────── -->
+<div id="pin-screen">
+  <div class="pin-card">
+    <div class="pin-kc">KARLCON · Developer Portal</div>
+    <div class="pin-h">Director Access</div>
+    <div class="pin-sub">Enter your access passphrase to view live marketing analytics and visitor intelligence.</div>
+    <input class="pin-in" id="pin-in" type="password" placeholder="passphrase" autocomplete="off" maxlength="40"/>
+    <button class="pin-btn" id="pin-btn">Unlock Dashboard →</button>
+    <div class="pin-err" id="pin-err"></div>
+  </div>
+</div>
+
+<!-- ── HEADER ─────────────────────────────────────────────── -->
+<header id="hdr">
+  <div class="hdr-l">
+    <div class="hdr-mark">KC</div>
+    <div>
+      <div class="hdr-t"><b>KARLCON</b> Analytics</div>
+      <div class="hdr-s">Director Dashboard · Real-Time · Bot-Filtered</div>
+    </div>
+  </div>
+  <div class="hdr-r">
+    <div class="live-chip">
+      <div class="live-dot"></div>
+      LIVE &nbsp;<span id="clock">--:--:--</span>
+    </div>
+    <button class="hdr-btn" id="bot-btn" onclick="toggleBots()">BOTS: HIDDEN</button>
+    <button class="hdr-btn green" onclick="refreshDash()">REFRESH</button>
+    <a class="hdr-btn" href="index.html" style="text-decoration:none;display:inline-flex;">← RETREATS SITE</a>
+    <button class="hdr-btn" onclick="signOut()">SIGN OUT</button>
+  </div>
+</header>
+
+<!-- ── DASHBOARD ──────────────────────────────────────────── -->
+<div id="dash">
+
+  <!-- KPIs -->
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-l">Total Sessions</div>
+      <div class="kpi-v" id="kpi-tot">—</div>
+      <div class="kpi-s" id="kpi-tot-s">all traffic recorded</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-l">Human Visitors</div>
+      <div class="kpi-v g" id="kpi-hum">—</div>
+      <div class="kpi-s" id="kpi-hum-s">bots excluded</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-l">Bots Filtered</div>
+      <div class="kpi-v r" id="kpi-bot">—</div>
+      <div class="kpi-s" id="kpi-bot-s">crawlers & scrapers</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-l">Countries Reached</div>
+      <div class="kpi-v a" id="kpi-cty">—</div>
+      <div class="kpi-s" id="kpi-cty-s">unique geographies</div>
+    </div>
+  </div>
+
+  <!-- Timeline + Bot quality -->
+  <div class="row-2">
+    <div class="panel">
+      <div class="ph"><span class="pl">Sessions · Last 14 Days</span><span class="pt" id="pt-range">14-DAY TREND</span></div>
+      <div class="cw" style="min-height:155px;"><canvas id="ch-timeline"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="ph"><span class="pl">Traffic Quality</span><span class="pt" id="pt-qual">BOT RATIO</span></div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:20px;flex:1;">
+        <canvas id="ch-donut" style="max-width:96px;max-height:96px;"></canvas>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#12A869;flex-shrink:0;"></div>
+            <span style="font-family:var(--mono);font-size:9px;color:var(--t2);">Humans</span>
+            <span style="font-family:var(--mono);font-size:11px;font-weight:700;color:var(--t1);margin-left:auto;min-width:36px;text-align:right;" id="pct-h">—</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#EF4444;flex-shrink:0;"></div>
+            <span style="font-family:var(--mono);font-size:9px;color:var(--t2);">Bots</span>
+            <span style="font-family:var(--mono);font-size:11px;font-weight:700;color:var(--t1);margin-left:auto;min-width:36px;text-align:right;" id="pct-b">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Traffic Sources + Top Pages + Devices -->
+  <div class="row-3">
+    <div class="panel">
+      <div class="ph"><span class="pl">Traffic Sources</span><span class="pt">MARKETING CHANNELS</span></div>
+      <div class="ch-list" id="ch-sources"><div class="empty">No referrer data yet</div></div>
+    </div>
+    <div class="panel">
+      <div class="ph"><span class="pl">Top Pages</span><span class="pt">RETREATS + SECTIONS</span></div>
+      <div class="cw" style="min-height:130px;"><canvas id="ch-pages"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="ph"><span class="pl">Devices</span><span class="pt">MOBILE VS DESKTOP</span></div>
+      <div class="cw" style="min-height:130px;"><canvas id="ch-devices"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Visitor Map + Countries -->
+  <div class="row-4">
+    <div class="map-shell">
+      <div id="visitor-map"></div>
+    </div>
+    <div class="panel">
+      <div class="ph"><span class="pl">Countries</span><span class="pt">GEO REACH</span></div>
+      <div class="geo-list" id="geo-list"><div class="empty">No geo data yet</div></div>
+    </div>
+  </div>
+
+  <!-- Sessions Table -->
+  <div class="panel" style="min-height:0;">
+    <div class="ph">
+      <span class="pl">Recent Sessions</span>
+      <span class="pt" id="tbl-tag">0 RECORDS</span>
+    </div>
+    <div class="tbl-w">
+      <table class="vtbl">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Page</th>
+            <th>Location</th>
+            <th>ISP / Org</th>
+            <th>Source</th>
+            <th>Channel</th>
+            <th>Screen</th>
+            <th>Device</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody id="tbl-body">
+          <tr><td colspan="9" class="empty">Add &lt;script src="js/analytics.js"&gt;&lt;/script&gt; to your pages to begin collecting sessions.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /#dash -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   KARLCON Director Analytics — analytics.html
+
+   CHANGING THE PASSPHRASE:
+     Update PASSPHRASE below.  For stronger protection, move
+     analytics.html behind HTTP Basic Auth on your server.
+   ═══════════════════════════════════════════════════════════════ */
+var PASSPHRASE = 'Usabata123$';      // ← Change to your own passphrase
+var STORE_KEY  = 'kcAnalytics_v1'; // Must match js/analytics.js
+var AUTH_KEY   = 'kcDirAuth';
+
+var showBots = false;
+var charts   = {};
+var vMap = null, vMarkers = [];
+
+/* ── AUTH ─────────────────────────────────────────────────── */
+function unlock() {
+  var val = document.getElementById('pin-in').value.trim();
+  var err = document.getElementById('pin-err');
+  if (!val) { err.textContent = 'Enter a passphrase.'; return; }
+  if (val === PASSPHRASE) {
+    sessionStorage.setItem(AUTH_KEY, '1');
+    showDash();
+  } else {
+    err.textContent = 'Incorrect passphrase. Try again.';
+    document.getElementById('pin-in').value = '';
+    document.getElementById('pin-in').focus();
+  }
+}
+function signOut() { sessionStorage.removeItem(AUTH_KEY); location.reload(); }
+function showDash() {
+  document.getElementById('pin-screen').style.display = 'none';
+  document.getElementById('hdr').style.display = 'flex';
+  document.getElementById('dash').style.display = 'flex';
+  initDash();
+}
+
+document.getElementById('pin-btn').addEventListener('click', unlock);
+document.getElementById('pin-in').addEventListener('keydown', function(e){ if (e.key === 'Enter') unlock(); });
+if (sessionStorage.getItem(AUTH_KEY)) showDash();
+
+/* ── DATA ─────────────────────────────────────────────────── */
+function getRaw() { try { return JSON.parse(localStorage.getItem(STORE_KEY) || '[]'); } catch(_){ return []; } }
+function getHumans(all) { return all.filter(function(e){ return !e.isBot; }); }
+function getBots(all)   { return all.filter(function(e){ return  e.isBot; }); }
+function getView(all)   { return showBots ? all : getHumans(all); }
+
+/* ── HELPERS ──────────────────────────────────────────────── */
+function fmtTime(ts) {
+  var d = new Date(ts);
+  return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short'}) + ' ' +
+         d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+}
+function flag(cc) {
+  return (cc && cc.length === 2) ? cc.toUpperCase() : '—';
+}
+function shortPage(p) {
+  if (!p || p === '/' || p === '/index.html') return 'Home';
+  if (/listing\.html/.test(p)) {
+    var m = p.match(/id=([^&]+)/);
+    return m ? 'Listing: ' + decodeURIComponent(m[1]).slice(0,18) : 'Listing';
+  }
+  return p.replace(/\?.*$/,'').replace(/\.html$/,'').replace(/^\//,'').slice(0,26) || 'Home';
+}
+function shortIsp(s) { return s ? s.replace(/^AS\d+\s+/,'').slice(0,22) : '—'; }
+function shortRef(r) {
+  if (!r || r === 'direct') return 'Direct';
+  try { return new URL(r).hostname.replace(/^www\./,'').slice(0,22); }
+  catch(_){ return r.slice(0,22); }
+}
+function channelLabel(ch) {
+  var map = {direct:'Direct',search:'Search',
+    'social-meta':'Facebook/IG','social-x':'Twitter/X',
+    'social-tiktok':'TikTok',whatsapp:'WhatsApp'};
+  return map[ch] || (ch ? ch.slice(0,20) : '—');
+}
+function channelColor(ch) {
+  var map = {direct:'#12A869',search:'#2F80ED',
+    'social-meta':'#1877F2','social-x':'#1DA1F2',
+    'social-tiktok':'#FF0050',whatsapp:'#25D366'};
+  return map[ch] || '#7B9B87';
+}
+
+function getLast14Days() {
+  var days = [];
+  for (var i = 13; i >= 0; i--) {
+    var d = new Date(); d.setDate(d.getDate() - i);
+    days.push(d.toLocaleDateString('en-GB',{day:'2-digit',month:'short'}));
+  }
+  return days;
+}
+function dayLabel(ts) {
+  return new Date(ts).toLocaleDateString('en-GB',{day:'2-digit',month:'short'});
+}
+
+/* ── CHART DEFAULTS ───────────────────────────────────────── */
+var CHART_GRID   = 'rgba(255,255,255,.04)';
+var CHART_TICK   = {color:'#3A5846',font:{family:'IBM Plex Mono',size:8}};
+var CHART_TICK2  = {color:'#7B9B87',font:{family:'IBM Plex Mono',size:8}};
+var CHART_TIP    = {
+  backgroundColor:'#0A1118',borderColor:'rgba(14,122,76,.3)',borderWidth:1,
+  titleColor:'#E4EDE8',bodyColor:'#7B9B87',
+  titleFont:{family:'IBM Plex Mono',size:9},
+  bodyFont:{family:'IBM Plex Mono',size:9}
+};
+
+/* ── KPIs ─────────────────────────────────────────────────── */
+function renderKPIs(all) {
+  var h = getHumans(all), b = getBots(all);
+  var countries = new Set(h.filter(function(e){return e.country;}).map(function(e){return e.country;}));
+  var total = all.length;
+
+  document.getElementById('kpi-tot').textContent = total || '0';
+  document.getElementById('kpi-hum').textContent = h.length;
+  document.getElementById('kpi-bot').textContent = b.length;
+  document.getElementById('kpi-cty').textContent = countries.size;
+
+  document.getElementById('kpi-tot-s').textContent = total
+    ? h.length + ' human · ' + b.length + ' bot' : 'no data yet — add analytics.js to your pages';
+  document.getElementById('kpi-hum-s').textContent = total
+    ? Math.round(h.length/total*100) + '% of all sessions' : 'bots excluded';
+  document.getElementById('kpi-bot-s').textContent = total && b.length
+    ? Math.round(b.length/total*100) + '% of traffic — noise removed' : 'none detected';
+  document.getElementById('kpi-cty-s').textContent = countries.size
+    ? Array.from(countries).slice(0,3).join(', ') + (countries.size > 3 ? ' +more' : '') : 'awaiting geo data';
+
+  var hp = total ? Math.round(h.length/total*100) : 0;
+  document.getElementById('pct-h').textContent = hp + '%';
+  document.getElementById('pct-b').textContent = (100-hp) + '%';
+  document.getElementById('pt-qual').textContent = hp + '% HUMAN';
+
+  return {h:h.length, b:b.length, total:total, countries:countries};
+}
+
+/* ── TIMELINE ─────────────────────────────────────────────── */
+function renderTimeline(all) {
+  var days = getLast14Days();
+  var h = getHumans(all), b = getBots(all);
+  function countPerDay(arr) {
+    return days.map(function(d){ return arr.filter(function(e){ return dayLabel(e.ts)===d; }).length; });
+  }
+  var ctx = document.getElementById('ch-timeline').getContext('2d');
+  if (charts.tl) charts.tl.destroy();
+  charts.tl = new Chart(ctx, {
+    type:'line',
+    data:{
+      labels:days,
+      datasets:[
+        {label:'Humans',data:countPerDay(h),borderColor:'#12A869',backgroundColor:'rgba(18,168,105,.1)',fill:true,tension:.4,pointRadius:3,pointBackgroundColor:'#12A869'},
+        {label:'Bots',data:countPerDay(b),borderColor:'#EF4444',backgroundColor:'rgba(239,68,68,.06)',fill:true,tension:.4,pointRadius:2,pointBackgroundColor:'#EF4444',borderDash:[4,5],hidden:!showBots}
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,animation:{duration:350},
+      plugins:{legend:{labels:{color:'#7B9B87',font:{family:'IBM Plex Mono',size:9},boxWidth:10}},tooltip:CHART_TIP},
+      scales:{
+        x:{ticks:Object.assign({},CHART_TICK,{maxRotation:45}),grid:{color:CHART_GRID}},
+        y:{ticks:Object.assign({},CHART_TICK,{stepSize:1}),grid:{color:CHART_GRID},beginAtZero:true}
+      }
+    }
+  });
+}
+
+/* ── DONUT ────────────────────────────────────────────────── */
+function renderDonut(h, b) {
+  var ctx = document.getElementById('ch-donut').getContext('2d');
+  if (charts.dn) charts.dn.destroy();
+  var total = h + b;
+  charts.dn = new Chart(ctx, {
+    type:'doughnut',
+    data:{
+      labels:['Humans','Bots'],
+      datasets:[{data:total?[h,b]:[1,0],backgroundColor:total?['#12A869','#EF4444']:['#142030','#142030'],borderWidth:0,hoverOffset:4}]
+    },
+    options:{responsive:true,maintainAspectRatio:true,cutout:'65%',animation:{duration:500},plugins:{legend:{display:false},tooltip:{enabled:!!total}}}
+  });
+}
+
+/* ── TOP PAGES ────────────────────────────────────────────── */
+function renderPages(evts) {
+  var counts = {};
+  evts.forEach(function(e){ var p=shortPage(e.page); counts[p]=(counts[p]||0)+1; });
+  var sorted = Object.entries(counts).sort(function(a,b){return b[1]-a[1];}).slice(0,8);
+  var ctx = document.getElementById('ch-pages').getContext('2d');
+  if (charts.pg) charts.pg.destroy();
+  charts.pg = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels:sorted.map(function(x){return x[0];}),
+      datasets:[{data:sorted.map(function(x){return x[1];}),backgroundColor:'rgba(14,122,76,.55)',borderColor:'#12A869',borderWidth:1,borderRadius:3}]
+    },
+    options:{
+      indexAxis:'y',responsive:true,maintainAspectRatio:false,animation:{duration:350},
+      plugins:{legend:{display:false},tooltip:CHART_TIP},
+      scales:{
+        x:{ticks:CHART_TICK,grid:{color:CHART_GRID},beginAtZero:true},
+        y:{ticks:CHART_TICK2,grid:{display:false}}
+      }
+    }
+  });
+}
+
+/* ── DEVICES ──────────────────────────────────────────────── */
+function renderDevices(evts) {
+  var mob = evts.filter(function(e){return e.mobile;}).length;
+  var des = evts.length - mob;
+  var ctx = document.getElementById('ch-devices').getContext('2d');
+  if (charts.dv) charts.dv.destroy();
+  charts.dv = new Chart(ctx, {
+    type:'doughnut',
+    data:{
+      labels:['Desktop/Tablet','Mobile'],
+      datasets:[{data:evts.length?[des,mob]:[1,0],backgroundColor:evts.length?['#2F80ED','#12A869']:['#142030','#142030'],borderWidth:0,hoverOffset:4}]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:true,cutout:'60%',animation:{duration:500},
+      plugins:{
+        legend:{labels:{color:'#7B9B87',font:{family:'IBM Plex Mono',size:9},boxWidth:10}},
+        tooltip:CHART_TIP
+      }
+    }
+  });
+}
+
+/* ── TRAFFIC SOURCES ──────────────────────────────────────── */
+function renderSources(evts) {
+  var counts = {};
+  evts.forEach(function(e){ var ch=e.channel||'direct'; counts[ch]=(counts[ch]||0)+1; });
+  var sorted = Object.entries(counts).sort(function(a,b){return b[1]-a[1];}).slice(0,8);
+  var max = sorted[0]?sorted[0][1]:1;
+  var el = document.getElementById('ch-sources');
+  if (!sorted.length) { el.innerHTML = '<div class="empty">No source data yet</div>'; return; }
+  el.innerHTML = sorted.map(function(entry){
+    var ch=entry[0], n=entry[1];
+    var pct = Math.round(n/max*100);
+    var color = channelColor(ch);
+    return '<div class="ch-row">' +
+      '<span class="ch-lbl">' + channelLabel(ch) + '</span>' +
+      '<div class="ch-bar-w"><div class="ch-bar" style="width:'+pct+'%;background:'+color+';"></div></div>' +
+      '<span class="ch-cnt">'+n+'</span>' +
+    '</div>';
+  }).join('');
+}
+
+/* ── GEO TABLE ────────────────────────────────────────────── */
+function renderGeo(evts) {
+  var counts = {};
+  evts.forEach(function(e){ if(e.country){ var k=e.country; if(!counts[k]) counts[k]={n:0,cc:e.cc}; counts[k].n++; } });
+  var sorted = Object.entries(counts).sort(function(a,b){return b[1].n-a[1].n;}).slice(0,14);
+  var max = sorted[0]?sorted[0][1].n:1;
+  var el = document.getElementById('geo-list');
+  if (!sorted.length) { el.innerHTML = '<div class="empty">No location data yet<br>ipapi.co will populate this on next page load</div>'; return; }
+  el.innerHTML = sorted.map(function(entry){
+    var country=entry[0], obj=entry[1];
+    return '<div class="geo-r">' +
+      '<span class="gflag">' + flag(obj.cc) + '</span>' +
+      '<span class="gcname">' + country + '</span>' +
+      '<div class="gbar-w"><div class="gbar" style="width:'+Math.round(obj.n/max*100)+'%"></div></div>' +
+      '<span class="gcnt">' + obj.n + '</span>' +
+    '</div>';
+  }).join('');
+}
+
+/* ── VISITOR MAP ──────────────────────────────────────────── */
+function renderMap(evts) {
+  if (!vMap) {
+    vMap = L.map('visitor-map',{zoomControl:true,attributionControl:false});
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:18,subdomains:'abcd'}).addTo(vMap);
+    vMap.setView([10,20],2);
+  }
+  vMarkers.forEach(function(m){vMap.removeLayer(m);}); vMarkers=[];
+
+  var geoEvts = evts.filter(function(e){return e.lat&&e.lng;});
+  var groups = {};
+  geoEvts.forEach(function(e){
+    var k = (e.city||e.country||'Unknown')+':'+Math.round(e.lat*10)+':'+Math.round(e.lng*10);
+    if (!groups[k]) groups[k]={lat:e.lat,lng:e.lng,n:0,label:(e.city||e.country||'Unknown'),cc:e.cc};
+    groups[k].n++;
+  });
+
+  Object.values(groups).forEach(function(g){
+    var sz = Math.min(10 + g.n*3, 32);
+    var icon = L.divIcon({
+      className:'',
+      html:'<div style="background:linear-gradient(135deg,#0E7A4C,#12A869);border:2px solid rgba(18,168,105,.5);border-radius:50%;width:'+sz+'px;height:'+sz+'px;display:flex;align-items:center;justify-content:center;font-family:IBM Plex Mono,monospace;font-size:9px;font-weight:700;color:#fff;box-shadow:0 0 14px rgba(18,168,105,.4);transform:translate(-50%,-50%);cursor:pointer;">'+g.n+'</div>',
+      iconSize:[0,0],iconAnchor:[0,0]
+    });
+    var m = L.marker([g.lat,g.lng],{icon:icon}).addTo(vMap);
+    m.bindPopup('<b>'+flag(g.cc)+' '+g.label+'</b><br>'+g.n+' session'+(g.n>1?'s':''),{className:'kc-pop'});
+    vMarkers.push(m);
+  });
+}
+
+/* ── SESSIONS TABLE ───────────────────────────────────────── */
+function renderTable(evts) {
+  var el = document.getElementById('tbl-body');
+  document.getElementById('tbl-tag').textContent = evts.length + ' RECORDS';
+  if (!evts.length) {
+    el.innerHTML = '<tr><td colspan="9" class="empty">No sessions yet — add &lt;script src="js/analytics.js"&gt;&lt;/script&gt; to your pages.</td></tr>';
+    return;
+  }
+  el.innerHTML = evts.slice(0,100).map(function(e){
+    var geoTitle = e.geoSrc ? ' title="Confirmed via '+e.geoSrc+'"' : '';
+    var loc = e.city ? '<span'+geoTitle+'>'+flag(e.cc)+' '+e.city+(e.cc?' ('+e.cc+')':'')+'</span>' : (e.country ? '<span'+geoTitle+'>'+flag(e.cc)+' '+e.country+'</span>' : '—');
+    var dev = e.mobile ? '<span class="badge b-m">MOBILE</span>' : '<span class="badge b-d">DESKTOP</span>';
+    var type = e.isBot ? '<span class="badge b-b">BOT</span>' : '<span class="badge b-h">HUMAN</span>';
+    return '<tr>' +
+      '<td>'+fmtTime(e.ts)+'</td>' +
+      '<td title="'+e.page+'">'+shortPage(e.page)+'</td>' +
+      '<td>'+loc+'</td>' +
+      '<td title="'+(e.isp||'')+'">'+shortIsp(e.isp)+'</td>' +
+      '<td>'+shortRef(e.ref)+'</td>' +
+      '<td>'+channelLabel(e.channel)+'</td>' +
+      '<td>'+(e.screen||'—')+'</td>' +
+      '<td>'+dev+'</td>' +
+      '<td>'+type+'</td>' +
+    '</tr>';
+  }).join('');
+}
+
+/* ── BOT TOGGLE ───────────────────────────────────────────── */
+function toggleBots() {
+  showBots = !showBots;
+  var btn = document.getElementById('bot-btn');
+  btn.classList.toggle('active', showBots);
+  btn.textContent = showBots ? 'BOTS: VISIBLE' : 'BOTS: HIDDEN';
+  refreshDash();
+}
+
+/* ── MAIN REFRESH ─────────────────────────────────────────── */
+function refreshDash() {
+  var all  = getRaw();
+  var view = getView(all);
+  var kpi  = renderKPIs(all);
+
+  renderTimeline(all);
+  renderDonut(kpi.h, kpi.b);
+  renderPages(view);
+  renderDevices(view);
+  renderSources(view);
+  renderGeo(view);
+  renderMap(view);
+  renderTable(showBots ? all : view);
+}
+
+/* ── CLOCK ────────────────────────────────────────────────── */
+function tickClock() {
+  var el = document.getElementById('clock');
+  if (el) el.textContent = new Date().toLocaleTimeString('en-GB');
+}
+
+/* ── INIT ─────────────────────────────────────────────────── */
+function initDash() {
+  refreshDash();
+  setInterval(refreshDash, 15000);   // auto-refresh every 15 s
+  setInterval(tickClock, 1000);
+  tickClock();
+  // Real-time: react immediately when analytics.js stores a new event
+  // in another tab / page (localStorage fires a 'storage' event cross-tab)
+  window.addEventListener('storage', function(e){
+    if (e.key === STORE_KEY) refreshDash();
+  });
+}
+</script>
+</body>
+</html>

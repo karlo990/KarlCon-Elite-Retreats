@@ -2,142 +2,788 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-<title>KARLCON Elite Retreats — Private Homes, Zimbabwe</title>
-<meta name="description" content="A private collection of Zimbabwe's finest retreats — curated, verified, and mapped with satellite precision."/>
-<link rel="icon" type="image/png" href="assets/favicon.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover"/>
+<title>K1RL Telematics — Live Fleet Monitoring</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
-<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2F6FEB; --blue-bright:#5B9BFF; --blue-dim:rgba(47,111,235,.14);
+  --bg:#070B12; --surf:#0B111C; --surf2:#101928; --surf3:#152036;
+  --border:rgba(91,155,255,.16); --border2:rgba(255,255,255,.06);
+  --txt:#E7ECF5; --txt2:#8A96AE; --txt3:#4C5670;
+  --green:#1FBE7A; --amber:#F5A524; --red:#EF4444;
+  --green-dim:rgba(31,190,122,.12); --amber-dim:rgba(245,165,36,.12); --red-dim:rgba(239,68,68,.12);
+  --green-txt:#6EE7B7; --amber-txt:#FCD34D; --red-txt:#FCA5A5;
+  --sans:'IBM Plex Sans',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+}
+@media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important;} }
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;overflow:hidden;}
+body{background:var(--bg);color:var(--txt);font-family:var(--sans);display:flex;flex-direction:column;}
+:focus-visible{outline:2px solid var(--blue-bright);outline-offset:2px;}
+
+/* ──── HEADER ──── */
+.hdr{min-height:56px;flex-shrink:0;background:rgba(7,11,18,.97);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;padding:env(safe-area-inset-top) 20px 0;gap:16px;position:relative;z-index:1000;}
+.hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,var(--blue) 0%,var(--blue-bright) 35%,transparent 75%);}
+.hdr-left{display:flex;align-items:center;gap:14px;}
+.menu-btn{display:none;background:none;border:1px solid var(--border2);border-radius:4px;color:var(--txt2);
+  width:32px;height:32px;cursor:pointer;font-size:14px;align-items:center;justify-content:center;}
+.mark{width:34px;height:34px;flex-shrink:0;border-radius:7px;background:linear-gradient(160deg,var(--surf3),var(--surf2));
+  border:1px solid rgba(91,155,255,.4);display:flex;align-items:center;justify-content:center;}
+.mark svg{display:block;}
+.hdr-title{font-size:16px;font-weight:700;color:var(--txt);letter-spacing:.01em;}
+.hdr-title b{color:var(--blue-bright);}
+.hdr-sub{font-family:var(--mono);font-size:9px;color:var(--txt2);margin-top:2px;letter-spacing:.05em;text-transform:uppercase;}
+.legend{display:flex;gap:14px;align-items:center;}
+.li{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:9px;color:var(--txt2);letter-spacing:.04em;}
+.dot{width:6px;height:6px;border-radius:50%;}
+.live-chip{display:flex;align-items:center;gap:6px;border-left:1px solid var(--border2);padding-left:14px;
+  font-family:var(--mono);font-size:9px;color:var(--blue-bright);letter-spacing:.06em;}
+.dot.pulse{animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.25;}}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ──── BODY GRID ──── */
+.body{display:grid;grid-template-columns:302px 1fr;flex:1;overflow:hidden;position:relative;}
+
+/* ──── SIDEBAR ──── */
+.sidebar{background:rgba(9,13,21,.98);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;z-index:600;}
+.sec-hdr{padding:9px 14px 6px;border-bottom:1px solid var(--border2);display:flex;align-items:center;justify-content:space-between;}
+.sec-lbl{font-family:var(--mono);font-size:9px;color:var(--txt3);text-transform:uppercase;letter-spacing:.1em;}
+.sec-tag{font-family:var(--mono);font-size:8px;padding:2px 6px;border-radius:2px;background:var(--blue-dim);color:var(--blue-bright);border:1px solid rgba(91,155,255,.25);}
+.view-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:9px 12px;border-bottom:1px solid var(--border2);}
+.vb{font-family:var(--sans);font-size:11px;font-weight:500;padding:8px;border-radius:5px;border:1px solid var(--border2);
+  background:rgba(255,255,255,.02);color:var(--txt2);cursor:pointer;transition:all .15s;text-align:center;}
+.vb:hover{border-color:var(--blue);color:var(--blue-bright);background:var(--blue-dim);}
+.vb.active{border-color:var(--blue);color:var(--txt);background:rgba(47,111,235,.14);}
+
+.overview{padding:11px 14px;border-bottom:1px solid var(--border2);background:rgba(47,111,235,.03);}
+.ov-name{font-size:14px;font-weight:600;color:var(--txt);margin-bottom:8px;}
+.ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.ov-cell{background:rgba(255,255,255,.02);border:1px solid var(--border2);border-radius:5px;padding:7px 9px;}
+.ov-val{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--txt);}
+.ov-val.g{color:var(--green-txt);} .ov-val.a{color:var(--amber-txt);} .ov-val.r{color:var(--red-txt);}
+.ov-lbl{font-family:var(--mono);font-size:7.5px;color:var(--txt3);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;}
+
+.list-hdr{padding:8px 14px;border-bottom:1px solid var(--border2);display:flex;align-items:center;justify-content:space-between;}
+.vlist{flex:1;overflow-y:auto;}
+.vlist::-webkit-scrollbar{width:3px;}
+.vlist::-webkit-scrollbar-thumb{background:rgba(91,155,255,.35);}
+.vi{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.03);cursor:pointer;transition:background .1s;display:flex;align-items:flex-start;gap:10px;}
+.vi:hover{background:rgba(255,255,255,.025);}
+.vi.sel{background:rgba(47,111,235,.09);border-left:2px solid var(--blue);}
+.vi-dot{width:7px;height:7px;border-radius:50%;margin-top:5px;flex-shrink:0;}
+.vi-body{flex:1;min-width:0;}
+.vi-name{font-size:13px;font-weight:600;line-height:1.3;color:var(--txt);}
+.vi-meta{font-family:var(--mono);font-size:9px;color:var(--txt2);margin-top:2px;}
+.badge{font-family:var(--mono);font-size:8px;padding:2px 6px;border-radius:2px;white-space:nowrap;flex-shrink:0;letter-spacing:.05em;}
+.b-grn{background:var(--green-dim);color:var(--green-txt);border:1px solid rgba(31,190,122,.25);}
+.b-amb{background:var(--amber-dim);color:var(--amber-txt);border:1px solid rgba(245,165,36,.25);}
+.b-red{background:var(--red-dim);color:var(--red-txt);border:1px solid rgba(239,68,68,.25);}
+
+/* ──── MAIN ──── */
+.main{display:flex;flex-direction:column;position:relative;overflow:hidden;}
+#map{flex:1;min-height:0;background:var(--bg);}
+.tile-loader{position:absolute;inset:0;background:rgba(7,11,18,.7);backdrop-filter:blur(2px);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;z-index:800;pointer-events:none;opacity:0;transition:opacity .4s;}
+.tile-loader.on{opacity:1;pointer-events:all;}
+.spinner{width:34px;height:34px;border:2px solid rgba(91,155,255,.2);border-top:2px solid var(--blue);border-radius:50%;animation:spin 1s linear infinite;}
+.loader-txt{font-family:var(--mono);font-size:9px;color:var(--txt2);letter-spacing:.1em;text-transform:uppercase;}
+.map-stats{position:absolute;top:12px;left:12px;z-index:700;display:flex;gap:5px;flex-wrap:wrap;max-width:calc(100% - 160px);}
+.stat-chip{font-family:var(--mono);font-size:9px;padding:5px 10px;background:rgba(7,11,18,.88);border:1px solid var(--border);border-radius:4px;color:var(--txt2);display:flex;align-items:center;gap:6px;backdrop-filter:blur(8px);letter-spacing:.04em;}
+.sn{font-weight:700;}
+.sn.g{color:var(--green-txt);} .sn.a{color:var(--amber-txt);} .sn.r{color:var(--red-txt);}
+.evt-btn{position:absolute;top:12px;right:12px;z-index:700;font-family:var(--mono);font-size:9px;padding:7px 12px;
+  background:rgba(7,11,18,.88);border:1px solid var(--border);border-radius:4px;color:var(--blue-bright);cursor:pointer;
+  transition:all .15s;backdrop-filter:blur(8px);letter-spacing:.05em;display:flex;align-items:center;gap:6px;}
+.evt-btn:hover{background:rgba(47,111,235,.1);border-color:var(--blue);}
+.evt-count{background:var(--red);color:#fff;border-radius:8px;font-size:9px;padding:0 5px;font-weight:700;}
+
+/* ──── EVENTS PANEL ──── */
+.evt-panel{position:absolute;top:12px;right:12px;width:320px;background:rgba(10,14,22,.97);border:1px solid var(--border);
+  border-radius:6px;z-index:750;display:none;backdrop-filter:blur(12px);animation:fadeSlide .2s ease;max-height:calc(100% - 24px);flex-direction:column;overflow:hidden;}
+.evt-panel.vis{display:flex;}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
+.evt-hdr{padding:11px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.evt-title{font-size:13px;font-weight:700;color:var(--blue-bright);}
+.evt-close{background:none;border:none;color:var(--txt2);cursor:pointer;font-size:14px;padding:0 2px;transition:color .1s;}
+.evt-close:hover{color:var(--txt);}
+.evt-body{padding:8px 14px;overflow-y:auto;flex:1;}
+.evt-body::-webkit-scrollbar{width:2px;}
+.evt-body::-webkit-scrollbar-thumb{background:rgba(91,155,255,.35);}
+.evt-item{margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.04);}
+.evt-item:last-child{border-bottom:none;margin-bottom:0;}
+.evt-top{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.evt-veh{font-size:12px;font-weight:600;color:var(--txt);}
+.evt-time{font-family:var(--mono);font-size:8px;color:var(--txt3);white-space:nowrap;}
+.evt-msg{font-size:11.5px;color:var(--txt2);line-height:1.5;margin-top:2px;}
+.evt-sev{font-family:var(--mono);font-size:7px;padding:1px 5px;border-radius:2px;display:inline-block;margin-top:4px;letter-spacing:.04em;}
+.sev-critical{background:var(--red-dim);color:var(--red-txt);}
+.sev-warning{background:var(--amber-dim);color:var(--amber-txt);}
+.sev-info{background:var(--blue-dim);color:var(--blue-bright);}
+.evt-empty{font-size:11px;color:var(--txt3);text-align:center;padding:20px 0;}
+
+/* ──── DETAIL PANEL ──── */
+.detail{background:rgba(7,11,18,.99);border-top:1px solid var(--border);padding:14px 18px;display:none;animation:slideUp .18s ease;flex-shrink:0;position:relative;z-index:600;}
+.detail::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--blue),var(--blue-bright) 25%,transparent 60%);}
+@keyframes slideUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+.detail-grid{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:start;}
+.d-name{font-size:20px;font-weight:700;color:var(--txt);line-height:1.2;}
+.d-sub{font-family:var(--mono);font-size:9px;color:var(--txt2);margin-top:3px;letter-spacing:.05em;}
+.d-fields{display:flex;gap:20px;margin-top:9px;flex-wrap:wrap;}
+.df-lbl{font-family:var(--mono);font-size:7.5px;color:var(--txt3);text-transform:uppercase;letter-spacing:.1em;}
+.df-val{font-family:var(--mono);font-size:12px;color:var(--txt);margin-top:2px;}
+.df-val.g{color:var(--green-txt);} .df-val.a{color:var(--amber-txt);} .df-val.r{color:var(--red-txt);}
+.d-notes{font-size:11.5px;color:var(--txt2);line-height:1.6;margin-top:8px;max-width:600px;}
+.d-actions{display:flex;gap:5px;flex-wrap:wrap;align-self:end;max-width:230px;justify-content:flex-end;}
+.ab{font-family:var(--mono);font-size:8.5px;padding:6px 10px;border-radius:4px;border:1px solid var(--border2);
+  background:rgba(255,255,255,.02);color:var(--txt2);cursor:pointer;transition:all .12s;text-decoration:none;
+  display:inline-flex;align-items:center;gap:4px;white-space:nowrap;letter-spacing:.03em;}
+.ab:hover{border-color:var(--blue);color:var(--blue-bright);background:var(--blue-dim);}
+.ab.primary{background:rgba(47,111,235,.15);border-color:rgba(47,111,235,.5);color:var(--blue-bright);}
+.ab.primary:hover{background:rgba(47,111,235,.25);}
+.ab.danger{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.4);color:var(--red-txt);}
+.ab.danger:hover{background:rgba(239,68,68,.2);border-color:var(--red);}
+.ab[disabled]{opacity:.35;cursor:not-allowed;pointer-events:none;}
+.copy-ok{font-family:var(--mono);font-size:8px;color:var(--green-txt);margin-top:5px;display:none;}
+
+/* ──── STATUS BAR ──── */
+.sbar{min-height:28px;flex-shrink:0;background:rgba(5,7,12,.99);border-top:1px solid rgba(91,155,255,.12);
+  display:flex;align-items:center;gap:18px;padding:0 18px calc(0px + env(safe-area-inset-bottom));
+  font-family:var(--mono);font-size:8px;color:var(--txt3);letter-spacing:.04em;overflow-x:auto;white-space:nowrap;}
+.sbar::-webkit-scrollbar{display:none;}
+.sb-item{display:flex;align-items:center;gap:5px;flex-shrink:0;}
+.sb-dot{width:4px;height:4px;border-radius:50%;}
+.sbar .spacer{flex:1;}
+
+/* ──── LEAFLET OVERRIDES ──── */
+.leaflet-control-zoom a{background:rgba(7,11,18,.9)!important;color:var(--txt)!important;border-color:rgba(91,155,255,.3)!important;}
+.leaflet-control-zoom a:hover{background:rgba(47,111,235,.15)!important;}
+.leaflet-attribution-flag{display:none!important;}
+.leaflet-container .leaflet-control-attribution{background:rgba(7,11,18,.8)!important;color:var(--txt3)!important;font-size:8px!important;}
+.leaflet-tooltip{background:rgba(7,11,18,.97)!important;border:1px solid var(--border)!important;color:var(--txt)!important;
+  font-family:var(--sans)!important;font-size:11px!important;box-shadow:0 8px 32px rgba(0,0,0,.6)!important;padding:7px 11px!important;border-radius:5px!important;}
+.leaflet-tooltip-top::before{border-top-color:rgba(91,155,255,.3)!important;}
+.zone-label{font-family:var(--mono);font-size:8px;color:var(--blue-bright);letter-spacing:.05em;text-transform:uppercase;
+  background:none!important;border:none!important;box-shadow:none!important;padding:0!important;}
+
+/* ──── SIDEBAR BACKDROP (mobile) ──── */
+.sidebar-backdrop{position:fixed;inset:0;background:rgba(3,5,9,.55);z-index:590;display:none;backdrop-filter:blur(1px);}
+.sidebar-backdrop.show{display:block;}
+
+/* ──── SHEET HANDLE (mobile bottom-sheet grip, hidden on desktop) ──── */
+.sheet-handle{display:none;width:100%;height:22px;position:relative;cursor:pointer;margin-bottom:2px;}
+.sheet-handle::after{content:'';position:absolute;top:9px;left:50%;transform:translateX(-50%);
+  width:36px;height:4px;border-radius:2px;background:var(--border2);}
+
+/* ──── RESPONSIVE ──── */
+@media (max-width:860px){
+  .menu-btn{display:flex;width:40px;height:40px;font-size:17px;flex-shrink:0;}
+  .hdr{padding-left:14px;padding-right:14px;gap:10px;}
+  .hdr-title{font-size:14px;}
+  .mark{width:30px;height:30px;}
+  .hdr-sub{display:none;}
+  .legend{display:none;}
+
+  .body{grid-template-columns:1fr;}
+
+  /* Sidebar becomes a slide-in drawer with backdrop */
+  .sidebar{position:fixed;top:0;bottom:0;left:0;width:min(85vw,320px);z-index:650;
+    transform:translateX(-100%);transition:transform .22s ease;box-shadow:20px 0 40px rgba(0,0,0,.5);
+    padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);}
+  .sidebar.open{transform:translateX(0);}
+  .vi{padding:13px 14px;} /* bigger tap target */
+  .vb{min-height:42px;font-size:11.5px;}
+
+  /* Floating map panels: fixed to viewport so they never fight the bottom sheet */
+  .map-stats{top:calc(10px + env(safe-area-inset-top));left:10px;right:auto;gap:4px;
+    max-width:calc(100vw - 130px);overflow-x:auto;flex-wrap:nowrap;}
+  .map-stats::-webkit-scrollbar{display:none;}
+  .stat-chip{font-size:8px;padding:5px 8px;flex-shrink:0;}
+  .evt-btn{top:calc(10px + env(safe-area-inset-top));right:10px;font-size:8px;padding:7px 10px;}
+  .evt-panel{position:fixed;top:calc(54px + env(safe-area-inset-top));left:10px;right:10px;width:auto;
+    max-height:calc(100vh - 220px);}
+
+  /* Detail panel becomes a bottom sheet that floats over the (always full-height) map */
+  .main{position:relative;}
+  .detail{position:fixed;left:0;right:0;bottom:0;z-index:900;
+    border-radius:16px 16px 0 0;box-shadow:0 -10px 34px rgba(0,0,0,.55);
+    max-height:66vh;overflow-y:auto;-webkit-overflow-scrolling:touch;
+    padding:6px 16px calc(14px + env(safe-area-inset-bottom));
+    transition:max-height .22s ease;}
+  .detail::-webkit-scrollbar{width:0;}
+  .detail.peek{max-height:92px;overflow:hidden;}
+  .sheet-handle{display:block;}
+  .detail-grid{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;gap:6px 12px;align-items:start;}
+  .detail-grid > *:nth-child(1){grid-column:1;grid-row:1;}
+  .detail-grid > *:nth-child(2){grid-column:2;grid-row:1;}
+  .detail-grid > *:nth-child(3){grid-column:1/3;grid-row:2;}
+  .d-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;}
+  .d-actions{max-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:7px;justify-content:stretch;align-self:stretch;margin-top:4px;}
+  .ab{justify-content:center;padding:11px 8px;font-size:10px;}
+
+  /* Touch-friendly Leaflet zoom control, moved out of the top-left chip zone */
+  .leaflet-control-zoom a{width:38px!important;height:38px!important;line-height:36px!important;font-size:18px!important;}
+
+  .sbar{font-size:7.5px;gap:12px;padding-left:14px;padding-right:14px;}
+}
+</style>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-brand">
-    <img src="assets/logo.png" alt="KARLCON" class="nav-logo"/>
-    <span class="nav-word">KARL<b>CON</b> Retreats</span>
-  </div>
-  <div class="nav-links">
-    <a href="#collection">Collection</a>
-    <a href="#map">Map</a>
-    <a href="#about">About</a>
-  </div>
-  <button class="nav-cta" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">Browse Retreats</button>
-</nav>
-
-<header class="hero">
-  <div class="hero-bg" style="background-image:url('data/listings/demo/images/image_001.jpg');"></div>
-  <div class="eyebrow">Private Collection · Zimbabwe</div>
-  <h1>Homes worth <em>arriving</em> for.</h1>
-  <p>A curated, verified collection of Zimbabwe's finest independent retreats — every listing scouted, every photo real, every location mapped in satellite precision.</p>
-
-  <form class="search-bar" id="search-form">
-    <div class="search-field">
-      <label for="search-where">Where</label>
-      <input id="search-where" type="text" placeholder="Search by area or retreat name" autocomplete="off"/>
-    </div>
-    <div class="search-field">
-      <label for="search-guests">Guests</label>
-      <input id="search-guests" type="text" placeholder="Add guests" autocomplete="off"/>
-    </div>
-    <button class="search-btn" type="submit">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      Search
-    </button>
-  </form>
-
-  <div class="hero-actions">
-    <button class="btn-ghost" onclick="document.getElementById('map').scrollIntoView({behavior:'smooth'})">Explore the Map</button>
-  </div>
-
-  <div class="stat-strip">
-    <div class="stat-cell"><div class="stat-val" id="stat-count">–</div><div class="stat-lbl">Retreats</div></div>
-    <div class="stat-cell"><div class="stat-val" id="stat-photos">–</div><div class="stat-lbl">Photos</div></div>
-    <div class="stat-cell"><div class="stat-val" id="stat-mapped">–</div><div class="stat-lbl">Mapped</div></div>
-    <div class="stat-cell"><div class="stat-val" id="stat-super">–</div><div class="stat-lbl">Superhosts</div></div>
-  </div>
-</header>
-
-<section class="section" id="collection">
-  <div class="section-hdr reveal">
-    <div>
-      <div class="section-eyebrow">The Collection</div>
-      <div class="section-title">Every retreat, verified.</div>
-      <div class="section-sub">Generated directly from your source folders — nothing here is invented copy.</div>
-    </div>
-  </div>
-  <div class="grid" id="listing-grid"></div>
-</section>
-
-<section class="section-map" id="map">
-  <div class="section-hdr reveal">
-    <div>
-      <div class="section-eyebrow">Live Cartography</div>
-      <div class="section-title">Find it on the earth.</div>
-      <div class="section-sub">Real satellite imagery, live pricing, coverage radius, and turn-by-turn directions from wherever you are — the same tile pipeline that powers the K1RL telematics fleet map.</div>
-    </div>
-  </div>
-  <div class="map-shell full-bleed reveal">
-    <div id="globe-map"></div>
-
-    <div class="map-overlay">
-      <div class="map-chip"><b id="map-listed-count">0</b>&nbsp; retreats pinned</div>
-      <div class="map-chip">Esri World Imagery · satellite raster</div>
-    </div>
-
-    <div class="map-controls">
-      <button class="map-locate-btn" id="locate-btn">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
-        Use my location
-      </button>
-      <div class="route-chip" id="route-chip" style="display:none;">
-        <span id="route-chip-text"></span>
-        <button id="route-clear" aria-label="Clear route">&times;</button>
-      </div>
-      <div class="locate-status" id="locate-status"></div>
-    </div>
-
-    <div class="map-legend">
-      <span><i class="lg-dot lg-green"></i> Retreat &amp; price</span>
-      <span><i class="lg-dot lg-blue-area"></i> Neighbourhood</span>
-      <span><i class="lg-dot lg-blue-user"></i> Your location</span>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="about-grid">
-    <div class="about-copy reveal">
-      <div class="section-eyebrow">Why KARLCON</div>
-      <div class="section-title" style="margin-bottom:20px;">Built like an instrument, not a listings page.</div>
-      <p>Most booking pages are templates with photos dropped in. This one is a pipeline: a build script reads your real host folders — titles, hosts, photos, coordinates — and regenerates the entire site, so what customers see is always exactly what's on disk.</p>
-      <ul class="about-list">
-        <li><b>1</b> Point the builder at your <code>airbnb_data</code> folder</li>
-        <li><b>2</b> Photos are optimised and copied automatically</li>
-        <li><b>3</b> The site, map pins, and stats rebuild themselves</li>
-      </ul>
-    </div>
-    <div class="about-visual reveal">
-      <svg viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="95" cy="95" r="88" fill="none" stroke="#0E7A4C" stroke-width="1" stroke-dasharray="1 7"/>
-        <circle cx="95" cy="95" r="70" fill="none" stroke="#0E7A4C" stroke-width=".7" opacity=".5" stroke-dasharray="18 6"/>
-        <path d="M50 118 L78 66 L94 92 L108 70 L142 118 Z" fill="none" stroke="#0E7A4C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<!-- ══════════════════ HEADER ══════════════════ -->
+<div class="hdr">
+  <div class="hdr-left">
+    <button class="menu-btn" id="menu-btn" onclick="toggleSidebar()" aria-label="Toggle vehicle list">☰</button>
+    <a class="mark" href="analytics.html" target="_blank" rel="noopener" title="Director Analytics" style="cursor:pointer;text-decoration:none;">
+      <svg width="20" height="20" viewBox="0 0 20 20">
+        <rect x="0.5" y="0.5" width="19" height="19" rx="4" fill="#152036" stroke="#5B9BFF" stroke-width="1"/>
+        <text x="10" y="14" text-anchor="middle" fill="#5B9BFF" font-size="9" font-weight="700" font-family="'IBM Plex Mono',monospace">K1</text>
       </svg>
+    </a>
+    <div>
+      <div class="hdr-title">K1RL <b>TELEMATICS</b></div>
+      <div class="hdr-sub">GPS Fleet Monitoring · GT06 Protocol · Karl Con Consultancy</div>
     </div>
   </div>
-</section>
+  <div class="legend">
+    <div class="li"><div class="dot" style="background:var(--green)"></div>ONLINE</div>
+    <div class="li"><div class="dot" style="background:var(--amber)"></div>IDLE</div>
+    <div class="li"><div class="dot" style="background:var(--red)"></div>OFFLINE</div>
+    <div class="live-chip"><div class="dot pulse" style="background:var(--blue-bright);box-shadow:0 0 4px var(--blue-bright)"></div>LIVE</div>
+  </div>
+</div>
 
-<footer class="footer">
-  <div>© <span data-year></span> KARLCON Elite Retreats — a Karl Con Consultancy engineering property.</div>
-  <div>Built on Leaflet · Esri World Imagery · zero synthetic listing data</div>
-</footer>
+<!-- ══════════════════ BODY ══════════════════ -->
+<div class="body">
+
+  <!-- SIDEBAR BACKDROP (mobile only) -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="closeSidebarMobile()"></div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <div class="sec-hdr">
+      <span class="sec-lbl">Map View</span>
+      <span class="sec-tag">LEAFLET</span>
+    </div>
+    <div class="view-grid">
+      <button class="vb active" id="vb-dark" onclick="setBase('dark')">Street (Dark)</button>
+      <button class="vb" id="vb-sat" onclick="setBase('sat')">Satellite</button>
+    </div>
+
+    <div class="overview">
+      <div class="ov-name">Karl Con Consultancy Fleet</div>
+      <div class="ov-grid">
+        <div class="ov-cell"><div class="ov-val" id="ov-total">0</div><div class="ov-lbl">Tracked Assets</div></div>
+        <div class="ov-cell"><div class="ov-val g" id="ov-online">0</div><div class="ov-lbl">Online Now</div></div>
+        <div class="ov-cell"><div class="ov-val a" id="ov-idle">0</div><div class="ov-lbl">Idle</div></div>
+        <div class="ov-cell"><div class="ov-val r" id="ov-offline">0</div><div class="ov-lbl">Offline</div></div>
+      </div>
+    </div>
+
+    <div class="list-hdr">
+      <span class="sec-lbl">Tracked Vehicles</span>
+      <span class="sec-tag" id="vcount-tag">0 DEVICES</span>
+    </div>
+    <div class="vlist" id="vlist"></div>
+  </div>
+
+  <!-- MAIN MAP -->
+  <div class="main">
+    <div id="map"></div>
+
+    <div class="tile-loader" id="tile-loader">
+      <div class="spinner"></div>
+      <span class="loader-txt">Loading map…</span>
+    </div>
+
+    <div class="map-stats">
+      <div class="stat-chip"><div class="dot pulse" style="background:var(--green)"></div>ONLINE <span class="sn g" id="sc-online">0</span></div>
+      <div class="stat-chip"><div class="dot" style="background:var(--amber)"></div>IDLE <span class="sn a" id="sc-idle">0</span></div>
+      <div class="stat-chip"><div class="dot" style="background:var(--red)"></div>OFFLINE <span class="sn r" id="sc-offline">0</span></div>
+    </div>
+
+    <button class="evt-btn" id="evt-btn" onclick="toggleEvents()">⚠ ALERTS &amp; EVENTS <span class="evt-count" id="evt-count" style="display:none;">0</span></button>
+
+    <div class="evt-panel" id="evt-panel">
+      <div class="evt-hdr">
+        <span class="evt-title">Alerts &amp; Events</span>
+        <button class="evt-close" onclick="toggleEvents()">✕</button>
+      </div>
+      <div class="evt-body" id="evt-body"></div>
+    </div>
+
+    <div class="detail" id="detail">
+      <div class="sheet-handle" id="sheet-handle" onclick="toggleSheet(event)" role="button" aria-label="Expand or collapse vehicle details"></div>
+      <div class="detail-grid" onclick="expandSheetIfPeeked()">
+        <div style="padding-top:4px"><span class="badge" id="d-badge"></span></div>
+        <div>
+          <div class="d-name" id="d-name"></div>
+          <div class="d-sub" id="d-sub"></div>
+          <div class="d-fields">
+            <div><div class="df-lbl">Driver</div><div class="df-val" id="d-driver"></div></div>
+            <div><div class="df-lbl">IMEI</div><div class="df-val" id="d-imei"></div></div>
+            <div><div class="df-lbl">Speed</div><div class="df-val" id="d-speed"></div></div>
+            <div><div class="df-lbl">Ignition</div><div class="df-val" id="d-ign"></div></div>
+            <div><div class="df-lbl">Backup Battery</div><div class="df-val" id="d-batt"></div></div>
+            <div><div class="df-lbl">GSM Signal</div><div class="df-val" id="d-signal"></div></div>
+            <div><div class="df-lbl">Odometer</div><div class="df-val" id="d-odo"></div></div>
+            <div><div class="df-lbl">Geofence</div><div class="df-val" id="d-geo"></div></div>
+            <div><div class="df-lbl">Last Report</div><div class="df-val" id="d-last"></div></div>
+          </div>
+          <div class="d-notes" id="d-notes"></div>
+          <div class="copy-ok" id="copy-ok">✓ Coordinates copied to clipboard</div>
+        </div>
+        <div class="d-actions">
+          <a class="ab primary" id="btn-gmaps" href="#" target="_blank">📍 Google Maps</a>
+          <a class="ab" id="btn-waze" href="#" target="_blank">🧭 Waze</a>
+          <button class="ab" onclick="copyCoords()">📋 Copy Coordinates</button>
+          <button class="ab" onclick="zoomVehicle()">🔍 Zoom In</button>
+          <button class="ab" onclick="tripHistory()">🕓 Trip History</button>
+          <button class="ab" onclick="editGeofence()">📐 Edit Geofence</button>
+          <button class="ab danger" id="btn-cutoff" onclick="engineCutoff()">⛔ Engine Cut-off</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ STATUS BAR ══════════════════ -->
+<div class="sbar">
+  <div class="sb-item"><div class="sb-dot pulse" style="background:var(--blue-bright)"></div>SIMULATED FEED · DEMO DATA</div>
+  <div class="sb-item">GT06 PROTOCOL · 30S REPORTING INTERVAL</div>
+  <div class="sb-item" id="sb-clock">—</div>
+  <div class="spacer"></div>
+  <div class="sb-item">K1RL TELEMATICS © KARL CON CONSULTANCY</div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
-<script src="js/common.js"></script>
-<script src="data/listings.js"></script>
-<script src="js/app.js"></script>
+<script>
+// ═══════════════════════════════════════════════════════════
+//  K1RL TELEMATICS — fleet monitoring demo
+//
+//  PRODUCTION NOTE: every vehicle position/status below is
+//  simulated client-side so this deploys to Vercel as a static
+//  site with zero backend. To go live against a real Traccar /
+//  GT06 server:
+//   1. Add a Vercel serverless function e.g. /api/positions that
+//      calls your Traccar REST API (GET /api/positions,
+//      /api/devices) using a server-side session — never expose
+//      Traccar credentials in client JS.
+//   2. Replace the VEHICLES array + simTick() below with a
+//      fetch('/api/positions') poll every 5–10s, mapping Traccar's
+//      {deviceId, latitude, longitude, speed, course, attributes:
+//      {ignition, battery, gsm}} onto the vehicle object shape used
+//      here.
+//   3. Geofences below (ZONES) map 1:1 onto Traccar Geofences —
+//      pull them from /api/geofences instead of hardcoding.
+// ═══════════════════════════════════════════════════════════
+
+const ZONES = [
+  {name:'Bikita Yard', lat:-20.0705, lng:31.6120, radius:900},
+  {name:'Masvingo CBD Zone', lat:-20.0744, lng:30.8328, radius:1400},
+  {name:'Royal Valerius Campus', lat:-20.0730, lng:31.6390, radius:600},
+];
+
+const VEHICLES = [
+  {id:1, name:'Hilux 01', type:'Pickup — Site Supervision', plate:'ADA 3312', driver:'T. Moyo',
+   imei:'864719042215501', status:'online', lat:-20.0705, lng:31.6120, heading:250, speed:58,
+   maxSpeed:80, ignition:true, battery:92, signal:4, odo:84213, zone:'Bikita Yard', zoneState:'inside',
+   lastUpdate:Date.now(), relay:'disarmed', notes:'Assigned to Bikita HQ ↔ Masvingo site supervision run.'},
+
+  {id:2, name:'Hilux 02', type:'Pickup — Site Supervision', plate:'ADA 3313', driver:'F. Ncube',
+   imei:'864719042215502', status:'idle', lat:-20.0744, lng:30.8328, heading:0, speed:0,
+   maxSpeed:80, ignition:true, battery:88, signal:4, odo:61840, zone:'Masvingo CBD Zone', zoneState:'inside',
+   lastUpdate:Date.now(), relay:'disarmed', notes:'Parked at Masvingo yard, engine idling, awaiting dispatch.'},
+
+  {id:3, name:'D-Max 03', type:'Pickup — Materials Haulage', plate:'ADB 1187', driver:'S. Chikwava',
+   imei:'864719042215503', status:'online', lat:-18.910, lng:30.955, heading:15, speed:96,
+   maxSpeed:120, ignition:true, battery:95, signal:3, odo:132904, zone:'In Transit', zoneState:'outside',
+   lastUpdate:Date.now(), relay:'disarmed', notes:'Long-haul materials run, Harare–Masvingo highway (A4).'},
+
+  {id:4, name:'Ranger 04', type:'Pickup — Field Detail', plate:'ADB 1188', driver:'R. Dube',
+   imei:'864719042215504', status:'offline', lat:-21.0455, lng:31.6683, heading:0, speed:0,
+   maxSpeed:80, ignition:false, battery:34, signal:0, odo:97711, zone:'In Transit', zoneState:'outside',
+   lastUpdate:Date.now()-6*3600*1000, relay:'disarmed', notes:'Last known position Chiredzi. No signal since server restart.'},
+
+  {id:5, name:'NP300 05', type:'Pickup — Client Site Visit', plate:'ADC 5521', driver:'P. Mutasa',
+   imei:'864719042215505', status:'idle', lat:-20.0650, lng:30.8350, heading:0, speed:0,
+   maxSpeed:80, ignition:true, battery:79, signal:4, odo:44120, zone:'Masvingo CBD Zone', zoneState:'inside',
+   lastUpdate:Date.now(), relay:'disarmed', notes:'Idling outside client premises, Masvingo CBD.'},
+
+  {id:6, name:'Fuso Canter 06', type:'Truck — Materials Delivery', plate:'ADC 5522', driver:'L. Sibanda',
+   imei:'864719042215506', status:'online', lat:-20.050, lng:31.550, heading:80, speed:48,
+   maxSpeed:70, ignition:true, battery:90, signal:3, odo:71234, zone:'In Transit', zoneState:'outside',
+   lastUpdate:Date.now(), relay:'disarmed', notes:'Delivering roofing sheets to Bikita site, ETA 40 min.'},
+
+  {id:7, name:'Prado 07', type:'SUV — Directors Vehicle', plate:'ADD 9081', driver:'K. Karimanzira',
+   imei:'864719042215507', status:'idle', lat:-20.0730, lng:31.6390, heading:0, speed:0,
+   maxSpeed:100, ignition:true, battery:97, signal:4, odo:38910, zone:'Royal Valerius Campus', zoneState:'inside',
+   lastUpdate:Date.now(), relay:'disarmed', notes:'Parked at Royal Valerius Techno-Science Academy, Bikita.'},
+
+  {id:8, name:'Hilux 08', type:'Pickup — Remote Detail', plate:'ADD 9082', driver:'M. Gumbo',
+   imei:'864719042215508', status:'offline', lat:-20.3333, lng:30.0667, heading:0, speed:0,
+   maxSpeed:80, ignition:false, battery:8, signal:0, odo:105330, zone:'In Transit', zoneState:'outside',
+   lastUpdate:Date.now()-2*86400*1000, relay:'disarmed', notes:'Last seen near Zvishavane. Backup battery critically low.'},
+
+  {id:9, name:'D-Max 09', type:'Pickup — Beitbridge Corridor', plate:'ADE 2244', driver:'C. Muchena',
+   imei:'864719042215509', status:'online', lat:-21.600, lng:29.950, heading:190, speed:118,
+   maxSpeed:120, ignition:true, battery:91, signal:2, odo:158220, zone:'In Transit', zoneState:'outside',
+   lastUpdate:Date.now(), relay:'disarmed', notes:'Southbound on the Beitbridge corridor — flagged for overspeed monitoring.'},
+
+  {id:10, name:'Tipper 10', type:'Truck — Quarry Operations', plate:'ADE 2245', driver:'G. Chirwa',
+   imei:'864719042215510', status:'idle', lat:-20.150, lng:30.750, heading:0, speed:0,
+   maxSpeed:60, ignition:true, battery:84, signal:3, odo:29011, zone:'In Transit', zoneState:'outside',
+   lastUpdate:Date.now(), relay:'disarmed', notes:'Idling at Masvingo quarry, loading aggregate.'},
+];
+
+const SC = {online:'#1FBE7A', idle:'#F5A524', offline:'#EF4444'};
+const BC = {online:'b-grn', idle:'b-amb', offline:'b-red'};
+const BL = {online:'ONLINE', idle:'IDLE', offline:'OFFLINE'};
+
+let EVENTS = [
+  {ts:Date.now()-12*60*1000, veh:'D-Max 03', type:'Geofence', msg:'Left Masvingo CBD Zone, now in transit on the A4.', sev:'info'},
+  {ts:Date.now()-40*60*1000, veh:'Hilux 08', type:'Battery', msg:'Backup battery at 8% — schedule tracker service.', sev:'critical'},
+  {ts:Date.now()-70*60*1000, veh:'Fuso Canter 06', type:'Ignition', msg:'Ignition ON, departed Bikita yard.', sev:'info'},
+  {ts:Date.now()-6*3600*1000, veh:'Ranger 04', type:'Connectivity', msg:'Device offline — no report received in 6 hours.', sev:'critical'},
+];
+
+// ═══════════════════════════════════════════════════════════
+//  MAP INIT
+// ═══════════════════════════════════════════════════════════
+const map = L.map('map', {zoomControl:false, attributionControl:true}).setView([-19.9, 30.6], 7);
+L.control.zoom({position:'bottomright'}).addTo(map);
+
+const darkLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution:'&copy; OpenStreetMap &copy; CARTO', maxZoom:20, subdomains:'abcd'
+});
+const satLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  attribution:'Esri World Imagery', maxZoom:19
+});
+darkLayer.addTo(map);
+
+const loader = document.getElementById('tile-loader');
+darkLayer.on('loading', () => loader.classList.add('on'));
+darkLayer.on('load', () => loader.classList.remove('on'));
+
+function setBase(which){
+  document.getElementById('vb-dark').classList.toggle('active', which==='dark');
+  document.getElementById('vb-sat').classList.toggle('active', which==='sat');
+  if (which==='dark'){ if(map.hasLayer(satLayer)) map.removeLayer(satLayer); darkLayer.addTo(map); }
+  else { if(map.hasLayer(darkLayer)) map.removeLayer(darkLayer); satLayer.addTo(map); }
+}
+
+// Geofence circles
+ZONES.forEach(z => {
+  L.circle([z.lat, z.lng], {
+    radius:z.radius, color:'#5B9BFF', weight:1, dashArray:'5,5', fillColor:'#2F6FEB', fillOpacity:.06
+  }).addTo(map);
+  L.marker([z.lat, z.lng], {
+    icon:L.divIcon({className:'zone-label', html:z.name, iconSize:[0,0]}),
+    interactive:false
+  }).addTo(map);
+});
+
+// ═══════════════════════════════════════════════════════════
+//  MARKERS
+// ═══════════════════════════════════════════════════════════
+function mkIcon(v, selected){
+  const c = SC[v.status];
+  const s = selected ? 30 : 22;
+  let svg;
+  if (v.status === 'online'){
+    svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${s}' height='${s}' viewBox='0 0 24 24'
+      style='transform:rotate(${v.heading}deg);filter:drop-shadow(0 0 4px ${c})'>
+      <path d='M12 1 L21 20 L12 15.5 L3 20 Z' fill='${c}' stroke='rgba(7,11,18,.9)' stroke-width='1' opacity='${selected?1:.92}'/>
+      ${selected?`<circle cx='12' cy='12' r='11' fill='none' stroke='${c}' stroke-width='1' opacity='.35'/>`:''}
+    </svg>`;
+  } else {
+    svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${s}' height='${s}' viewBox='0 0 24 24'
+      style='filter:drop-shadow(0 0 3px ${c})'>
+      <circle cx='12' cy='12' r='8' fill='rgba(7,11,18,.9)' stroke='${c}' stroke-width='2'/>
+      <circle cx='12' cy='12' r='3.5' fill='${c}' opacity='${v.status==="offline"?.5:1}'/>
+      ${selected?`<circle cx='12' cy='12' r='11' fill='none' stroke='${c}' stroke-width='1' opacity='.35'/>`:''}
+    </svg>`;
+  }
+  return L.divIcon({
+    className:'', html:svg, iconSize:[s,s], iconAnchor:[s/2,s/2], popupAnchor:[0,-(s/2+4)]
+  });
+}
+
+const MARKERS = {};
+VEHICLES.forEach(v => {
+  const m = L.marker([v.lat, v.lng], {icon:mkIcon(v,false)}).addTo(map);
+  m.bindTooltip(() => tooltipHtml(v), {direction:'top', offset:[0,-10]});
+  m.on('click', () => selectVehicle(v.id));
+  MARKERS[v.id] = m;
+});
+
+function tooltipHtml(v){
+  return `<b>${v.name}</b> · ${v.plate}<br>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;opacity:.7">
+      ${BL[v.status]} · ${v.speed} km/h · ${v.driver}
+    </span>`;
+}
+
+// ═══════════════════════════════════════════════════════════
+//  SIDEBAR LIST
+// ═══════════════════════════════════════════════════════════
+let selectedId = null;
+
+function renderList(){
+  const list = document.getElementById('vlist');
+  list.innerHTML = '';
+  VEHICLES.forEach(v => {
+    const d = document.createElement('div');
+    d.className = 'vi' + (v.id===selectedId ? ' sel' : '');
+    d.id = 'vi-' + v.id;
+    d.innerHTML = `
+      <div class="vi-dot" style="background:${SC[v.status]}"></div>
+      <div class="vi-body">
+        <div class="vi-name">${v.name} <span style="color:var(--txt3);font-weight:400">· ${v.plate}</span></div>
+        <div class="vi-meta">${v.driver} · ${v.speed} km/h · ${formatAgo(v.lastUpdate)}</div>
+      </div>
+      <span class="badge ${BC[v.status]}">${BL[v.status]}</span>`;
+    d.onclick = () => selectVehicle(v.id);
+    list.appendChild(d);
+  });
+  document.getElementById('vcount-tag').textContent = VEHICLES.length + ' DEVICES';
+}
+
+function formatAgo(ts){
+  const s = Math.round((Date.now()-ts)/1000);
+  if (s < 10) return 'Just now';
+  if (s < 60) return s + 's ago';
+  const m = Math.round(s/60);
+  if (m < 60) return m + 'm ago';
+  const h = Math.round(m/60);
+  if (h < 24) return h + 'h ago';
+  return Math.round(h/24) + 'd ago';
+}
+
+// ═══════════════════════════════════════════════════════════
+//  SELECT VEHICLE
+// ═══════════════════════════════════════════════════════════
+function selectVehicle(id){
+  selectedId = id;
+  const v = VEHICLES.find(x => x.id === id);
+  document.querySelectorAll('.vi').forEach(e => e.classList.remove('sel'));
+  const row = document.getElementById('vi-'+id);
+  if (row){ row.classList.add('sel'); row.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+
+  VEHICLES.forEach(x => MARKERS[x.id].setIcon(mkIcon(x, x.id===id)));
+  map.flyTo([v.lat, v.lng], 14, {animate:true, duration:1.4});
+
+  fillDetail(v);
+  if (window.innerWidth <= 860){
+    closeSidebarMobile();
+    // Start collapsed ("peek") on mobile so the map + zoom controls stay reachable;
+    // tap the handle (or the name) to expand full details.
+    document.getElementById('detail').classList.add('peek');
+  } else {
+    document.getElementById('detail').classList.remove('peek');
+  }
+}
+
+function toggleSheet(){
+  document.getElementById('detail').classList.toggle('peek');
+}
+
+function fillDetail(v){
+  document.getElementById('d-name').textContent = v.name;
+  document.getElementById('d-sub').textContent = `${v.type} · ${v.plate}`;
+  document.getElementById('d-driver').textContent = v.driver;
+  document.getElementById('d-imei').textContent = v.imei;
+  document.getElementById('d-speed').textContent = v.speed + ' km/h';
+  const ign = document.getElementById('d-ign');
+  ign.textContent = v.ignition ? 'ON' : 'OFF';
+  ign.className = 'df-val ' + (v.ignition ? 'g' : '');
+  const batt = document.getElementById('d-batt');
+  batt.textContent = v.battery + '%';
+  batt.className = 'df-val ' + (v.battery < 20 ? 'r' : v.battery < 50 ? 'a' : 'g');
+  document.getElementById('d-signal').textContent = v.signal === 0 ? 'No signal' : '▮'.repeat(v.signal) + '▯'.repeat(4-v.signal);
+  document.getElementById('d-odo').textContent = v.odo.toLocaleString() + ' km';
+  document.getElementById('d-geo').textContent = v.zone + (v.zoneState==='inside' ? ' (inside)' : v.zone==='In Transit' ? '' : ' (outside)');
+  document.getElementById('d-last').textContent = formatAgo(v.lastUpdate);
+  document.getElementById('d-notes').textContent = v.notes;
+  const bdg = document.getElementById('d-badge');
+  bdg.textContent = BL[v.status]; bdg.className = 'badge ' + BC[v.status];
+  document.getElementById('btn-gmaps').href = `https://www.google.com/maps?q=${v.lat},${v.lng}`;
+  document.getElementById('btn-waze').href = `https://waze.com/ul?ll=${v.lat},${v.lng}&navigate=yes`;
+  document.getElementById('copy-ok').style.display = 'none';
+  const cutoff = document.getElementById('btn-cutoff');
+  if (v.status === 'offline'){ cutoff.setAttribute('disabled','disabled'); cutoff.title = 'Vehicle offline — command cannot be delivered'; }
+  else { cutoff.removeAttribute('disabled'); cutoff.title = ''; }
+  cutoff.textContent = v.relay === 'armed' ? '✓ Cut-off Armed' : '⛔ Engine Cut-off';
+  document.getElementById('detail').style.display = 'block';
+}
+
+// ═══════════════════════════════════════════════════════════
+//  ACTIONS
+// ═══════════════════════════════════════════════════════════
+function copyCoords(){
+  const v = VEHICLES.find(x => x.id === selectedId); if (!v) return;
+  navigator.clipboard.writeText(v.lat.toFixed(6) + ', ' + v.lng.toFixed(6)).then(() => {
+    const el = document.getElementById('copy-ok');
+    el.style.display = 'block';
+    setTimeout(() => el.style.display = 'none', 3000);
+  });
+}
+function zoomVehicle(){
+  const v = VEHICLES.find(x => x.id === selectedId); if (!v) return;
+  map.flyTo([v.lat, v.lng], 17, {animate:true, duration:1.1});
+}
+function tripHistory(){
+  const v = VEHICLES.find(x => x.id === selectedId); if (!v) return;
+  alert(`Trip History — ${v.name}\n\nThis prototype simulates live positions only. In production this opens ${v.name}'s breadcrumb trail from Traccar's Reports → Route, filterable by date range.`);
+}
+function editGeofence(){
+  alert('Geofence editor — in production this opens Traccar\'s Geofences panel to draw/edit a zone and attach entry/exit notifications for this vehicle.');
+}
+function engineCutoff(){
+  const v = VEHICLES.find(x => x.id === selectedId); if (!v) return;
+  if (v.relay === 'armed'){
+    if (!confirm(`Disarm engine cut-off for ${v.name}?\n\nThis restores normal fuel pump operation.`)) return;
+    v.relay = 'disarmed';
+    pushEvent(v.name, 'Relay', 'Engine cut-off disarmed — fuel pump relay restored.', 'info');
+  } else {
+    if (!confirm(`Send engine cut-off command to ${v.name}?\n\nThis will de-energise the fuel pump relay once the vehicle comes to a stop.\n\nThis is a DEMO — no real command is sent.`)) return;
+    v.relay = 'armed';
+    pushEvent(v.name, 'Relay', 'Engine cut-off command sent — fuel pump relay will de-energise on next stop.', 'warning');
+  }
+  fillDetail(v);
+  renderEvents();
+}
+
+// ═══════════════════════════════════════════════════════════
+//  ALERTS & EVENTS PANEL
+// ═══════════════════════════════════════════════════════════
+function pushEvent(veh, type, msg, sev){
+  EVENTS.unshift({ts:Date.now(), veh, type, msg, sev});
+  EVENTS = EVENTS.slice(0, 40);
+  updateEvtCount();
+}
+function updateEvtCount(){
+  const badge = document.getElementById('evt-count');
+  const n = EVENTS.filter(e => Date.now()-e.ts < 3600*1000).length;
+  if (n > 0){ badge.style.display='inline-block'; badge.textContent = n; }
+  else badge.style.display = 'none';
+}
+function renderEvents(){
+  const body = document.getElementById('evt-body');
+  if (EVENTS.length === 0){ body.innerHTML = '<div class="evt-empty">No events yet</div>'; return; }
+  body.innerHTML = EVENTS.map(e => `
+    <div class="evt-item">
+      <div class="evt-top"><span class="evt-veh">${e.veh}</span><span class="evt-time">${formatAgo(e.ts)}</span></div>
+      <div class="evt-msg">${e.msg}</div>
+      <span class="evt-sev sev-${e.sev}">${e.type.toUpperCase()}</span>
+    </div>`).join('');
+  updateEvtCount();
+}
+function toggleEvents(){
+  const p = document.getElementById('evt-panel');
+  p.classList.toggle('vis');
+  if (p.classList.contains('vis')){
+    renderEvents();
+    if (window.innerWidth <= 860) document.getElementById('detail').classList.add('peek');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+//  MOBILE SIDEBAR
+// ═══════════════════════════════════════════════════════════
+function toggleSidebar(){
+  const open = document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebar-backdrop').classList.toggle('show', open);
+}
+function closeSidebarMobile(){
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebar-backdrop').classList.remove('show');
+}
+
+// Keep the bottom-sheet/drawer behaviour correct if the viewport crosses
+// the mobile breakpoint (e.g. rotating a tablet, resizing a browser window).
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 860){
+    document.getElementById('detail').classList.remove('peek');
+    closeSidebarMobile();
+  }
+});
+
+// ═══════════════════════════════════════════════════════════
+//  STAT CHIPS / OVERVIEW
+// ═══════════════════════════════════════════════════════════
+function updateStats(){
+  const online = VEHICLES.filter(v=>v.status==='online').length;
+  const idle = VEHICLES.filter(v=>v.status==='idle').length;
+  const offline = VEHICLES.filter(v=>v.status==='offline').length;
+  ['sc-online','ov-online'].forEach(id => document.getElementById(id).textContent = online);
+  ['sc-idle','ov-idle'].forEach(id => document.getElementById(id).textContent = idle);
+  ['sc-offline','ov-offline'].forEach(id => document.getElementById(id).textContent = offline);
+  document.getElementById('ov-total').textContent = VEHICLES.length;
+}
+
+// ═══════════════════════════════════════════════════════════
+//  SIMULATION TICK — moves online vehicles, jitters telemetry,
+//  and occasionally raises alerts. Replace with a Traccar poll
+//  for production (see PRODUCTION NOTE at top of file).
+// ═══════════════════════════════════════════════════════════
+function simTick(){
+  VEHICLES.forEach(v => {
+    if (v.status === 'offline') return; // frozen — no signal
+
+    if (v.status === 'online'){
+      v.heading += (Math.random()*16 - 8);
+      const stepDeg = (v.speed / 3600) * 0.09; // rough distance-per-tick scaling
+      v.lat += Math.cos(v.heading*Math.PI/180) * stepDeg;
+      v.lng += Math.sin(v.heading*Math.PI/180) * stepDeg;
+      v.speed = Math.max(15, Math.min(v.maxSpeed + 15, v.speed + (Math.random()*10-5)));
+
+      if (v.speed > v.maxSpeed && !v._overspeedCooldown){
+        pushEvent(v.name, 'Overspeed', `Travelling at ${Math.round(v.speed)} km/h in an ${v.maxSpeed} km/h zone.`, 'critical');
+        v._overspeedCooldown = 6; // ticks before we can alert again
+      }
+      if (v._overspeedCooldown) v._overspeedCooldown--;
+
+      MARKERS[v.id].setLatLng([v.lat, v.lng]);
+    } else {
+      // idle: tiny battery/signal jitter only
+      v.battery = Math.max(5, Math.min(100, v.battery + (Math.random()*2-1)));
+    }
+    v.lastUpdate = Date.now();
+    MARKERS[v.id].setIcon(mkIcon(v, v.id===selectedId));
+  });
+
+  renderList();
+  updateStats();
+  if (selectedId){
+    const v = VEHICLES.find(x=>x.id===selectedId);
+    if (v) fillDetail(v);
+  }
+  if (document.getElementById('evt-panel').classList.contains('vis')) renderEvents();
+  updateEvtCount();
+}
+
+function tickClock(){
+  document.getElementById('sb-clock').textContent = new Date().toLocaleString('en-GB', {
+    weekday:'short', hour:'2-digit', minute:'2-digit', second:'2-digit'
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════════════════════
+renderList();
+updateStats();
+updateEvtCount();
+selectVehicle(VEHICLES[0].id);
+setInterval(simTick, 3000);
+setInterval(tickClock, 1000);
+tickClock();
+</script>
+<script src="js/analytics.js"></script>
 </body>
 </html>
