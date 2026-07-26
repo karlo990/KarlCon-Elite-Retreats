@@ -162,6 +162,13 @@ table.vtbl{width:100%;border-collapse:collapse;}
 .b-b{background:var(--redd);color:var(--redt);border:1px solid rgba(239,68,68,.3);}
 .b-m{background:rgba(47,128,237,.12);color:#93C5FD;border:1px solid rgba(47,128,237,.3);}
 .b-d{background:rgba(255,255,255,.04);color:var(--t2);border:1px solid var(--bd2);}
+.stat-dot{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:8px;letter-spacing:.04em;}
+.stat-dot::before{content:'';width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.stat-dot.on::before{background:#12A869;box-shadow:0 0 5px rgba(18,168,105,.7);animation:pulse 2s infinite;}
+.stat-dot.on{color:#6EE7B7;}
+.stat-dot.off::before{background:var(--t3);}
+.stat-dot.off{color:var(--t3);}
+.visit-cnt{font-family:var(--mono);font-size:8px;color:var(--t2);margin-left:5px;}
 
 /* ── EMPTY STATE ──────────────────────────────────────────── */
 .empty{font-family:var(--mono);font-size:10px;color:var(--t3);text-align:center;padding:36px 0 32px;}
@@ -301,15 +308,20 @@ table.vtbl{width:100%;border-collapse:collapse;}
   <div class="panel" style="min-height:0;">
     <div class="ph">
       <span class="pl">Recent Sessions</span>
-      <span class="pt" id="tbl-tag">0 RECORDS</span>
+      <span style="display:flex;align-items:center;gap:8px;">
+        <button class="hdr-btn" id="dedupe-btn" onclick="toggleDedupe()" style="font-size:7.5px;padding:3px 8px;">DEDUPE: OFF</button>
+        <span class="pt" id="tbl-tag">0 RECORDS</span>
+      </span>
     </div>
-    <div class="tbl-w">
+    <div class="tbl-w" style="overflow-x:auto;">
       <table class="vtbl">
         <thead>
           <tr>
             <th>Time</th>
+            <th>Status</th>
             <th>Page</th>
             <th>Location</th>
+            <th>IP</th>
             <th>ISP / Org</th>
             <th>Source</th>
             <th>Channel</th>
@@ -319,7 +331,7 @@ table.vtbl{width:100%;border-collapse:collapse;}
           </tr>
         </thead>
         <tbody id="tbl-body">
-          <tr><td colspan="9" class="empty">Add &lt;script src="js/analytics.js"&gt;&lt;/script&gt; to your pages to begin collecting sessions.</td></tr>
+          <tr><td colspan="11" class="empty">Add &lt;script src="js/analytics.js"&gt;&lt;/script&gt; to your pages to begin collecting sessions.</td></tr>
         </tbody>
       </table>
     </div>
@@ -342,6 +354,7 @@ var STORE_KEY  = 'kcAnalytics_v1'; // Must match js/analytics.js
 var AUTH_KEY   = 'kcDirAuth';
 
 var showBots = false;
+var showDedupe = false;
 var charts   = {};
 var vMap = null, vMarkers = [];
 
@@ -623,23 +636,65 @@ function renderMap(evts) {
   });
 }
 
+/* ── DEDUPE ───────────────────────────────────────────────────
+   Reloads and re-visits by the same browser session (sid) show up
+   as separate rows since each page load fires its own beacon.
+   With dedupe on, we collapse those down to one row per session,
+   keeping its most recent event and tagging how many times it
+   fired (e.g. "×7") so repeat traffic doesn't look like 7 people.
+  ─────────────────────────────────────────────────────────── */
+function dedupeBySession(evts) {
+  var bySid = {};
+  var order = [];
+  evts.forEach(function(e){
+    var key = e.sid || e.id;
+    if (!bySid[key]) { bySid[key] = {latest:e, count:1}; order.push(key); }
+    else {
+      bySid[key].count++;
+      if (e.ts > bySid[key].latest.ts) bySid[key].latest = e;
+    }
+  });
+  return order.map(function(k){
+    var row = Object.assign({}, bySid[k].latest);
+    row._visits = bySid[k].count;
+    return row;
+  }).sort(function(a,b){ return b.ts - a.ts; });
+}
+
+/* ── ONLINE STATUS ────────────────────────────────────────────
+   analytics.js fires one beacon per page load, not a continuous
+   heartbeat, so "online" here means "active in the last 90s" —
+   a same-session reload or navigation would refresh this, but a
+   visitor who is silently still reading the page won't re-fire
+   until they load another page. Best available signal without
+   adding a heartbeat ping to the beacon script.
+  ─────────────────────────────────────────────────────────── */
+var ONLINE_WINDOW_MS = 90 * 1000;
+function isOnline(ts) { return (Date.now() - ts) < ONLINE_WINDOW_MS; }
+
 /* ── SESSIONS TABLE ───────────────────────────────────────── */
 function renderTable(evts) {
   var el = document.getElementById('tbl-body');
-  document.getElementById('tbl-tag').textContent = evts.length + ' RECORDS';
-  if (!evts.length) {
-    el.innerHTML = '<tr><td colspan="9" class="empty">No sessions yet — add &lt;script src="js/analytics.js"&gt;&lt;/script&gt; to your pages.</td></tr>';
+  var rows = showDedupe ? dedupeBySession(evts) : evts;
+  document.getElementById('tbl-tag').textContent = rows.length + ' RECORDS';
+  if (!rows.length) {
+    el.innerHTML = '<tr><td colspan="11" class="empty">No sessions yet — add &lt;script src="js/analytics.js"&gt;&lt;/script&gt; to your pages.</td></tr>';
     return;
   }
-  el.innerHTML = evts.slice(0,100).map(function(e){
+  el.innerHTML = rows.slice(0,100).map(function(e){
     var geoTitle = e.geoSrc ? ' title="Confirmed via '+e.geoSrc+'"' : '';
     var loc = e.city ? '<span'+geoTitle+'>'+flag(e.cc)+' '+e.city+(e.cc?' ('+e.cc+')':'')+'</span>' : (e.country ? '<span'+geoTitle+'>'+flag(e.cc)+' '+e.country+'</span>' : '—');
     var dev = e.mobile ? '<span class="badge b-m">MOBILE</span>' : '<span class="badge b-d">DESKTOP</span>';
     var type = e.isBot ? '<span class="badge b-b">BOT</span>' : '<span class="badge b-h">HUMAN</span>';
+    var online = isOnline(e.ts);
+    var status = '<span class="stat-dot '+(online?'on':'off')+'">'+(online?'ONLINE':'OFFLINE')+'</span>';
+    var visits = e._visits > 1 ? '<span class="visit-cnt">×'+e._visits+'</span>' : '';
     return '<tr>' +
-      '<td>'+fmtTime(e.ts)+'</td>' +
+      '<td>'+fmtTime(e.ts)+visits+'</td>' +
+      '<td>'+status+'</td>' +
       '<td title="'+e.page+'">'+shortPage(e.page)+'</td>' +
       '<td>'+loc+'</td>' +
+      '<td>'+(e.ip||'—')+'</td>' +
       '<td title="'+(e.isp||'')+'">'+shortIsp(e.isp)+'</td>' +
       '<td>'+shortRef(e.ref)+'</td>' +
       '<td>'+channelLabel(e.channel)+'</td>' +
@@ -656,6 +711,15 @@ function toggleBots() {
   var btn = document.getElementById('bot-btn');
   btn.classList.toggle('active', showBots);
   btn.textContent = showBots ? 'BOTS: VISIBLE' : 'BOTS: HIDDEN';
+  refreshDash();
+}
+
+/* ── DEDUPE TOGGLE ────────────────────────────────────────── */
+function toggleDedupe() {
+  showDedupe = !showDedupe;
+  var btn = document.getElementById('dedupe-btn');
+  btn.classList.toggle('active', showDedupe);
+  btn.textContent = showDedupe ? 'DEDUPE: ON' : 'DEDUPE: OFF';
   refreshDash();
 }
 
