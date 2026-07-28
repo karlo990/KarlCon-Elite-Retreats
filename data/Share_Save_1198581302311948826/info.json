@@ -1,0 +1,52 @@
+{
+  "listingId": "1198581302311948826",
+  "url": "https://www.airbnb.com/rooms/1198581302311948826",
+  "datedUrl": "https://www.airbnb.com/rooms/1198581302311948826?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Ascot Chic Townhouse",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1622,
+  "lng": 28.61247,
+  "price": "$338",
+  "priceDetail": {
+    "raw": "$338",
+    "currency": "USD",
+    "amount": 338.0,
+    "nights": null,
+    "per_night": 338.0,
+    "usd_total": 338.0,
+    "usd_per_night": 338.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Samantha",
+    "superhost": false,
+    "yearsHosting": "4 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/81a6271f-a605-44ed-b781-c613eb1d0ddf.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/7feab5ae-1eed-4387-b287-7aed44181b45.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198581302311948826/original/8d7d6963-9627-42d6-a33c-e310bfdf05e5.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/59cab358-80f2-4180-87ff-2284513b943d.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/01827c4a-9c83-4ce7-8362-355e66716188.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/e8f05540-4181-4538-ace8-c60d2931faf3.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/8dc8e257-df56-45e5-9f7c-ccab1982aa4d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/4f41541f-6ade-433f-8b9e-e82029ef5383.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/f76fea8e-d444-4d6a-b406-549f4d06bc00.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/3d6e694b-8c8d-4145-aa15-d419228d1744.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198581302311948826/original/c26b2a35-a14c-4c46-b373-55da962856ad.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/7ebafb8a-612e-4da6-a807-59fe8f5c7bf0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1198451446005495594/original/58e1fa48-3f1c-46be-95f0-0579b36096dc.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:24:56.694300Z"
+}

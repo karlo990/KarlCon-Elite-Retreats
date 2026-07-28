@@ -1,0 +1,53 @@
+{
+  "listingId": "1327994369646555581",
+  "url": "https://www.airbnb.com/rooms/1327994369646555581",
+  "datedUrl": "https://www.airbnb.com/rooms/1327994369646555581?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "The Matopos Diamond",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1836,
+  "lng": 28.5864,
+  "price": "Hosted by Peter 1 year hosting",
+  "priceDetail": {
+    "raw": "Hosted by Peter 1 year hosting",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Peter",
+    "superhost": false,
+    "yearsHosting": "1 year hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/8694c758-7943-445a-bd0c-2fc80914a230.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/fbd5eb6f-80c6-41b4-84dc-6ef7a8f4105d.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/537df488-56fe-4868-bced-ce1bee42d691.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/7903db81-67e6-4518-bc16-ecbf8108e0c0.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/047ff7b1-2b73-4924-a8b4-8bd9cb7cda5b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/fa3ce01f-e8cf-4040-acc0-e6295397de29.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/82941219-30e7-4292-921d-e233de4d514b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/1b17c653-1cb6-4a76-963f-49dd83639d67.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/91566f88-e6ff-47d3-98ff-5a83643b49d6.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/5a2023df-3970-4329-a671-cc8e0bc902e6.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/2238dfc0-d95e-4c32-97be-2c778ab6d368.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/bfe1ea64-0e82-4863-a1b2-5b9152172d46.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/6015a4d0-6bcc-43bd-ab94-1b1c3cbbf4ec.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1327994369646555581/original/e52d2c88-7223-4645-bb05-e28a6fed7ae8.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:51:31.993076Z"
+}

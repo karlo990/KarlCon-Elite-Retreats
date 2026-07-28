@@ -1,0 +1,47 @@
+{
+  "listingId": "1669249006641148803",
+  "url": "https://www.airbnb.com/rooms/1669249006641148803",
+  "datedUrl": "https://www.airbnb.com/rooms/1669249006641148803?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Ruemat 4 bedrooms Cozy Place Hillcrest Bulawayo",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1927,
+  "lng": 28.5939,
+  "price": "$230",
+  "priceDetail": {
+    "raw": "$230",
+    "currency": "USD",
+    "amount": 230.0,
+    "nights": null,
+    "per_night": 230.0,
+    "usd_total": 230.0,
+    "usd_per_night": 230.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Mathew",
+    "superhost": false,
+    "yearsHosting": "2 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in: 2:00\u202fPM - 6:00\u202fPM\nCheckout before 11:00\u202fAM\n8 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nExterior security cameras on property\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1669249006641148803/original/ae34fade-1f57-41a7-8bf7-5cac4ba98478.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1669249006641148803/original/4bf230d1-a572-45b9-8e50-9c07a56b3683.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1669249006641148803/original/eb770188-36f2-4418-bbb0-681f255b3ea4.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1669249006641148803/original/3bb009f7-4683-4a6a-a568-618577a83574.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1669249006641148803/original/58d8c85e-d6f5-4192-85c3-48b14154ba20.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1669249006641148803/original/78457612-cc68-44e9-9405-7fcb16b5a227.png",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1669249006641148803/original/23005acc-2fd1-45d5-b003-ccb316addc9c.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1669249006641148803/original/06e2e62d-7496-453c-b920-60ad7c66b3b1.jpeg"
+  ],
+  "scrapedAt": "2026-07-28T10:13:57.238549Z"
+}

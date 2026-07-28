@@ -1,0 +1,52 @@
+{
+  "listingId": "1435631998586663511",
+  "url": "https://www.airbnb.com/rooms/1435631998586663511",
+  "datedUrl": "https://www.airbnb.com/rooms/1435631998586663511?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "a home away from home",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.0893,
+  "lng": 28.6308,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Vimbai",
+    "superhost": false,
+    "yearsHosting": "1 year hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/2a482212-0fcf-466c-9859-e6af501d344a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/fe66fa41-9fb1-4bd9-b8e0-1ec198ea8115.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/247f6dde-18b8-4030-a8b5-00cd2e0b966e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/52e99f87-ff39-44fe-b496-956301e088fc.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/d4ba6ee4-0205-4fbf-9520-72784120beaa.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/762749d5-b042-40a5-a50f-d9682ae2fbe8.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/a75e579c-bf7c-4c25-9d34-e56b7a6f9f70.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/b15f5b24-b46f-4947-b0d5-244fa18bd83f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/2c4ccd56-57e8-4034-bef8-28104095c4dc.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/4c0f7251-c9c6-4ce1-a327-20d2c5b09a01.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/61a812ce-fbff-4641-85ca-8f8e5dd1a517.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/611fac16-b426-4835-a2d8-8228472908cc.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1435631998586663511/original/5cfa5628-f37d-48a7-86e3-ab67999aad16.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:47:30.541880Z"
+}

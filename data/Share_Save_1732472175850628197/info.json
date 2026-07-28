@@ -1,0 +1,51 @@
+{
+  "listingId": "1732472175850628197",
+  "url": "https://www.airbnb.com/rooms/1732472175850628197",
+  "datedUrl": "https://www.airbnb.com/rooms/1732472175850628197?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Family Home in Matsheumhlophe",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2249,
+  "lng": 28.6344,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Nobuhle",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/a90ad295-404f-455a-823b-6854a2cc4fea.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/d1b4c0b6-6df9-4c0e-80bf-0eb3652385ce.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/d81f25a9-3e0e-402c-b0a3-44058dfe1e6b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/ba2e0728-cf47-4021-86b8-94f71d19fbff.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/b23747b1-fa8f-42e2-8542-6c624766e067.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/03016fc6-ecea-4d3a-af73-f54ee4c9c9d4.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/6283cfda-dc2d-4982-be07-aaa29a9b8377.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/280f12a7-fb58-4ed8-bfc2-64f3a7ebabcb.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/fa50488f-a3de-41ea-8e5c-866a06ec21d6.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/792cc000-61f3-4dea-ab47-acf832d5ae59.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/861c5400-9047-4b33-8ef1-7e8b90b41e1b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1732472175850628197/original/acd1e3a5-d5c2-4a43-82cf-ea813ba55b8b.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:02:45.604861Z"
+}

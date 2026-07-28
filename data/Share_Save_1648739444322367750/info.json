@@ -1,0 +1,44 @@
+{
+  "listingId": "1648739444322367750",
+  "url": "https://www.airbnb.com/rooms/1648739444322367750",
+  "datedUrl": "https://www.airbnb.com/rooms/1648739444322367750?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Still Your Home!",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1731,
+  "lng": 28.584,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Shami",
+    "superhost": false,
+    "yearsHosting": "4 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1648739444322367750/original/8bbd1022-0a7a-4fdd-a8c6-d1dcbaa99a99.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1648739444322367750/original/a0c8b742-193f-4b80-a27c-c551717c3099.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1648739444322367750/original/eda4b83f-7cb5-4080-aa28-a2da7f0d2423.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1648739444322367750/original/f8e4590d-d5c7-472c-b42c-303379c77a06.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1648739444322367750/original/219c0024-f60b-4680-897f-9b02c47048cc.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T08:20:43.272405Z"
+}

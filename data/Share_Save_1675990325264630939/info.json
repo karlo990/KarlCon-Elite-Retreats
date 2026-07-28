@@ -1,0 +1,44 @@
+{
+  "listingId": "1675990325264630939",
+  "url": "https://www.airbnb.com/rooms/1675990325264630939",
+  "datedUrl": "https://www.airbnb.com/rooms/1675990325264630939?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Sage\u20221\u2011Bed Solar Cottage \u2022Borehole \u2022 Fast Wi-Fi",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.195378516773452,
+  "lng": 28.64140011647512,
+  "price": "$82",
+  "priceDetail": {
+    "raw": "$82",
+    "currency": "USD",
+    "amount": 82.0,
+    "nights": null,
+    "per_night": 82.0,
+    "usd_total": 82.0,
+    "usd_per_night": 82.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1675990325264630939/original/73de9dfb-b78d-4f23-bf1b-b4596e2c144b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1662548712349206519/original/ee4fd7df-ce95-4248-84ec-75315d8b1120.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1675990325264630939/original/47addce4-a6f4-4605-8f14-93859d25a61b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1675990325264630939/original/2e538161-118b-4166-98b0-afa4edd07771.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1675990325264630939/original/b315ba4f-4f73-460c-82cd-669dfd55b26d.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T08:18:19.611584Z"
+}

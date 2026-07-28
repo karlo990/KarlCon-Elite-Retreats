@@ -1,0 +1,44 @@
+{
+  "listingId": "1017842816559595140",
+  "url": "https://www.airbnb.com/rooms/1017842816559595140",
+  "datedUrl": "https://www.airbnb.com/rooms/1017842816559595140?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "Upmarket cottage in Morningside",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -26.07107,
+  "lng": 28.0517,
+  "price": "$92",
+  "priceDetail": {
+    "raw": "$92",
+    "currency": "USD",
+    "amount": 92.0,
+    "nights": null,
+    "per_night": 92.0,
+    "usd_total": 92.0,
+    "usd_per_night": 92.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Jossie",
+    "superhost": true,
+    "yearsHosting": "10 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nJossie\nSuperhost\n217 reviews\n217\nReviews\n4.99 out of 5 average rating\n4.99\nRating\n10 years of hosting\n10\nYears hosting\nSpeaks English\nLives in Sandton, South Africa\nProfessional couple with two active dogs (a staffie and a jackie) living in the beautiful suburb of Morningside, on the Sandton CBD doorstep. Well travelled, love cooking, love entertaining friends and enjoy a glass of red wine in front of the fire. We work long hours so generally leave guests to their own devices.\nJossie is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1017842816559595140/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 3:00\u202fPM\nCheckout before 10:00\u202fAM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nNot suitable for children and infants\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTAxNzg0MjgxNjU1OTU5NTE0MA%3D%3D/original/848b650e-3177-4138-8afc-aeea69405648.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTAxNzg0MjgxNjU1OTU5NTE0MA%3D%3D/original/e1545fd7-89e9-4dd4-8a91-841ed5fef570.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTAxNzg0MjgxNjU1OTU5NTE0MA%3D%3D/original/5d3f342d-b7e0-4ad2-abe2-4b9b7716ae6f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTAxNzg0MjgxNjU1OTU5NTE0MA%3D%3D/original/31328b3d-fca4-404c-bd8a-5362463f531a.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTAxNzg0MjgxNjU1OTU5NTE0MA%3D%3D/original/df271edd-19f5-4848-a06a-31737cb6b8c1.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:11:19.540784Z"
+}

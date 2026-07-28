@@ -1,0 +1,45 @@
+{
+  "listingId": "1516721171969624991",
+  "url": "https://www.airbnb.com/rooms/1516721171969624991",
+  "datedUrl": "https://www.airbnb.com/rooms/1516721171969624991?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Little Nest 1 Burnside",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.22416774515677,
+  "lng": 28.616838698100562,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Themba",
+    "superhost": true,
+    "yearsHosting": "10 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1516721171969624991/original/eee592a3-a474-444c-aa28-1643b3ff1144.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1516721171969624991/original/17a479a7-ea88-41cc-8e91-3fdfa636a969.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1516721171969624991/original/490fce92-7488-4562-b97e-49769456ecd1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1516721171969624991/original/00780def-739e-4f27-9c4f-40b5f9b90c93.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1516721171969624991/original/6f0eca73-d045-4821-9ff3-eeee8996fbfb.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1516721171969624991/original/d7232b84-bc32-485f-8faa-d6c39ed87a66.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:51:11.468600Z"
+}

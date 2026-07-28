@@ -1,0 +1,52 @@
+{
+  "listingId": "1548510123961105862",
+  "url": "https://www.airbnb.com/rooms/1548510123961105862",
+  "datedUrl": "https://www.airbnb.com/rooms/1548510123961105862?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "2 Bedroom BNB at 51 Airport Rd, Northend",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.15751,
+  "lng": 28.58807,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Michaela",
+    "superhost": false,
+    "yearsHosting": "8 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/da18aca4-34a6-481c-9247-174608b77954.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/1ac3ed6d-ce5b-487c-88aa-e20ecc5493b9.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/efcb766c-d84a-4460-998e-215c431c8d81.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/e24d3d21-76ce-4613-afbf-b0dd170b028e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/3149997c-0ec7-42eb-a838-938b3f9a6f1d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/74d4e7a2-469d-46c0-a538-29042b2fe719.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/a875620a-9d66-4bcd-9e5b-a1a449ffa1ec.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/511942f7-1257-4af2-a2a4-6ac90f23264e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/9636df86-3b4c-487b-8ce2-110aeb18db10.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/ba572522-1407-48b9-86dc-477c8ec72bb0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/e539b660-6858-4278-abcd-0de245e5f75b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/fb4fcc19-eef7-446b-83ec-f3711fe8256d.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1548510123961105862/original/9a745a10-18e3-4059-a091-0f9333803cf0.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:48:49.847414Z"
+}

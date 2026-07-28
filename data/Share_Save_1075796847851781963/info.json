@@ -1,0 +1,48 @@
+{
+  "listingId": "1075796847851781963",
+  "url": "https://www.airbnb.com/rooms/1075796847851781963",
+  "datedUrl": "https://www.airbnb.com/rooms/1075796847851781963?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1411,
+  "lng": 28.5952,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Mandy",
+    "superhost": true,
+    "yearsHosting": "6 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/a22f490d-650d-4024-a77d-b981dc9229f8.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/4e32ac51-13c7-41ef-a606-945d4881bc0f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/96d26b2f-83c4-4cba-866a-df9f969307a7.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/52bd3c5e-7701-4204-970a-15881d963cfe.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/b7ae1713-7567-4b37-9931-64bf436c8a4b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/12ce1162-28d2-4e76-937c-6c69f7706020.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/c7707c5f-a764-4734-b4b8-b65ae02ebb3d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/5ad49659-db46-4ad4-bab2-8900b61f51df.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1075796847851781963/original/f9260673-52df-4c44-8021-1a9381289b17.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:21:29.788674Z"
+}

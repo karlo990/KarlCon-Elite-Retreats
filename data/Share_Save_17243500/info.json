@@ -1,0 +1,38 @@
+{
+  "listingId": "17243500",
+  "url": "https://www.airbnb.com/rooms/17243500",
+  "datedUrl": "https://www.airbnb.com/rooms/17243500?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Bulawayo's best spot.",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1543,
+  "lng": 28.60625,
+  "price": "$133",
+  "priceDetail": {
+    "raw": "$133",
+    "currency": "USD",
+    "amount": 133.0,
+    "nights": null,
+    "per_night": 133.0,
+    "usd_total": 133.0,
+    "usd_per_night": 133.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Adam",
+    "superhost": true,
+    "yearsHosting": "9 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nAdam\nSuperhost\n330 reviews\n330\nReviews\n4.66 out of 5 average rating\n4.66\nRating\n9 years of hosting\n9\nYears hosting\nBorn in the 80s\nLives in Bulawayo, Zimbabwe\nVery chilled, meditator. Don't like talking about myself\nAdam is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/17243500/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation for 24 hours. Cancel before August 4 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in: 3:00\u202fPM - 10:00\u202fPM\nCheckout before 10:00\u202fAM\n3 guests maximum\nLearn more\nSafety & property\nNo carbon monoxide alarm\nNo smoke alarm\nExterior security cameras on property\nLearn more",
+  "images": [],
+  "scrapedAt": "2026-07-28T09:36:26.694743Z"
+}

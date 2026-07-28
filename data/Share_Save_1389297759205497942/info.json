@@ -18,7 +18,7 @@
     "bio": "Meet your host\nMiguel\nSuperhost\n2,332 reviews\n2332\nReviews\n4.82 out of 5 average rating\n4.82\nRating\n4 years of hosting\n4\nYears hosting\nBorn in the 70s\nMy work: Airbnb Host\nMiguel is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nCo-hosts\nDaniella\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
   },
   "contactUrl": "https://www.airbnb.com/contact_host/1389297759205497942/send_message",
-  "thingsToKnow": "Things to know\nCancellation policy\nAdd your trip dates to get the cancellation details for this stay.\nAdd dates\nHouse rules\nCheck-in after 2:00\u202fPM\nCheckout before 10:00\u202fAM\n4 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "thingsToKnow": "Things to know\nCancellation policy\nAdd your trip dates to get the cancellation details for this stay.\nAdd dates\nHouse rules\nCheck-in after 2:00 PM\nCheckout before 10:00 AM\n4 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
   "images": [
     "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM4OTI5Nzc1OTIwNTQ5Nzk0Mg==/original/b225fdde-f523-4516-94b4-72ac4191f106.jpeg?im_w=720",
     "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM4OTI5Nzc1OTIwNTQ5Nzk0Mg==/original/3a636b1e-55f5-4719-be01-38655b1490e6.jpeg?im_w=720",
@@ -33,5 +33,7 @@
     "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM4OTI5Nzc1OTIwNTQ5Nzk0Mg==/original/3a06abe7-c79d-4ca0-978b-80bcccab9dff.jpeg",
     "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM4OTI5Nzc1OTIwNTQ5Nzk0Mg==/original/916dea46-ae34-46f4-a526-8e8fc3568900.jpeg?im_w=720"
   ],
-  "scrapedAt": "2026-07-25T04:39:44.158827Z"
+  "scrapedAt": "2026-07-25T04:39:44.158827Z",
+  "lat": -26.0602,
+  "lng": 28.0577
 }

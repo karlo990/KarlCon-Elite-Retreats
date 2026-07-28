@@ -1,0 +1,50 @@
+{
+  "listingId": "911563176584659023",
+  "url": "https://www.airbnb.com/rooms/911563176584659023",
+  "datedUrl": "https://www.airbnb.com/rooms/911563176584659023?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "21 Brown Crescent",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.128,
+  "lng": 28.5961,
+  "price": "$238",
+  "priceDetail": {
+    "raw": "$238",
+    "currency": "USD",
+    "amount": 238.0,
+    "nights": null,
+    "per_night": 238.0,
+    "usd_total": 238.0,
+    "usd_per_night": 238.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "About this space\nThree bedroomed house (MES) in a quiet neighborhood with a mid sized pool. Offers high speed uncapped wifi and two bedrooms are equipped with smart TVs with Netflix access. Comfortable work space for business travelers. Fully equipped kitchen, solar and generator back up- trampoline for kids, very ideal for families. Very secure with rapid response. Property manager available 24/7. Complimentary airport pick ups and special car hire rates for guests.\n\nThe space\nProperty has 3 bedrooms, main ensuite with a king sized bed, other two bedrooms have queen sized beds and share a common bathroom and toilet. Property has full electricity back up (inverter and 5kva generator), borehole, gas water heater and a pool.\n\nGuest access\nGuests will have full access to the house and its entire outside space.\n\nOther things to note\nPool usage is at your own risk as we dont have a lifeguard. Maximum number of guests is strictly 5 any failure to adhere to this rule will incur extra charges.",
+  "amenities": [],
+  "host": {
+    "name": "Anele",
+    "superhost": false,
+    "yearsHosting": "3 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nAnele\nHost\n73 reviews\n73\nReviews\n4.7 out of 5 average rating\n4.7\nRating\n3 years of hosting\n3\nYears hosting\nBorn in the 80s\nMy work: Commercial\nI have a keen interest in wildlife, adrenaline activities, athletics and golf.\nCo-hosts\nNontando\nMthandazo\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/911563176584659023/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 6. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in: 3:00\u202fPM - 12:00\u202fAM\nCheckout before 10:00\u202fAM\n5 guests maximum\nLearn more\nSafety & property\nNo carbon monoxide alarm\nNo smoke alarm\nPool/hot tub without a gate or lock\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/af3eb572-8810-49d1-807e-e81e317e0695.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/2b2be8b7-898a-4d9b-988a-fd6628b51e01.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/c4a0cc2e-1702-4c89-887e-4fac06fb6c74.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/107b2e02-ba9f-42e8-ad0b-1c378703ea53.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/4df6a8a8-4194-49ab-9546-68b08482d25b.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/77f3ff46-0cef-43dc-b947-e8d31e1a62c4.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/95ee889c-5990-4f3e-9018-7e2de643bf4f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/887d7426-acfb-49cc-a14e-bbde54e8b4d9.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/5a4eca7d-aff0-415f-953b-c035cd8a224c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/1f53bbb5-65ff-4c80-8dd9-a150eb2a00b7.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-911563176584659023/original/083c1ae1-b6b9-4ff2-a7bc-b6eaf3975c6e.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:21:20.101065Z"
+}

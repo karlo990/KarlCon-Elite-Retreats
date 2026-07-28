@@ -1,0 +1,47 @@
+{
+  "listingId": "1639033590980494044",
+  "url": "https://www.airbnb.com/rooms/1639033590980494044",
+  "datedUrl": "https://www.airbnb.com/rooms/1639033590980494044?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "Tayla Suites on Tatonga",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -18.962428194122836,
+  "lng": 32.68510000238536,
+  "price": "$134",
+  "priceDetail": {
+    "raw": "$134",
+    "currency": "USD",
+    "amount": 134.0,
+    "nights": null,
+    "per_night": 134.0,
+    "usd_total": 134.0,
+    "usd_per_night": 134.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Tatenda",
+    "superhost": false,
+    "yearsHosting": "10 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nTatenda\nHost\n30 reviews\n30\nReviews\n4.6 out of 5 average rating\n4.6\nRating\n10 months of hosting\n10\nMonths hosting\nSpeaks English\nLives in Mutare, Zimbabwe\nCo-hosts\nTofara\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1639033590980494044/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 2:00\u202fPM\nCheckout before 11:00\u202fAM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1639033590980494044/original/fa54d839-6c76-4f13-8fe6-fdfd0f1f264c.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1639033590980494044/original/eb91994f-c59f-45f9-af8a-9a98150ca1aa.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1639033590980494044/original/3e7902b5-5e01-49c7-a3d4-bc47e4e43a49.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1639033590980494044/original/7f1ccb58-0d5f-45eb-85b7-266a2fa41e9c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1639033590980494044/original/46bf47ac-5fce-47d3-a751-85d0b25653f7.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1639033590980494044/original/8148123e-b033-4c18-a535-1a67dea9d70c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1639033590980494044/original/c3aaa633-7eaf-4aa6-8d40-03759c286620.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1639033590980494044/original/4931c8bf-63a8-4a9a-a19d-2778565a89b0.jpeg"
+  ],
+  "scrapedAt": "2026-07-28T09:09:13.526210Z"
+}

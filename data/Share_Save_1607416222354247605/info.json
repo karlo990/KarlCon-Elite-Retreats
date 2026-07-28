@@ -1,0 +1,44 @@
+{
+  "listingId": "1607416222354247605",
+  "url": "https://www.airbnb.com/rooms/1607416222354247605",
+  "datedUrl": "https://www.airbnb.com/rooms/1607416222354247605?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Diamond Cottage",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2217,
+  "lng": 28.5833,
+  "price": "$130",
+  "priceDetail": {
+    "raw": "$130",
+    "currency": "USD",
+    "amount": 130.0,
+    "nights": null,
+    "per_night": 130.0,
+    "usd_total": 130.0,
+    "usd_per_night": 130.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Matsha",
+    "superhost": true,
+    "yearsHosting": "5 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1607416222354247605/original/d2f468c5-f91e-484f-ba44-cea0a31ac144.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1607416222354247605/original/0d560337-2901-40f8-a8dc-8ada9684e579.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1607416222354247605/original/85e2b311-fa2c-4d52-8abc-bd87a808d176.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1607416222354247605/original/d3e92770-29aa-4069-87c8-69ee104a7b9d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1607416222354247605/original/22800ec4-bd2b-42df-8d88-3426ec6d6bb7.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:49:33.032100Z"
+}

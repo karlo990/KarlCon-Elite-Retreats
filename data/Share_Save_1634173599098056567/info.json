@@ -1,0 +1,50 @@
+{
+  "listingId": "1634173599098056567",
+  "url": "https://www.airbnb.com/rooms/1634173599098056567",
+  "datedUrl": "https://www.airbnb.com/rooms/1634173599098056567?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Serene Mqabuko retreat /pool & a beautiful garden",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2077340497427,
+  "lng": 28.634646700339108,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Sithembiso",
+    "superhost": false,
+    "yearsHosting": "4 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/e483ad92-2734-4274-aabe-33efce00f313.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/566052cf-9183-4371-abb1-f1192d437eb4.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/81b1d478-59a7-461b-b8f8-e181b06ee2d4.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/5e5c30bf-7a49-475b-8122-7eff832ea862.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/a2f4c0f8-30e3-4691-9c33-177a2394e94c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/33d13f34-dfa6-4e62-b2d0-fbce7a132516.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/d58f3f27-5ce6-49a7-9b54-22d639ca08ab.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/b0168f2a-2e93-4b1a-844a-40d6835dffe1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/5eef3b86-31bb-4e44-b873-d0c15c3ad381.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/7ee423e9-e98f-481b-b7e1-152b96bb767f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1634173599098056567/original/8252f047-a003-4377-b00c-4f46792ed78e.jpeg"
+  ],
+  "scrapedAt": "2026-07-28T10:12:18.510012Z"
+}

@@ -1,0 +1,47 @@
+{
+  "listingId": "1346246246707290388",
+  "url": "https://www.airbnb.com/rooms/1346246246707290388",
+  "datedUrl": "https://www.airbnb.com/rooms/1346246246707290388?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Cozy 2 bedroom Villa in Hillside",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1987,
+  "lng": 28.6022,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Lindy's Place",
+    "superhost": false,
+    "yearsHosting": "2 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1293327238770907836/original/ad5050f1-7c08-469f-8dc4-0e0a4333e6c9.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1346246246707290388/original/4dcb35f1-3642-467f-ac1d-a0afce34bdb6.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1346246246707290388/original/4ba2286f-ca54-4624-9aab-e16fae08c613.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1293327238770907836/original/173d23c1-8055-46c0-b106-9319157655f0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1293327238770907836/original/bc9d2afb-e2c3-4ac7-8d52-5765ab1f5afe.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1346246246707290388/original/0c7467a4-d3b1-4335-816b-4a9ba32182df.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1293327238770907836/original/0d51b8a8-6007-4c93-af85-41ebf34a6301.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1293327238770907836/original/9da8b3f0-4efc-4763-bcb1-ddda3d7f7ba5.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:32:55.125201Z"
+}

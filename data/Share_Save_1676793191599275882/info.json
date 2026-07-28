@@ -1,0 +1,45 @@
+{
+  "listingId": "1676793191599275882",
+  "url": "https://www.airbnb.com/rooms/1676793191599275882",
+  "datedUrl": "https://www.airbnb.com/rooms/1676793191599275882?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Quiet value stay",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1267,
+  "lng": 28.6393,
+  "price": "September 2026",
+  "priceDetail": {
+    "raw": "September 2026",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nJudith\nHost\n3 reviews\n3\nReviews\n5.0 out of 5 average rating\n5.0\nRating\n2 months of hosting\n2\nMonths hosting\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1676793191599275882/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 3:00\u202fPM\n4 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1676793191599275882/original/17981185-fcb8-4207-aad1-88b4d862b1cc.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1676793191599275882/original/c759da37-b210-46a1-a7b1-aecfe7548b22.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1676793191599275882/original/d509caba-4d43-46de-8df8-d6be125dec8d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1676793191599275882/original/02bc2370-6ec8-4f93-873b-d48b09b35b90.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1676793191599275882/original/b65825d6-bf14-4858-a4ac-32dd406f2f2e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1676793191599275882/original/65bdf4bc-9a8d-4687-b426-6f94e8bf91b7.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:02:48.266227Z"
+}

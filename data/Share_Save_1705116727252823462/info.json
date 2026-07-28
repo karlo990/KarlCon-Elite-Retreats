@@ -1,0 +1,47 @@
+{
+  "listingId": "1705116727252823462",
+  "url": "https://www.airbnb.com/rooms/1705116727252823462",
+  "datedUrl": "https://www.airbnb.com/rooms/1705116727252823462?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "Nala Realty at SoHo Two",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -25.993,
+  "lng": 27.986,
+  "price": "$115",
+  "priceDetail": {
+    "raw": "$115",
+    "currency": "USD",
+    "amount": 115.0,
+    "nights": null,
+    "per_night": 115.0,
+    "usd_total": 115.0,
+    "usd_per_night": 115.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Gugu",
+    "superhost": false,
+    "yearsHosting": "2 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nHost\n234 reviews\n234\nReviews\n4.79 out of 5 average rating\n4.79\nRating\n2 years of hosting\n2\nYears hosting\nBorn in the 80s\nMy work: Real Estate\nI'm fun loving mom loves to travel and loves to spend quality time with myself\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1705116727252823462/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in: 2:00\u202fPM - 9:00\u202fPM\nCheckout before 10:00\u202fAM\n4 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1705116727252823462/original/5c6a9f23-1e1a-469e-a9ba-cc6d9656c083.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1705116727252823462/original/415d7f79-48dc-4f79-96e4-63af691a2041.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1705116727252823462/original/f86e3a57-3c09-41c9-848a-9dcbbb735f70.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1705116727252823462/original/c3b07ac5-e93e-407e-a41a-1cb92f8f0ac0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1705116727252823462/original/0b254218-456d-4ca6-a79b-7b1c056c3a38.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1705116727252823462/original/e72e603c-0ebd-47b6-9905-4159de133487.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1705116727252823462/original/a3aa9b4a-0019-46fd-b86c-ef05908c5640.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1705116727252823462/original/da8edff5-13b8-46bd-b0b6-263386cca949.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:26:23.990653Z"
+}

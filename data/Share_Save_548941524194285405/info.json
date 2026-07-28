@@ -1,0 +1,44 @@
+{
+  "listingId": "548941524194285405",
+  "url": "https://www.airbnb.com/rooms/548941524194285405",
+  "datedUrl": "https://www.airbnb.com/rooms/548941524194285405?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Room 5 Cheerful 1 bed home with lots of Extras",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2146,
+  "lng": 28.5849,
+  "price": "$87",
+  "priceDetail": {
+    "raw": "$87",
+    "currency": "USD",
+    "amount": 87.0,
+    "nights": null,
+    "per_night": 87.0,
+    "usd_total": 87.0,
+    "usd_per_night": 87.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Promise",
+    "superhost": true,
+    "yearsHosting": "5 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQ4OTQxNTI0MTk0Mjg1NDA1/original/cc82360d-f5ae-42e8-943b-2b0fee5c8818.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQ4OTQxNTI0MTk0Mjg1NDA1/original/e54c78af-68e3-4681-9a22-3daeaf08e794.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQ4OTQxNTI0MTk0Mjg1NDA1/original/d4807df7-5198-4f8c-907f-89ae6ba6d19c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-548941524194285405/original/e20d59f1-c5da-4645-a84c-cb29457a0746.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-548941524194285405/original/282236dc-d287-4cde-bcc9-35df68942dd9.jpeg?im_w=1200"
+  ],
+  "scrapedAt": "2026-07-28T10:00:00.189734Z"
+}

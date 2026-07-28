@@ -1,0 +1,46 @@
+{
+  "listingId": "1710206452059629866",
+  "url": "https://www.airbnb.com/rooms/1710206452059629866",
+  "datedUrl": "https://www.airbnb.com/rooms/1710206452059629866?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Backpackers Lil\u2019Delight",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1122,
+  "lng": 28.6354,
+  "price": "$68",
+  "priceDetail": {
+    "raw": "$68",
+    "currency": "USD",
+    "amount": 68.0,
+    "nights": null,
+    "per_night": 68.0,
+    "usd_total": 68.0,
+    "usd_per_night": 68.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Unika",
+    "superhost": false,
+    "yearsHosting": "1 month hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1710206452059629866/original/bba58797-645e-4094-8156-269aeb36a306.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1710206452059629866/original/7c8d41cc-3b7a-4a6c-90d8-2489ab8c94c3.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1710206452059629866/original/4edadc90-ddb1-4222-9076-ca9fbcdefe61.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1710206452059629866/original/08f53133-713e-454c-ada2-3a1d1347c67b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1710206452059629866/original/fa355f67-679b-4d7e-b90c-6662a6a3aba4.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1710206452059629866/original/5bf788c3-cff4-4c04-9fb8-e6d4a6b732f8.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1710206452059629866/original/5156c2dc-f896-4d6b-ab53-03efb972e815.jpeg?im_w=1200"
+  ],
+  "scrapedAt": "2026-07-28T09:28:36.385224Z"
+}

@@ -1,0 +1,44 @@
+{
+  "listingId": "1731415674894185988",
+  "url": "https://www.airbnb.com/rooms/1731415674894185988",
+  "datedUrl": "https://www.airbnb.com/rooms/1731415674894185988?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "",
+  "subtitle": "",
+  "location": "",
+  "lat": -20.1291,
+  "lng": 28.5956,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1731415674894185988/original/f7b85dd6-4392-4539-a575-15ff90a71d9d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1731415674894185988/original/4c1b73f9-0332-45dc-af51-1f8fb3eddeec.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1731415674894185988/original/092efb89-3534-4aff-a95e-da77eec78e54.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1731415674894185988/original/7325cf93-6efe-495a-8b19-b257417d6283.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1731415674894185988/original/197c83e0-9b85-460b-ba3e-fe03c697999c.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:45:52.730413Z"
+}

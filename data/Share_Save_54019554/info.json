@@ -1,0 +1,45 @@
+{
+  "listingId": "54019554",
+  "url": "https://www.airbnb.com/rooms/54019554",
+  "datedUrl": "https://www.airbnb.com/rooms/54019554?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "Art House Cottage, a Mutare, Zimbabwe vacation rental",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -18.95438,
+  "lng": 32.67775,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Bronwen",
+    "superhost": true,
+    "yearsHosting": "8 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQwMTk1NTQ%3D/original/256156db-071d-424d-84a2-abd8af14618c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQwMTk1NTQ%3D/original/bd2d9d0f-3424-4ff2-bebc-c38b9553ad5e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQwMTk1NTQ%3D/original/ff8e7432-56ec-4e5d-ba80-d4d60c61686c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQwMTk1NTQ%3D/original/3657fee1-1c58-4465-8e5b-2b390bdba07d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQwMTk1NTQ%3D/original/3084794d-4614-4cc5-8731-544db6132382.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTQwMTk1NTQ%3D/original/9c6fd726-9eb0-4519-9c8a-3efc5575d1d9.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:24:11.694879Z"
+}

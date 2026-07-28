@@ -1,0 +1,38 @@
+{
+  "listingId": "1424606206785563895",
+  "url": "https://www.airbnb.com/rooms/1424606206785563895",
+  "datedUrl": "https://www.airbnb.com/rooms/1424606206785563895?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "Lavender House Victoria Falls",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -17.9381,
+  "lng": 25.8244,
+  "price": "$1,386",
+  "priceDetail": {
+    "raw": "$1,386",
+    "currency": "USD",
+    "amount": 1386.0,
+    "nights": null,
+    "per_night": 1386.0,
+    "usd_total": 1386.0,
+    "usd_per_night": 1386.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Farai",
+    "superhost": true,
+    "yearsHosting": "1 year hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nFarai\nSuperhost\n7 reviews\n7\nReviews\n5.0 out of 5 average rating\n5.0\nRating\n1 year of hosting\n1\nYear hosting\nFarai is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nHost details\nResponse rate: 100%\nResponds within a few hours\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1424606206785563895/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation for 24 hours. Cancel before August 4 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 2:00\u202fPM\nCheckout before 11:00\u202fAM\n12 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm\nSmoke alarm\nLearn more",
+  "images": [],
+  "scrapedAt": "2026-07-28T06:26:26.160282Z"
+}

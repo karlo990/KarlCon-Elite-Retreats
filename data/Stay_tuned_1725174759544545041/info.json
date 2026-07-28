@@ -1,0 +1,46 @@
+{
+  "listingId": "1725174759544545041",
+  "url": "https://www.airbnb.com/rooms/1725174759544545041",
+  "datedUrl": "https://www.airbnb.com/rooms/1725174759544545041?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Stay tuned",
+  "subtitle": "",
+  "location": "",
+  "lat": null,
+  "lng": null,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1725174759544545041/original/7578e799-1882-4b80-bbca-1939315bf9aa.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1725174759544545041/original/dcbd88d4-d82a-4ae0-ae31-d4e7b6f5c555.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1725174759544545041/original/d15dccb5-a9f6-4046-ae48-a4907620bbf1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1725174759544545041/original/77dcc3a2-b83d-4508-b9d0-d0c408dc8a65.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1725174759544545041/original/4e2fb606-327d-4fab-90cd-cc0c5117eb56.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1725174759544545041/original/ae48471a-a0a5-4551-8d18-fa64aa62d388.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1725174759544545041/original/f3b2246d-5aa9-4720-a35d-ccdcf5dca2e4.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:54:53.922199Z"
+}

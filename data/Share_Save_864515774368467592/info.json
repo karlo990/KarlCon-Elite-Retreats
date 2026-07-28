@@ -1,0 +1,47 @@
+{
+  "listingId": "864515774368467592",
+  "url": "https://www.airbnb.com/rooms/864515774368467592",
+  "datedUrl": "https://www.airbnb.com/rooms/864515774368467592?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Bulawayo Studio \u2022 Solar \u2022 Starlink \u2022 AC \u2022 Sleeps 3",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.18167,
+  "lng": 28.59557,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Alice",
+    "superhost": true,
+    "yearsHosting": "4 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-864515774368467592/original/786c8192-fa37-46f1-a838-3128748cd581.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-864515774368467592/original/2d52d10e-705c-47ed-af62-f1f7805e663e.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-864515774368467592/original/3ff6dedd-24ad-411e-a2d9-2a733170fa97.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-864515774368467592/original/66ef2c3e-e0f4-4ab3-91a5-dd872494a66e.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-864515774368467592/original/48f111f4-9f05-4546-acff-24795a0b08e8.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-864515774368467592/original/f3b87df8-bfe0-478f-b701-3bfc06df63af.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-864515774368467592/original/333348d8-f116-41b2-b8c8-73a4510f1a35.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-864515774368467592/original/d6172e32-64b8-40ed-bab8-dcd04f231bc5.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:29:02.478643Z"
+}

@@ -1,0 +1,38 @@
+{
+  "listingId": "12733063",
+  "url": "https://www.airbnb.com/rooms/12733063",
+  "datedUrl": "https://www.airbnb.com/rooms/12733063?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "KHH Stone Cottage at John Galt Village Main Gate",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -18.34176,
+  "lng": 32.53427,
+  "price": "$164",
+  "priceDetail": {
+    "raw": "$164",
+    "currency": "USD",
+    "amount": 164.0,
+    "nights": null,
+    "per_night": 164.0,
+    "usd_total": 164.0,
+    "usd_per_night": 164.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Nyara",
+    "superhost": true,
+    "yearsHosting": "10 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nNyara\nSuperhost\n900 reviews\n900\nReviews\n4.78 out of 5 average rating\n4.78\nRating\n10 years of hosting\n10\nYears hosting\nBorn in the 70s\nMy work: Business Consultant\nFun-loving, number cruncher, friendly, loves travelling and camping, great hostess, simple easy going person,mother of three bunnies, interested in property development, Christian, ....are some words I am described by those closest to me:)\nNyara is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nCo-hosts\nSavious\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/12733063/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation for 24 hours. Cancel before August 4 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in: 2:00\u202fPM - 8:00\u202fPM\nCheckout before 11:00\u202fAM\n8 guests maximum\nLearn more\nSafety & property\nNo carbon monoxide alarm\nNo smoke alarm\nPool/hot tub without a gate or lock\nLearn more",
+  "images": [],
+  "scrapedAt": "2026-07-28T09:11:06.319597Z"
+}

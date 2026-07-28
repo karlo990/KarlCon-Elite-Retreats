@@ -1,0 +1,44 @@
+{
+  "listingId": "1652361718441455083",
+  "url": "https://www.airbnb.com/rooms/1652361718441455083",
+  "datedUrl": "https://www.airbnb.com/rooms/1652361718441455083?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Little Nest 3 Burnside Bulawayo",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2234,
+  "lng": 28.6165,
+  "price": "$93",
+  "priceDetail": {
+    "raw": "$93",
+    "currency": "USD",
+    "amount": 93.0,
+    "nights": null,
+    "per_night": 93.0,
+    "usd_total": 93.0,
+    "usd_per_night": 93.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Themba",
+    "superhost": true,
+    "yearsHosting": "10 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1652361718441455083/original/146a03a7-0d54-45a0-b4d0-7a1e3e7e0752.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1652361718441455083/original/4fb1d5bd-2a2d-4ae8-8bd7-4298894f66c2.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1652361718441455083/original/76073e65-6e94-4910-99af-a6c783876851.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1652361718441455083/original/0fa17160-e2f6-459c-b8c1-01489354cab3.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1652361718441455083/original/574b4372-8272-4bfc-bc82-16f1202e4d0c.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:47:32.641953Z"
+}

@@ -1,0 +1,46 @@
+{
+  "listingId": "53934598",
+  "url": "https://www.airbnb.com/rooms/53934598",
+  "datedUrl": "https://www.airbnb.com/rooms/53934598?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Room 6 Comfortable Abode with ample space",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.21404,
+  "lng": 28.58421,
+  "price": "$87",
+  "priceDetail": {
+    "raw": "$87",
+    "currency": "USD",
+    "amount": 87.0,
+    "nights": null,
+    "per_night": 87.0,
+    "usd_total": 87.0,
+    "usd_per_night": 87.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "About this space\nForget your worries in this spacious and serene space located in Fourwinds .\n\nWith a backup power system in case of load shedding.\nFree Internet WiFi\nShower & bath\nKitchenette with 4 plate stove (2Gas& 2 electric) with oven & microwave oven for your basic needs\nGas Cylinder available ONLY on request.\n\nDstv & open view for your Entertainment\nrefrigerator\nCutlery\nKettle\nCups\nIroning board & steam iron\n\nOther things to note\nIron & Gas Cylinder available ONLY on request",
+  "amenities": [],
+  "host": {
+    "name": "Promise",
+    "superhost": true,
+    "yearsHosting": "5 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nPromise\nSuperhost\n212 reviews\n212\nReviews\n4.67 out of 5 average rating\n4.67\nRating\n5 years of hosting\n5\nYears hosting\nPromise is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/53934598/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nFlexible check-in\n2 guests maximum\nPets allowed\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTM5MzQ1OTg=/original/ac52f0cd-bb31-47ea-ac5a-bb01ec96088d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53934598/original/40b092b8-08f6-4480-8f56-e6245b9f7166.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53934598/original/4886e66d-3491-4b44-bb67-67fe4b3e56d0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53934598/original/56753b92-cc3a-4beb-add5-79aeefc07cbd.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53934598/original/0b43ce70-2c9d-4685-b2f5-12d1c50060fd.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53934598/original/37b58578-fe43-4e35-b277-95ea77bd86f0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53934598/original/f8902415-352d-4b3a-a981-66ed8c62a906.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:21:04.965185Z"
+}

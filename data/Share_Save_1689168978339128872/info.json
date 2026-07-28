@@ -1,0 +1,45 @@
+{
+  "listingId": "1689168978339128872",
+  "url": "https://www.airbnb.com/rooms/1689168978339128872",
+  "datedUrl": "https://www.airbnb.com/rooms/1689168978339128872?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Moffat House Retreat 2",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.210435663862242,
+  "lng": 28.57970448478374,
+  "price": "$113",
+  "priceDetail": {
+    "raw": "$113",
+    "currency": "USD",
+    "amount": 113.0,
+    "nights": null,
+    "per_night": 113.0,
+    "usd_total": 113.0,
+    "usd_per_night": 113.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Nokwanda",
+    "superhost": false,
+    "yearsHosting": "2 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689168978339128872/original/f7956547-5c19-4be2-b89e-41912a2a05f2.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689168978339128872/original/eaaf77db-b9da-4011-9f28-2417b6ac56a7.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689168978339128872/original/8d0a1515-07e1-4217-b3f6-ccb016037c70.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689168978339128872/original/746c738c-cc20-4dab-8e36-24e8d1416d0c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689168978339128872/original/53a4f01c-dd1a-4e04-8e50-ab8dea519881.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689168978339128872/original/46ae90a6-499a-4460-9935-dd45d211d6ba.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:37:41.082209Z"
+}

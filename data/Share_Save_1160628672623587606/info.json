@@ -1,0 +1,44 @@
+{
+  "listingId": "1160628672623587606",
+  "url": "https://www.airbnb.com/rooms/1160628672623587606",
+  "datedUrl": "https://www.airbnb.com/rooms/1160628672623587606?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "The Flange Guest House R3",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -17.93099,
+  "lng": 25.81846,
+  "price": "The Flange Guest House R3 (~$0/night USD)",
+  "priceDetail": {
+    "raw": "The Flange Guest House R3",
+    "currency": "ZAR",
+    "amount": 3.0,
+    "nights": null,
+    "per_night": 3.0,
+    "usd_total": 0.18,
+    "usd_per_night": 0.18,
+    "fxRateUsed": 16.756593719628672
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nDoug\nSuperhost\n52 reviews\n52\nReviews\n4.71 out of 5 average rating\n4.71\nRating\n9 years of hosting\n9\nYears hosting\nI spend too much time: Fishing, Watching TV, Game viewing\u2026\nLives in Victoria Falls, Zimbabwe\nDouglas Musiringofa, an emerging social entrepreneur addressing societal and environmental challenges through sustainable business practices. With successful ventures balancing financial success with social impact, he inspires aspiring changemakers. A philanthropist and social justice advocate, he strives for inclusivity. Douglas is shaping a future where business and social impact are interconnected, leaving a significant mark in his industry.\nDoug is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1160628672623587606/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 2:00\u202fPM\nCheckout before 10:00\u202fAM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1160628672623587606/original/1b3e13c9-76ca-4f96-9b41-1d2dc4d77608.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1160628672623587606/original/8e5895f2-3c2d-4ef3-9e89-5e0a0c481fb2.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1160628672623587606/original/c334919c-163e-4932-b196-8d37007aed32.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1160628672623587606/original/ca1bc170-e5e2-46e8-a916-dc140d178f11.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1160628672623587606/original/0cc7727e-5f76-4f27-8826-c0c68b6a058e.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:09:19.208725Z"
+}

@@ -1,0 +1,38 @@
+{
+  "listingId": "52219266",
+  "url": "https://www.airbnb.com/rooms/52219266",
+  "datedUrl": "https://www.airbnb.com/rooms/52219266?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Olive Grove-Executive stunning 1bed home.",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.18826,
+  "lng": 28.60708,
+  "price": "$159",
+  "priceDetail": {
+    "raw": "$159",
+    "currency": "USD",
+    "amount": 159.0,
+    "nights": null,
+    "per_night": 159.0,
+    "usd_total": 159.0,
+    "usd_per_night": 159.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Nomvuyo",
+    "superhost": false,
+    "yearsHosting": "7 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [],
+  "scrapedAt": "2026-07-28T09:42:41.427877Z"
+}

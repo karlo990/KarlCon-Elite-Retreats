@@ -1,0 +1,44 @@
+{
+  "listingId": "1586033261645577110",
+  "url": "https://www.airbnb.com/rooms/1586033261645577110",
+  "datedUrl": "https://www.airbnb.com/rooms/1586033261645577110?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "The boarding Nest",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1617,
+  "lng": 28.6022,
+  "price": "$70",
+  "priceDetail": {
+    "raw": "$70",
+    "currency": "USD",
+    "amount": 70.0,
+    "nights": null,
+    "per_night": 70.0,
+    "usd_total": 70.0,
+    "usd_per_night": 70.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Emily",
+    "superhost": true,
+    "yearsHosting": "6 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1586033261645577110/original/50040698-0959-4fd1-9dff-e72ccab6c88d.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1586033261645577110/original/b512ba9e-c626-4630-aff0-d57ed218a367.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1586033261645577110/original/e7da16d9-bb98-4255-98ce-51d80eed4989.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1586033261645577110/original/b8c4846c-8e15-4845-8966-a7a2253e18fc.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1586033261645577110/original/28e0edfb-9c68-4f86-9178-528b14cb1379.jpeg?im_w=1200"
+  ],
+  "scrapedAt": "2026-07-28T10:01:52.865469Z"
+}

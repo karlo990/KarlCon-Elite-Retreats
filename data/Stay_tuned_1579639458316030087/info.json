@@ -1,0 +1,50 @@
+{
+  "listingId": "1579639458316030087",
+  "url": "https://www.airbnb.com/rooms/1579639458316030087",
+  "datedUrl": "https://www.airbnb.com/rooms/1579639458316030087?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Stay tuned",
+  "subtitle": "",
+  "location": "",
+  "lat": null,
+  "lng": null,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/0b98a321-a28a-4421-9155-d4ce3ba0211d.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/1a2ee7a9-49a4-4b08-b184-a85f0f225c41.png?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/5319c8ab-683f-4deb-b64b-6d4e98b0f127.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/d8069c04-d945-424b-bf51-83fc70eba61e.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/c3305038-ed5d-41cb-a261-3fe8d4204b3f.png?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/b2a8072b-9a25-493e-9430-8a5e0daa40a3.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/d43943e1-13dd-48a4-8d16-e51086fcf3a5.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/2c889341-090c-4a6b-82a9-8cda1ddac94d.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/d625debf-7156-42b0-81ed-bf691edd09ac.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/5a77018b-baaa-4666-9e10-ede7477fcee9.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579639458316030087/original/5a7633f6-590d-4b1d-83d6-e06a70dd45b1.png?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:13:18.483820Z"
+}

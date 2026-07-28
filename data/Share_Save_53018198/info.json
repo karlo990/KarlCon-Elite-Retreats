@@ -1,0 +1,45 @@
+{
+  "listingId": "53018198",
+  "url": "https://www.airbnb.com/rooms/53018198",
+  "datedUrl": "https://www.airbnb.com/rooms/53018198?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Zumbane Lodge 3 (Gairezi)",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -18.21274,
+  "lng": 32.73655,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Primrose",
+    "superhost": true,
+    "yearsHosting": "8 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53018198/original/289d6498-c13c-4c8d-8199-f913bd446930.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53018198/original/dd0bab2f-65a4-4291-a6dc-a9fbefb36d4e.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53018198/original/15f98564-9925-4549-b6ad-2eaacf8e515a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53018198/original/7d02f267-c3cf-4d20-8521-a5eb2b331887.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53018198/original/ed161c65-82ba-48fa-b623-b1a2a574505a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53018198/original/2b04d871-b7e4-44f2-a442-38ea7cb978d0.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:31:53.913499Z"
+}

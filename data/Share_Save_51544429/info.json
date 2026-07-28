@@ -1,0 +1,38 @@
+{
+  "listingId": "51544429",
+  "url": "https://www.airbnb.com/rooms/51544429",
+  "datedUrl": "https://www.airbnb.com/rooms/51544429?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "Lovely rental unit with No loadshedding.",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -26.0207,
+  "lng": 28.0344,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Celeste",
+    "superhost": true,
+    "yearsHosting": "4 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [],
+  "scrapedAt": "2026-07-28T09:12:23.515100Z"
+}

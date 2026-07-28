@@ -1,0 +1,45 @@
+{
+  "listingId": "1466852724117719668",
+  "url": "https://www.airbnb.com/rooms/1466852724117719668",
+  "datedUrl": "https://www.airbnb.com/rooms/1466852724117719668?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "The Urban Delight",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.158,
+  "lng": 28.5889,
+  "price": "$130",
+  "priceDetail": {
+    "raw": "$130",
+    "currency": "USD",
+    "amount": 130.0,
+    "nights": null,
+    "per_night": 130.0,
+    "usd_total": 130.0,
+    "usd_per_night": 130.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "About this space\nEnjoy a cozy experience at this centrally-located place with spacious rooms for a comfortable stay. It\u2019s ideal for Solo travelers or a couple\n\nThis Apartment is conveniently located in the CBD, walking distance from grocery stores,restaurants, banks, leisure places, medical centers and every convenience the city can offer.\n\nGuest access\nYou have access to the Entire place\u2026 Extra guests attract extra guest fees\n\nOther things to note\nWe appreciate you in advance for leaving our home clean and in good condition\n\nOur furniture stays in good condition for longer when you observe our house rules .\n\nWe would love for you to communicate and pay for any additional guests you bring to our home .",
+  "amenities": [],
+  "host": {
+    "name": "Tariro",
+    "superhost": true,
+    "yearsHosting": "7 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1466852724117719668/original/a8059877-479a-4264-9127-9c075ddfebf3.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1466852724117719668/original/a5ac8f62-506c-4a86-9617-eeac2f34e7cf.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1466852724117719668/original/895e47ce-6765-4c20-9684-4bfba97092b2.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1466852724117719668/original/a475f53b-e959-4001-a2ae-425c9babc990.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1466852724117719668/original/25c8b377-995f-4a8e-bbcc-6a7a9cc9b7fd.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1466852724117719668/original/81ca8d81-3baa-4841-9577-ce031156f22f.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:54:52.960183Z"
+}

@@ -1,0 +1,49 @@
+{
+  "listingId": "1354885145113627319",
+  "url": "https://www.airbnb.com/rooms/1354885145113627319",
+  "datedUrl": "https://www.airbnb.com/rooms/1354885145113627319?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Comfort Inn Bed and Breakfast_Grey Room",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1439,
+  "lng": 28.6281,
+  "price": "$94",
+  "priceDetail": {
+    "raw": "$94",
+    "currency": "USD",
+    "amount": 94.0,
+    "nights": null,
+    "per_night": 94.0,
+    "usd_total": 94.0,
+    "usd_per_night": 94.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Ruramisai",
+    "superhost": false,
+    "yearsHosting": "4 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nRuramisai\nHost\n77 reviews\n77\nReviews\n4.74 out of 5 average rating\n4.74\nRating\n4 years of hosting\n4\nYears hosting\nWhere I went to school: Madzivire High school\nMy work: Administrator\nI spend too much time: visiting flower necessaries\nWhat makes my home unique: beautiful kitchen &garden\nFor guests, I always: sharing cooking skills\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1354885145113627319/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation for 24 hours. Cancel before August 4 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/91342ea9-7e4b-4400-984f-af7c6657ed66.png?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/5b66b747-288c-465e-9ed2-0f47cdf8ad70.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/3532e3f9-2347-413e-8f98-84d1d032f4d5.png",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/a6e3170b-8c83-42db-9806-9b50d278f9a3.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/20e45780-b69c-4e45-a112-48c0344aa426.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/95b0925e-782c-4520-9322-b5ebf89d081a.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/ba8a9647-66af-49e6-aec2-f2f408f7ffe3.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/42e1d673-a243-4b32-8235-71b14b5489a0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/33684473-1151-4e00-a1c0-7dda2717e748.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1354885145113627319/original/a24e1df5-e97b-45d2-8c57-754a3810526e.jpeg"
+  ],
+  "scrapedAt": "2026-07-28T09:41:09.213577Z"
+}

@@ -1,0 +1,44 @@
+{
+  "listingId": "18546307",
+  "url": "https://www.airbnb.com/rooms/18546307",
+  "datedUrl": "https://www.airbnb.com/rooms/18546307?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Mafiris Modern Urban Suite in Khumalo",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.14738,
+  "lng": 28.61863,
+  "price": "$109",
+  "priceDetail": {
+    "raw": "$109",
+    "currency": "USD",
+    "amount": 109.0,
+    "nights": null,
+    "per_night": 109.0,
+    "usd_total": 109.0,
+    "usd_per_night": 109.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTg1NDYzMDc%3D/original/383977e6-0d0a-4bdf-bd84-d24e45bd3749.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTg1NDYzMDc%3D/original/fbe8a4fa-645e-4962-90f1-69182ee42e4e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTg1NDYzMDc%3D/original/a5e09b78-022c-41f6-bef3-613f13139faf.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTg1NDYzMDc%3D/original/57a1ab6c-73de-49cc-86e4-43659b84b23c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTg1NDYzMDc%3D/original/50fdf1e5-b736-4ac1-8192-0d14bebde4fd.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T08:18:26.805508Z"
+}

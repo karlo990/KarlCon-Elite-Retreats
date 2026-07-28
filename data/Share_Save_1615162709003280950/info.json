@@ -1,0 +1,44 @@
+{
+  "listingId": "1615162709003280950",
+  "url": "https://www.airbnb.com/rooms/1615162709003280950",
+  "datedUrl": "https://www.airbnb.com/rooms/1615162709003280950?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Charming Hillside Cottage",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.193007157620293,
+  "lng": 28.624337185723544,
+  "price": "$74",
+  "priceDetail": {
+    "raw": "$74",
+    "currency": "USD",
+    "amount": 74.0,
+    "nights": null,
+    "per_night": 74.0,
+    "usd_total": 74.0,
+    "usd_per_night": 74.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Rooted Rentals",
+    "superhost": true,
+    "yearsHosting": "6 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in: 3:00\u202fPM - 2:00\u202fAM\nCheckout before 10:00\u202fAM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1615162709003280950/original/758640de-df84-4c07-84b1-7ea2e975ca09.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1615162709003280950/original/ea561e01-813d-41e5-bfe1-cbdb07e00029.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1615162709003280950/original/27db728c-ebc0-4af6-9bad-bf376382ad1c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1615162709003280950/original/8ede623b-9bac-45de-8e12-fe6ef7551efc.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1615162709003280950/original/c8d31ab9-1d80-4896-8c5e-b888fbc1dc7c.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:47:57.145241Z"
+}

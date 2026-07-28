@@ -1,0 +1,49 @@
+{
+  "listingId": "1711007190540576647",
+  "url": "https://www.airbnb.com/rooms/1711007190540576647",
+  "datedUrl": "https://www.airbnb.com/rooms/1711007190540576647?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "The Old Fig Tree House|Ambience|Character| Privacy",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2028,
+  "lng": 28.6074,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Patience",
+    "superhost": true,
+    "yearsHosting": "3 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/44124571-7da7-4c02-902c-cbf1858de25b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/9a026a33-d71b-4149-a99b-60411c81ca43.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/0b71979e-f52f-4a59-a7dc-edd4ebcdb6c1.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/a45fd117-b2e8-48f1-af6d-d384a031ff7d.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/97ccf245-0612-4dd6-8e25-249f2189f517.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/5f7e97fc-e672-4e4d-9b1a-ed1e9759ddfd.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/9d93c5c9-25d3-49b9-bd37-6760e01012d8.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/b1a0ea65-5f40-4163-9492-3105e692ba29.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/8e8317c6-dfee-4516-8f71-44ca97cef700.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1711007190540576647/original/d8a87b24-6013-4826-9974-f164e8f97c0a.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:59:37.659871Z"
+}

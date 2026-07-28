@@ -1,0 +1,44 @@
+{
+  "listingId": "1378387788281014574",
+  "url": "https://www.airbnb.com/rooms/1378387788281014574",
+  "datedUrl": "https://www.airbnb.com/rooms/1378387788281014574?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "",
+  "subtitle": "",
+  "location": "",
+  "lat": -26.074957494367172,
+  "lng": 28.066380739183344,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Anna Properties",
+    "superhost": true,
+    "yearsHosting": "1 year hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1378387788281014574/original/5ee2b8ed-f2ac-4ee2-bbd8-b7aeb0273d04.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1378387788281014574/original/5f5afab8-1e8f-4252-82b7-a94242b4a862.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1378387788281014574/original/549fdaad-d2fc-4699-a42b-b0137a493450.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1378387788281014574/original/5bd704c7-a84b-4dc3-b9e3-9637f48420eb.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1378387788281014574/original/29695b1b-ec0c-4633-b3d4-422b4c8d169e.jpeg"
+  ],
+  "scrapedAt": "2026-07-28T09:06:55.605337Z"
+}

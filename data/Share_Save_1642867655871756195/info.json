@@ -1,0 +1,49 @@
+{
+  "listingId": "1642867655871756195",
+  "url": "https://www.airbnb.com/rooms/1642867655871756195",
+  "datedUrl": "https://www.airbnb.com/rooms/1642867655871756195?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "Cedarwood Cottage",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.15438,
+  "lng": 28.60294,
+  "price": "$104",
+  "priceDetail": {
+    "raw": "$104",
+    "currency": "USD",
+    "amount": 104.0,
+    "nights": null,
+    "per_night": 104.0,
+    "usd_total": 104.0,
+    "usd_per_night": 104.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Anatolia Rudo",
+    "superhost": true,
+    "yearsHosting": "3 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nAnatolia Rudo\nSuperhost\n57 reviews\n57\nReviews\n4.75 out of 5 average rating\n4.75\nRating\n3 years of hosting\n3\nYears hosting\nBorn in the 70s\nWhere I went to school: Bulawayo Polytech\nMy work: Baker\nI'm obsessed with: Baking and cooking\nFor guests, I always: Share local recommendations\nAnatolia Rudo is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nHost details\nResponse rate: 100%\nResponds within a few hours\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1642867655871756195/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 11:00\u202fAM\nCheckout before 10:00\u202fAM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/2d352fe6-d889-4003-a415-b9d18ac7f1c7.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/03bddd48-a545-43ee-9d4a-2195000500a5.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/b37b31dd-34b4-4d9a-8999-038f7c2ea710.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/a4f702c8-c000-48e3-88eb-567f5d116fa5.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/94f5afb3-a595-4d1c-9ff5-243b0a11a228.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/e5c345f3-e804-431e-b85d-79875e24c5ce.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/af566de1-dffd-4978-a18b-5b07f3f4444e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/9778795a-1517-410a-b2e8-5fdd2978ab41.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/40d82e87-f1b6-40ab-adab-2707d514427d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1642867655871756195/original/16cb37ef-4580-487e-8794-5df38f230fe6.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:20:08.516491Z"
+}

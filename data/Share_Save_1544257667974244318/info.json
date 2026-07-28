@@ -1,0 +1,52 @@
+{
+  "listingId": "1544257667974244318",
+  "url": "https://www.airbnb.com/rooms/1544257667974244318",
+  "datedUrl": "https://www.airbnb.com/rooms/1544257667974244318?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Samba ApartmentsZW",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1639,
+  "lng": 28.5847,
+  "price": "$152",
+  "priceDetail": {
+    "raw": "$152",
+    "currency": "USD",
+    "amount": 152.0,
+    "nights": null,
+    "per_night": 152.0,
+    "usd_total": 152.0,
+    "usd_per_night": 152.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Tatenda",
+    "superhost": true,
+    "yearsHosting": "3 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nTatenda\nSuperhost\n23 reviews\n23\nReviews\n4.96 out of 5 average rating\n4.96\nRating\n3 years of hosting\n3\nYears hosting\nl absolutely love hosting people and making them feel at home in the best way possible . l love travelling and very keen learning new things\nTatenda is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nCo-hosts\nBen\nHerbert T\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1544257667974244318/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 6. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 2:00\u202fPM\nCheckout before 10:00\u202fAM\n4 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/6b02c304-73c0-4a89-af14-4f7001e8b37e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/4f26aa35-c83d-44a3-ac5c-b7175ff46c7a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/823be8a0-4660-40db-8ac5-9128d1dc234d.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/4b13a30f-d9aa-427d-937e-19bb70713d4d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/fe20fd19-0dfe-4680-a6d7-2841832abb1f.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/55562c87-910d-4085-918a-0d3b25c61e62.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/ee5df3b3-e238-4bf6-a9bf-0a133512cc41.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/ad4829c6-aef6-4959-afd9-c2eb515ed4a7.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/1fd3b0ba-b4ff-41b4-8770-cb42596f0fe1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/119d8308-2aee-4dc8-92e8-1ce3f2852927.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/0a2fe24b-64ff-4831-b724-05ffda0a782b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/d1fa4e56-ba22-47e4-8817-024fcfa48883.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1544257667974244318/original/aad3417f-09fd-46ae-ab2c-b01aed85a7e0.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:05:17.771381Z"
+}

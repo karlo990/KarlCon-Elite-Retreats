@@ -1,0 +1,41 @@
+{
+  "listingId": "25178105",
+  "url": "https://www.airbnb.com/rooms/25178105",
+  "datedUrl": "https://www.airbnb.com/rooms/25178105?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Mutare",
+  "title": "Endless Views & Privacy",
+  "subtitle": "",
+  "location": "",
+  "lat": -34.0152,
+  "lng": 18.3483,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Dale",
+    "superhost": true,
+    "yearsHosting": "11 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MjUxNzgxMDU%3D/original/2a9bf913-7d2d-4cf7-b625-facadca70d47.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MjUxNzgxMDU%3D/original/6e5756c6-cd72-4166-ba9e-c6673e1cfbbd.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:31:54.195790Z"
+}

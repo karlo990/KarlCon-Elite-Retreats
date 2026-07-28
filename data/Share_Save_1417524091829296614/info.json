@@ -1,0 +1,51 @@
+{
+  "listingId": "1417524091829296614",
+  "url": "https://www.airbnb.com/rooms/1417524091829296614",
+  "datedUrl": "https://www.airbnb.com/rooms/1417524091829296614?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Lions Gate",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.17808,
+  "lng": 28.64603,
+  "price": "$179",
+  "priceDetail": {
+    "raw": "$179",
+    "currency": "USD",
+    "amount": 179.0,
+    "nights": null,
+    "per_night": 179.0,
+    "usd_total": 179.0,
+    "usd_per_night": 179.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Mike",
+    "superhost": false,
+    "yearsHosting": "1 year hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/f553fda1-c1be-4137-a324-e7abe3d66e4b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/3ad903e7-5f1a-466c-8949-2b711c65d9ac.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/92293d48-fe4e-435d-8a8d-43d3315b7eb3.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/dd14149c-5dbf-40ea-aea1-24e419aae528.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/9ff7ee0e-de1a-4cdf-9e6a-1b9ee1c3553f.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/4be0c552-cb29-4ba4-84f6-4a4618d98095.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/cd1e9424-0901-40f4-b55f-5c3ed72dabb2.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/1a3109bf-a6fb-49d1-9c7a-93c7757388bb.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/6cf6145c-fa4e-4c86-a8c8-e1c8278544ac.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/30570127-9c92-45c9-962b-f2768a15d0b8.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/ac90212f-d859-444b-9e85-d7c84e647b56.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1417524091829296614/original/7c6b7131-e14b-472c-a432-1de2524e7d00.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:10:59.640974Z"
+}

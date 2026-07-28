@@ -1,0 +1,48 @@
+{
+  "listingId": "1344944113683902041",
+  "url": "https://www.airbnb.com/rooms/1344944113683902041",
+  "datedUrl": "https://www.airbnb.com/rooms/1344944113683902041?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Singles&couples corner",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.18441507235569,
+  "lng": 28.58701011003508,
+  "price": "Hosted by Peter 1 year hosting",
+  "priceDetail": {
+    "raw": "Hosted by Peter 1 year hosting",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Peter",
+    "superhost": false,
+    "yearsHosting": "1 year hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/67412628-e56a-41f9-b14b-5b0a4dd4b2af.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/e32ace70-b527-413a-b48c-7b64e237fc6f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/77db6cf9-6bb6-4b7d-bfc1-8fd5b207005e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/58b8b76c-0dc8-4e9f-bd78-9d59d0fe1293.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/1a6a2326-6844-439b-b470-c27210c4369e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/9f37fa5f-c62e-46e1-95df-06b316b14c47.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/168f9b53-431a-4204-a3de-b635a6fa11e5.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/ec04dda5-3d60-4f9d-9dce-2c7ec54d74b8.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1344944113683902041/original/f8f50c50-0de8-49e3-b265-f0da16eab5ea.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:39:32.618733Z"
+}

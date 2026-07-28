@@ -1,0 +1,51 @@
+{
+  "listingId": "1177302892584717646",
+  "url": "https://www.airbnb.com/rooms/1177302892584717646",
+  "datedUrl": "https://www.airbnb.com/rooms/1177302892584717646?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Stone wall cottage - White Porch Guest House",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.19367,
+  "lng": 28.59751,
+  "price": "Hosted by Never 6 years hosting",
+  "priceDetail": {
+    "raw": "Hosted by Never 6 years hosting",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Never",
+    "superhost": false,
+    "yearsHosting": "6 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/be02a284-f451-4563-8875-3c2ba8783141.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/66329740-aa6b-4553-b92e-7323e1303847.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/e6a07bd2-d236-40e0-95c2-292dd1149a27.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/e80139e6-57cb-45ef-8129-1b123b1be0b8.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/182d9ebc-8260-4fd7-be13-224048c1f3b7.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/231b2658-b95f-4749-9932-a52c5583c614.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/0a523a85-b905-44c9-9ec7-e628d78bf808.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/767a6c2f-84b5-4e3c-b802-0edc23370fff.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/76f74ee3-2c1c-41dd-83ef-53b09d5a1347.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/f7b81a42-9e3e-43fd-8ff0-bd79924aa496.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/0a10a24e-dc62-4f5f-9643-f65332ecce7b.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1177302892584717646/original/c2a69ff5-2f73-4640-ac4d-363ba7e24594.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:31:14.623280Z"
+}

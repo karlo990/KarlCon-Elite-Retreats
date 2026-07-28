@@ -1,0 +1,46 @@
+{
+  "listingId": "1545771038528034130",
+  "url": "https://www.airbnb.com/rooms/1545771038528034130",
+  "datedUrl": "https://www.airbnb.com/rooms/1545771038528034130?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "The Nook Apartment in Bulawayo opposite Zitf",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.166142727278864,
+  "lng": 28.58687325033211,
+  "price": "$80",
+  "priceDetail": {
+    "raw": "$80",
+    "currency": "USD",
+    "amount": 80.0,
+    "nights": null,
+    "per_night": 80.0,
+    "usd_total": 80.0,
+    "usd_per_night": 80.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Dumoluhle",
+    "superhost": false,
+    "yearsHosting": "9 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1545771038528034130/original/bab65cec-3dcd-4ad9-870a-4dc04e93ea78.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1545771038528034130/original/bca0afce-2bda-49c6-9eba-762831b8ab40.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1520426885746405963/original/c22c0c30-4a56-4432-af9c-49abced8b222.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1545771038528034130/original/453cb73b-ebf8-4dbe-9aee-6b06c7cdc393.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1545771038528034130/original/e39dbfcb-78be-4755-8739-e9752897e7c1.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1545771038528034130/original/3f66518d-d261-410c-8dff-40683e02374b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1545771038528034130/original/ff3f9537-bcee-41dd-9fe3-cecd6b3df3fe.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:52:28.194091Z"
+}

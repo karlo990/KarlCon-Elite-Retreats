@@ -1,0 +1,46 @@
+{
+  "listingId": "1053691801501780324",
+  "url": "https://www.airbnb.com/rooms/1053691801501780324",
+  "datedUrl": "https://www.airbnb.com/rooms/1053691801501780324?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "B~Zeela Apartment",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1594,
+  "lng": 28.5809,
+  "price": "$82",
+  "priceDetail": {
+    "raw": "$82",
+    "currency": "USD",
+    "amount": 82.0,
+    "nights": null,
+    "per_night": 82.0,
+    "usd_total": 82.0,
+    "usd_per_night": 82.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Sinokubekezela P",
+    "superhost": true,
+    "yearsHosting": "3 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1053691801501780324/original/5bf949ef-c86d-4bbd-b9d4-3558c5c63b1f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1053560608074009563/original/a0a01bc4-e91b-4749-a461-a0cc36a849ac.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1053560608074009563/original/e31e509a-b3d1-4323-a1e6-429947f25a98.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1053560608074009563/original/9888d72c-ce00-45f5-b599-07a2e3a3ffcd.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1053691801501780324/original/ac98dd3a-eebb-4bcd-91b1-725d0e97727d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1053560608074009563/original/6ccb05e4-d0e2-425d-881e-1b0d9605db3a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1053560608074009563/original/395be66c-4910-4554-8727-d09dd3ec196a.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:48:29.196817Z"
+}

@@ -1,0 +1,45 @@
+{
+  "listingId": "33908351",
+  "url": "https://www.airbnb.com/rooms/33908351",
+  "datedUrl": "https://www.airbnb.com/rooms/33908351?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Golden Crown",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.16092,
+  "lng": 28.6103,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "Rated 4.57 out of 5 stars.\n4.57\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 74% of reviews\n5\n4 stars, 11% of reviews\n4\n3 stars, 11% of reviews\n3\n2 stars, 3% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.5 out of 5 stars for cleanliness\nCleanliness\n4.5\nRated 4.6 out of 5 stars for accuracy\nAccuracy\n4.6\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 4.8 out of 5 stars for communication\nCommunication\n4.8\nRated 4.9 out of 5 stars for location\nLocation\n4.9\nRated 4.7 out of 5 stars for value\nValue\n4.7\nGuest reviews mention\nHospitality\n19\nLocation\n8\nCleanliness\n7\nWifi\n3\nCondition\n3\nQuiet\n3\nNearby\n5\nCheck-in\n2\nKitchen\n2\nLong stay\n3\n35 reviews\nRatings sort order: Most relevant\nMost relevant",
+  "amenities": [],
+  "host": {
+    "name": "Lola",
+    "superhost": false,
+    "yearsHosting": "7 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nLola\nHost\n35 reviews\n35\nReviews\n4.57 out of 5 average rating\n4.57\nRating\n7 years of hosting\n7\nYears hosting\nLives in Bulawayo, Zimbabwe\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/33908351/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in: 3:00\u202fPM - 8:00\u202fPM\nCheckout before 10:00\u202fAM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nMust climb stairs\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-33908351/original/39e60a8d-be0e-4c5a-858a-468df89317b0.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-33908351/original/bfc6631c-1f2f-4c40-8cb0-c45e0b9ab56b.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-33908351/original/8e80dc44-97aa-4c3d-8c39-530ed9f65339.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-33908351/original/8d0278d9-091b-4a8f-9544-54b6b38b3cc6.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-33908351/original/7cd93888-3015-419f-a2a3-731e6bcc981a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-33908351/original/ea4664e4-2607-4924-b5ea-953e960d1ddc.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:17:02.343017Z"
+}

@@ -1,0 +1,50 @@
+{
+  "listingId": "53204801",
+  "url": "https://www.airbnb.com/rooms/53204801",
+  "datedUrl": "https://www.airbnb.com/rooms/53204801?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Bongi's Comfortable Flat",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1586,
+  "lng": 28.5888,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Bongiwe",
+    "superhost": false,
+    "yearsHosting": "3 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/17a887f8-038d-4a9d-b3cd-ef9e3dccda2b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/695cb9a6-6784-41f0-8865-21647fa8c071.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/87759d69-ec01-4802-a7e3-f7063acdd70a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/bec5c041-248a-4a31-b87b-e1f1600379d3.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/6dbd3104-d495-4fb2-b4de-3a16d755e117.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/f256f426-8305-4801-9d90-c1f16189a775.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/dc18c65f-4007-40d6-b4ea-c3f23612986b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/86cc2c54-898f-4842-9eba-0b83e46033fe.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/fd7ae63f-c537-4108-a011-957a6a7de6d0.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/b6a88767-e7f4-4d03-b8af-a69346dfeda9.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-53204801/original/b9cf2df4-3b42-4a47-851f-c70fc61db73c.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:58:13.580191Z"
+}

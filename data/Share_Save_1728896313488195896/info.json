@@ -1,0 +1,49 @@
+{
+  "listingId": "1728896313488195896",
+  "url": "https://www.airbnb.com/rooms/1728896313488195896",
+  "datedUrl": "https://www.airbnb.com/rooms/1728896313488195896?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Febbies Guest House Room E",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1184,
+  "lng": 28.6099,
+  "price": "$73",
+  "priceDetail": {
+    "raw": "$73",
+    "currency": "USD",
+    "amount": 73.0,
+    "nights": null,
+    "per_night": 73.0,
+    "usd_total": 73.0,
+    "usd_per_night": 73.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Joice",
+    "superhost": false,
+    "yearsHosting": "4 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nJoice\nHost\n24 reviews\n24\nReviews\n4.63 out of 5 average rating\n4.63\nRating\n4 years of hosting\n4\nYears hosting\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1728896313488195896/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 3:00\u202fPM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/a4ccede5-5da4-46f5-bdc5-8efe6b7204aa.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/704f3dc5-3723-42ef-9063-f6bedb4aebf4.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/961ba866-e5bb-4cba-b2fc-2c236f2c1d42.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/b4f685dd-f7f2-4fb7-a0a9-7ff10a3fa757.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/6860ee8b-82cc-4a97-9904-1ab9a1209d9b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/7a3e782f-936f-47a5-93dc-905c08092117.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/c6ca84d6-2b1d-498e-8e9c-d2826d72c398.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/91c0ad20-fde2-4ce9-86e0-87a6ff374fef.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/7f8e2881-1a02-4290-be64-8570b44bb8f1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1728896313488195896/original/dde9b9f4-c18a-4a7f-b237-71fa7ae158f7.jpeg?im_w=1200"
+  ],
+  "scrapedAt": "2026-07-28T09:22:43.196930Z"
+}

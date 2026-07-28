@@ -1,0 +1,49 @@
+{
+  "listingId": "1683486362146091908",
+  "url": "https://www.airbnb.com/rooms/1683486362146091908",
+  "datedUrl": "https://www.airbnb.com/rooms/1683486362146091908?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "SimPhil Haven | Relax, Recharge, Repeat!",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.12938648555547,
+  "lng": 28.608170730433404,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Phillis",
+    "superhost": false,
+    "yearsHosting": "2 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nPhillis\nHost\n1 review\n1\nReview\n5.0 out of 5 average rating\n5.0\nRating\n2 months of hosting\n2\nMonths hosting\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1683486362146091908/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 2:00\u202fPM\nCheckout before 10:00\u202fAM\n8 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nExterior security cameras on property\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/b99f1718-38b4-4193-8f48-925705e0c24b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/10a347cb-349e-4fe0-b7a4-81674fa11b0a.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/e7747570-2c27-428b-8314-e3556b7a2c7f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/a3b7ed7d-e4c8-4c59-8eb1-637d33b6adf6.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/0f884dab-c640-4c92-8899-718066a970e9.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/8723cd15-a546-4f4b-b54f-e72623913591.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/903779a4-e64f-4e82-81c0-3cfb9534e2e9.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/ebe82b3e-16e6-4d81-8c87-00271705b29f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/74e4e95f-484f-436a-96a6-1ec0a8a665a0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1683486362146091908/original/abee7852-5e2d-46e5-99c4-e86256ec0bc2.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:08:09.105387Z"
+}

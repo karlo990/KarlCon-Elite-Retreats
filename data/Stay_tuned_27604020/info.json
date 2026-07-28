@@ -1,0 +1,53 @@
+{
+  "listingId": "27604020",
+  "url": "https://www.airbnb.com/rooms/27604020",
+  "datedUrl": "https://www.airbnb.com/rooms/27604020?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Stay tuned",
+  "subtitle": "",
+  "location": "",
+  "lat": null,
+  "lng": null,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/49ff40d6-2777-4d3d-8b79-510388a76dfd.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/858bc933-2ca7-49f1-8a78-3165df79b808.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/b06f6e1e-2f2c-4330-99c4-56a04eecfa11.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/d22676f8-ab79-48fc-ad19-4a1bfb85e14c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/e74186d3-9aea-44e4-9500-173bb99e9786.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/cb2f8025-904c-44e6-b1d7-468164b790cd.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/0e531293-2b72-49a4-9f83-88ced9e08c8e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/cc6ce102-9689-405c-9d71-31589bbe5235.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/94666822-6c85-456c-b100-f1451d924dd6.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/6d0b16a8-1cae-4055-859e-9e643aeeb85a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/935ebf78-67e2-4a53-bbe2-854068024967.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/de90c9c2-0d7e-483a-a4e1-e2827975b6ee.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/0df7b631-4741-4455-96c6-fa0a9f88a0fb.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-27604020/original/5e8550f6-9f60-4b73-b721-6309668074f0.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:11:53.396767Z"
+}

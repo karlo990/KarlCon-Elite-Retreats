@@ -1,0 +1,45 @@
+{
+  "listingId": "1579079948932191998",
+  "url": "https://www.airbnb.com/rooms/1579079948932191998",
+  "datedUrl": "https://www.airbnb.com/rooms/1579079948932191998?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Mizu Bnb 2 (Room 1)",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1442,
+  "lng": 28.5825,
+  "price": "$62",
+  "priceDetail": {
+    "raw": "$62",
+    "currency": "USD",
+    "amount": 62.0,
+    "nights": null,
+    "per_night": 62.0,
+    "usd_total": 62.0,
+    "usd_per_night": 62.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Tamlyn",
+    "superhost": false,
+    "yearsHosting": "7 months hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nTamlyn\nHost\n8 reviews\n8\nReviews\n4.25 out of 5 average rating\n4.25\nRating\n7 months of hosting\n7\nMonths hosting\nMy work: Care Assistant\nSpeaks English\nLives in Milton Keynes, United Kingdom\nPets: No\nI\u2019m happy to spend time with my guests or give them space\nCo-hosts\nNombulelo Diana\nThelma\nHost details\nResponse rate: 90%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1579079948932191998/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in: 2:00\u202fPM - 2:00\u202fAM\nCheckout before 11:00\u202fAM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579079948932191998/original/de6f36be-d50e-4c86-a881-dba4e54fe522.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579079948932191998/original/1de6f350-728e-48cf-b8b6-04bd6f3a21a4.png",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579079948932191998/original/eceb6fe4-99f0-43b2-8bc7-3218f2975278.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579079948932191998/original/4b4e6e5c-f70a-4c9f-ba0d-879567884d3c.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579079948932191998/original/f6a351ba-9a2f-4dc1-b94e-811e0a1670d9.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1579079948932191998/original/38b1da0a-27de-4c9a-b8b2-9c70c3b2a440.jpeg"
+  ],
+  "scrapedAt": "2026-07-28T09:37:05.801328Z"
+}

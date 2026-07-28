@@ -1,0 +1,50 @@
+{
+  "listingId": "45335379",
+  "url": "https://www.airbnb.com/rooms/45335379",
+  "datedUrl": "https://www.airbnb.com/rooms/45335379?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "",
+  "subtitle": "",
+  "location": "",
+  "lat": -18.2201,
+  "lng": 32.7464,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/bea90b77-0059-49ef-9580-775e1bfc4d56.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/aa32e127-80d9-4f0b-ad91-641e9a3d1ccb.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk%3D/original/803a6624-5eda-41d7-958a-42a89b2ad9be.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/cb6b8f34-4a36-426b-bd72-c767ca9f0706.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/4c24cade-bf31-49e6-80b1-dd743c107c3b.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-45335379/original/bc7c6ede-222f-43bf-8ce1-8d325e414203.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/98a9cb5f-be2f-46b3-8b01-ca7e19157acb.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/e32418ca-490f-4c62-a291-73d97dafdd74.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/98d0f804-cabc-4080-a016-abe683807ad8.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/16f23534-ebf4-45db-b5fd-0d1593c97326.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDUzMzUzNzk=/original/19f988e6-d207-4bdb-9477-c6708e998dd9.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:26:50.462895Z"
+}

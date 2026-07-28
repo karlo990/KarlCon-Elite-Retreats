@@ -1,0 +1,44 @@
+{
+  "listingId": "1395822195257909387",
+  "url": "https://www.airbnb.com/rooms/1395822195257909387",
+  "datedUrl": "https://www.airbnb.com/rooms/1395822195257909387?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "8 On Dianne - The Anastacia Suite",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2109,
+  "lng": 28.5909,
+  "price": "$140",
+  "priceDetail": {
+    "raw": "$140",
+    "currency": "USD",
+    "amount": 140.0,
+    "nights": null,
+    "per_night": 140.0,
+    "usd_total": 140.0,
+    "usd_per_night": 140.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": true,
+    "yearsHosting": "1 year hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1395822195257909387/original/3298b830-28c0-4ee5-bd93-6fa85ef50dff.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1395822195257909387/original/5b471394-fb77-4b97-b39f-b7ed72400e23.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1395822195257909387/original/fadcf072-83c9-4e8d-bf2f-a2b8bbe7c6fe.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1395822195257909387/original/75abc075-482e-46db-aa77-ec3a697bc08d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1395822195257909387/original/22aaffe7-bb69-422f-ae34-476e612a30a1.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:26:08.263682Z"
+}

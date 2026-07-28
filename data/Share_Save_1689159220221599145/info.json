@@ -1,0 +1,49 @@
+{
+  "listingId": "1689159220221599145",
+  "url": "https://www.airbnb.com/rooms/1689159220221599145",
+  "datedUrl": "https://www.airbnb.com/rooms/1689159220221599145?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Kennedy Suite Villa",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.18631656908474,
+  "lng": 28.62079752300614,
+  "price": "$330",
+  "priceDetail": {
+    "raw": "$330",
+    "currency": "USD",
+    "amount": 330.0,
+    "nights": null,
+    "per_night": 330.0,
+    "usd_total": 330.0,
+    "usd_per_night": 330.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Shelta Tabita",
+    "superhost": false,
+    "yearsHosting": "3 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nShelta Tabita\nHost\n115 reviews\n115\nReviews\n4.82 out of 5 average rating\n4.82\nRating\n3 years of hosting\n3\nYears hosting\nWhere I went to school: Bulawayo\nMy work: Humanitarian Aid\nMy husband and I love to travel & explore. We are humanitarian aid workers so we have a deep passion to serve those less fortunate but most importantly we love God. Can't wait to host you...\nCo-hosts\nBekezela\nHost details\nResponse rate: 90%\nResponds within a few hours\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1689159220221599145/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\n6 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/cfde0bb3-6b95-4384-878b-687ea09957e4.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/2e8b8464-ad30-4763-a5a3-de9b2db57823.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/283fb346-a7ee-4002-a032-e839e3b4422b.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/9280dfed-24ef-4e28-bd94-f4b491d4575a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/e59a765e-5bcc-4a18-8bcf-ab3ca4642ddb.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/02c6d62d-0d54-40c4-8cfc-fdb72abdc26e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/9d224ee0-a80b-4e69-8a0b-ba67c27e1fc8.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/f656e5aa-e9b4-4fbe-97d8-ae997241a305.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/7fe6098b-3255-48c7-99e6-091f45035820.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1689159220221599145/original/92b135e3-4bac-42f1-b4f7-6805d3a52474.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T10:22:12.630039Z"
+}

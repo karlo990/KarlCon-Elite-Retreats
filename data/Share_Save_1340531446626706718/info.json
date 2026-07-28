@@ -1,0 +1,44 @@
+{
+  "listingId": "1340531446626706718",
+  "url": "https://www.airbnb.com/rooms/1340531446626706718",
+  "datedUrl": "https://www.airbnb.com/rooms/1340531446626706718?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "The Nook in Paddonhurst",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1361,
+  "lng": 28.6008,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1340531446626706718/original/c65092ac-4109-49ce-97ba-023be0bd6315.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1340531446626706718/original/9522ae5e-a32f-4fdb-b159-830786ff8278.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1340531446626706718/original/b1dc1f8c-cc9e-4784-9078-97a16b078c2d.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1340531446626706718/original/4ed12ab3-62a7-400c-b35f-a17947c90a31.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1340531446626706718/original/06f0ca0f-23e2-472e-ac20-aaa5c8b63f69.jpeg"
+  ],
+  "scrapedAt": "2026-07-28T06:49:06.145556Z"
+}

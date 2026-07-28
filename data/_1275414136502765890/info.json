@@ -1,0 +1,44 @@
+{
+  "listingId": "1275414136502765890",
+  "url": "https://www.airbnb.com/rooms/1275414136502765890",
+  "datedUrl": "https://www.airbnb.com/rooms/1275414136502765890?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Harare",
+  "title": "",
+  "subtitle": "",
+  "location": "",
+  "lat": -20.204464438036428,
+  "lng": 28.56653673795504,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1275414136502765890/original/886b5cb0-5bc0-4b45-968a-5e5871db7648.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1275414136502765890/original/6627cc36-c981-4273-bb3f-aec7ac721a49.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1275414136502765890/original/50e93edd-82b8-4494-b71f-1195829ac37e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1275414136502765890/original/7282d07c-39cb-4a41-9838-1dbd2d46ac81.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1275414136502765890/original/1b8d1102-fd32-411f-a62d-f69c8c7c5308.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:07:32.580365Z"
+}

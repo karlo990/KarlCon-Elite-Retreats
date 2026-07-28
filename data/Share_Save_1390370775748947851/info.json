@@ -1,0 +1,44 @@
+{
+  "listingId": "1390370775748947851",
+  "url": "https://www.airbnb.com/rooms/1390370775748947851",
+  "datedUrl": "https://www.airbnb.com/rooms/1390370775748947851?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2141,
+  "lng": 28.5849,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Promise",
+    "superhost": true,
+    "yearsHosting": "5 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nSuperhost\n211 reviews\n211\nReviews\n4.67 out of 5 average rating\n4.67\nRating\n5 years of hosting\n5\nYears hosting\nPromise is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1390370775748947851/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 10. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nFlexible check-in\nCheckout before 10:00\u202fAM\n2 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM5MDM3MDc3NTc0ODk0Nzg1MQ==/original/1e9216f7-1c22-4ea2-93d2-a54017349340.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM5MDM3MDc3NTc0ODk0Nzg1MQ==/original/2837b228-b582-4ef3-95d3-aafca981c213.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM5MDM3MDc3NTc0ODk0Nzg1MQ==/original/8555d509-30c3-4127-a303-e1efde946d91.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1390370775748947851/original/f5f68292-4db2-4f0b-8e62-8f0b6fa243e3.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM5MDM3MDc3NTc0ODk0Nzg1MQ==/original/29e41c9f-cfb6-47f7-98ae-0df816398826.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T06:45:30.380500Z"
+}

@@ -1,0 +1,42 @@
+{
+  "listingId": "1278778875226804077",
+  "url": "https://www.airbnb.com/rooms/1278778875226804077",
+  "datedUrl": "https://www.airbnb.com/rooms/1278778875226804077?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Anna Lodge",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.1754,
+  "lng": 28.59234,
+  "price": "",
+  "priceDetail": {
+    "raw": "",
+    "currency": null,
+    "amount": null,
+    "nights": null,
+    "per_night": null,
+    "usd_total": null,
+    "usd_per_night": null,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "Rated 5.0 out of 5 from 20 reviews.\n5.0\nGuest favorite\nThis home is in the top 10% of eligible listings based on ratings, reviews, and reliability\nLearn more\nLearn more\n5 of 7 items showing\nOverall rating\n5 stars, 100% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 5.0 out of 5 stars for check-in\nCheck-in\n5.0\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 5.0 out of 5 stars for location\nLocation\n5.0\nRated 5.0 out of 5 stars for value\nValue\n5.0\n20 reviews\nRatings sort order: Most relevant\nMost relevant",
+  "amenities": [],
+  "host": {
+    "name": "Lindelwe Michael",
+    "superhost": true,
+    "yearsHosting": "2 years hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": "Meet your host\nLindelwe Michael\nSuperhost\n20 reviews\n20\nReviews\n5.0 out of 5 average rating\n5.0\nRating\n2 years of hosting\n2\nYears hosting\nMy work: software engineer\nLives in Cairns, Australia\nLindelwe Michael is a Superhost\nSuperhosts are experienced, highly rated hosts who are committed to providing great stays for guests.\nHost details\nResponse rate: 100%\nResponds within an hour\nMessage host\nTo help protect your payment, always use Airbnb to send money and communicate with hosts."
+  },
+  "contactUrl": "https://www.airbnb.com/contact_host/1278778875226804077/send_message?adults=1&check_in=2026-08-11&check_out=2026-08-13",
+  "thingsToKnow": "Things to know\nCancellation policy\nFree cancellation before August 6. Cancel before check-in on August 11 for a partial refund.\nReview this host's full policy for details.\nLearn more\nHouse rules\nCheck-in after 3:00\u202fPM\n6 guests maximum\nLearn more\nSafety & property\nCarbon monoxide alarm not reported\nSmoke alarm not reported\nExterior security cameras on property\nLearn more",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1278778875226804077/original/c469b5b9-1b6a-47e5-abca-4e44d4701ce6.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1278778875226804077/original/4cd1ab56-7f41-46cf-b2e9-24764b68994f.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1278778875226804077/original/a3b66aae-52b1-4e1b-b627-0c7c06b9bd4b.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:41:29.221744Z"
+}

@@ -1,0 +1,49 @@
+{
+  "listingId": "1686679323247299857",
+  "url": "https://www.airbnb.com/rooms/1686679323247299857",
+  "datedUrl": "https://www.airbnb.com/rooms/1686679323247299857?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Spacious 3 BR Property Home In Northend Bulawayo",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.12113646288549,
+  "lng": 28.59799076265856,
+  "price": "$154",
+  "priceDetail": {
+    "raw": "$154",
+    "currency": "USD",
+    "amount": 154.0,
+    "nights": null,
+    "per_night": 154.0,
+    "usd_total": 154.0,
+    "usd_per_night": 154.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Tawanda",
+    "superhost": false,
+    "yearsHosting": "",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/68ed6a25-e961-481a-ad45-fdac3f40745e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/0bdfe045-69cd-4e07-a705-8e95a8adb13b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/916b02da-1a2f-46e6-ab7d-4f574627bcbb.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/4fed685f-e7bc-4cae-b118-060d068ca863.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/76506605-1881-40bf-a3a8-2837b4f22eb2.png?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/6e553a81-7141-4a55-acc3-16b09b6b613f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/acef8f23-bcb0-4238-ad93-214cd502a2a7.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/00554913-aeb6-450d-a414-bc58009243a7.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/1dfc1950-c0e9-4578-88b1-1c154b1e80b1.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1686679323247299857/original/72a7d3e4-89a0-4fcc-a821-0e7dc11ef3d3.jpeg"
+  ],
+  "scrapedAt": "2026-07-28T09:19:16.936331Z"
+}

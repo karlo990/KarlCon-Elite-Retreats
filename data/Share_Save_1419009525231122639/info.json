@@ -1,0 +1,49 @@
+{
+  "listingId": "1419009525231122639",
+  "url": "https://www.airbnb.com/rooms/1419009525231122639",
+  "datedUrl": "https://www.airbnb.com/rooms/1419009525231122639?adults=1&guests=1&check_in=2026-08-11&check_out=2026-08-13",
+  "searchCity": "Bulawayo",
+  "title": "Sunset Golf View Villa",
+  "subtitle": "Share\nSave",
+  "location": "Share\nSave",
+  "lat": -20.2028,
+  "lng": 28.6537,
+  "price": "$465",
+  "priceDetail": {
+    "raw": "$465",
+    "currency": "USD",
+    "amount": 465.0,
+    "nights": null,
+    "per_night": 465.0,
+    "usd_total": 465.0,
+    "usd_per_night": 465.0,
+    "fxRateUsed": null
+  },
+  "rating": "",
+  "reviewsCount": "",
+  "description": "",
+  "amenities": [],
+  "host": {
+    "name": "Nonkululeko",
+    "superhost": false,
+    "yearsHosting": "1 year hosting",
+    "reviews": "",
+    "rating": "",
+    "bio": ""
+  },
+  "contactUrl": "",
+  "thingsToKnow": "",
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/42dcc73b-6fa9-4b31-9212-7465179403c4.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/64320d1a-2474-4c04-bb93-dcc05e32756e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/efcf85af-f659-48e7-b9cd-2da290c09d7e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1419009525231122639/original/5d958682-e403-4b88-8116-4262762e6449.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/bc805a63-0892-4946-95e2-7f0387fe7755.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/9ede310f-c2d6-42c4-af2a-6cc0f6a4951a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/9bbd1ab7-2e4b-410e-8f91-820066822e9d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/2da70599-269a-44bf-8376-71b67c67a91f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/befe0022-2d84-4fd0-9680-ebb485211ef9.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQxOTAwOTUyNTIzMTEyMjYzOQ==/original/11cfc860-a92a-47a3-b206-b2f45e15e8ab.jpeg?im_w=720"
+  ],
+  "scrapedAt": "2026-07-28T09:27:25.077375Z"
+}
