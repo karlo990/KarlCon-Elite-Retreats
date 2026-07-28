@@ -10,7 +10,10 @@
 
   function cardHTML(l){
     const img = l.images && l.images[0] ? l.images[0] : '';
-    const rating = l.rating ? `<span class="card-rating">${STAR} ${l.rating.toFixed(1)}</span>` : '';
+    const ratingNum = parseFloat(l.rating);
+    const rating = Number.isFinite(ratingNum)
+      ? `<span class="card-rating">${STAR} ${ratingNum.toFixed(1)}</span>`
+      : '';
     return `
     <a class="card reveal" href="listing.html?id=${encodeURIComponent(l.id)}">
       <div class="card-img">
