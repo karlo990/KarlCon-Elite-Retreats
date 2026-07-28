@@ -3,18 +3,41 @@
    ═══════════════════════════════════════════════════════════ */
 
 // Some scraped listings have junk in the price field (the scraper grabbed
-// the full "About this space" description instead of a price). A real
-// price is short — "$180", "R1 200", "POA" — so anything long or wordy is
-// almost certainly not a price and should fall back to a safe default
-// rather than blow out a pill/label with a paragraph of text.
+// the full "About this space" description, an availability date, or an
+// amenity name instead of a price). A real price always has a currency
+// marker directly against a digit — "$180", "R1 200", "ZAR 1200" — so
+// anything short that lacks that pattern (like "September 2026" or
+// "Decor 5", both of which contain digits but aren't prices) is just as
+// much junk as a long paragraph and should fall back too.
+//
+// Note: the currency marker must be preceded by the start of the string or
+// a non-letter — otherwise a word that just happens to END in "r" right
+// before a number (e.g. "Septembe-r 2026") would false-positive as "R 2026".
+const PRICE_LOOKS_REAL_RE = /(^|[^a-z])(\$|r|zar|usd)\s?\d/i;
+
 function cleanPriceLabel(raw, fallback){
   fallback = fallback || 'POA';
   if (!raw) return fallback;
   const s = String(raw).trim();
   if (!s) return fallback;
+  if (/^(POA|price on request)$/i.test(s)) return s;
   if (s.length > 24) return fallback;
   if (s.split(/\s+/).length > 4) return fallback;
+  if (!PRICE_LOOKS_REAL_RE.test(s)) return fallback;
   return s;
+}
+
+// Zimbabwe's real bounding box (with a little padding) — anything a scraper
+// hands us outside this box is a bad coordinate (a mis-scraped lat/lng pair
+// picked up from unrelated JSON on the source page — map bounds, some other
+// preview, a default config — not the actual listing), and should never be
+// plotted or used to steer the map's camera.
+const ZIM_BOUNDS = { minLat: -23.0, maxLat: -15.0, minLng: 24.5, maxLng: 34.0 };
+function isValidZimCoord(lat, lng){
+  return typeof lat === 'number' && typeof lng === 'number' &&
+    isFinite(lat) && isFinite(lng) &&
+    lat >= ZIM_BOUNDS.minLat && lat <= ZIM_BOUNDS.maxLat &&
+    lng >= ZIM_BOUNDS.minLng && lng <= ZIM_BOUNDS.maxLng;
 }
 
 // Smart pan — when a marker is clicked/tapped, nudge the map by the
@@ -228,6 +251,24 @@ function injectGlassPinStyles(){
     @media (prefers-reduced-motion: reduce){
       .kc-pin-wrap{ animation:none; }
     }
+    /* Cluster bubble — same glass/green language as the individual pins,
+       shown by Leaflet.markercluster in place of overlapping markers when
+       several retreats sit close together at the current zoom level. */
+    .kc-cluster-bubble{
+      width:40px; height:40px;
+      display:flex; align-items:center; justify-content:center;
+      border-radius:50%;
+      background:linear-gradient(160deg, rgba(20,168,104,.92), rgba(14,122,76,.96));
+      color:#fff;
+      font-family:var(--sans, 'Inter', sans-serif);
+      font-weight:700;
+      font-size:14px;
+      box-shadow:0 6px 18px rgba(14,122,76,.4), 0 0 0 4px rgba(255,255,255,.85);
+      border:1.5px solid rgba(255,255,255,.6);
+      cursor:pointer;
+      transition:transform .18s ease;
+    }
+    .kc-cluster-bubble:hover{ transform:scale(1.08); }
   `;
   document.head.appendChild(style);
 }
