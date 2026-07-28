@@ -408,6 +408,41 @@ function clearRoute(map){
    a snappier *attack* back up to full presence the instant they
    re-engage, so the music still feels alive rather than just quiet.
 
+   ── CROSS-PAGE CONTINUATION ──────────────────────────────────
+   This is a multi-page site, so every internal link is a full
+   document reload that destroys and rebuilds the <audio> element.
+   Two things make that feel like one continuous track instead of
+   a restart-or-silence on every click:
+
+     1. An immediate, unrequested play() attempt fires as soon as
+        a later page's script runs, before any listener is even
+        attached. This isn't reckless — Chrome's autoplay policy
+        explicitly allows unmuted autoplay once a site crosses the
+        user's Media Engagement Index (a rolling per-origin score
+        of past >7s unmuted plays), and separately treats a
+        same-tab navigation driven by a click as carrying that
+        click's activation over to the destination document
+        (developer.chrome.com/blog/autoplay). So on a returning
+        page within the same visit, play() typically just
+        succeeds outright. If a browser (Safari, or Chrome before
+        MEI is earned) still blocks it, the promise rejects
+        silently and the existing scroll/click/touch/keydown
+        listeners below catch it the normal way — no behavior
+        regresses, this only adds a faster path.
+     2. The exact playback position is carried forward in
+        sessionStorage (not just an "it was playing" flag) and
+        re-applied before the new page's element starts, so the
+        track picks up where it left off rather than looping back
+        to 0:00. This matters beyond polish: a 2025 meta-analysis
+        of the Zeigarnik/Ovsiankina literature (Kuhbandner et al.,
+        Humanities & Social Sciences Communications) found the
+        original Zeigarnik memory-advantage doesn't reliably
+        replicate, but confirmed a robust, general tendency for
+        people to want to *resume* an interrupted activity from
+        where it stopped, not restart it — true resumption, not
+        just "something is playing again," is what reads as
+        uninterrupted to a visitor.
+
    Usage: call initBackgroundMusic('assets/audio/theme.mp3') once,
    from a page's own script (after common.js loads).
 ─────────────────────────────────────────────────────────────── */
@@ -495,6 +530,17 @@ function initBackgroundMusic(src, opts){
   document.body.appendChild(btn);
   injectMusicToggleStyles();
 
+  // Re-apply the position carried over from the previous page. currentTime
+  // can only be set once metadata is loaded, and with preload="auto" that's
+  // usually already true by the time this runs — but fall back to waiting
+  // for it rather than silently dropping the seek on a slow connection.
+  function applySavedTime(){
+    if (!wasStarted || savedTime <= 0) return;
+    const seek = () => { try { audio.currentTime = savedTime; } catch(e){} };
+    if (audio.readyState >= 1) seek();
+    else audio.addEventListener('loadedmetadata', seek, { once: true });
+  }
+
   let started = false;
   function startPlayback(){
     if (started) return;
@@ -502,18 +548,37 @@ function initBackgroundMusic(src, opts){
     ensureGraph();
     if (ctx && ctx.state === 'suspended') ctx.resume().catch(() => {});
     audio.volume = 1; // real volume now lives in gainNode; keep the element itself at unity
+    applySavedTime();
     audio.play().catch(() => {
-      // Extremely rare after a real user gesture, but fail quietly —
-      // the toggle button still lets them start it manually.
+      // Blocked (or, on the unrequested attempt below, simply not yet
+      // earned autoplay rights) — fail quietly. The gesture listeners
+      // registered right after this are still armed and will retry
+      // startPlayback on the visitor's next scroll/click/touch/key.
       started = false;
     });
   }
+
+  // The instant this page's script runs, mark the element as "actually
+  // playing" so the position-saving interval below has something to save
+  // even if the visitor never touches the mute button — and so a same-tab
+  // link click straight to yet another page still has a fresh flag/time
+  // to hand off.
+  audio.addEventListener('playing', () => {
+    sessionStorage.setItem(STARTED_KEY, '1');
+  });
 
   // Fires on the very first scroll, click, or touch — passive + once so it
   // costs nothing and cleans itself up immediately after firing.
   ['scroll', 'click', 'touchstart', 'keydown'].forEach(evt => {
     window.addEventListener(evt, startPlayback, { passive: true, once: true });
   });
+
+  // Cross-page continuation: on any page after the first, jump straight to
+  // startPlayback() without waiting for a gesture at all. See the "CROSS-PAGE
+  // CONTINUATION" note in the header comment for why this is allowed to
+  // succeed outright on most returning visits, and why it's safe to just try
+  // — a rejection here quietly falls back to the listeners above.
+  if (wasStarted) startPlayback();
 
   btn.addEventListener('click', () => {
     if (!started) startPlayback();
@@ -540,6 +605,11 @@ function initBackgroundMusic(src, opts){
     .forEach(evt => window.addEventListener(evt, markActive, { passive: true }));
 
   setInterval(() => {
+    // Keep TIME_KEY current regardless of mute state — the track keeps
+    // advancing even when muted, and a mid-track nav should still resume
+    // from the right spot rather than snapping back to the last unmuted
+    // moment.
+    if (started) sessionStorage.setItem(TIME_KEY, String(audio.currentTime));
     if (!started || muted) return;
     const idleFor = Date.now() - lastActivity;
     if (idleFor >= IDLE_MS && !ducked){
@@ -547,6 +617,20 @@ function initBackgroundMusic(src, opts){
       rampTo(DUCK_RAMP_SEC);
     }
   }, CHECK_MS);
+
+  // Belt-and-suspenders flush for the moment of navigation itself, in case
+  // it lands between two 500ms polls — pagehide is the reliable one for a
+  // real unload (unlike beforeunload, it still fires when the page is
+  // going into the back/forward cache), visibilitychange catches the rest.
+  function flushTime(){
+    if (!started) return;
+    sessionStorage.setItem(TIME_KEY, String(audio.currentTime));
+    sessionStorage.setItem(STARTED_KEY, '1');
+  }
+  window.addEventListener('pagehide', flushTime);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') flushTime();
+  });
 
   return { audio, toggleButton: btn };
 }
