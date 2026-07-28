@@ -414,6 +414,15 @@ function clearRoute(map){
 function initBackgroundMusic(src, opts){
   opts = opts || {};
   const MUTE_KEY = 'kcMusicMuted';
+  // This is a multi-page site — every internal link click is a full page
+  // reload, which destroys and rebuilds the <audio> element from scratch.
+  // These two sessionStorage keys are what make the music feel continuous
+  // across that reload instead of restarting (or falling silent) on every
+  // new page: STARTED_KEY says "music was already playing this visit, don't
+  // wait for another gesture", TIME_KEY says "and here's exactly where it
+  // was", so the new page's <audio> element can pick up mid-track.
+  const STARTED_KEY = 'kcMusicStarted';
+  const TIME_KEY    = 'kcMusicTime';
   const BASE_VOLUME      = opts.volume         != null ? opts.volume         : 0.35;
   const DUCK_LEVEL        = opts.duckLevel       != null ? opts.duckLevel       : 0.45; // fraction of base while "thinking"
   const IDLE_MS           = opts.idleMs          != null ? opts.idleMs          : 3800; // no input this long = treat as idle
@@ -428,6 +437,9 @@ function initBackgroundMusic(src, opts){
   audio.crossOrigin = 'anonymous';
   audio.setAttribute('playsinline', ''); // iOS Safari
   document.body.appendChild(audio);
+
+  const wasStarted = sessionStorage.getItem(STARTED_KEY) === '1';
+  const savedTime = parseFloat(sessionStorage.getItem(TIME_KEY) || '0') || 0;
 
   const userMuted = localStorage.getItem(MUTE_KEY) === '1';
   let muted = userMuted;
