@@ -3,18 +3,41 @@
    ═══════════════════════════════════════════════════════════ */
 
 // Some scraped listings have junk in the price field (the scraper grabbed
-// the full "About this space" description instead of a price). A real
-// price is short — "$180", "R1 200", "POA" — so anything long or wordy is
-// almost certainly not a price and should fall back to a safe default
-// rather than blow out a pill/label with a paragraph of text.
+// the full "About this space" description, an availability date, or an
+// amenity name instead of a price). A real price always has a currency
+// marker directly against a digit — "$180", "R1 200", "ZAR 1200" — so
+// anything short that lacks that pattern (like "September 2026" or
+// "Decor 5", both of which contain digits but aren't prices) is just as
+// much junk as a long paragraph and should fall back too.
+//
+// Note: the currency marker must be preceded by the start of the string or
+// a non-letter — otherwise a word that just happens to END in "r" right
+// before a number (e.g. "Septembe-r 2026") would false-positive as "R 2026".
+const PRICE_LOOKS_REAL_RE = /(^|[^a-z])(\$|r|zar|usd)\s?\d/i;
+
 function cleanPriceLabel(raw, fallback){
   fallback = fallback || 'POA';
   if (!raw) return fallback;
   const s = String(raw).trim();
   if (!s) return fallback;
+  if (/^(POA|price on request)$/i.test(s)) return s;
   if (s.length > 24) return fallback;
   if (s.split(/\s+/).length > 4) return fallback;
+  if (!PRICE_LOOKS_REAL_RE.test(s)) return fallback;
   return s;
+}
+
+// Zimbabwe's real bounding box (with a little padding) — anything a scraper
+// hands us outside this box is a bad coordinate (a mis-scraped lat/lng pair
+// picked up from unrelated JSON on the source page — map bounds, some other
+// preview, a default config — not the actual listing), and should never be
+// plotted or used to steer the map's camera.
+const ZIM_BOUNDS = { minLat: -23.0, maxLat: -15.0, minLng: 24.5, maxLng: 34.0 };
+function isValidZimCoord(lat, lng){
+  return typeof lat === 'number' && typeof lng === 'number' &&
+    isFinite(lat) && isFinite(lng) &&
+    lat >= ZIM_BOUNDS.minLat && lat <= ZIM_BOUNDS.maxLat &&
+    lng >= ZIM_BOUNDS.minLng && lng <= ZIM_BOUNDS.maxLng;
 }
 
 // Smart pan — when a marker is clicked/tapped, nudge the map by the
@@ -228,6 +251,24 @@ function injectGlassPinStyles(){
     @media (prefers-reduced-motion: reduce){
       .kc-pin-wrap{ animation:none; }
     }
+    /* Cluster bubble — same glass/green language as the individual pins,
+       shown by Leaflet.markercluster in place of overlapping markers when
+       several retreats sit close together at the current zoom level. */
+    .kc-cluster-bubble{
+      width:40px; height:40px;
+      display:flex; align-items:center; justify-content:center;
+      border-radius:50%;
+      background:linear-gradient(160deg, rgba(20,168,104,.92), rgba(14,122,76,.96));
+      color:#fff;
+      font-family:var(--sans, 'Inter', sans-serif);
+      font-weight:700;
+      font-size:14px;
+      box-shadow:0 6px 18px rgba(14,122,76,.4), 0 0 0 4px rgba(255,255,255,.85);
+      border:1.5px solid rgba(255,255,255,.6);
+      cursor:pointer;
+      transition:transform .18s ease;
+    }
+    .kc-cluster-bubble:hover{ transform:scale(1.08); }
   `;
   document.head.appendChild(style);
 }
@@ -329,11 +370,212 @@ function clearRoute(map){
   if (map._kcRouteLine){ map.removeLayer(map._kcRouteLine); map._kcRouteLine = null; }
 }
 
+/* ── BACKGROUND MUSIC — activity-adaptive volume ducking ───────
+   Browsers block audio autoplay outright until the visitor has
+   interacted with the page — so this arms itself on load, then
+   starts playback on the FIRST scroll, click, or touch anywhere
+   on the page (whichever happens first), which satisfies every
+   major browser's autoplay policy. A small floating toggle lets
+   the visitor mute/unmute, remembered via localStorage across
+   pages.
+
+   On top of that, the track is routed through a Web Audio
+   GainNode (not the stepped `audio.volume` property, which
+   produces an audible "zipper" artifact when changed) so volume
+   can be ramped smoothly. That gain is driven by how active the
+   visitor currently is on the page:
+
+     - No mouse/scroll/key/touch input for a few seconds usually
+       means they've stopped skimming and started actually
+       reading a description or weighing a decision. The
+       systematic review by Cheah, Wong, Spitzer & Coutinho
+       (2022, "Background Music and Cognitive Task Performance")
+       and a 2025 Cognitive Research: Principles & Implications
+       study on sonic salience both found busier/louder background
+       audio measurably interferes with memory- and language-heavy
+       tasks, while barely affecting quick glance-and-scan actions.
+       That maps onto Sweller's Cognitive Load Theory — competing
+       sensory input costs the most exactly when working memory is
+       already occupied by a decision. So: idle → duck.
+     - Any renewed activity (scrolling on, clicking a photo,
+       typing in search) means they're back to browsing/scanning,
+       where a fuller mix doesn't cost them anything, so volume
+       recovers.
+
+   The ramp shapes borrow from standard broadcast/game-audio
+   ducking practice: a slower, gentler *release* down into the
+   duck (so the drop doesn't itself become a distracting cue) and
+   a snappier *attack* back up to full presence the instant they
+   re-engage, so the music still feels alive rather than just quiet.
+
+   Usage: call initBackgroundMusic('assets/audio/theme.mp3') once,
+   from a page's own script (after common.js loads).
+─────────────────────────────────────────────────────────────── */
+function initBackgroundMusic(src, opts){
+  opts = opts || {};
+  const MUTE_KEY = 'kcMusicMuted';
+  const BASE_VOLUME      = opts.volume         != null ? opts.volume         : 0.35;
+  const DUCK_LEVEL        = opts.duckLevel       != null ? opts.duckLevel       : 0.45; // fraction of base while "thinking"
+  const IDLE_MS           = opts.idleMs          != null ? opts.idleMs          : 3800; // no input this long = treat as idle
+  const DUCK_RAMP_SEC     = opts.duckRampSec     != null ? opts.duckRampSec     : 1.6;   // slow, unobtrusive release down
+  const RESTORE_RAMP_SEC  = opts.restoreRampSec  != null ? opts.restoreRampSec  : 0.35;  // quick, alive attack back up
+  const CHECK_MS = 500; // idle-poll cadence — cheap, and plenty responsive for a music cue
+
+  const audio = document.createElement('audio');
+  audio.src = src;
+  audio.loop = true;
+  audio.preload = 'auto';
+  audio.crossOrigin = 'anonymous';
+  audio.setAttribute('playsinline', ''); // iOS Safari
+  document.body.appendChild(audio);
+
+  const userMuted = localStorage.getItem(MUTE_KEY) === '1';
+  let muted = userMuted;
+  let ducked = false;
+
+  // --- Web Audio graph -----------------------------------------------
+  // Routing the element through a GainNode makes every future volume
+  // change (mute, duck, restore) a smooth ramp instead of a hard jump.
+  // Once connected this way the <audio> element's own .volume/.muted
+  // stop mattering — gainNode.gain becomes the single source of truth —
+  // so the graph is built lazily on the visitor's first real gesture
+  // (AudioContext also starts "suspended" until then in every major
+  // browser, same root cause as the autoplay block itself).
+  let ctx = null, gainNode = null;
+  function ensureGraph(){
+    if (ctx) return;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return; // ancient browser: silently fall back to plain audio.volume below
+    try{
+      ctx = new AC();
+      const source = ctx.createMediaElementSource(audio);
+      gainNode = ctx.createGain();
+      gainNode.gain.value = muted ? 0 : BASE_VOLUME;
+      source.connect(gainNode).connect(ctx.destination);
+    } catch(e){
+      ctx = null; gainNode = null; // e.g. a second element already piped through this element
+    }
+  }
+
+  function targetGain(){
+    if (muted) return 0;
+    return ducked ? BASE_VOLUME * DUCK_LEVEL : BASE_VOLUME;
+  }
+
+  function rampTo(rampSec){
+    if (gainNode && ctx){
+      const now = ctx.currentTime;
+      gainNode.gain.cancelScheduledValues(now);
+      gainNode.gain.setValueAtTime(gainNode.gain.value, now);
+      gainNode.gain.linearRampToValueAtTime(targetGain(), now + rampSec);
+    } else {
+      // No Web Audio available — still respect mute/duck, just without the smooth ramp.
+      audio.volume = targetGain();
+    }
+  }
+
+  // Floating toggle — same glass/green language as the rest of the chrome.
+  const btn = document.createElement('button');
+  btn.className = 'kc-music-toggle';
+  btn.setAttribute('aria-label', userMuted ? 'Unmute background music' : 'Mute background music');
+  btn.innerHTML = musicIconSVG(!userMuted);
+  btn.classList.toggle('is-muted', userMuted);
+  document.body.appendChild(btn);
+  injectMusicToggleStyles();
+
+  let started = false;
+  function startPlayback(){
+    if (started) return;
+    started = true;
+    ensureGraph();
+    if (ctx && ctx.state === 'suspended') ctx.resume().catch(() => {});
+    audio.volume = 1; // real volume now lives in gainNode; keep the element itself at unity
+    audio.play().catch(() => {
+      // Extremely rare after a real user gesture, but fail quietly —
+      // the toggle button still lets them start it manually.
+      started = false;
+    });
+  }
+
+  // Fires on the very first scroll, click, or touch — passive + once so it
+  // costs nothing and cleans itself up immediately after firing.
+  ['scroll', 'click', 'touchstart', 'keydown'].forEach(evt => {
+    window.addEventListener(evt, startPlayback, { passive: true, once: true });
+  });
+
+  btn.addEventListener('click', () => {
+    if (!started) startPlayback();
+    muted = !muted;
+    localStorage.setItem(MUTE_KEY, muted ? '1' : '0');
+    btn.innerHTML = musicIconSVG(!muted);
+    btn.setAttribute('aria-label', muted ? 'Unmute background music' : 'Mute background music');
+    btn.classList.toggle('is-muted', muted);
+    rampTo(RESTORE_RAMP_SEC * 0.6); // the mute toggle itself should feel immediate, not laggy
+  });
+
+  // --- Activity tracking -----------------------------------------------
+  // Cheap by design: listeners just stamp a timestamp, no per-event work.
+  // A single lightweight interval decides whether to duck or restore.
+  let lastActivity = Date.now();
+  function markActive(){
+    lastActivity = Date.now();
+    if (ducked){
+      ducked = false;
+      rampTo(RESTORE_RAMP_SEC);
+    }
+  }
+  ['mousemove', 'scroll', 'wheel', 'keydown', 'touchstart', 'touchmove', 'click']
+    .forEach(evt => window.addEventListener(evt, markActive, { passive: true }));
+
+  setInterval(() => {
+    if (!started || muted) return;
+    const idleFor = Date.now() - lastActivity;
+    if (idleFor >= IDLE_MS && !ducked){
+      ducked = true;
+      rampTo(DUCK_RAMP_SEC);
+    }
+  }, CHECK_MS);
+
+  return { audio, toggleButton: btn };
+}
+
 // Blurred-backdrop "Talk to Karl" WhatsApp nudge — appears once per browser
 // session, exactly 90 seconds (1.5 min) after the page loads, so it only
 // interrupts someone who's actually spent real time browsing, never on
 // first paint. sessionStorage keeps it from firing again on every page
 // nav within the same visit (index.html -> listing.html -> back, etc.).
+
+function musicIconSVG(playing){
+  return playing
+    ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>'
+    : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/><line x1="3" y1="3" x2="21" y2="21"/></svg>';
+}
+
+let _kcMusicStylesInjected = false;
+function injectMusicToggleStyles(){
+  if (_kcMusicStylesInjected) return;
+  _kcMusicStylesInjected = true;
+  const style = document.createElement('style');
+  style.textContent = `
+    .kc-music-toggle{
+      position:fixed; left:18px; bottom:18px; z-index:900;
+      width:42px; height:42px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      background:rgba(255,255,255,.92); backdrop-filter:blur(8px);
+      border:1px solid rgba(14,122,76,.25);
+      color:#0E7A4C; cursor:pointer;
+      box-shadow:0 6px 18px rgba(0,0,0,.14);
+      transition:transform .18s ease, background .18s ease, color .18s ease;
+    }
+    .kc-music-toggle:hover{ transform:scale(1.08); }
+    .kc-music-toggle.is-muted{ color:#9AA0A6; }
+    @media (max-width:640px){
+      .kc-music-toggle{ left:14px; bottom:14px; width:38px; height:38px; }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
 function initWhatsAppPopup(){
   const SHOWN_KEY = 'kcWhatsappPopupShown';
   const DELAY_MS = 90 * 1000; // exactly 1.5 minutes

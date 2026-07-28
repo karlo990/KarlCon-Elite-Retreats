@@ -10,7 +10,10 @@
 
   function cardHTML(l){
     const img = l.images && l.images[0] ? l.images[0] : '';
-    const rating = l.rating ? `<span class="card-rating">${STAR} ${l.rating.toFixed(1)}</span>` : '';
+    const ratingNum = parseFloat(l.rating);
+    const rating = Number.isFinite(ratingNum)
+      ? `<span class="card-rating">${STAR} ${ratingNum.toFixed(1)}</span>`
+      : '';
     return `
     <a class="card reveal" href="listing.html?id=${encodeURIComponent(l.id)}">
       <div class="card-img">
@@ -80,19 +83,43 @@
   function renderMap(){
     const el = document.getElementById('globe-map');
     if (!el || typeof L === 'undefined') return;
-    const pinned = LISTINGS.filter(l => l.lat && l.lng);
-    const target = pinned.length ? [pinned[0].lat, pinned[0].lng] : [-19.0154, 29.1549];
+
+    // isValidZimCoord (common.js) rejects mis-scraped lat/lng pairs that land
+    // outside Zimbabwe entirely (e.g. picked up from unrelated JSON on the
+    // source page) — without this, one bad coordinate can send the whole
+    // map's camera out into open ocean with nothing to look at.
+    const pinned = LISTINGS.filter(l => isValidZimCoord(l.lat, l.lng));
+    const skipped = LISTINGS.filter(l => (l.lat || l.lng) && !isValidZimCoord(l.lat, l.lng)).length;
+    if (skipped > 0) console.warn(`[map] ${skipped} listing(s) had out-of-range coordinates and were not plotted.`);
+
+    const fallbackCenter = [-19.0154, 29.1549];
     const targetZoom = pinned.length === 1 ? 12 : 5.4;
 
-    // Start high above the earth, then fly down into the retreat once the
+    // Start high above the earth, then fly down into the retreats once the
     // section actually enters view — a real "moving globe" rather than a
     // map that's just already sitting there.
-    const map = initSatelliteMap('globe-map', { center: target, zoom: 2.2, scrollWheelZoom: true });
+    const map = initSatelliteMap('globe-map', { center: fallbackCenter, zoom: 2.2, scrollWheelZoom: true });
 
+    // Cluster nearby pins instead of dumping 300+ individual markers on
+    // screen — at low zoom they collapse into a single "N retreats" bubble
+    // that expands as you zoom in, instead of a wall of overlapping pills.
+    const hasCluster = typeof L.markerClusterGroup === 'function';
+    const clusterGroup = hasCluster ? L.markerClusterGroup({
+      maxClusterRadius: 55,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      iconCreateFunction: (cluster) => L.divIcon({
+        html: `<div class="kc-cluster-bubble">${cluster.getChildCount()}</div>`,
+        className: '', iconSize: [40, 40],
+      }),
+    }) : null;
+    const markerTarget = clusterGroup || map;
+
+    const markerLatLngs = [];
     pinned.forEach((l, i) => {
       addAreaCircle(map, l.lat, l.lng, 2200);
       const label = cleanPriceLabel(l.price, 'POA');
-      const marker = L.marker([l.lat, l.lng], {icon: priceDivIcon(label, {delay: i * 45}), zIndexOffset: 500}).addTo(map);
+      const marker = L.marker([l.lat, l.lng], {icon: priceDivIcon(label, {delay: i * 45}), zIndexOffset: 500});
       marker.bindPopup(`
         <b>${l.title}</b><br>${l.areaLabel || ''}<br>
         <div class="popup-actions">
@@ -105,26 +132,43 @@
         if (!btn) return;
         btn.onclick = () => requestDirectionsTo(map, [l.lat, l.lng]);
       });
+      marker.addTo(markerTarget);
+      markerLatLngs.push([l.lat, l.lng]);
     });
+    if (clusterGroup) map.addLayer(clusterGroup);
 
     document.getElementById('map-listed-count') &&
       (document.getElementById('map-listed-count').textContent = pinned.length);
 
+    // Fit the camera to every valid pin instead of flying to listing #1 —
+    // one bad coordinate can no longer strand the map somewhere empty, and
+    // as a bonus the view now actually frames all your retreats.
+    const bounds = markerLatLngs.length ? L.latLngBounds(markerLatLngs) : null;
+
     let flown = false;
     const mapSection = document.getElementById('map');
+    const doFly = () => {
+      if (bounds) {
+        map.flyToBounds(bounds, { padding: [50, 50], duration: 2.4, maxZoom: 12 });
+      } else {
+        map.flyTo(fallbackCenter, targetZoom, { duration: 2.4 });
+      }
+    };
     if ('IntersectionObserver' in window && mapSection){
       const io = new IntersectionObserver((entries) => {
         entries.forEach(en => {
           if (en.isIntersecting && !flown){
             flown = true;
-            setTimeout(() => map.flyTo(target, targetZoom, {duration: 2.4}), 200);
+            setTimeout(doFly, 200);
             io.disconnect();
           }
         });
       }, {threshold: .3});
       io.observe(mapSection);
+    } else if (bounds) {
+      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 12 });
     } else {
-      map.setView(target, targetZoom);
+      map.setView(fallbackCenter, targetZoom);
     }
 
     initMapControls(map);

@@ -74,6 +74,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 <script src="js/common.js"></script>
+<script>
+  initBackgroundMusic('assets/audio/theme.mp3');
+</script>
 <script src="data/listings.js"></script>
 <script src="js/gallery.js"></script>
 <script>
@@ -126,7 +129,7 @@
       document.getElementById('gallery').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-family:var(--sans);color:var(--txt2);">No photos found for this retreat yet</div>';
     }
 
-    if (l.lat && l.lng && typeof L !== 'undefined'){
+    if (isValidZimCoord(l.lat, l.lng) && typeof L !== 'undefined'){
       const map = initSatelliteMap('mini-map', {center:[l.lat,l.lng], zoom:13, scrollWheelZoom:false});
       L.marker([l.lat, l.lng], {icon: greenDivIcon()}).addTo(map);
       addAreaCircle(map, l.lat, l.lng, 1800);
