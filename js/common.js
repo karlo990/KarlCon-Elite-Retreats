@@ -370,11 +370,212 @@ function clearRoute(map){
   if (map._kcRouteLine){ map.removeLayer(map._kcRouteLine); map._kcRouteLine = null; }
 }
 
+/* ── BACKGROUND MUSIC — activity-adaptive volume ducking ───────
+   Browsers block audio autoplay outright until the visitor has
+   interacted with the page — so this arms itself on load, then
+   starts playback on the FIRST scroll, click, or touch anywhere
+   on the page (whichever happens first), which satisfies every
+   major browser's autoplay policy. A small floating toggle lets
+   the visitor mute/unmute, remembered via localStorage across
+   pages.
+
+   On top of that, the track is routed through a Web Audio
+   GainNode (not the stepped `audio.volume` property, which
+   produces an audible "zipper" artifact when changed) so volume
+   can be ramped smoothly. That gain is driven by how active the
+   visitor currently is on the page:
+
+     - No mouse/scroll/key/touch input for a few seconds usually
+       means they've stopped skimming and started actually
+       reading a description or weighing a decision. The
+       systematic review by Cheah, Wong, Spitzer & Coutinho
+       (2022, "Background Music and Cognitive Task Performance")
+       and a 2025 Cognitive Research: Principles & Implications
+       study on sonic salience both found busier/louder background
+       audio measurably interferes with memory- and language-heavy
+       tasks, while barely affecting quick glance-and-scan actions.
+       That maps onto Sweller's Cognitive Load Theory — competing
+       sensory input costs the most exactly when working memory is
+       already occupied by a decision. So: idle → duck.
+     - Any renewed activity (scrolling on, clicking a photo,
+       typing in search) means they're back to browsing/scanning,
+       where a fuller mix doesn't cost them anything, so volume
+       recovers.
+
+   The ramp shapes borrow from standard broadcast/game-audio
+   ducking practice: a slower, gentler *release* down into the
+   duck (so the drop doesn't itself become a distracting cue) and
+   a snappier *attack* back up to full presence the instant they
+   re-engage, so the music still feels alive rather than just quiet.
+
+   Usage: call initBackgroundMusic('assets/audio/theme.mp3') once,
+   from a page's own script (after common.js loads).
+─────────────────────────────────────────────────────────────── */
+function initBackgroundMusic(src, opts){
+  opts = opts || {};
+  const MUTE_KEY = 'kcMusicMuted';
+  const BASE_VOLUME      = opts.volume         != null ? opts.volume         : 0.35;
+  const DUCK_LEVEL        = opts.duckLevel       != null ? opts.duckLevel       : 0.45; // fraction of base while "thinking"
+  const IDLE_MS           = opts.idleMs          != null ? opts.idleMs          : 3800; // no input this long = treat as idle
+  const DUCK_RAMP_SEC     = opts.duckRampSec     != null ? opts.duckRampSec     : 1.6;   // slow, unobtrusive release down
+  const RESTORE_RAMP_SEC  = opts.restoreRampSec  != null ? opts.restoreRampSec  : 0.35;  // quick, alive attack back up
+  const CHECK_MS = 500; // idle-poll cadence — cheap, and plenty responsive for a music cue
+
+  const audio = document.createElement('audio');
+  audio.src = src;
+  audio.loop = true;
+  audio.preload = 'auto';
+  audio.crossOrigin = 'anonymous';
+  audio.setAttribute('playsinline', ''); // iOS Safari
+  document.body.appendChild(audio);
+
+  const userMuted = localStorage.getItem(MUTE_KEY) === '1';
+  let muted = userMuted;
+  let ducked = false;
+
+  // --- Web Audio graph -----------------------------------------------
+  // Routing the element through a GainNode makes every future volume
+  // change (mute, duck, restore) a smooth ramp instead of a hard jump.
+  // Once connected this way the <audio> element's own .volume/.muted
+  // stop mattering — gainNode.gain becomes the single source of truth —
+  // so the graph is built lazily on the visitor's first real gesture
+  // (AudioContext also starts "suspended" until then in every major
+  // browser, same root cause as the autoplay block itself).
+  let ctx = null, gainNode = null;
+  function ensureGraph(){
+    if (ctx) return;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return; // ancient browser: silently fall back to plain audio.volume below
+    try{
+      ctx = new AC();
+      const source = ctx.createMediaElementSource(audio);
+      gainNode = ctx.createGain();
+      gainNode.gain.value = muted ? 0 : BASE_VOLUME;
+      source.connect(gainNode).connect(ctx.destination);
+    } catch(e){
+      ctx = null; gainNode = null; // e.g. a second element already piped through this element
+    }
+  }
+
+  function targetGain(){
+    if (muted) return 0;
+    return ducked ? BASE_VOLUME * DUCK_LEVEL : BASE_VOLUME;
+  }
+
+  function rampTo(rampSec){
+    if (gainNode && ctx){
+      const now = ctx.currentTime;
+      gainNode.gain.cancelScheduledValues(now);
+      gainNode.gain.setValueAtTime(gainNode.gain.value, now);
+      gainNode.gain.linearRampToValueAtTime(targetGain(), now + rampSec);
+    } else {
+      // No Web Audio available — still respect mute/duck, just without the smooth ramp.
+      audio.volume = targetGain();
+    }
+  }
+
+  // Floating toggle — same glass/green language as the rest of the chrome.
+  const btn = document.createElement('button');
+  btn.className = 'kc-music-toggle';
+  btn.setAttribute('aria-label', userMuted ? 'Unmute background music' : 'Mute background music');
+  btn.innerHTML = musicIconSVG(!userMuted);
+  btn.classList.toggle('is-muted', userMuted);
+  document.body.appendChild(btn);
+  injectMusicToggleStyles();
+
+  let started = false;
+  function startPlayback(){
+    if (started) return;
+    started = true;
+    ensureGraph();
+    if (ctx && ctx.state === 'suspended') ctx.resume().catch(() => {});
+    audio.volume = 1; // real volume now lives in gainNode; keep the element itself at unity
+    audio.play().catch(() => {
+      // Extremely rare after a real user gesture, but fail quietly —
+      // the toggle button still lets them start it manually.
+      started = false;
+    });
+  }
+
+  // Fires on the very first scroll, click, or touch — passive + once so it
+  // costs nothing and cleans itself up immediately after firing.
+  ['scroll', 'click', 'touchstart', 'keydown'].forEach(evt => {
+    window.addEventListener(evt, startPlayback, { passive: true, once: true });
+  });
+
+  btn.addEventListener('click', () => {
+    if (!started) startPlayback();
+    muted = !muted;
+    localStorage.setItem(MUTE_KEY, muted ? '1' : '0');
+    btn.innerHTML = musicIconSVG(!muted);
+    btn.setAttribute('aria-label', muted ? 'Unmute background music' : 'Mute background music');
+    btn.classList.toggle('is-muted', muted);
+    rampTo(RESTORE_RAMP_SEC * 0.6); // the mute toggle itself should feel immediate, not laggy
+  });
+
+  // --- Activity tracking -----------------------------------------------
+  // Cheap by design: listeners just stamp a timestamp, no per-event work.
+  // A single lightweight interval decides whether to duck or restore.
+  let lastActivity = Date.now();
+  function markActive(){
+    lastActivity = Date.now();
+    if (ducked){
+      ducked = false;
+      rampTo(RESTORE_RAMP_SEC);
+    }
+  }
+  ['mousemove', 'scroll', 'wheel', 'keydown', 'touchstart', 'touchmove', 'click']
+    .forEach(evt => window.addEventListener(evt, markActive, { passive: true }));
+
+  setInterval(() => {
+    if (!started || muted) return;
+    const idleFor = Date.now() - lastActivity;
+    if (idleFor >= IDLE_MS && !ducked){
+      ducked = true;
+      rampTo(DUCK_RAMP_SEC);
+    }
+  }, CHECK_MS);
+
+  return { audio, toggleButton: btn };
+}
+
 // Blurred-backdrop "Talk to Karl" WhatsApp nudge — appears once per browser
 // session, exactly 90 seconds (1.5 min) after the page loads, so it only
 // interrupts someone who's actually spent real time browsing, never on
 // first paint. sessionStorage keeps it from firing again on every page
 // nav within the same visit (index.html -> listing.html -> back, etc.).
+
+function musicIconSVG(playing){
+  return playing
+    ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>'
+    : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/><line x1="3" y1="3" x2="21" y2="21"/></svg>';
+}
+
+let _kcMusicStylesInjected = false;
+function injectMusicToggleStyles(){
+  if (_kcMusicStylesInjected) return;
+  _kcMusicStylesInjected = true;
+  const style = document.createElement('style');
+  style.textContent = `
+    .kc-music-toggle{
+      position:fixed; left:18px; bottom:18px; z-index:900;
+      width:42px; height:42px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      background:rgba(255,255,255,.92); backdrop-filter:blur(8px);
+      border:1px solid rgba(14,122,76,.25);
+      color:#0E7A4C; cursor:pointer;
+      box-shadow:0 6px 18px rgba(0,0,0,.14);
+      transition:transform .18s ease, background .18s ease, color .18s ease;
+    }
+    .kc-music-toggle:hover{ transform:scale(1.08); }
+    .kc-music-toggle.is-muted{ color:#9AA0A6; }
+    @media (max-width:640px){
+      .kc-music-toggle{ left:14px; bottom:14px; width:38px; height:38px; }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
 function initWhatsAppPopup(){
   const SHOWN_KEY = 'kcWhatsappPopupShown';
   const DELAY_MS = 90 * 1000; // exactly 1.5 minutes
