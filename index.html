@@ -131,6 +131,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
 <script src="js/common.js"></script>
 <script>
+  // Point this at your deployed dispatch_server.py (wss://...) to switch
+  // the live driver fleet on. Left as-is, initLiveRide() no-ops quietly.
+  // Verify against the Space's actual URL on first deploy (Files tab -> "Embed
+  // this Space", or the browser URL once /App/ loads) — subdomain pattern is
+  // <owner>-<space-name>.hf.space, lowercased, underscores turned to hyphens.
+  window.KARLCON_RIDE_WS_URL = 'wss://karl-tech-karlcon-elite-retreats.hf.space/ws/riders';
   // Starts on first scroll/click/touch (browser autoplay rules require a
   // user gesture) — swap in your licensed track's path once you have it.
   initBackgroundMusic('assets/audio/theme.mp3');
