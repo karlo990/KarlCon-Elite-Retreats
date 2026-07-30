@@ -437,18 +437,65 @@ function injectCarMarkerStyles(){
   document.head.appendChild(style);
 }
 
-function carDivIcon(heading, tier){
+// Top-down car silhouettes, one profile per vehicle_type so the fleet
+// doesn't look like identical clones. Half-width/half-length pairs, in the
+// same 34x34 marker box the old icon used.
+const KC_CAR_SHAPES = {
+  sedan: { bodyW: 11,   bodyL: 25,   roofW: 8,    roofL: 12.5, roofY: -0.5 },
+  suv:   { bodyW: 12.5, bodyL: 23,   roofW: 9.5,  roofL: 14,   roofY: 0.5  },
+  hatch: { bodyW: 11,   bodyL: 20,   roofW: 8.5,  roofL: 10.5, roofY: 1.5  },
+};
+let _kcCarIconSeq = 0;
+
+function carDivIcon(heading, tier, vehicleType){
   injectCarMarkerStyles();
   const color = KC_RIDE_TIER_COLOR[tier] || KC_RIDE_TIER_COLOR.mid;
+  const shape = KC_CAR_SHAPES[vehicleType] || KC_CAR_SHAPES.sedan;
+  // Unique gradient IDs per marker — url(#id) resolves against the whole
+  // document, so reusing one ID across many inlined car SVGs would make
+  // every car repaint itself off whichever marker happened to render first.
+  const uid = 'kcCar' + (_kcCarIconSeq++);
+  const hw = shape.bodyW / 2, hl = shape.bodyL / 2;
+  const rw = shape.roofW / 2, rl = shape.roofL / 2;
   const html = `
-    <div class="kc-car-wrap" style="transform:rotate(${heading||0}deg);">
+    <div class="kc-car-wrap" style="transform:rotate(${heading || 0}deg);">
       <span class="kc-car-pulse" style="background:${color};"></span>
-      <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="17" cy="17" r="15" fill="#fff" fill-opacity="0.92" stroke="${color}" stroke-width="1.4"/>
-        <g transform="translate(17,17)">
-          <path d="M0,-9 C3.4,-9 4.6,-6.4 5,-3.6 L5.6,2.4 C5.8,4.6 4.6,6 2.6,6.4 L2.6,8.2 C2.6,9 2,9.4 1.3,9.4 L-1.3,9.4 C-2,9.4 -2.6,9 -2.6,8.2 L-2.6,6.4 C-4.6,6 -5.8,4.6 -5.6,2.4 L-5,-3.6 C-4.6,-6.4 -3.4,-9 0,-9 Z" fill="${color}"/>
-          <rect x="-3.4" y="-4.6" width="6.8" height="4.6" rx="1.1" fill="#fff" fill-opacity=".85"/>
-        </g>
+      <svg width="34" height="34" viewBox="-17 -17 34 34" xmlns="http://www.w3.org/2000/svg"
+           style="filter:drop-shadow(0 2px 2.5px rgba(0,0,0,.45));">
+        <defs>
+          <linearGradient id="${uid}body" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%"  stop-color="#000" stop-opacity=".22"/>
+            <stop offset="16%" stop-color="${color}"/>
+            <stop offset="55%" stop-color="${color}"/>
+            <stop offset="100%" stop-color="#000" stop-opacity=".2"/>
+          </linearGradient>
+          <linearGradient id="${uid}glass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e4edf4"/>
+            <stop offset="100%" stop-color="#8fa4b6"/>
+          </linearGradient>
+        </defs>
+        <!-- body shell -->
+        <rect x="${-hw}" y="${-hl}" width="${shape.bodyW}" height="${shape.bodyL}"
+              rx="${hw * 0.7}" ry="${hw * 0.95}"
+              fill="url(#${uid}body)" stroke="rgba(0,0,0,.4)" stroke-width="0.5"/>
+        <!-- wheel wells peeking from under the body -->
+        <rect x="${-hw - 1.3}" y="${-hl + 3}" width="1.9" height="5" rx="1" fill="#1a1a1a"/>
+        <rect x="${hw - 0.6}"  y="${-hl + 3}" width="1.9" height="5" rx="1" fill="#1a1a1a"/>
+        <rect x="${-hw - 1.3}" y="${hl - 8}"  width="1.9" height="5" rx="1" fill="#1a1a1a"/>
+        <rect x="${hw - 0.6}"  y="${hl - 8}"  width="1.9" height="5" rx="1" fill="#1a1a1a"/>
+        <!-- glass roof -->
+        <rect x="${-rw}" y="${shape.roofY - rl}" width="${shape.roofW}" height="${shape.roofL}"
+              rx="${rw * 0.55}" fill="url(#${uid}glass)" opacity=".93"/>
+        <line x1="${-rw}" y1="${shape.roofY - rl * 0.1}" x2="${rw}" y2="${shape.roofY - rl * 0.1}"
+              stroke="rgba(0,0,0,.28)" stroke-width="0.4"/>
+        <!-- gloss sheen down one flank -->
+        <rect x="${-hw}" y="${-hl}" width="${shape.bodyW * 0.36}" height="${shape.bodyL}"
+              rx="${hw * 0.7}" fill="#fff" opacity=".16"/>
+        <!-- head/tail lights, front is -y (matches heading 0 = north/up) -->
+        <ellipse cx="${-hw * 0.55}" cy="${-hl + 1.3}" rx="1" ry="0.7" fill="#fff6d8"/>
+        <ellipse cx="${hw * 0.55}"  cy="${-hl + 1.3}" rx="1" ry="0.7" fill="#fff6d8"/>
+        <ellipse cx="${-hw * 0.55}" cy="${hl - 1.3}"  rx="1" ry="0.7" fill="#c62828"/>
+        <ellipse cx="${hw * 0.55}"  cy="${hl - 1.3}"  rx="1" ry="0.7" fill="#c62828"/>
       </svg>
     </div>`;
   return L.divIcon({ className: 'kc-car-icon', html, iconSize:[34,34], iconAnchor:[17,17] });
@@ -461,9 +508,9 @@ function rideTier(min){ return min <= 5 ? 'near' : min <= 10 ? 'mid' : 'far'; }
 // One live driver marker: rotated icon, glides between pings via rAF
 // rather than snapping, matches the interpolation approach used for
 // smartPanToMarker above.
-function createCarMarker(map, lat, lng, heading, tier){
-  const state = { lat, lng, heading: heading||0, tier: tier||'mid', anim:null };
-  state.marker = L.marker([lat, lng], { icon: carDivIcon(state.heading, state.tier), interactive:false, zIndexOffset: 800 }).addTo(map);
+function createCarMarker(map, lat, lng, heading, tier, vehicleType){
+  const state = { lat, lng, heading: heading||0, tier: tier||'mid', vehicleType: vehicleType||'sedan', anim:null };
+  state.marker = L.marker([lat, lng], { icon: carDivIcon(state.heading, state.tier, state.vehicleType), interactive:false, zIndexOffset: 800 }).addTo(map);
   // divIcon markers are non-interactive by design (smoother dragging/perf
   // elsewhere on the map) — a transparent circleMarker on top catches clicks.
   state.hit = L.circleMarker([lat, lng], { radius:15, opacity:0, fillOpacity:0 }).addTo(map);
@@ -471,7 +518,7 @@ function createCarMarker(map, lat, lng, heading, tier){
   state.setTier = function(tier){
     if (tier === state.tier) return;
     state.tier = tier;
-    state.marker.setIcon(carDivIcon(state.heading, state.tier));
+    state.marker.setIcon(carDivIcon(state.heading, state.tier, state.vehicleType));
   };
 
   state.moveTo = function(toLat, toLng, toHeading, durationMs){
@@ -593,7 +640,7 @@ function initLiveRide(map, opts){
 
       let car = cars.get(driverId);
       if (!car){
-        car = createCarMarker(map, d.lat, d.lng, d.heading, tier);
+        car = createCarMarker(map, d.lat, d.lng, d.heading, tier, d.vehicle_type);
         car.hit.on('click', () => { selectedId = driverId; updateSummary(driverId); });
         cars.set(driverId, car);
       } else {
