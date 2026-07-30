@@ -61,7 +61,7 @@
           <button id="mini-route-clear" aria-label="Clear route">&times;</button>
         </div>
       </div>
-      <button class="btn-primary side-cta" id="l-cta">💬 Checkout on WhatsApp</button>
+      <button class="btn-primary side-cta" id="l-cta">💬 Talk to Agent</button>
     </div>
   </div>
 </div>
@@ -125,36 +125,16 @@
     const cta = document.getElementById('l-cta');
     const WHATSAPP_NUMBER = '263780563561';
 
-    // The checkout button doubles as the ride-booking CTA: plain checkout
-    // when no driver is priced yet, upgraded to "checkout + book ride"
-    // (with driver, fare, ETA folded into one WhatsApp message) the moment
-    // initLiveRide's onQuote callback below has a live quote for this
-    // retreat. Keeps one button instead of two competing WhatsApp CTAs.
-    function setCheckoutHandler(quote){
-      if (quote){
-        cta.textContent = `💬 Checkout + book ride · $${quote.price.toFixed(2)}, ${quote.min} min`;
-        cta.onclick = () => {
-          const mapsLink = `https://maps.google.com/?q=${quote.destLat},${quote.destLng}`;
-          const pickupLine = (quote.hasPickup && quote.pickupLat != null)
-            ? `Pickup: https://maps.google.com/?q=${quote.pickupLat},${quote.pickupLng}\n`
-            : '';
-          const msg = `Hi Karl! I'd like to book "${l.title}" (${location.href}) and a ride there.\n` +
-            `${quote.label} (${quote.vehicleType}) is ${quote.min} min away — arriving around ${quote.arrivalClock}.\n` +
-            `Ride fare: ~$${quote.price.toFixed(2)}\n` +
-            pickupLine +
-            `Drop-off: ${mapsLink}\n` +
-            `Can you confirm both the stay and the pickup?`;
-          window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
-        };
-      } else {
-        cta.textContent = '💬 Checkout on WhatsApp';
-        cta.onclick = () => {
-          const waMessage = `Hi Karl! I'd like to book "${l.title}" (${location.href}). Is it available?`;
-          window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`, '_blank');
-        };
-      }
-    }
-    setCheckoutHandler(null);
+    // Top CTA — "Talk to Agent". Stays lightweight: a general
+    // information/review/help message, no fare or ride details in it.
+    // The ride panel's own "Book via WhatsApp" button (wired up inside
+    // initLiveRide, below) is where the actual driver/fare/location
+    // breakdown gets sent — two buttons, two different jobs.
+    cta.textContent = '💬 Talk to Agent';
+    cta.onclick = () => {
+      const waMessage = `Hi Karl! I'd like some information / help reviewing "${l.title}" (${location.href}). Could you assist?`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`, '_blank');
+    };
 
     const images = (l.images && l.images.length) ? l.images : [];
     if (images.length){
@@ -168,39 +148,106 @@
       L.marker([l.lat, l.lng], {icon: greenDivIcon()}).addTo(map);
       addAreaCircle(map, l.lat, l.lng, 1800);
 
-      // Ask for location proactively on load rather than waiting for the
-      // "Directions from me" click — silently sets map._kcUserLatLng so
-      // initLiveRide can price rides from the rider's REAL pickup point
-      // instead of guessing. Fails silently if the visitor declines; the
-      // ride panel just falls back to the old driver->retreat estimate.
-      locateUser(map, () => {}, () => {});
-
-      // Live drivers, priced to THIS retreat — panel drops in under the
-      // mini-map, and the checkout button below upgrades itself (via
-      // onQuote) to a merged "checkout + book ride" CTA once a driver
-      // is priced. No-ops quietly until KARLCON_RIDE_WS_URL points at a
-      // deployed dispatch_server.py.
-      initLiveRide(map, {
-        dest: { lat: l.lat, lng: l.lng, title: l.title },
-        panelMount: document.querySelector('.side-card'),
-        whatsappNumber: WHATSAPP_NUMBER,
-        onQuote: setCheckoutHandler
-      });
-
       const locateBtn = document.getElementById('mini-locate-btn');
       const chip = document.getElementById('mini-route-chip');
       const chipText = document.getElementById('mini-route-chip-text');
       const chipClear = document.getElementById('mini-route-clear');
 
+      // Self-contained styles for the auto-route preview/animation — kept
+      // inline (rather than css/style.css, which this task doesn't touch)
+      // so this behaves the same regardless of what's already in that file.
+      if (!document.getElementById('kc-auto-route-style')){
+        const s = document.createElement('style');
+        s.id = 'kc-auto-route-style';
+        s.textContent = `
+          .kc-route-chip-loading .kc-route-chip-dot{
+            display:inline-block; width:6px; height:6px; border-radius:50%;
+            background:currentColor; margin-right:6px; vertical-align:middle;
+            animation: kcRouteDotPulse 1.1s ease-in-out infinite;
+          }
+          @keyframes kcRouteDotPulse{
+            0%,100%{ opacity:.25; transform:scale(.8); }
+            50%{ opacity:1; transform:scale(1.15); }
+          }
+          .kc-route-line-draw{
+            stroke-dasharray: 2000;
+            stroke-dashoffset: 2000;
+            animation: kcRouteDraw 1.3s cubic-bezier(.4,0,.2,1) forwards;
+          }
+          @keyframes kcRouteDraw{ to{ stroke-dashoffset: 0; } }
+          .kc-user-marker-drop{ animation: kcUserDrop .55s cubic-bezier(.34,1.56,.64,1) both; }
+          @keyframes kcUserDrop{
+            0%{ transform: translateY(-14px) scale(.6); opacity:0; }
+            100%{ transform: translateY(0) scale(1); opacity:1; }
+          }
+        `;
+        document.head.appendChild(s);
+      }
+
+      function showRouteLoadingPreview(){
+        chip.style.display = 'flex';
+        chip.classList.add('kc-route-chip-loading');
+        chipText.innerHTML = '<span class="kc-route-chip-dot"></span>Calculating route…';
+      }
+
+      function runAutoRoute(userLatLng){
+        showRouteLoadingPreview();
+        drawRoute(map, userLatLng, [l.lat, l.lng], {
+          onSummary: (text) => {
+            chip.classList.remove('kc-route-chip-loading');
+            chipText.textContent = text;
+          },
+          onRouteReady: (lineLayer) => {
+            // Fires once the real drawn polyline exists (fallback straight
+            // line or actual OSRM road geometry) — reliable hook for the
+            // draw-in animation, rather than guessing when Leaflet's
+            // internal DOM update has settled.
+            const el = lineLayer && lineLayer.getElement && lineLayer.getElement();
+            if (el){
+              el.classList.remove('kc-route-line-draw');
+              // restart the animation cleanly even if this is a re-route
+              void el.getBoundingClientRect();
+              el.classList.add('kc-route-line-draw');
+            }
+          }
+        });
+        if (map._kcUserMarker){
+          const el = map._kcUserMarker.getElement();
+          if (el){
+            el.classList.remove('kc-user-marker-drop');
+            void el.getBoundingClientRect();
+            el.classList.add('kc-user-marker-drop');
+          }
+        }
+      }
+
+      // Auto-draw the route the moment we land on the page — no click
+      // needed. Silently no-ops (falls back to the old driver->retreat
+      // pricing estimate) if the visitor declines the location prompt.
+      locateUser(map, runAutoRoute, () => {});
+
+      // Live drivers, priced to THIS retreat — panel drops in under the
+      // mini-map with its own fare breakdown and its own "Book via
+      // WhatsApp" button (the one that does the heavy lifting: driver,
+      // fare/fee/subtotal, ETA, both location formats). The top "Talk to
+      // Agent" button above is separate and stays lightweight. No-ops
+      // quietly until KARLCON_RIDE_WS_URL points at a deployed dispatch_server.py.
+      initLiveRide(map, {
+        dest: { lat: l.lat, lng: l.lng, title: l.title, price: l.price },
+        panelMount: document.querySelector('.side-card'),
+        whatsappNumber: WHATSAPP_NUMBER
+      });
+
+      // "Directions from me" still works as a manual re-trigger (e.g. the
+      // visitor's location changed, or they declined the initial prompt
+      // and want to try again).
       locateBtn.addEventListener('click', () => {
         locateBtn.disabled = true;
         locateBtn.textContent = 'Locating…';
         locateUser(map, (userLatLng) => {
           locateBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg> Directions from me';
           locateBtn.disabled = false;
-          drawRoute(map, userLatLng, [l.lat, l.lng], {
-            onSummary: (text) => { chip.style.display = 'flex'; chipText.textContent = text; }
-          });
+          runAutoRoute(userLatLng);
         }, (msg) => {
           locateBtn.disabled = false;
           locateBtn.textContent = 'Location unavailable';
@@ -210,6 +257,7 @@
       chipClear.addEventListener('click', () => {
         clearRoute(map);
         chip.style.display = 'none';
+        chip.classList.remove('kc-route-chip-loading');
         map.setView([l.lat, l.lng], 13);
       });
     } else {
