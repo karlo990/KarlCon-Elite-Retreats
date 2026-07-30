@@ -370,6 +370,256 @@ function clearRoute(map){
   if (map._kcRouteLine){ map.removeLayer(map._kcRouteLine); map._kcRouteLine = null; }
 }
 
+/* ── LIVE RIDE — driver cars on the map + booking panel ─────────
+   Connects to a small WebSocket dispatch server (see dispatch_server.py)
+   that streams a table of { driver_id: {lat,lng,heading,...} }. Each
+   driver gets a rotated car marker that glides between GPS pings instead
+   of jumping. Works two ways, chosen by what you pass in:
+
+     - opts.dest = {lat,lng,title}   -> "listing" mode: every car shows
+       its ETA/price to THIS one destination. Used on listing.html, where
+       there's one obvious place a guest wants a ride to.
+
+     - opts.listings = LISTINGS array -> "fleet" mode: no single
+       destination, so each car's ETA/price is shown to whichever listing
+       is nearest to it. Used on index.html's globe map, where showing a
+       live fleet roaming the whole country is the point, not booking to
+       one address yet.
+
+   Set window.KARLCON_RIDE_WS_URL before calling initLiveRide, or pass
+   opts.wsUrl directly — this is the one placeholder you need to fill in
+   once dispatch_server.py is deployed somewhere with a wss:// URL.
+
+   Usage:
+     initLiveRide(map, { dest: {lat:l.lat, lng:l.lng, title:l.title},
+                          panelMount: document.querySelector('.side-card'),
+                          whatsappNumber: '263780563561' });
+─────────────────────────────────────────────────────────────── */
+
+const KC_RIDE_TIER_COLOR = { near: '#0E7A4C', mid: '#D97706', far: '#8A8578' };
+const KC_RIDE_AVG_SPEED_KMH = 28;
+const KC_RIDE_PRICE_PER_KM = 1.10;
+const KC_RIDE_BASE_FARE = 0.80;
+
+let _kcCarStylesInjected = false;
+function injectCarMarkerStyles(){
+  if (_kcCarStylesInjected) return;
+  _kcCarStylesInjected = true;
+  const style = document.createElement('style');
+  style.textContent = `
+    .kc-car-icon{ background:none; border:none; }
+    .kc-car-wrap{ position:relative; width:34px; height:34px; }
+    .kc-car-pulse{
+      position:absolute; inset:0; border-radius:50%; opacity:.35;
+      animation:kcCarPulse 1.8s ease-out infinite;
+    }
+    @keyframes kcCarPulse{
+      0%   { transform:scale(.6); opacity:.4; }
+      70%  { transform:scale(1.6); opacity:0; }
+      100% { transform:scale(1.6); opacity:0; }
+    }
+    @media (prefers-reduced-motion: reduce){ .kc-car-pulse{ animation:none; opacity:.18; } }
+
+    .kc-ride-panel{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      margin-top:12px; padding:1rem 1.15rem; background:rgba(14,122,76,.06);
+      border:1px solid rgba(14,122,76,.18); border-radius:12px;
+      font-family:var(--sans, inherit);
+    }
+    .kc-ride-panel .kc-ride-label{ margin:0; font-size:12px; color:var(--txt2,#6b6558); }
+    .kc-ride-panel .kc-ride-summary{ margin:2px 0 0; font-size:14.5px; font-weight:600; color:var(--txt1,#151512); }
+    .kc-ride-book{
+      flex:0 0 auto; border:none; border-radius:9px; padding:10px 16px; font-weight:700;
+      font-size:13px; background:#0E7A4C; color:#fff; cursor:pointer; transition:opacity .2s;
+    }
+    .kc-ride-empty{ font-size:12.5px; color:var(--txt3,#9a958a); font-family:var(--sans, inherit); margin-top:10px; }
+  `;
+  document.head.appendChild(style);
+}
+
+function carDivIcon(heading, tier){
+  injectCarMarkerStyles();
+  const color = KC_RIDE_TIER_COLOR[tier] || KC_RIDE_TIER_COLOR.mid;
+  const html = `
+    <div class="kc-car-wrap" style="transform:rotate(${heading||0}deg);">
+      <span class="kc-car-pulse" style="background:${color};"></span>
+      <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17" cy="17" r="15" fill="#fff" fill-opacity="0.92" stroke="${color}" stroke-width="1.4"/>
+        <g transform="translate(17,17)">
+          <path d="M0,-9 C3.4,-9 4.6,-6.4 5,-3.6 L5.6,2.4 C5.8,4.6 4.6,6 2.6,6.4 L2.6,8.2 C2.6,9 2,9.4 1.3,9.4 L-1.3,9.4 C-2,9.4 -2.6,9 -2.6,8.2 L-2.6,6.4 C-4.6,6 -5.8,4.6 -5.6,2.4 L-5,-3.6 C-4.6,-6.4 -3.4,-9 0,-9 Z" fill="${color}"/>
+          <rect x="-3.4" y="-4.6" width="6.8" height="4.6" rx="1.1" fill="#fff" fill-opacity=".85"/>
+        </g>
+      </svg>
+    </div>`;
+  return L.divIcon({ className: 'kc-car-icon', html, iconSize:[34,34], iconAnchor:[17,17] });
+}
+
+function rideEtaMinutes(km){ return Math.round((km / KC_RIDE_AVG_SPEED_KMH) * 60 * 10) / 10; }
+function ridePrice(km){ return Math.round((KC_RIDE_BASE_FARE + km * KC_RIDE_PRICE_PER_KM) * 100) / 100; }
+function rideTier(min){ return min <= 5 ? 'near' : min <= 10 ? 'mid' : 'far'; }
+
+// One live driver marker: rotated icon, glides between pings via rAF
+// rather than snapping, matches the interpolation approach used for
+// smartPanToMarker above.
+function createCarMarker(map, lat, lng, heading, tier){
+  const state = { lat, lng, heading: heading||0, tier: tier||'mid', anim:null };
+  state.marker = L.marker([lat, lng], { icon: carDivIcon(state.heading, state.tier), interactive:false, zIndexOffset: 800 }).addTo(map);
+  // divIcon markers are non-interactive by design (smoother dragging/perf
+  // elsewhere on the map) — a transparent circleMarker on top catches clicks.
+  state.hit = L.circleMarker([lat, lng], { radius:15, opacity:0, fillOpacity:0 }).addTo(map);
+
+  state.setTier = function(tier){
+    if (tier === state.tier) return;
+    state.tier = tier;
+    state.marker.setIcon(carDivIcon(state.heading, state.tier));
+  };
+
+  state.moveTo = function(toLat, toLng, toHeading, durationMs){
+    durationMs = durationMs || 1400;
+    if (state.anim) cancelAnimationFrame(state.anim);
+    const fromLat = state.lat, fromLng = state.lng, fromHeading = state.heading;
+    const dh = ((toHeading - fromHeading) % 360 + 540) % 360 - 180;
+    const start = performance.now();
+    function step(now){
+      const t = Math.min(1, (now - start) / durationMs);
+      const ease = t < .5 ? 2*t*t : -1 + (4 - 2*t)*t;
+      const curLat = fromLat + (toLat - fromLat) * ease;
+      const curLng = fromLng + (toLng - fromLng) * ease;
+      const curHeading = fromHeading + dh * ease;
+      state.marker.setLatLng([curLat, curLng]);
+      state.hit.setLatLng([curLat, curLng]);
+      const el = state.marker.getElement();
+      const wrap = el && el.querySelector('.kc-car-wrap');
+      if (wrap) wrap.style.transform = `rotate(${curHeading}deg)`;
+      if (t < 1){ state.anim = requestAnimationFrame(step); }
+      else { state.lat = toLat; state.lng = toLng; state.heading = (fromHeading + dh + 360) % 360; }
+    }
+    state.anim = requestAnimationFrame(step);
+  };
+
+  state.remove = function(){
+    if (state.anim) cancelAnimationFrame(state.anim);
+    map.removeLayer(state.marker);
+    map.removeLayer(state.hit);
+  };
+
+  return state;
+}
+
+// Wires a map up to the dispatch server's rider feed and keeps one
+// createCarMarker() per live driver in sync with it. Returns
+// { disconnect() } so a page can tear it down (e.g. on SPA-style nav,
+// not needed on this multi-page site but cheap to offer).
+function initLiveRide(map, opts){
+  opts = opts || {};
+  const wsUrl = opts.wsUrl || window.KARLCON_RIDE_WS_URL;
+  const whatsappNumber = opts.whatsappNumber || '263780563561';
+  const dest = opts.dest || null;                 // {lat,lng,title} — listing mode
+  const listings = opts.listings || null;          // array — fleet mode (nearest-retreat)
+  const panelMount = opts.panelMount || null;
+
+  if (!wsUrl || /YOUR-DISPATCH-SERVER/.test(wsUrl)){
+    console.info('[live-ride] KARLCON_RIDE_WS_URL not set yet — skipping live driver layer.');
+    return { disconnect(){} };
+  }
+
+  const cars = new Map();     // driver_id -> car marker state
+  const targets = new Map();  // driver_id -> {lat,lng,title,km,min,price} it's currently priced against
+  let selectedId = null;
+  let ws = null;
+  let panel = null;
+
+  if (panelMount){
+    panel = document.createElement('div');
+    panel.className = 'kc-ride-panel';
+    panel.innerHTML = `
+      <div>
+        <p class="kc-ride-label">Nearby driver</p>
+        <p class="kc-ride-summary">No drivers online yet</p>
+      </div>
+      <button class="kc-ride-book" style="opacity:.5;pointer-events:none;">Book ride</button>`;
+    panelMount.appendChild(panel);
+  }
+
+  function nearestListingTo(lat, lng){
+    if (!listings || !listings.length) return null;
+    let best = null, bestKm = Infinity;
+    listings.forEach((l) => {
+      if (!isValidZimCoord(l.lat, l.lng)) return;
+      const km = haversineKm([lat, lng], [l.lat, l.lng]);
+      if (km < bestKm){ bestKm = km; best = l; }
+    });
+    return best ? { lat: best.lat, lng: best.lng, title: best.title, km: bestKm } : null;
+  }
+
+  function targetFor(driver){
+    if (dest) return { lat: dest.lat, lng: dest.lng, title: dest.title, km: haversineKm([driver.lat, driver.lng], [dest.lat, dest.lng]) };
+    const nearest = nearestListingTo(driver.lat, driver.lng);
+    return nearest; // may be null if no listings/coords available
+  }
+
+  function updateSummary(driverId){
+    if (!panel) return;
+    const t = targets.get(driverId);
+    const summaryEl = panel.querySelector('.kc-ride-summary');
+    const bookBtn = panel.querySelector('.kc-ride-book');
+    if (!t){ summaryEl.textContent = 'No drivers online yet'; bookBtn.style.opacity = '.5'; bookBtn.style.pointerEvents = 'none'; return; }
+    summaryEl.textContent = `${t.min} min away, roughly $${t.price.toFixed(2)} to ${t.title || 'the retreat'}`;
+    bookBtn.style.opacity = '1';
+    bookBtn.style.pointerEvents = 'auto';
+    bookBtn.onclick = () => bookRide(driverId, t);
+  }
+
+  function bookRide(driverId, t){
+    const mapsLink = `https://maps.google.com/?q=${t.lat},${t.lng}`;
+    const msg = `Hi Karl! I'd like a ride to "${t.title || 'a KarlCon retreat'}" — ` +
+      `driver ${driverId} is ${t.min} min away, ~$${t.price.toFixed(2)}.\n` +
+      `Drop-off: ${mapsLink}\nCan you confirm pickup?`;
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+  }
+
+  function syncDrivers(drivers){
+    const seen = new Set();
+    Object.keys(drivers).forEach((driverId) => {
+      const d = drivers[driverId];
+      seen.add(driverId);
+      const t = targetFor(d);
+      if (t){
+        t.min = rideEtaMinutes(t.km);
+        t.price = ridePrice(t.km);
+        targets.set(driverId, t);
+      }
+      const tier = t ? rideTier(t.min) : 'mid';
+
+      let car = cars.get(driverId);
+      if (!car){
+        car = createCarMarker(map, d.lat, d.lng, d.heading, tier);
+        car.hit.on('click', () => { selectedId = driverId; updateSummary(driverId); });
+        cars.set(driverId, car);
+      } else {
+        car.moveTo(d.lat, d.lng, d.heading || car.heading);
+        car.setTier(tier);
+      }
+    });
+
+    for (const [id, car] of cars){
+      if (!seen.has(id)){ car.remove(); cars.delete(id); targets.delete(id); if (selectedId === id) selectedId = null; }
+    }
+    if (selectedId) updateSummary(selectedId);
+    else if (panel && !targets.size){ updateSummary(null); }
+  }
+
+  function connect(){
+    ws = new WebSocket(wsUrl);
+    ws.onmessage = (evt) => { try { syncDrivers(JSON.parse(evt.data)); } catch(e){} };
+    ws.onclose = () => setTimeout(connect, 3000);
+    ws.onerror = () => {};
+  }
+  connect();
+
+  return { disconnect(){ if (ws){ ws.onclose = null; ws.close(); } for (const car of cars.values()) car.remove(); } };
+}
+
 /* ── BACKGROUND MUSIC — activity-adaptive volume ducking ───────
    Browsers block audio autoplay outright until the visitor has
    interacted with the page — so this arms itself on load, then
