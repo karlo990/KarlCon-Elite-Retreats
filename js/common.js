@@ -421,18 +421,48 @@ function injectCarMarkerStyles(){
     @media (prefers-reduced-motion: reduce){ .kc-car-pulse{ animation:none; opacity:.18; } }
 
     .kc-ride-panel{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      margin-top:12px; padding:1rem 1.15rem; background:rgba(14,122,76,.06);
-      border:1px solid rgba(14,122,76,.18); border-radius:12px;
+      display:flex; flex-direction:column; gap:11px;
+      margin-top:12px; padding:14px 15px; background:rgba(14,122,76,.06);
+      border:1px solid rgba(14,122,76,.18); border-radius:14px;
       font-family:var(--sans, inherit);
     }
-    .kc-ride-panel .kc-ride-label{ margin:0; font-size:12px; color:var(--txt2,#6b6558); }
-    .kc-ride-panel .kc-ride-summary{ margin:2px 0 0; font-size:14.5px; font-weight:600; color:var(--txt1,#151512); }
-    .kc-ride-book{
-      flex:0 0 auto; border:none; border-radius:9px; padding:10px 16px; font-weight:700;
-      font-size:13px; background:#0E7A4C; color:#fff; cursor:pointer; transition:opacity .2s;
+    .kc-ride-top{ display:flex; align-items:center; gap:10px; }
+    .kc-ride-avatar{
+      width:38px; height:38px; border-radius:50%; flex:0 0 auto;
+      display:flex; align-items:center; justify-content:center;
+      background:linear-gradient(160deg, rgba(20,168,104,.95), rgba(14,122,76,1));
+      box-shadow:0 4px 10px rgba(14,122,76,.35);
     }
+    .kc-ride-avatar svg{ width:19px; height:19px; }
+    .kc-ride-name{ margin:0; font-size:13.5px; font-weight:700; color:var(--txt1,#151512); }
+    .kc-ride-sub{ margin:1px 0 0; font-size:11.5px; color:var(--txt2,#6b6558); }
+    .kc-ride-nearest-tag{
+      margin-left:auto; font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+      color:#0E7A4C; background:rgba(14,122,76,.12); border-radius:99px; padding:4px 9px;
+    }
+    .kc-ride-stats{ display:flex; gap:8px; }
+    .kc-ride-pill{
+      flex:1; text-align:center; padding:8px 4px; border-radius:10px;
+      background:rgba(255,255,255,.7); border:1px solid rgba(14,122,76,.14);
+    }
+    .kc-ride-pill b{ display:block; font-size:14px; color:var(--txt1,#151512); line-height:1.3; }
+    .kc-ride-pill span{ font-size:9.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--txt3,#9a958a); }
+    .kc-ride-book{
+      border:none; border-radius:10px; padding:11px; font-weight:700;
+      font-size:13px; background:#25D366; color:#fff; cursor:pointer; transition:opacity .2s;
+      display:flex; align-items:center; justify-content:center; gap:7px;
+    }
+    .kc-ride-book:disabled, .kc-ride-book[data-disabled="1"]{ opacity:.5; pointer-events:none; }
     .kc-ride-empty{ font-size:12.5px; color:var(--txt3,#9a958a); font-family:var(--sans, inherit); margin-top:10px; }
+
+    /* Ring drawn around whichever car is currently priced in the panel —
+       auto-follows the nearest driver so there's always an obvious answer
+       to "which car is that quote for" on a map with a dozen cars on it. */
+    .kc-car-wrap.kc-car-selected::after{
+      content:''; position:absolute; inset:-7px; border-radius:50%;
+      border:2px solid #fff; box-shadow:0 0 0 2.5px rgba(14,122,76,.6), 0 0 16px rgba(14,122,76,.55);
+      pointer-events:none;
+    }
   `;
   document.head.appendChild(style);
 }
@@ -573,18 +603,34 @@ function initLiveRide(map, opts){
   const cars = new Map();     // driver_id -> car marker state
   const targets = new Map();  // driver_id -> {lat,lng,title,km,min,price} it's currently priced against
   let selectedId = null;
+  let userPicked = false;     // true once the rider taps a specific car, overriding auto-follow-nearest
   let ws = null;
   let panel = null;
+
+  const CAR_GLYPH_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 13l1.6-4.8A2 2 0 0 1 6.5 7h11a2 2 0 0 1 1.9 1.2L21 13"/>
+    <path d="M3 13h18v3.5a1 1 0 0 1-1 1h-1.2a1 1 0 0 1-1-1V16H6.2v.5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V13z"/>
+    <circle cx="7.2" cy="17" r="1.3"/><circle cx="16.8" cy="17" r="1.3"/>
+  </svg>`;
 
   if (panelMount){
     panel = document.createElement('div');
     panel.className = 'kc-ride-panel';
     panel.innerHTML = `
-      <div>
-        <p class="kc-ride-label">Nearby driver</p>
-        <p class="kc-ride-summary">No drivers online yet</p>
+      <div class="kc-ride-top">
+        <div class="kc-ride-avatar">${CAR_GLYPH_SVG}</div>
+        <div style="flex:1;min-width:0;">
+          <p class="kc-ride-name">No drivers online yet</p>
+          <p class="kc-ride-sub">&nbsp;</p>
+        </div>
+        <span class="kc-ride-nearest-tag" style="display:none;">Nearest</span>
       </div>
-      <button class="kc-ride-book" style="opacity:.5;pointer-events:none;">Book ride</button>`;
+      <div class="kc-ride-stats">
+        <div class="kc-ride-pill"><b class="kc-ride-fee">–</b><span>Fare</span></div>
+        <div class="kc-ride-pill"><b class="kc-ride-min">–</b><span>Away</span></div>
+        <div class="kc-ride-pill"><b class="kc-ride-clock">–</b><span>Arrives</span></div>
+      </div>
+      <button class="kc-ride-book" data-disabled="1">💬 Book via WhatsApp</button>`;
     panelMount.appendChild(panel);
   }
 
@@ -605,22 +651,92 @@ function initLiveRide(map, opts){
     return nearest; // may be null if no listings/coords available
   }
 
-  function updateSummary(driverId){
+  // Turns "sim-4" or "driver-ab12cd" into something a rider can actually
+  // read on a WhatsApp confirmation instead of a raw internal id.
+  function friendlyDriverLabel(driverId){
+    const m = String(driverId).match(/(\d+)$/);
+    if (m) return 'Driver ' + m[1];
+    return 'Driver ' + String(driverId).slice(-4).toUpperCase();
+  }
+
+  function etaClockLabel(min){
+    const arrival = new Date(Date.now() + min * 60000);
+    return arrival.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  }
+
+  // Draws the glow ring around whichever car the panel is currently
+  // quoting — re-applied every sync tick because setIcon() (tier/color
+  // changes) replaces the marker's DOM node and would otherwise silently
+  // drop the class.
+  let ringedId = null;
+  function setSelectedRing(driverId){
+    if (ringedId && ringedId !== driverId && cars.has(ringedId)){
+      const prevEl = cars.get(ringedId).marker.getElement();
+      const prevWrap = prevEl && prevEl.querySelector('.kc-car-wrap');
+      if (prevWrap) prevWrap.classList.remove('kc-car-selected');
+    }
+    ringedId = driverId;
+    if (driverId && cars.has(driverId)){
+      const el = cars.get(driverId).marker.getElement();
+      const wrap = el && el.querySelector('.kc-car-wrap');
+      if (wrap) wrap.classList.add('kc-car-selected');
+    }
+  }
+
+  function updateSummary(driverId, isAuto){
     if (!panel) return;
     const t = targets.get(driverId);
-    const summaryEl = panel.querySelector('.kc-ride-summary');
+    const nameEl = panel.querySelector('.kc-ride-name');
+    const subEl = panel.querySelector('.kc-ride-sub');
+    const tagEl = panel.querySelector('.kc-ride-nearest-tag');
+    const feeEl = panel.querySelector('.kc-ride-fee');
+    const minEl = panel.querySelector('.kc-ride-min');
+    const clockEl = panel.querySelector('.kc-ride-clock');
     const bookBtn = panel.querySelector('.kc-ride-book');
-    if (!t){ summaryEl.textContent = 'No drivers online yet'; bookBtn.style.opacity = '.5'; bookBtn.style.pointerEvents = 'none'; return; }
-    summaryEl.textContent = `${t.min} min away, roughly $${t.price.toFixed(2)} to ${t.title || 'the retreat'}`;
-    bookBtn.style.opacity = '1';
-    bookBtn.style.pointerEvents = 'auto';
+
+    if (!t){
+      nameEl.textContent = 'No drivers online yet';
+      subEl.innerHTML = '&nbsp;';
+      tagEl.style.display = 'none';
+      feeEl.textContent = minEl.textContent = clockEl.textContent = '–';
+      bookBtn.setAttribute('data-disabled', '1');
+      bookBtn.onclick = null;
+      if (opts.onQuote) opts.onQuote(null);
+      return;
+    }
+
+    const car = cars.get(driverId);
+    const vType = car ? car.vehicleType : 'sedan';
+    nameEl.textContent = friendlyDriverLabel(driverId);
+    subEl.textContent = vType.charAt(0).toUpperCase() + vType.slice(1) + ' · to ' + (t.title || 'the retreat');
+    tagEl.style.display = isAuto ? 'inline-block' : 'none';
+    feeEl.textContent = '$' + t.price.toFixed(2);
+    minEl.textContent = t.min + ' min';
+    clockEl.textContent = etaClockLabel(t.min);
+    bookBtn.removeAttribute('data-disabled');
     bookBtn.onclick = () => bookRide(driverId, t);
+
+    if (opts.onQuote){
+      const car = cars.get(driverId);
+      opts.onQuote({
+        driverId,
+        label: friendlyDriverLabel(driverId),
+        vehicleType: car ? car.vehicleType : 'sedan',
+        min: t.min,
+        price: t.price,
+        arrivalClock: etaClockLabel(t.min),
+        destLat: t.lat, destLng: t.lng, destTitle: t.title,
+      });
+    }
   }
 
   function bookRide(driverId, t){
     const mapsLink = `https://maps.google.com/?q=${t.lat},${t.lng}`;
-    const msg = `Hi Karl! I'd like a ride to "${t.title || 'a KarlCon retreat'}" — ` +
-      `driver ${driverId} is ${t.min} min away, ~$${t.price.toFixed(2)}.\n` +
+    const car = cars.get(driverId);
+    const vType = car ? car.vehicleType : 'car';
+    const msg = `Hi Karl! I'd like to book a ride to "${t.title || 'a KarlCon retreat'}".\n` +
+      `${friendlyDriverLabel(driverId)} (${vType}) is ${t.min} min away — arriving around ${etaClockLabel(t.min)}.\n` +
+      `Fare: ~$${t.price.toFixed(2)}\n` +
       `Drop-off: ${mapsLink}\nCan you confirm pickup?`;
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
   }
@@ -641,7 +757,7 @@ function initLiveRide(map, opts){
       let car = cars.get(driverId);
       if (!car){
         car = createCarMarker(map, d.lat, d.lng, d.heading, tier, d.vehicle_type);
-        car.hit.on('click', () => { selectedId = driverId; updateSummary(driverId); });
+        car.hit.on('click', () => { userPicked = true; selectedId = driverId; updateSummary(driverId, false); setSelectedRing(driverId); });
         cars.set(driverId, car);
       } else {
         car.moveTo(d.lat, d.lng, d.heading || car.heading);
@@ -650,10 +766,25 @@ function initLiveRide(map, opts){
     });
 
     for (const [id, car] of cars){
-      if (!seen.has(id)){ car.remove(); cars.delete(id); targets.delete(id); if (selectedId === id) selectedId = null; }
+      if (!seen.has(id)){
+        car.remove(); cars.delete(id); targets.delete(id);
+        if (selectedId === id){ selectedId = null; userPicked = false; }
+      }
     }
-    if (selectedId) updateSummary(selectedId);
-    else if (panel && !targets.size){ updateSummary(null); }
+
+    // Always keep an answer on screen: follow whichever driver is nearest
+    // unless the rider tapped a specific different car on the map, and
+    // fall back to auto-follow again if their pick goes offline.
+    if (!userPicked || !cars.has(selectedId)){
+      let bestId = null, bestMin = Infinity;
+      for (const [id, t] of targets){
+        if (t.min < bestMin){ bestMin = t.min; bestId = id; }
+      }
+      selectedId = bestId;
+    }
+
+    updateSummary(selectedId, !userPicked);
+    setSelectedRing(selectedId);
   }
 
   function connect(){
