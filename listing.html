@@ -135,9 +135,14 @@
         cta.textContent = `💬 Checkout + book ride · $${quote.price.toFixed(2)}, ${quote.min} min`;
         cta.onclick = () => {
           const mapsLink = `https://maps.google.com/?q=${quote.destLat},${quote.destLng}`;
+          const pickupLine = (quote.hasPickup && quote.pickupLat != null)
+            ? `Pickup: https://maps.google.com/?q=${quote.pickupLat},${quote.pickupLng}\n`
+            : '';
           const msg = `Hi Karl! I'd like to book "${l.title}" (${location.href}) and a ride there.\n` +
             `${quote.label} (${quote.vehicleType}) is ${quote.min} min away — arriving around ${quote.arrivalClock}.\n` +
-            `Ride fare: ~$${quote.price.toFixed(2)}\nDrop-off: ${mapsLink}\n` +
+            `Ride fare: ~$${quote.price.toFixed(2)}\n` +
+            pickupLine +
+            `Drop-off: ${mapsLink}\n` +
             `Can you confirm both the stay and the pickup?`;
           window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
         };
@@ -162,6 +167,13 @@
       const map = initSatelliteMap('mini-map', {center:[l.lat,l.lng], zoom:13, scrollWheelZoom:false});
       L.marker([l.lat, l.lng], {icon: greenDivIcon()}).addTo(map);
       addAreaCircle(map, l.lat, l.lng, 1800);
+
+      // Ask for location proactively on load rather than waiting for the
+      // "Directions from me" click — silently sets map._kcUserLatLng so
+      // initLiveRide can price rides from the rider's REAL pickup point
+      // instead of guessing. Fails silently if the visitor declines; the
+      // ride panel just falls back to the old driver->retreat estimate.
+      locateUser(map, () => {}, () => {});
 
       // Live drivers, priced to THIS retreat — panel drops in under the
       // mini-map, and the checkout button below upgrades itself (via
