@@ -124,8 +124,32 @@
 
     const cta = document.getElementById('l-cta');
     const WHATSAPP_NUMBER = '263780563561';
-    const waMessage = `Hi Karl! I'd like to book "${l.title}" (${location.href}). Is it available?`;
-    cta.onclick = () => window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`, '_blank');
+
+    // The checkout button doubles as the ride-booking CTA: plain checkout
+    // when no driver is priced yet, upgraded to "checkout + book ride"
+    // (with driver, fare, ETA folded into one WhatsApp message) the moment
+    // initLiveRide's onQuote callback below has a live quote for this
+    // retreat. Keeps one button instead of two competing WhatsApp CTAs.
+    function setCheckoutHandler(quote){
+      if (quote){
+        cta.textContent = `💬 Checkout + book ride · $${quote.price.toFixed(2)}, ${quote.min} min`;
+        cta.onclick = () => {
+          const mapsLink = `https://maps.google.com/?q=${quote.destLat},${quote.destLng}`;
+          const msg = `Hi Karl! I'd like to book "${l.title}" (${location.href}) and a ride there.\n` +
+            `${quote.label} (${quote.vehicleType}) is ${quote.min} min away — arriving around ${quote.arrivalClock}.\n` +
+            `Ride fare: ~$${quote.price.toFixed(2)}\nDrop-off: ${mapsLink}\n` +
+            `Can you confirm both the stay and the pickup?`;
+          window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+        };
+      } else {
+        cta.textContent = '💬 Checkout on WhatsApp';
+        cta.onclick = () => {
+          const waMessage = `Hi Karl! I'd like to book "${l.title}" (${location.href}). Is it available?`;
+          window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`, '_blank');
+        };
+      }
+    }
+    setCheckoutHandler(null);
 
     const images = (l.images && l.images.length) ? l.images : [];
     if (images.length){
@@ -140,12 +164,15 @@
       addAreaCircle(map, l.lat, l.lng, 1800);
 
       // Live drivers, priced to THIS retreat — panel drops in under the
-      // mini-map, right above the WhatsApp checkout button. No-ops quietly
-      // until KARLCON_RIDE_WS_URL points at a deployed dispatch_server.py.
+      // mini-map, and the checkout button below upgrades itself (via
+      // onQuote) to a merged "checkout + book ride" CTA once a driver
+      // is priced. No-ops quietly until KARLCON_RIDE_WS_URL points at a
+      // deployed dispatch_server.py.
       initLiveRide(map, {
         dest: { lat: l.lat, lng: l.lng, title: l.title },
         panelMount: document.querySelector('.side-card'),
-        whatsappNumber: WHATSAPP_NUMBER
+        whatsappNumber: WHATSAPP_NUMBER,
+        onQuote: setCheckoutHandler
       });
 
       const locateBtn = document.getElementById('mini-locate-btn');
