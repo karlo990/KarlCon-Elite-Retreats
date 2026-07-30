@@ -172,6 +172,18 @@
     }
 
     initMapControls(map);
+
+    // Live fleet, ambient mode: no single destination on this map (it shows
+    // every retreat at once), so each car prices itself to whichever
+    // listing is nearest to it — see nearestListingTo() in common.js.
+    // No-ops quietly until KARLCON_RIDE_WS_URL points at a deployed
+    // dispatch_server.py.
+    if (typeof initLiveRide === 'function'){
+      initLiveRide(map, {
+        listings: pinned,
+        panelMount: document.querySelector('.map-shell'),
+      });
+    }
   }
 
   // "Use my location" + route summary chip, wired to the shared locateUser/
