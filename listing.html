@@ -75,6 +75,11 @@
 <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 <script src="js/common.js"></script>
 <script>
+  // Point this at your deployed dispatch_server.py (wss://...) to switch
+  // the live driver fleet on. Left as-is, initLiveRide() no-ops quietly.
+  // Verify against the Space's actual URL on first deploy — see the same
+  // note in index.html.
+  window.KARLCON_RIDE_WS_URL = 'wss://karl-tech-karlcon-elite-retreats.hf.space/ws/riders';
   initBackgroundMusic('assets/audio/theme.mp3');
 </script>
 <script src="data/listings.js"></script>
@@ -133,6 +138,15 @@
       const map = initSatelliteMap('mini-map', {center:[l.lat,l.lng], zoom:13, scrollWheelZoom:false});
       L.marker([l.lat, l.lng], {icon: greenDivIcon()}).addTo(map);
       addAreaCircle(map, l.lat, l.lng, 1800);
+
+      // Live drivers, priced to THIS retreat — panel drops in under the
+      // mini-map, right above the WhatsApp checkout button. No-ops quietly
+      // until KARLCON_RIDE_WS_URL points at a deployed dispatch_server.py.
+      initLiveRide(map, {
+        dest: { lat: l.lat, lng: l.lng, title: l.title },
+        panelMount: document.querySelector('.side-card'),
+        whatsappNumber: WHATSAPP_NUMBER
+      });
 
       const locateBtn = document.getElementById('mini-locate-btn');
       const chip = document.getElementById('mini-route-chip');
