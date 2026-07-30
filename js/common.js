@@ -301,6 +301,42 @@ function haversineKm(a, b){
   return R * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1-h));
 }
 
+// ── Reverse geocoding for copy/paste into InDrive, WhatsApp, etc ──────────
+// Turns a raw lat/lng into a short human place name ("Borrowdale, Harare")
+// instead of a bare coordinate pair, so it can be pasted directly into a
+// ride app's pickup/drop-off search box. Uses OSM Nominatim (free, no key).
+// Results are cached per-session since the same pickup/listing coordinate
+// gets asked for repeatedly as drivers move.
+const _kcGeocodeCache = new Map();
+
+async function reverseGeocodeShortName(lat, lng){
+  const key = lat.toFixed(4) + ',' + lng.toFixed(4);
+  if (_kcGeocodeCache.has(key)) return _kcGeocodeCache.get(key);
+
+  try{
+    const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}&zoom=14&addressdetails=1`;
+    const res = await fetch(url, { headers: { 'Accept-Language': 'en' } });
+    if (!res.ok) throw new Error('reverse geocode failed: ' + res.status);
+    const data = await res.json();
+    const a = data.address || {};
+    // Prefer a suburb/neighbourhood + city pairing — short enough to paste
+    // into an app's search box, specific enough to actually find the spot.
+    const primary = a.suburb || a.neighbourhood || a.village || a.town || a.city_district || a.road;
+    const secondary = a.city || a.town || a.county;
+    let short;
+    if (primary && secondary && primary !== secondary) short = `${primary}, ${secondary}`;
+    else short = primary || secondary || data.display_name || `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
+
+    _kcGeocodeCache.set(key, short);
+    return short;
+  } catch (err){
+    console.info('[reverse-geocode] falling back to coordinates:', err.message);
+    const fallback = `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
+    _kcGeocodeCache.set(key, fallback);
+    return fallback;
+  }
+}
+
 // Device geolocation — drops/updates a "you are here" marker on the given
 // map and hands the coordinates back for routing. Each map keeps its own
 // marker reference so the overview map and a listing's mini-map don't clash.
@@ -398,8 +434,12 @@ function clearRoute(map){
 
 const KC_RIDE_TIER_COLOR = { near: '#0E7A4C', mid: '#D97706', far: '#8A8578' };
 const KC_RIDE_AVG_SPEED_KMH = 28;
-const KC_RIDE_PRICE_PER_KM = 1.10;
-const KC_RIDE_BASE_FARE = 0.80;
+
+// Flat-rate pricing: the quoted amount is intentionally NOT a function of
+// distance. Only the ETA/arrival clock moves as cars get closer or farther —
+// the fare and booking fee are fixed line items, by design (not a bug).
+const KC_RIDE_FLAT_FARE = 3.50;
+const KC_RIDE_BOOKING_FEE = 0.39;
 
 let _kcCarStylesInjected = false;
 function injectCarMarkerStyles(){
@@ -447,6 +487,24 @@ function injectCarMarkerStyles(){
     }
     .kc-ride-pill b{ display:block; font-size:14px; color:var(--txt1,#151512); line-height:1.3; }
     .kc-ride-pill span{ font-size:9.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--txt3,#9a958a); }
+
+    /* Fare breakdown — fare + booking fee are shown as distinct line items
+       that sum to a subtotal, never blended into a single "Fare" figure. */
+    .kc-ride-breakdown{
+      display:flex; flex-direction:column; gap:5px; margin:2px 0 2px;
+      padding:9px 11px; border-radius:10px;
+      background:rgba(255,255,255,.7); border:1px solid rgba(14,122,76,.14);
+    }
+    .kc-ride-bd-row{ display:flex; justify-content:space-between; font-size:12px; color:var(--txt2,#6b6558); }
+    .kc-ride-bd-row b{ color:var(--txt1,#151512); font-weight:600; }
+    .kc-ride-bd-row.kc-ride-bd-total{
+      border-top:1px solid rgba(14,122,76,.14); padding-top:5px; margin-top:1px;
+      font-size:12.5px; color:var(--txt1,#151512); font-weight:700;
+    }
+    .kc-ride-locline{
+      font-size:11px; color:var(--txt3,#9a958a); line-height:1.5; margin:0 0 8px;
+      overflow-wrap:anywhere;
+    }
     .kc-ride-book{
       border:none; border-radius:10px; padding:11px; font-weight:700;
       font-size:13px; background:#25D366; color:#fff; cursor:pointer; transition:opacity .2s;
@@ -532,7 +590,16 @@ function carDivIcon(heading, tier, vehicleType){
 }
 
 function rideEtaMinutes(km){ return Math.round((km / KC_RIDE_AVG_SPEED_KMH) * 60 * 10) / 10; }
-function ridePrice(km){ return Math.round((KC_RIDE_BASE_FARE + km * KC_RIDE_PRICE_PER_KM) * 100) / 100; }
+
+// Flat fare breakdown — fare and booking fee are fixed constants regardless
+// of distance; only subtotal (their sum) is derived. Returns the three line
+// items separately so the UI never blends "fare" and "fee" into one number.
+function rideFareBreakdown(){
+  const fare = KC_RIDE_FLAT_FARE;
+  const bookingFee = KC_RIDE_BOOKING_FEE;
+  const subtotal = Math.round((fare + bookingFee) * 100) / 100;
+  return { fare, bookingFee, subtotal };
+}
 function rideTier(min){ return min <= 5 ? 'near' : min <= 10 ? 'mid' : 'far'; }
 
 // One live driver marker: rotated icon, glides between pings via rAF
@@ -625,11 +692,16 @@ function initLiveRide(map, opts){
         </div>
         <span class="kc-ride-nearest-tag" style="display:none;">Nearest</span>
       </div>
+      <div class="kc-ride-breakdown">
+        <div class="kc-ride-bd-row"><span>Fare</span><b class="kc-ride-fare">–</b></div>
+        <div class="kc-ride-bd-row"><span>Booking fee</span><b class="kc-ride-bookingfee">–</b></div>
+        <div class="kc-ride-bd-row kc-ride-bd-total"><span>Subtotal</span><b class="kc-ride-subtotal">–</b></div>
+      </div>
       <div class="kc-ride-stats">
-        <div class="kc-ride-pill"><b class="kc-ride-fee">–</b><span>Fare</span></div>
         <div class="kc-ride-pill"><b class="kc-ride-min">–</b><span>Away</span></div>
         <div class="kc-ride-pill"><b class="kc-ride-clock">–</b><span>Arrives</span></div>
       </div>
+      <p class="kc-ride-locline"></p>
       <button class="kc-ride-book" data-disabled="1">💬 Book via WhatsApp</button>`;
     panelMount.appendChild(panel);
   }
@@ -707,16 +779,21 @@ function initLiveRide(map, opts){
     const nameEl = panel.querySelector('.kc-ride-name');
     const subEl = panel.querySelector('.kc-ride-sub');
     const tagEl = panel.querySelector('.kc-ride-nearest-tag');
-    const feeEl = panel.querySelector('.kc-ride-fee');
+    const fareEl = panel.querySelector('.kc-ride-fare');
+    const feeEl = panel.querySelector('.kc-ride-bookingfee');
+    const subtotalEl = panel.querySelector('.kc-ride-subtotal');
     const minEl = panel.querySelector('.kc-ride-min');
     const clockEl = panel.querySelector('.kc-ride-clock');
+    const locEl = panel.querySelector('.kc-ride-locline');
     const bookBtn = panel.querySelector('.kc-ride-book');
 
     if (!t){
       nameEl.textContent = 'No drivers online yet';
       subEl.innerHTML = '&nbsp;';
       tagEl.style.display = 'none';
-      feeEl.textContent = minEl.textContent = clockEl.textContent = '–';
+      fareEl.textContent = feeEl.textContent = subtotalEl.textContent = '–';
+      minEl.textContent = clockEl.textContent = '–';
+      locEl.textContent = '';
       bookBtn.setAttribute('data-disabled', '1');
       bookBtn.onclick = null;
       if (opts.onQuote) opts.onQuote(null);
@@ -725,24 +802,43 @@ function initLiveRide(map, opts){
 
     const car = cars.get(driverId);
     const vType = car ? car.vehicleType : 'sedan';
+    const breakdown = rideFareBreakdown();
     nameEl.textContent = friendlyDriverLabel(driverId);
     subEl.textContent = vType.charAt(0).toUpperCase() + vType.slice(1) + ' · to ' + (t.title || 'the retreat');
     tagEl.style.display = isAuto ? 'inline-block' : 'none';
-    feeEl.textContent = '$' + t.price.toFixed(2);
+    fareEl.textContent = '$' + breakdown.fare.toFixed(2);
+    feeEl.textContent = '$' + breakdown.bookingFee.toFixed(2);
+    subtotalEl.textContent = '$' + breakdown.subtotal.toFixed(2);
     minEl.textContent = t.min + ' min';
     clockEl.textContent = etaClockLabel(t.min);
     bookBtn.removeAttribute('data-disabled');
     bookBtn.onclick = () => bookRide(driverId, t);
 
+    // Fill in human-readable place names for easy copy/paste into InDrive —
+    // async and non-blocking; panel shows coordinates briefly, then updates
+    // in place once the lookup resolves (or falls back silently on failure).
+    const pickup = map._kcUserLatLng || null;
+    locEl.textContent = 'Looking up place names…';
+    (async () => {
+      const dropName = await reverseGeocodeShortName(t.lat, t.lng);
+      const pickupName = (t.hasPickup && pickup) ? await reverseGeocodeShortName(pickup[0], pickup[1]) : null;
+      if (locEl.isConnected){
+        locEl.textContent = pickupName ? `${pickupName} → ${dropName}` : `To: ${dropName}`;
+      }
+      t.dropName = dropName;
+      t.pickupName = pickupName;
+    })();
+
     if (opts.onQuote){
       const car = cars.get(driverId);
-      const pickup = map._kcUserLatLng || null;
       opts.onQuote({
         driverId,
         label: friendlyDriverLabel(driverId),
         vehicleType: car ? car.vehicleType : 'sedan',
         min: t.min,
-        price: t.price,
+        fare: breakdown.fare,
+        bookingFee: breakdown.bookingFee,
+        subtotal: breakdown.subtotal,
         arrivalClock: etaClockLabel(t.min),
         destLat: t.lat, destLng: t.lng, destTitle: t.title,
         pickupLat: pickup ? pickup[0] : null, pickupLng: pickup ? pickup[1] : null,
@@ -751,19 +847,29 @@ function initLiveRide(map, opts){
     }
   }
 
-  function bookRide(driverId, t){
-    const mapsLink = `https://maps.google.com/?q=${t.lat},${t.lng}`;
+  async function bookRide(driverId, t){
     const car = cars.get(driverId);
     const vType = car ? car.vehicleType : 'car';
     const pickup = map._kcUserLatLng || null;
-    const pickupLine = (t.hasPickup && pickup)
-      ? `Pickup: https://maps.google.com/?q=${pickup[0]},${pickup[1]}\n`
-      : '';
+    const breakdown = rideFareBreakdown();
+
+    // Prefer the place names already resolved by updateSummary; if the
+    // lookup hasn't landed yet, resolve now rather than falling back to
+    // raw coordinates in the actual booking message.
+    const dropName = t.dropName || await reverseGeocodeShortName(t.lat, t.lng);
+    const pickupName = (t.hasPickup && pickup)
+      ? (t.pickupName || await reverseGeocodeShortName(pickup[0], pickup[1]))
+      : null;
+
+    const pickupLine = pickupName ? `Pickup: ${pickupName}\n` : '';
     const msg = `Hi Karl! I'd like to book a ride to "${t.title || 'a KarlCon retreat'}".\n` +
       `${friendlyDriverLabel(driverId)} (${vType}) is ${t.min} min away — arriving around ${etaClockLabel(t.min)}.\n` +
-      `Fare: ~$${t.price.toFixed(2)}\n` +
+      `Fare: $${breakdown.fare.toFixed(2)}\n` +
+      `Booking fee: $${breakdown.bookingFee.toFixed(2)}\n` +
+      `Subtotal: $${breakdown.subtotal.toFixed(2)}\n` +
       pickupLine +
-      `Drop-off: ${mapsLink}\nCan you confirm pickup?`;
+      `Drop-off: ${dropName}\n` +
+      `Can you confirm pickup?`;
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
   }
 
@@ -775,7 +881,10 @@ function initLiveRide(map, opts){
       const t = targetFor(d);
       if (t){
         t.min = rideEtaMinutes(t.pickupKm);
-        t.price = ridePrice(t.rideKm);
+        const breakdown = rideFareBreakdown();
+        t.fare = breakdown.fare;
+        t.bookingFee = breakdown.bookingFee;
+        t.price = breakdown.subtotal; // kept for any old callers reading t.price
         targets.set(driverId, t);
       }
       const tier = t ? rideTier(t.min) : 'mid';
