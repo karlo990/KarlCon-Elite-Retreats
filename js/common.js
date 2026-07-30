@@ -646,9 +646,27 @@ function initLiveRide(map, opts){
   }
 
   function targetFor(driver){
-    if (dest) return { lat: dest.lat, lng: dest.lng, title: dest.title, km: haversineKm([driver.lat, driver.lng], [dest.lat, dest.lng]) };
+    // Once we know the rider's actual location (via locateUser — now asked
+    // for proactively on load, not just on "Directions from me"), price the
+    // ride the way a real dispatch would: ETA is how far the DRIVER is from
+    // the PICKUP point, and the fare is the PICKUP-to-destination distance —
+    // not the driver's own distance to the retreat, which was never the
+    // rider's actual trip.
+    const pickup = map._kcUserLatLng || null;
+    if (dest){
+      if (pickup){
+        const pickupKm = haversineKm([driver.lat, driver.lng], pickup);
+        const rideKm = haversineKm(pickup, [dest.lat, dest.lng]);
+        return { lat: dest.lat, lng: dest.lng, title: dest.title, pickupKm, rideKm, hasPickup: true };
+      }
+      // No known pickup point yet — fall back to the old single-leg
+      // estimate (driver straight to the retreat) rather than blocking.
+      const km = haversineKm([driver.lat, driver.lng], [dest.lat, dest.lng]);
+      return { lat: dest.lat, lng: dest.lng, title: dest.title, pickupKm: km, rideKm: km, hasPickup: false };
+    }
     const nearest = nearestListingTo(driver.lat, driver.lng);
-    return nearest; // may be null if no listings/coords available
+    if (!nearest) return null;
+    return { ...nearest, pickupKm: nearest.km, rideKm: nearest.km, hasPickup: false };
   }
 
   // Turns "sim-4" or "driver-ab12cd" into something a rider can actually
@@ -718,6 +736,7 @@ function initLiveRide(map, opts){
 
     if (opts.onQuote){
       const car = cars.get(driverId);
+      const pickup = map._kcUserLatLng || null;
       opts.onQuote({
         driverId,
         label: friendlyDriverLabel(driverId),
@@ -726,6 +745,8 @@ function initLiveRide(map, opts){
         price: t.price,
         arrivalClock: etaClockLabel(t.min),
         destLat: t.lat, destLng: t.lng, destTitle: t.title,
+        pickupLat: pickup ? pickup[0] : null, pickupLng: pickup ? pickup[1] : null,
+        hasPickup: !!t.hasPickup,
       });
     }
   }
@@ -734,9 +755,14 @@ function initLiveRide(map, opts){
     const mapsLink = `https://maps.google.com/?q=${t.lat},${t.lng}`;
     const car = cars.get(driverId);
     const vType = car ? car.vehicleType : 'car';
+    const pickup = map._kcUserLatLng || null;
+    const pickupLine = (t.hasPickup && pickup)
+      ? `Pickup: https://maps.google.com/?q=${pickup[0]},${pickup[1]}\n`
+      : '';
     const msg = `Hi Karl! I'd like to book a ride to "${t.title || 'a KarlCon retreat'}".\n` +
       `${friendlyDriverLabel(driverId)} (${vType}) is ${t.min} min away — arriving around ${etaClockLabel(t.min)}.\n` +
       `Fare: ~$${t.price.toFixed(2)}\n` +
+      pickupLine +
       `Drop-off: ${mapsLink}\nCan you confirm pickup?`;
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
   }
@@ -748,8 +774,8 @@ function initLiveRide(map, opts){
       seen.add(driverId);
       const t = targetFor(d);
       if (t){
-        t.min = rideEtaMinutes(t.km);
-        t.price = ridePrice(t.km);
+        t.min = rideEtaMinutes(t.pickupKm);
+        t.price = ridePrice(t.rideKm);
         targets.set(driverId, t);
       }
       const tier = t ? rideTier(t.min) : 'mid';
