@@ -27,6 +27,18 @@ function cleanPriceLabel(raw, fallback){
   return s;
 }
 
+// Pulls the first plain number out of a scraped price string ("$70" -> 70,
+// "R1 200" -> 1200). Returns null (not 0) when nothing usable is found, so
+// callers can fall back to a sane default rather than silently charging $0.
+function parsePriceNumber(raw){
+  if (raw == null) return null;
+  const s = String(raw).replace(/[, ]/g, '');
+  const m = s.match(/(\d+(\.\d+)?)/);
+  if (!m) return null;
+  const n = parseFloat(m[1]);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
 // Zimbabwe's real bounding box (with a little padding) — anything a scraper
 // hands us outside this box is a bad coordinate (a mis-scraped lat/lng pair
 // picked up from unrelated JSON on the source page — map bounds, some other
@@ -367,6 +379,16 @@ function locateUser(map, onLocated, onError){
 // Leaflet Routing Machine + the public OSRM demo router; falls back to a
 // dashed as-the-crow-flies line (with a haversine distance) if the routing
 // service is unavailable, so the feature still works offline/degraded.
+// Draws a route from `from` to `to` on `map`. Prefers real road routing via
+// Leaflet Routing Machine + the public OSRM demo router; falls back to a
+// dashed as-the-crow-flies line (with a haversine distance) if the routing
+// service is unavailable, so the feature still works offline/degraded.
+//
+// Always exposes the actual drawn line as map._kcRouteLine (a plain
+// L.polyline, whether the geometry came from OSRM or the fallback) so
+// callers can reliably grab its DOM element — e.g. for a draw-in animation
+// — instead of reaching into Leaflet Routing Machine's internal line layer,
+// which isn't a stable public API.
 function drawRoute(map, from, to, opts){
   opts = opts || {};
   clearRoute(map);
@@ -376,15 +398,19 @@ function drawRoute(map, from, to, opts){
     map.fitBounds(map._kcRouteLine.getBounds(), {padding:[50,50]});
     const km = haversineKm(from, to).toFixed(1);
     opts.onSummary && opts.onSummary(`${km} km · straight line (no road route found)`);
+    opts.onRouteReady && opts.onRouteReady(map._kcRouteLine);
   }
 
   if (typeof L.Routing !== 'undefined'){
     try{
+      // show:false + a styles array of zero-opacity hides Routing Machine's
+      // own line so it doesn't double up with the polyline we draw below
+      // from the same route's coordinates — one line, one we fully control.
       const control = L.Routing.control({
         waypoints:[L.latLng(from), L.latLng(to)],
         addWaypoints:false, draggableWaypoints:false, fitSelectedRoutes:true,
         show:false, createMarker:() => null,
-        lineOptions:{styles:[{color:'#0E7A4C', weight:5, opacity:.88}]},
+        lineOptions:{styles:[{opacity:0, weight:0}]},
         router: L.Routing.osrmv1({serviceUrl:'https://router.project-osrm.org/route/v1'})
       }).addTo(map);
       control.on('routesfound', (e) => {
@@ -392,6 +418,15 @@ function drawRoute(map, from, to, opts){
         const km = (r.summary.totalDistance/1000).toFixed(1);
         const mins = Math.round(r.summary.totalTime/60);
         opts.onSummary && opts.onSummary(`${km} km · ${mins} min drive`);
+
+        // Draw our own visible polyline from the route's actual road
+        // geometry (r.coordinates is the full turn-by-turn path, not just
+        // the two endpoints) so it looks like real road routing rather
+        // than a straight line, while still being a plain polyline we can
+        // animate reliably.
+        if (map._kcRouteLine) map.removeLayer(map._kcRouteLine);
+        map._kcRouteLine = L.polyline(r.coordinates, {color:'#0E7A4C', weight:5, opacity:.88}).addTo(map);
+        opts.onRouteReady && opts.onRouteReady(map._kcRouteLine);
       });
       control.on('routingerror', () => { map.removeControl(control); map._kcRouteControl = null; fallbackLine(); });
       map._kcRouteControl = control;
@@ -412,9 +447,11 @@ function clearRoute(map){
    driver gets a rotated car marker that glides between GPS pings instead
    of jumping. Works two ways, chosen by what you pass in:
 
-     - opts.dest = {lat,lng,title}   -> "listing" mode: every car shows
-       its ETA/price to THIS one destination. Used on listing.html, where
-       there's one obvious place a guest wants a ride to.
+     - opts.dest = {lat,lng,title,price}   -> "listing" mode: every car
+       shows its ETA/fare to THIS one destination. `price` is the listing's
+       own raw nightly price string (e.g. "$70") and is used as the
+       booking fee, per-listing — not the ride fare itself. Used on
+       listing.html, where there's one obvious place a guest wants a ride to.
 
      - opts.listings = LISTINGS array -> "fleet" mode: no single
        destination, so each car's ETA/price is shown to whichever listing
@@ -435,11 +472,13 @@ function clearRoute(map){
 const KC_RIDE_TIER_COLOR = { near: '#0E7A4C', mid: '#D97706', far: '#8A8578' };
 const KC_RIDE_AVG_SPEED_KMH = 28;
 
-// Flat-rate pricing: the quoted amount is intentionally NOT a function of
-// distance. Only the ETA/arrival clock moves as cars get closer or farther —
-// the fare and booking fee are fixed line items, by design (not a bug).
+// Flat-rate pricing: the ride FARE is intentionally NOT a function of
+// distance — only the ETA/arrival clock moves as cars get closer or
+// farther. The BOOKING FEE is per-listing: it mirrors that listing's own
+// nightly price (see rideFareBreakdown), so KC_RIDE_BOOKING_FEE_FALLBACK is
+// only used if a listing's price couldn't be parsed to a number at all.
 const KC_RIDE_FLAT_FARE = 3.50;
-const KC_RIDE_BOOKING_FEE = 0.39;
+const KC_RIDE_BOOKING_FEE_FALLBACK = 0.39;
 
 let _kcCarStylesInjected = false;
 function injectCarMarkerStyles(){
@@ -591,12 +630,15 @@ function carDivIcon(heading, tier, vehicleType){
 
 function rideEtaMinutes(km){ return Math.round((km / KC_RIDE_AVG_SPEED_KMH) * 60 * 10) / 10; }
 
-// Flat fare breakdown — fare and booking fee are fixed constants regardless
-// of distance; only subtotal (their sum) is derived. Returns the three line
-// items separately so the UI never blends "fare" and "fee" into one number.
-function rideFareBreakdown(){
+// Fare breakdown — the ride fare is a fixed flat rate; the booking fee is
+// NOT fixed, it mirrors this specific listing's own nightly price (per
+// Rulez: "booking fee should equal the retreat listing's own $/night
+// price"). listingPriceRaw is the listing's raw price string/number as
+// scraped (e.g. "$70"); falls back to a constant only if unparseable.
+function rideFareBreakdown(listingPriceRaw){
   const fare = KC_RIDE_FLAT_FARE;
-  const bookingFee = KC_RIDE_BOOKING_FEE;
+  const parsed = parsePriceNumber(listingPriceRaw);
+  const bookingFee = parsed != null ? parsed : KC_RIDE_BOOKING_FEE_FALLBACK;
   const subtotal = Math.round((fare + bookingFee) * 100) / 100;
   return { fare, bookingFee, subtotal };
 }
@@ -714,7 +756,7 @@ function initLiveRide(map, opts){
       const km = haversineKm([lat, lng], [l.lat, l.lng]);
       if (km < bestKm){ bestKm = km; best = l; }
     });
-    return best ? { lat: best.lat, lng: best.lng, title: best.title, km: bestKm } : null;
+    return best ? { lat: best.lat, lng: best.lng, title: best.title, listingPrice: best.price, km: bestKm } : null;
   }
 
   function targetFor(driver){
@@ -729,12 +771,12 @@ function initLiveRide(map, opts){
       if (pickup){
         const pickupKm = haversineKm([driver.lat, driver.lng], pickup);
         const rideKm = haversineKm(pickup, [dest.lat, dest.lng]);
-        return { lat: dest.lat, lng: dest.lng, title: dest.title, pickupKm, rideKm, hasPickup: true };
+        return { lat: dest.lat, lng: dest.lng, title: dest.title, listingPrice: dest.price, pickupKm, rideKm, hasPickup: true };
       }
       // No known pickup point yet — fall back to the old single-leg
       // estimate (driver straight to the retreat) rather than blocking.
       const km = haversineKm([driver.lat, driver.lng], [dest.lat, dest.lng]);
-      return { lat: dest.lat, lng: dest.lng, title: dest.title, pickupKm: km, rideKm: km, hasPickup: false };
+      return { lat: dest.lat, lng: dest.lng, title: dest.title, listingPrice: dest.price, pickupKm: km, rideKm: km, hasPickup: false };
     }
     const nearest = nearestListingTo(driver.lat, driver.lng);
     if (!nearest) return null;
@@ -794,15 +836,14 @@ function initLiveRide(map, opts){
       fareEl.textContent = feeEl.textContent = subtotalEl.textContent = '–';
       minEl.textContent = clockEl.textContent = '–';
       locEl.textContent = '';
-      bookBtn.setAttribute('data-disabled', '1');
-      bookBtn.onclick = null;
+      if (bookBtn){ bookBtn.setAttribute('data-disabled', '1'); bookBtn.onclick = null; }
       if (opts.onQuote) opts.onQuote(null);
       return;
     }
 
     const car = cars.get(driverId);
     const vType = car ? car.vehicleType : 'sedan';
-    const breakdown = rideFareBreakdown();
+    const breakdown = rideFareBreakdown(t.listingPrice);
     nameEl.textContent = friendlyDriverLabel(driverId);
     subEl.textContent = vType.charAt(0).toUpperCase() + vType.slice(1) + ' · to ' + (t.title || 'the retreat');
     tagEl.style.display = isAuto ? 'inline-block' : 'none';
@@ -811,8 +852,10 @@ function initLiveRide(map, opts){
     subtotalEl.textContent = '$' + breakdown.subtotal.toFixed(2);
     minEl.textContent = t.min + ' min';
     clockEl.textContent = etaClockLabel(t.min);
-    bookBtn.removeAttribute('data-disabled');
-    bookBtn.onclick = () => bookRide(driverId, t);
+    if (bookBtn){
+      bookBtn.removeAttribute('data-disabled');
+      bookBtn.onclick = () => bookRide(driverId, t);
+    }
 
     // Fill in human-readable place names for easy copy/paste into InDrive —
     // async and non-blocking; panel shows coordinates briefly, then updates
@@ -851,24 +894,31 @@ function initLiveRide(map, opts){
     const car = cars.get(driverId);
     const vType = car ? car.vehicleType : 'car';
     const pickup = map._kcUserLatLng || null;
-    const breakdown = rideFareBreakdown();
+    const breakdown = rideFareBreakdown(t.listingPrice);
 
     // Prefer the place names already resolved by updateSummary; if the
     // lookup hasn't landed yet, resolve now rather than falling back to
     // raw coordinates in the actual booking message.
     const dropName = t.dropName || await reverseGeocodeShortName(t.lat, t.lng);
+    const dropMapsUrl = `https://maps.google.com/?q=${t.lat},${t.lng}`;
     const pickupName = (t.hasPickup && pickup)
       ? (t.pickupName || await reverseGeocodeShortName(pickup[0], pickup[1]))
       : null;
+    const pickupMapsUrl = (t.hasPickup && pickup) ? `https://maps.google.com/?q=${pickup[0]},${pickup[1]}` : null;
 
-    const pickupLine = pickupName ? `Pickup: ${pickupName}\n` : '';
+    // Each location goes out in BOTH formats: the short place name (for
+    // pasting into InDrive's search box) and the Google Maps link (for
+    // tapping straight to the pin) — per Rulez's ask, not either/or.
+    const pickupLine = pickupName
+      ? `Pickup: ${pickupName}\n${pickupMapsUrl}\n`
+      : '';
     const msg = `Hi Karl! I'd like to book a ride to "${t.title || 'a KarlCon retreat'}".\n` +
       `${friendlyDriverLabel(driverId)} (${vType}) is ${t.min} min away — arriving around ${etaClockLabel(t.min)}.\n` +
       `Fare: $${breakdown.fare.toFixed(2)}\n` +
       `Booking fee: $${breakdown.bookingFee.toFixed(2)}\n` +
       `Subtotal: $${breakdown.subtotal.toFixed(2)}\n` +
       pickupLine +
-      `Drop-off: ${dropName}\n` +
+      `Drop-off: ${dropName}\n${dropMapsUrl}\n` +
       `Can you confirm pickup?`;
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
   }
@@ -881,8 +931,7 @@ function initLiveRide(map, opts){
       const t = targetFor(d);
       if (t){
         t.min = rideEtaMinutes(t.pickupKm);
-        const breakdown = rideFareBreakdown();
-        t.fare = breakdown.fare;
+        const breakdown = rideFareBreakdown(t.listingPrice);
         t.bookingFee = breakdown.bookingFee;
         t.price = breakdown.subtotal; // kept for any old callers reading t.price
         targets.set(driverId, t);
