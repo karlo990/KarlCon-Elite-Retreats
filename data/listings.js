@@ -9,7 +9,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$160",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -24,7 +24,9 @@ window.LISTINGS = [
     ],
     "lat": -20.209,
     "lng": 28.5958,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1004820448242511037",
@@ -36,7 +38,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$175",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThe Buffalo Place offers a unique and comfortable stay for travellers and also a cozy and welcoming atmosphere for guests.\nThe accommodation is equipped with modern amenities to ensure a convenient stay, including comfortable beds, private bathrooms, and essential facilities.\nWe offer various amenities, these may include complimentary Wi-Fi access, a communal lounge area, a fully equipped kitchen for self-catering, and a friendly and attentive staff to assist you with any needs or inquiries.\n\nOther things to note\nWe have security onsite from 6pm to 6am. We have safeguards rapid response whereby if the alarm goes off or a guest presses the panic button they respond onsite within five minutes.",
@@ -52,7 +54,9 @@ window.LISTINGS = [
     ],
     "lat": -20.19976,
     "lng": 28.62553,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1006454846957808605",
@@ -64,7 +68,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "10 years hosting"
     },
-    "price": null,
+    "price": "$192",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -86,7 +90,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1903,
     "lng": 28.6113,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1017842816559595140",
@@ -124,7 +130,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$142",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -143,7 +149,9 @@ window.LISTINGS = [
     ],
     "lat": -20.21789,
     "lng": 28.56514,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1031120592199964968",
@@ -155,7 +163,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": "September 2026",
+    "price": "$132",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.77 out of 5 stars.\n4.77\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 79% of reviews\n5\n4 stars, 19% of reviews\n4\n3 stars, 2% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 5.0 out of 5 stars for cleanliness\nCleanliness\n5.0\nRated 4.8 out of 5 stars for accuracy\nAccuracy\n4.8\nRated 4.6 out of 5 stars for check-in\nCheck-in\n4.6\nRated 4.8 out of 5 stars for communication\nCommunication\n4.8\nRated 4.7 out of 5 stars for location\nLocation\n4.7\nRated 4.6 out of 5 stars for value\nValue\n4.6\nGuest reviews mention\nCleanliness\n13\nFamily\n7\nHospitality\n16\nLocation\n9\nAccuracy\n6\nNearby\n6\nCondition\n4\nCheckout\n3\nAmenities\n3\nCheck-in\n2\n43 reviews\nRatings sort order: Most relevant\nMost relevant\nNatalie\nMasvingo, Zimbabwe\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nGroup trip\nPetty’s place was lovely .The pictures don’t do justice.All listed amenities were available and functional.The place was clean and a walkable distance from a shopping centre with restaurants even .She was also very responsive to calls and texts and made the stay stress free .Would definitely come back for a longer stay and would recommend for a small group of friends or family :)\nResponse from Petty\nAugust 2025\nThank you🌻\nBongi\n5 years on Airbnb\nRating, 3 stars\n,\n·\nDecember 2025\n,\n·\nStayed a few nights\nThe place was very nice and clean. We had booked a three-bedroom house because of the number of people in our group, but we ended up using only two bedrooms because the roof in the third one was leaking due to rain, and the bed got wet.\nThe housekeeper came early in the morning on our checkout day, and we felt under pressure, as it seemed like she wanted to start her work before we had left. Our checkout time was 11 a.m., but before we were out of the house, she had already started stripping the beds. We had to take all our belongings outside while waiting for our transport.\nSean\n10 years on Airbnb\nRating, 4 stars\n,\n·\nAugust 2025\n,\n·\nStayed one night\nHad booked the place for my family who had no complaint except for the delay in getting inside due to the alarm going off and having to wait for the host to switch it off and reset it. Otherwise great place in a great location\nGreat\nMasvingo, Zimbabwe\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nStayed with kids\nStrategically located to all your needs and it's a home away from home\nMalcom\nBulawayo, Zimbabwe\nRating, 5 stars\n,\n·\nFebruary 2026\nReally enjoyed staying at the place. Wouldnt mind being there again in the near future.\nBhekuzulu\nCape Town, South Africa\nRating, 5 stars\n,\n·\nJanuary 2026\n,\n·\nStayed one night\nI really enjoyed my stay,Petty is such a great host. would like to visit again soon.\nAmanda\nGaborone, Botswana\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed with kids\nVery lovely home! The aesthetic was very impeccable. My family and I will definitely be back in December 💓\nLungile\nPietermaritzburg, South Africa\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nStayed one night\nPerfect\nWinston\nJohannesburg, South Africa\nRating, 5 stars\n,\n·\nMarch 2026\n,\n·\nStayed over a week\nA great, convenient location in Bulawayo. Will be back.\nMufaro Michael\nGweru, Zimbabwe\nRating, 5 stars\n,\n·\nJanuary 2026\n,\n·\nGroup trip\nThis place is just magnificent \nI am really impressed by the way the host handles everything.\nI would recommend this place over and over again.\nThandoe\nBulawayo, Zimbabwe\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed one night\nClean, neat and exactly as described, we loved our stay. Would definitely book again!\nSean\n10 years on Airbnb\nRating, 4 stars\n,\n·\nAugust 2025\n,\n·\nStayed one night\nGreat place, close to shops. Peaceful neighbourhood. The family had a lovely time\nCharity\nWindhoek, Namibia\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed with kids\nThank you very much Petty… really appreciate it. My family really enjoyed their stay!!!\nGardner\n1 year on Airbnb\nRating, 5 stars\n,\n·\nSeptember 2025\n,\n·\nStayed a few nights\ngreat place clean cozy.. good security too.\nSikhululekile\n3 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2025\n,\n·\nStayed over a week\nPetty’ place was easy to find and in great location- easy accessibility to shops and restaurants. The place is well maintained, no issues with water and electricity. They are very responsive if you need assistance with anything. The available of the housekeeper when needed came in handy.\nOverall l would highly recommend it to anyone and definitely look forward to making more bookings\nMark\n2 years on Airbnb\nRating, 4 stars\n,\n·\nDecember 2024\nThe place was beautiful and very clean however the host's unpleasant attitude left a sour taste in the mouth. At check in the host was given the benefit of the doubt with hopes that she was just having a bad day. However the attitude continued at check out,  the host's abrasive and and arrogant personality is the only reason why we haven't rated higher and won't be booking again.\nResponse from Petty\nDecember 2024\nThank you for your review.Its unfortunate that you booked on behalf of your sister whom I had direct contact with not you.She called me for her checkin and I told her if I can have her wats app number to give her location since you had booked on her behalf and I did not have her number.unfortunately she said her wats was not active I can give her address and directions through the phone which I did.When she was getting lost she called again demanding I get her number and save it and send her location through Wats app which I had suggested in the beginning of her call.She began saying the number out without first asking if I was in a place we’re I could write the number down as I was driving on my way to check her in and I did not have pen and paper or other phone to save her number.l would have appreciated if she had told me politely that I am lost are you able to write my number down and save it so that you send me location through wats app.l managed to write her number down and save it .and send her location well on time.l checked her the exact time she arrived and checked her out the time she mentioned despite her slight delay I did not complain.Its good to hear both sides of the story not to have a biased review thanks.\nShow more\nLloyd\n5 years on Airbnb\nRating, 5 stars\n,\n·\nDecember 2025\ngreat place, Mr Bhebhe is a great host\nLloyd\n5 years on Airbnb\nRating, 5 stars\n,\n·\nDecember 2025\nThis one ticks all the boxes, highly recommended\nTafadzwa\nGaborone, Botswana\nRating, 5 stars\n,\n·\nDecember 2024\n,\n·\nStayed a few nights\nPetty is an amazing host and very responsive and polite. Directions to her place were spot on and the place was exactly as described . I had a very comfortable and lovely stay and will definitely come back again.\nNobukhosi\n8 years on Airbnb\nRating, 5 stars\n,\n·\nSeptember 2024\n,\n·\nStayed over a week\nHome, sweet home. It’s the place where we find solace, joy, and the freedom to be ourselves.”  l found this at petty's house with my family. She is such a sweetheart . l can never thank her enough for what she did during my stay..She went above and beyond\n.Thank you petty and your hubby so much. l will definitely book this place again...l highly recommend..A very quite place and sparkling clean, shops nearby just a walking distance very beautiful..Good job to your housekeeper she knows her thing.. Great place\nGladys\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nAugust 2024\n,\n·\nGroup trip\nPetty is friendly, quick to respond and welcoming host.Everything is as advertised.Very clean, secure and peaceful place which I recommend to both individuals and family travellers.\nResponse from Petty\nAugust 2024\nThank you for being a lovely guest 🌻\nConstantino Dumisani\nBulawayo, Zimbabwe\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed one night\nGreat place\nRenske\n11 years on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed one night\n-\nStephen\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nDecember 2024\n,\n·\nStayed one night\nStayed over for a night as a family of 4. place is very well-kept and clean, they just need to replace the toilet lid. Would recommend and book again",
@@ -167,7 +175,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1769,
     "lng": 28.5952,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1050192923941301373",
@@ -179,7 +189,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": "September 2026",
+    "price": "$135",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThis spacious 3-bedroom house offers a comfortable and convenient living experience. It features 3 cozy bedrooms, 2 bathrooms, and an open living space with a TV & WiFi perfect for entertainment. The kitchen is fully equipped with both electric and gas & an ac. Additionally, the washer and dryer make this house an ideal choice for a relaxing and hassle-free stay. Please note solar backup is for Fridge, lights, TV and WiFi only. Air conditioner & booster pump not available on Solar.Outdoor Camera\n\nThe space\nWiFi is available.",
@@ -187,7 +197,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.1144,
     "lng": 28.6328,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1051081100916269357",
@@ -199,7 +211,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "12 years hosting"
     },
-    "price": null,
+    "price": "$109",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -211,7 +223,9 @@ window.LISTINGS = [
     ],
     "lat": -33.9191,
     "lng": 18.4172,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1053691801501780324",
@@ -251,7 +265,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$212",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -275,7 +289,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1613,
     "lng": 28.6141,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1060141771651609722",
@@ -287,7 +303,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": "September 2026",
+    "price": "$205",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.81 out of 5 stars.\n4.81\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 86% of reviews\n5\n4 stars, 8% of reviews\n4\n3 stars, 6% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 4.8 out of 5 stars for accuracy\nAccuracy\n4.8\nRated 4.7 out of 5 stars for check-in\nCheck-in\n4.7\nRated 4.9 out of 5 stars for communication\nCommunication\n4.9\nRated 4.8 out of 5 stars for location\nLocation\n4.8\nRated 4.8 out of 5 stars for value\nValue\n4.8\nGuest reviews mention\nCleanliness\n8\nIndoor spaces\n7\nHospitality\n10\nLocation\n8\nComfort\n5\nAmenities\n4\nQuiet\n3\nNearby\n2\nValue\n2\n36 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -305,7 +321,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16325,
     "lng": 28.61122,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1067714199690773895",
@@ -317,7 +335,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$159",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.82 out of 5 from 28 reviews.\n4.82\nGuest favorite\nThis home is a guest favorite based on ratings, reviews, and reliability\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 82% of reviews\n5\n4 stars, 18% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 4.8 out of 5 stars for accuracy\nAccuracy\n4.8\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 4.9 out of 5 stars for communication\nCommunication\n4.9\nRated 4.7 out of 5 stars for location\nLocation\n4.7\nRated 4.8 out of 5 stars for value\nValue\n4.8\n28 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -325,7 +343,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.1301,
     "lng": 28.6062,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1069592290266626066",
@@ -337,7 +357,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$255",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -355,7 +375,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16019,
     "lng": 28.61404,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1075052077649818088",
@@ -367,7 +389,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$2215",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nYou will love our spacious family-friendly villa, that accommodates 6-8 guests in comfort. Our fully-equipped holiday home features:\nRefreshing private swimming pool you can use anytime\nMaid service (free)\nPool table & board games\nDedicated remote work station with reliable WiFi\nFull kitchen and barbecue/braai facilities & utensils\nadditional paid services\nActivity and restaurant booking assistance\nTransportation\nLocal guide\nWe aim to provide an unforgettable experience!\nMessage us for discounts\n\nThe space\nDiscover this stunning 3-bedroom residence nestled in the prestigious Victoria Falls Estate, just a short 5-minute drive from the town center and merely 8 minutes from the breathtaking Victoria Falls. Enjoy unparalleled convenience and proximity to one of the world's most spectacular natural wonders.\n\nGuest access\nWelcome to The Happy Home, a charming and secure residence featuring a spacious patio, private parking, private backyard, sparkling pool, and barbecue/braai area perfect for outdoor entertaining. Nestled in a tranquil estate, the property boasts a fully walled backyard, ensuring a peaceful and secluded retreat for relaxation and enjoyment.\"\n\nOther things to note\nIndulge in the luxury of a personal chef experience during your stay. Our talented chef is available to prepare a diverse range of mouth-watering cuisines, including Italian, Indian, Chinese, local farm-style, and vegan/vegetarian delights. Let us take care of your culinary needs, so you can focus on relaxation and enjoyment.\n\nBreakfast $10 / person\n3 Course Lunch $25 / Person\n3 Course Dinner $35/ Person\n5 Course Dinner $45 / Person ( includes a bottle of Champagne)\nbeverages are charged separately.",
@@ -405,7 +427,9 @@ window.LISTINGS = [
     ],
     "lat": -17.9355,
     "lng": 25.8163,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1075796847851781963",
@@ -417,7 +441,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": null,
+    "price": "$160",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -435,7 +459,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1411,
     "lng": 28.5952,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1080764567243541928",
@@ -447,7 +473,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": "September 2026",
+    "price": "$172",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.85 out of 5 from 67 reviews.\n4.85\nGuest favorite\nThis home is a guest favorite based on ratings, reviews, and reliability\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 90% of reviews\n5\n4 stars, 7% of reviews\n4\n3 stars, 1% of reviews\n3\n2 stars, 1% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 4.8 out of 5 stars for accuracy\nAccuracy\n4.8\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 4.9 out of 5 stars for communication\nCommunication\n4.9\nRated 4.7 out of 5 stars for location\nLocation\n4.7\nRated 4.8 out of 5 stars for value\nValue\n4.8\nGuest reviews mention\nCleanliness\n26\nHospitality\n37\nFamily\n9\nQuiet\n8\nOutdoor spaces\n5\nAmenities\n4\nComfort\n7\nLocation\n8\nDecor\n5\nCondition\n3\n67 reviews\nRatings sort order: Most relevant\nMost relevant\nTshidi\nRoodepoort, South Africa\nRating, 3 stars\n,\n·\nMarch 2026\n,\n·\nStayed a few nights\nThe house is fairly clean and beautiful. We just had an unfortunate experience of loadshedding. The Host should have a contingency plan as loadshedding seems to be a country issue. Perhaps those steel irons so that guests don't get too inconvenienced. The place is far from shops /city. The beds are super comfortable, and the area is nice and quiet still developing.  In general our stay was okay .\nNonhlanhla\nBulawayo, Zimbabwe\nRating, 5 stars\n,\n·\n3 weeks ago\n,\n·\nStayed a few nights\nOne of the most beautiful and cleanest places ,I’ve ever used on Airbnb .This is what this app is all about .The standard that Airbnb should maintain.keep up the good work\nIrvine\n10 years on Airbnb\nRating, 5 stars\n,\n·\nJune 2026\n,\n·\nStayed one night\nWe had a wonderful overnight stay with our family at Takudzwa's place. The property was beautiful and exactly as shown in the photos. It was spotless, very clean, and had all the amenities listed, plus the added bonus of solar power, so there was no need to worry about power outages.\nAlthough we never met Takudzwa in person, he was an incredibly friendly, kind, and responsive host. Communication was excellent throughout our stay. He also went the extra mile when our son accidentally left his sneakers behind by promptly contacting my sister in law to let her know.\nWe truly enjoyed our stay and would highly recommend this Airbnb to anyone looking for a comfortable, well maintained place with an exceptional host.\nCasper\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nApril 2026\n,\n·\nStayed with kids\nFamily friendly place,  all essentials were available and well it was a pleasant stay for us. Made the Easter Holidays memorable for our kids. and the Hosts are very responsive 🙏🙏🙏\nJabulani\n2 years on Airbnb\nRating, 5 stars\n,\n·\nFebruary 2026\n,\n·\nStayed a few nights\nTakudzwa was an amazing host—very welcoming, responsive, and easy to reach. The house was clean, well-equipped, and set in a peaceful neighborhood. A major highlight was having consistent water and electricity (including reliable backups) and free, fast Wi-Fi, which made our stay seamless. We also loved the thoughtful extras like the snacks and drinks provided. The outdoor area was pristine, and the whole experience felt just like home. Highly recommended!\nEthel\n7 years on Airbnb\nRating, 5 stars\n,\n·\nNovember 2025\n,\n·\nStayed over a week\nTakudzwa welcomed us well and made us feel at home. He was very responsive and helpful with any queries we had. The house was clean and the cleaners were really lovely especially Chipo. We came down with a flu during our stay and Takudzwa checked on us and brought us flu remedies which was very thoughtful and kind.  We will definitely be staying there again\nLaetitia\n1 year on Airbnb\nRating, 5 stars\n,\n·\nJune 2026\n,\n·\nStayed about a week\nHospitality was great from both the host and the caretaker! I couldn’t have asked for more!!! Thank you very much\nTakunda\n9 months on Airbnb\nRating, 5 stars\n,\n·\nApril 2026\n,\n·\nStayed a few nights\nTakudzwa was a great host, check in and check out were very good. We never had any issues and all that we need was available.\nGladman\n1 year on Airbnb\nRating, 5 stars\n,\n·\nJanuary 2026\nBeautiful place, had the whole yard to ourselves and our host was ssuper friendly. Would definitely use it again, highly recommend this palce to anyone looking for a great place to call their home while visitong Bulawayo\nPatrick\n10 years on Airbnb\nRating, 5 stars\n,\n·\nSeptember 2025\nEnjoying my stay ended up extending twice, exceeded my expectations. Clean property and well-resourced. Nice and peaceful surrounding environment. Host easy to reach out  if needing support. Will definitely book this property on my next visit.\nLetty\n9 years on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed one night\nWe stayed one night here, wishing we stayed longer,  this place is gem, the host had Snacks, water bottles, coffee ready for us, the outdoor area so clean & everything was perfect. Will be coming back here next visit.\nCrosby\n9 years on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed a few nights\nBrilliant place to stay, very quiet place with ample space for parking. \nBeautiful decorated house with good sized bedrooms.\nStayed there with my family, more than enough space for everyone.\nExcellent host\nRutendo\n7 years on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed one night\nThis place is absolutely incredible! The host was super responsive and welcoming.  The space was clean, stylish and had everything we needed. The host even left some treats for us. Highly recommend 😊😊😊\nJudith\n2 years on Airbnb\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nStayed one night\nTakudzwa’s place is very need and homely. Loved my stay and will definitely come back\nTonderai\n5 months on Airbnb\nRating, 5 stars\n,\n·\nFebruary 2026\n,\n·\nStayed a few nights\nWhen you are in Bulawayo please contact Takudzwa for a great hospitality\nDorothy\n3 years on Airbnb\nRating, 4 stars\n,\n·\nAugust 2025\n,\n·\nStayed about a week\nproblems with low voltage electricity which wasnt the host fault but needs sorting..beautiful home and safe\nSithembile\n3 years on Airbnb\nRating, 5 stars\n,\n·\nFebruary 2026\n,\n·\nStayed one night\nHost is very responsive and friendly, I highly recommend\nGladman\n1 year on Airbnb\nRating, 5 stars\n,\n·\nJanuary 2026\nGreat place with lots of room for the kids to play. Very quiet and safe neighbourhood\nCharles\nJohannesburg, South Africa\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed with kids\nBeautiful place and accommodated all my needs during a stay with my family.\nPriscillah\n6 years on Airbnb\nRating, 5 stars\n,\n·\nNovember 2025\n,\n·\nStayed with kids\nWould highly recommend.Beautiful place with a great host\nQhawe Gilmore\nBulawayo, Zimbabwe\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed a few nights\nLoved staying in this place, the host was extremely helpful throughout.\nRosemary\n5 years on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed a few nights\nVery nice and down to earth \nThank you for having us \nKind Regards \nRosey\nGeorge\n11 years on Airbnb\nRating, 5 stars\n,\n·\nJune 2025\n,\n·\nStayed one night\nTakudzwa's location was a great overnight stay for us.  It had everything we needed and we appreciated the little things provided so it felt like home. I will say arriving there was tricky as its in a new build residential area and there are road works taking place.\nOtherwise it was worth every penny.\nGeorge\nSelebi Phikwe, Botswana\nRating, 5 stars\n,\n·\nNovember 2024\n,\n·\nStayed one night\nThe pictures on the listing page do not do justice to the place. Takudzwa's place is magnificent and has lots of space. The furniture is pristine, the kitchen is spotless and the power backup is great. Takudzwa himself is very polite and very attentive to guests needs. I would DEFINITELY stay at his place again. The tranquility in the place is awesome.",
@@ -455,7 +481,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.2254,
     "lng": 28.6424,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1104445975550267122",
@@ -467,7 +495,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$121",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -491,7 +519,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1473,
     "lng": 28.6309,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1111567777128739263",
@@ -528,7 +558,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$166",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -555,7 +585,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1376,
     "lng": 28.6478,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1150661778330680273",
@@ -567,7 +599,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$166",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nSerene, spacious apartment for 2, ideal for business travelers/ solo guests or couples who want comfort, privacy, and a quiet neighborhood.\nPrime location: steps from Ascot Shopping Centre, Holiday Inn, restaurants and essentials, perfect for short stays or work trips.\nPeace of mind: secure parking and 24/7 security.\nReliable stay: water and electricity backup for added comfort and convenience.\n\nYour calm, convenient base for experiencing Bulawayo without compromising on safety or reliability.",
@@ -575,7 +607,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.1601,
     "lng": 28.6092,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1153692229287647356",
@@ -587,7 +621,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": "Renovated in 2018, Seacliffe on Two is a luxury 3-bedroom, 3.5-bathroom apartment in wind-free Bantry Bay, perfectly located between Sea Point and Clifton/Camps Bay. Nestled on a quiet road, it offers breathtaking ocean views and premium comfort where you can see, smell, and hear the sea. Fully furnished with FREE secure parking for 2 vehicles, uncapped high-speed WiFi, and reliable BACKUP POWER during outages, this stylish retreat ensures convenience and relaxation with every stay. The space Recently renovated Seacliffe on Two is located on the second level and offers exquisite views and sounds of the ocean from the lounge/dining room and two ocean facing bedrooms. The over sized bay window in the lounge frames the view of the Atlantic into a picture you will never forget. The three bedroom, three and a half bathroom apartment is larger than most three bedroom apartments as it was converted from two separate apartments and have been finished in a chic retro style with polished curved surfaces, luxurious wood and marbled finishes. The kitchen is fully equipped with appliances and all cookware needed for self catering, including a dishwasher, washing machine, dryer, for your convenience. Each of the three bedrooms has an en-suite and all the bedrooms has been decorated in neutral tones with a semi hotel feel. The apartment has 24hr security cameras and each entrance/exit point of the complex is accessed with security tags. Two parking spaces is available in the secured complex, one covered and one open. Elevators are accessed from the entrance level to all floors. One elevator has backup power and will be operational during power outages. Located on the Bantry Bay beach front, Seacliffe is but minutes away from Clifton and Camps Bay, with the Waterfront and the CBD a 10-15 min drive. Best Features: 1. Fantastic ocean views 2. Location is superb 3. Complex has great security with CCTV 4. Two secure parking spots – 1 covered, 1 uncovered 5. Spacious for an apartment 6. Complex is well managed and maintained 7. Free WiFi - UNCAPPED 600/600 mbps speed 8. Stayover cleaning can be arranged for an additional fee. 9. Backup power during power outages - appliances that generate heat will not be operational during power outages. Good news: I have inverters and lithium batteries inside my apartment to keep the basics going during power outages. What will work: lights/TV's/wifi/fridges/power outlets (no appliances that generate heat). What will not work: geysers/stove/oven/kettle/coffee maker/heaters - please unplug heaters during power outages. The system is automated and will automatically kick in when the power goes out. Apartment Layout: •Entrance •Kitchen •Guest Bathroom •Lounge/Dining Room •Master Bedroom – 2 x Twin Beds or a King Bed with TV and safe – Bathroom with Shower – Ocean Facing •2nd Bedroom – Queen Bed with TV and safe – Bathroom with Shower – Ocean Facing •3rd Bedroom – 2 x Twin Beds or a King Bed with TV and safe – Bathroom with Bathtub Distances: Cape Town International Airport 24.7km Clifton Beaches 2.4km Camps Bay Beach 4.5km V&A Waterfront 7km Cape Town Stadium 4.5km Cape Town International Convention Center 6.3km Table Mountain 7.5km Cape Town International Convention Center 6.3km Long Street 6.8km US Consulate General 30.2km Parliament 7.6km Canal Walk Mall 16km Guest access Entire apartment Other things to note The cost to clean the apartment on DEPARTURE has been included in your quoted rate and is marked as \"Cleaning Fee\". Stayover cleaning can be arranged for an additional fee directly with my cleaning lady and is not included in your booking rate. Although tipping is not customary in South Africa, it is always appreciated should you feel it appropriate. Heads‑up: On the last Tuesday of each month, between 10:00 and 12:00, window cleaners will be working outside the apartment (weather permitting). If the day falls on a public holiday, cleaning will be skipped. Guests may see the cleaners during this time, so please be mindful of privacy and close the shutters if you prefer. Electronic tags and remotes are used to access the building. Please take this in to consideration if you observe any religious days/holidays that limits your use of technology. The building manager/caretaker of the building can not assist with the opening of any door/s during the observance of the days mentioned. The elevator undergoes regular servicing and is not operational during that service session (few hours). The staircase must be used during these incidents. One elevator has backup power and will be operational during power outages. Good news: I have inverters and lithium batteries inside my apartment to keep the basics going during power outages. What will work: lights/TV's/wifi/fridges/power outlets (no appliances that generate heat). What will not work: geysers/stove/oven/kettle/coffee maker/heaters. The system is automated and will automatically kick in when the power goes out.",
+    "price": "$113",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nRenovated in 2018, Seacliffe on Two is a luxury 3-bedroom, 3.5-bathroom apartment in wind-free Bantry Bay, perfectly located between Sea Point and Clifton/Camps Bay. Nestled on a quiet road, it offers breathtaking ocean views and premium comfort where you can see, smell, and hear the sea. Fully furnished with FREE secure parking for 2 vehicles, uncapped high-speed WiFi, and reliable BACKUP POWER during outages, this stylish retreat ensures convenience and relaxation with every stay.\n\nThe space\nRecently renovated Seacliffe on Two is located on the second level and offers exquisite views and sounds of the ocean from the lounge/dining room and two ocean facing bedrooms. The over sized bay window in the lounge frames the view of the Atlantic into a picture you will never forget.\n\nThe three bedroom, three and a half bathroom apartment is larger than most three bedroom apartments as it was converted from two separate apartments and have been finished in a chic retro style with polished curved surfaces, luxurious wood and marbled finishes.\n\nThe kitchen is fully equipped with appliances and all cookware needed for self catering, including a dishwasher, washing machine, dryer, for your convenience. Each of the three bedrooms has an en-suite and all the bedrooms has been decorated in neutral tones with a semi hotel feel.\n\nThe apartment has 24hr security cameras and each entrance/exit point of the complex is accessed with security tags. Two parking spaces is available in the secured complex, one covered and one open. Elevators are accessed from the entrance level to all floors. One elevator has backup power and will be operational during power outages.\n\nLocated on the Bantry Bay beach front, Seacliffe is but minutes away from Clifton and Camps Bay, with the Waterfront and the CBD a 10-15 min drive.\n\nBest Features:\n\n1. Fantastic ocean views\n2. Location is superb\n3. Complex has great security with CCTV\n4. Two secure parking spots – 1 covered, 1 uncovered\n5. Spacious for an apartment\n6. Complex is well managed and maintained\n7. Free WiFi - UNCAPPED 600/600 mbps speed\n8. Stayover cleaning can be arranged for an additional fee.\n9. Backup power during power outages - appliances that generate heat will not be operational during power outages.\n\nGood news: I have inverters and lithium batteries inside my apartment to keep the basics going during power outages.\n\nWhat will work: lights/TV's/wifi/fridges/power outlets (no appliances that generate heat).\n\nWhat will not work: geysers/stove/oven/kettle/coffee maker/heaters - please unplug heaters during power outages.\n\nThe system is automated and will automatically kick in when the power goes out.\n\nApartment Layout:\n\n•Entrance\n•Kitchen\n•Guest Bathroom\n•Lounge/Dining Room\n•Master Bedroom – 2 x Twin Beds or a King Bed with TV and safe – Bathroom with Shower – Ocean Facing\n•2nd Bedroom – Queen Bed with TV and safe – Bathroom with Shower – Ocean Facing\n•3rd Bedroom – 2 x Twin Beds or a King Bed with TV and safe – Bathroom with Bathtub\n\nDistances:\n\nCape Town International Airport 24.7km\nClifton Beaches 2.4km\nCamps Bay Beach 4.5km\nV&A Waterfront 7km\nCape Town Stadium 4.5km\nCape Town International Convention Center 6.3km\nTable Mountain 7.5km\nCape Town International Convention Center 6.3km\nLong Street 6.8km\nUS Consulate General 30.2km\nParliament 7.6km\nCanal Walk Mall 16km\n\nGuest access\nEntire apartment\n\nOther things to note\nThe cost to clean the apartment on DEPARTURE has been included in your quoted rate and is marked as \"Cleaning Fee\".\n\nStayover cleaning can be arranged for an additional fee directly with my cleaning lady and is not included in your booking rate. Although tipping is not customary in South Africa, it is always appreciated should you feel it appropriate.\n\nHeads‑up: On the last Tuesday of each month, between 10:00 and 12:00, window cleaners will be working outside the apartment (weather permitting). If the day falls on a public holiday, cleaning will be skipped.\n\nGuests may see the cleaners during this time, so please be mindful of privacy and close the shutters if you prefer.\n\nElectronic tags and remotes are used to access the building. Please take this in to consideration if you observe any religious days/holidays that limits your use of technology. The building manager/caretaker of the building can not assist with the opening of any door/s during the observance of the days mentioned.\n\nThe elevator undergoes regular servicing and is not operational during that service session (few hours). The staircase must be used during these incidents. One elevator has backup power and will be operational during power outages.\n\nGood news: I have inverters and lithium batteries inside my apartment to keep the basics going during power outages.\n\nWhat will work: lights/TV's/wifi/fridges/power outlets (no appliances that generate heat).\n\nWhat will not work: geysers/stove/oven/kettle/coffee maker/heaters.\n\nThe system is automated and will automatically kick in when the power goes out.",
@@ -610,7 +644,9 @@ window.LISTINGS = [
     ],
     "lat": -33.92622,
     "lng": 18.37767,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1160628672623587606",
@@ -622,7 +658,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": "The Flange Guest House R3 (~$0/night USD)",
+    "price": "$1366",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -636,7 +672,9 @@ window.LISTINGS = [
     ],
     "lat": -17.93099,
     "lng": 25.81846,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1167945399278438024",
@@ -648,7 +686,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$150",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nRelax and unwind at the beautifully designed villa nestled in the peaceful suburb of Hillside . King's Executive Villa offers a pristine poolside experience with modern finishings and all the comforts of home - the perfect retreat.\nUnlimited Starlink Wifi\nLive streaming\nSwimming Pool for swimming\nSolar Power Back Up\nWater Back Up\nSolar Hot Water\nFully Equipped Kitchen\nWashing Machine\nDishwasher\nCeiling Fans\n65 inch Smart HDTV. Make yourself at home relax , unwind and have a great stay.\n\nGuest access\nKeys will be given to you by the care taker on arrival to the property.\n\nOther things to note\nStrictly no parties .",
@@ -664,7 +702,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2066,
     "lng": 28.5821,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1170834277197992105",
@@ -676,7 +716,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 years hosting"
     },
-    "price": "September 2026",
+    "price": "$137",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nTravelling to Bulawayo, experience the perfect blend of style and tranquility at The Mulberry Place self contained Guesthouse. Equipped with a double bed. Ideal for business travelers looking for a peaceful escape, those visiting the city for family gatherings as well as children's sports weekends. Enjoy the privacy and convenience of having your own private bathroom, and kitchenette. Relax and unwind in our beautiful and well-kept garden. Come experience the serenity for yourself.\n\nOther things to note\nThe Mulberry Place is 9km to cbd.\nPrivate taxis from town are available from as little as usd5 to usd10 depending on the taxi.\nPublic transport in kombis is also available from town at 50cents per trip and you can be dropped off at the gate.",
@@ -687,7 +727,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1362,
     "lng": 28.6506,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1174740696295570323",
@@ -730,7 +772,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "6 years hosting"
     },
-    "price": "Hosted by Never 6 years hosting",
+    "price": "$128",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -751,7 +793,9 @@ window.LISTINGS = [
     ],
     "lat": -20.19367,
     "lng": 28.59751,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1179285100294736859",
@@ -763,7 +807,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$226",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -786,7 +830,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16398,
     "lng": 28.608,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1184020798986018429",
@@ -798,7 +844,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$179",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -824,7 +870,9 @@ window.LISTINGS = [
     ],
     "lat": -20.15664,
     "lng": 28.61919,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1189063324733424998",
@@ -836,7 +884,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$1422",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -860,7 +908,9 @@ window.LISTINGS = [
     ],
     "lat": -17.9224,
     "lng": 25.8298,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1198519366188514758",
@@ -872,7 +922,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": "Decor 5",
+    "price": "$147",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -889,7 +939,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1562,
     "lng": 28.5942,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1198581302311948826",
@@ -935,7 +987,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "6 years hosting"
     },
-    "price": "Hosted by Never 6 years hosting",
+    "price": "$157",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -952,7 +1004,9 @@ window.LISTINGS = [
     ],
     "lat": -20.19558,
     "lng": 28.59962,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1202071023501631405",
@@ -964,7 +1018,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "6 years hosting"
     },
-    "price": null,
+    "price": "$127",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -984,7 +1038,9 @@ window.LISTINGS = [
     ],
     "lat": -20.19417,
     "lng": 28.5977,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1204195298315090369",
@@ -996,7 +1052,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$108",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nStylish & comfortable self-catering apartments offer a home away from home in a leafy suburb in Johannesburg.\n\nFully furnished 71 m² two-bedroom units feature a main bedroom with queen-size bed & en-suite bathroom including shower & bathtub.\n\nSecond bedroom has a double bed & second bathroom has a bathtub.\n\nFully equipped kitchen with modern appliances, a lounge, dining area & large balcony. Smart TV, with Netflix, DSTV, Showmax & Amazon Prime Video ready (Own Login), dedicated workspace.\n\nThe space\nA short walk away from The Wedge shopping centre, the apartment is located only 5 km from Sandton City Mall & Nelson Mandela Square Africa’s most iconic shopping centre and Sandton Business Hub.\n\nThe building consists of lift and stairs, 24/7 Security on site and 12-hour reception and concierge services (08h00 – 20h00).\n\nSecure on-site basement parking, Unlimited Wi-Fi, Digital management front door locks, Cleaning services: 3-6 nights once during stay, 7+ nights every third day and long stays 28+ nights twice a week, Backup power & water.\n\nGuest access\nOn arrival inform security you checking in and going to CAG reception.\n\nAt front desk on duty receptionist will provide you with code to enter apartment and Wi-Fi password. Proof of identification (ID/Passport) will be required and sign registration card which includes our house rules.\n\nWe have 24/7 Security on site and 12-hour reception and concierge services (08h00 – 20h00).",
@@ -1006,7 +1062,9 @@ window.LISTINGS = [
     ],
     "lat": -26.07488,
     "lng": 28.06643,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1204216671202030617",
@@ -1018,7 +1076,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": "September 2026",
+    "price": "$86",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.33 out of 5 stars.\n4.33\nThis home is in the bottom 10% of eligible listings based on ratings, reviews, and reliability\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 50% of reviews\n5\n4 stars, 33% of reviews\n4\n3 stars, 17% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.7 out of 5 stars for cleanliness\nCleanliness\n4.7\nRated 4.3 out of 5 stars for accuracy\nAccuracy\n4.3\nRated 4.7 out of 5 stars for check-in\nCheck-in\n4.7\nRated 4.6 out of 5 stars for communication\nCommunication\n4.6\nRated 4.6 out of 5 stars for location\nLocation\n4.6\nRated 4.5 out of 5 stars for value\nValue\n4.5\nGuest reviews mention\nHospitality\n9\nOutdoor spaces\n3\nWifi\n3\nComfort\n4\nCleanliness\n4\nFamily\n3\nKitchen\n2\nAir conditioning\n2\n12 reviews\nRatings sort order: Most relevant\nMost relevant\nBesa\n9 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2026\nI stayed at Warms hearts place with my family as we travelled from Australia. The place was perfect for our stay. \nThe surrounding is so clean with well maintained gardens . It’s peaceful and quiet. The room was spacious and clean. \nThe beds were comfortable with clean linen.  The room had a kitchenette with the essential utensils. The internet was fast and reliable. The host was very friendly and responsive to our inquiries. I highly recommend the place.\nTracy\n4 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2026\n,\n·\nStayed over a week\nIt became a home away from home. The pictures don't do justice to the place, it was lovelier than expected. Ma treated me very well and was always available to tend to any questions I had. Will definitely be going back\nAnele\nJohannesburg, South Africa\nRating, 5 stars\n,\n·\nJanuary 2026\n,\n·\nStayed a few nights\nThis became our home for 2 weeks and it was perfect\nPeacefully, clean and private \nThank you Warmed hearts for  making your home our home ..\nSee you on the near future\nSkumbuzo\nMiddelburg, South Africa\nRating, 5 stars\n,\n·\nJanuary 2026\n,\n·\nStayed a few nights\nThe place is great and fantastic hospitality. Just an improvement interms of air con is required\nMpumelelo\n6 months on Airbnb\nRating, 4 stars\n,\n·\nMay 2026\n,\n·\nStayed over a week\nabsolutely no problem\nBlessmore Marshal\nHarare, Zimbabwe\nRating, 3 stars\n,\n·\nOctober 2024\n,\n·\nStayed one night\nBulawayo is very hot, l recommend that the host consider putting aircon. I recommend the bnb to be positioned as 1 bedroom instead of two. The current arrangement is not comfortable for two families. \nI wasnt happy with the intermitancy of the wifi connection.\nThe host was overally welcoming. I appreciate.\nResponse from Warmedhearts\nOctober 2024\nWe have taken not of concerns and we currently in the process of putting an aircon.\nLael\nJohannesburg, South Africa\nRating, 3 stars\n,\n·\nAugust 2025\n,\n·\nStayed with kids\nAwesome host. Very welcoming and friendly.\nMichelle\n10 years on Airbnb\nRating, 4 stars\n,\n·\nApril 2025\n,\n·\nStayed with kids\nThank you for a great stay. My family and I were very comfortable. The host was very responsive and attended to any queries we had very timeously. Overall, it was a clean, homely place.\nChristabel\n2 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2025\n,\n·\nStayed over a week\nIt was a nice cozy place , very clean and a peaceful place . We really had nice time  and the host was so kind ,and always helpful to meet all our expectations and needs .looking forward to visit again in the future\nRufaz\nHarare, Zimbabwe\nRating, 4 stars\n,\n·\nSeptember 2024\n,\n·\nStayed with kids\nAn excellent place, with relaxing lash green gardens located in a quite and peaceful suburb\nHerman\nMaricopa, Arizona\nRating, 5 stars\n,\n·\nAugust 2024\n,\n·\nStayed one night\nThe place was awesome, the hostess ever so wonderfull\nElise\n11 years on Airbnb\nRating, 4 stars\n,\n·\nSeptember 2024\n,\n·\nStayed a few nights\nCoco is a kind and welcoming lady. Check-in was easy.\nOn the other hand, there were some things missing in the space: there was no plate, cutlery, cooking utensil, trash can, sponges, tea towels ... The simple things of everyday life that make you feel like home.\nThere were issues with the wifi. Coco finally gave us an internet router that we installed in the cottage and it worked well. \nThere was also a problem with the water. Often the water was off so you had to ask the lady of the house to activate the water. The water is cold or hot in the space, but it is not lukewarm. The mix isn't going well. Coco brought in workers to solve this question and at the end of our stay, it works better.\nThe garden is well maintained and the house is easy to find.\nWe have no doubt that Coco will continue to improve her cottage and we will be happy to come back.\nTranslated  Show original\nResponse from Warmedhearts\nSeptember 2024\nThank you very much. We are working in improving on all the concerns and our aim is to have a comfortable place.",
@@ -1036,7 +1094,9 @@ window.LISTINGS = [
     ],
     "lat": -20.13133,
     "lng": 28.58862,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1215592822293532725",
@@ -1048,7 +1108,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": "September 2026",
+    "price": "$427",
     "rating": null,
     "reviewsCount": null,
     "description": "Rare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked",
@@ -1063,7 +1123,9 @@ window.LISTINGS = [
     ],
     "lat": -29.8652,
     "lng": 31.0429,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1226530216341668596",
@@ -1113,7 +1175,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$1369",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1126,7 +1188,9 @@ window.LISTINGS = [
     ],
     "lat": -17.9314,
     "lng": 25.8221,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1247949133732602440",
@@ -1138,7 +1202,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": "Decor 2",
+    "price": "$118",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1165,7 +1229,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2052,
     "lng": 28.567,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1248890813886591796",
@@ -1177,7 +1243,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$437",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1185,7 +1251,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -18.957,
     "lng": 32.6777,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1260907815884656452",
@@ -1197,7 +1265,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$113",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1224,7 +1292,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2145,
     "lng": 28.5842,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1267919462394092429",
@@ -1236,7 +1306,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": "Decor 4",
+    "price": "$128",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThis is a spacious 3 bedroomed home with modern finishings. The home boasts of a fully equipped kitchen, complete with washing machine/dryer. There is back up power (solar) and water. The home boasts of a comfortable chic living area that is exquisitely furnished. The space allows you to unwind and relax after a long day.\nGuests have access to the entire home and will be provided with own keys and electric gate remote. The home also has a CCTV outside the house to provide ultimate security.\n\nThe space\nThe unit is one of two units one a one and a half acre lot.The two units are 10m apart.The place runs on solar power with batteries and they is a backup generator as well.Grid power is erratic at best but is also connected.The unit has ceiling fans in the dining areas and standing fans in the bedrooms.The aircon is installed in the bedrooms but is only available only when they is grid electricity.Also the same for the oven.\nThe area is 12km from the Bulawayo Main Post Office using the Hillside Road and Burnside Road.The unit is in a wooded lot with lots of indigenous trees and plenty of birds and squirrels around.They is also a perennial stream that runs through the property and a small natural pond with aquatic life and frogs are a common site,especially in the rainy season.Landscaping is more natural bush garden than pruned lawn and flowers\nPlease take note they are pets on the property,dogs,cats and ducks\n\nOther things to note\nThe booking is for the entire 3 bed house.Please note the price is based on the number of guests who will be staying at the property.Please ensure you put in the correct number of guests who will be sleeping over when making your booking.\nThey are also pets on the property,small dogs,cats and ducks",
@@ -1246,7 +1316,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2295,
     "lng": 28.6212,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "12733063",
@@ -1278,7 +1350,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$135",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 5.0 out of 5 from 20 reviews.\n5.0\nGuest favorite\nThis home is in the top 10% of eligible listings based on ratings, reviews, and reliability\nLearn more\nLearn more\n5 of 7 items showing\nOverall rating\n5 stars, 100% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 5.0 out of 5 stars for check-in\nCheck-in\n5.0\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 5.0 out of 5 stars for location\nLocation\n5.0\nRated 5.0 out of 5 stars for value\nValue\n5.0\n20 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -1290,7 +1362,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1754,
     "lng": 28.59234,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1279108249497683977",
@@ -1302,7 +1376,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$130",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.67 out of 5 stars.\n4.67\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 89% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 11% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 4.7 out of 5 stars for accuracy\nAccuracy\n4.7\nRated 4.7 out of 5 stars for check-in\nCheck-in\n4.7\nRated 4.7 out of 5 stars for communication\nCommunication\n4.7\nRated 4.7 out of 5 stars for location\nLocation\n4.7\nRated 4.6 out of 5 stars for value\nValue\n4.6\nGuest reviews mention\nLocation\n5\nIndoor spaces\n3\nHospitality\n4\nAccuracy\n2\n9 reviews\nRatings sort order: Most relevant\nMost relevant\nBryan Umaru\nZimbabwe\nRating, 5 stars\n,\n·\nJanuary 2026\n,\n·\nStayed with kids\nShannon and Patrick are nothing short of amazing. They took the time to check-in on how our visit was going and always used friendly language, you'd think we have been friends for years. The apartment was prestine and had amazing wall art (I am jealous). You'll feel right at home. Highly recommend (except if your booking clashes with mine 😉)\nNomsa\n11 years on Airbnb\nRating, 5 stars\n,\n·\nOctober 2025\n,\n·\nStayed a few nights\nHad an amazing stay at Shannon’s place. She was incredibly attentive and responsive, always quick to reply and all round a lovely host. The property was clean, well- located and exactly as described. Great value for the price! Highly recommend.\nResponse from Shannon\nOctober 2025\nThank you Nomsa for the kind review, it was a pleasure hosting you and your family 😊 looking forward to hosting you in the near future again.\nRok\nŽalec, Slovenia\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed a few nights\nGreat apartment, good WiFi, location close to downtown, everything works well. good communication with the host. Thanks.\nResponse from Shannon\nSeptember 2025\nThank you Rok for the review it was a pleasure hosting you 😊, looking forward to hosting you again.\nNyarie\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed a few nights\nGood central location. Enjoyed our stay. Definitely coming back soon\nGwinyai\nUnited Kingdom\nRating, 5 stars\n,\n·\nNovember 2025\n,\n·\nStayed one night\nI had a nice stay at Shannon's place, the place is easily accessible and is placed at a location of convenience.\nResponse from Shannon\nDecember 2025\nThank you Gwinyai for the kind review, it was a pleasure hosting you 😊\nNgonidzaishe\n1 year on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed with kids\nThe Place was So nice and peaceful, we really enjoyed our stay. I can recommend it to everyone looking for a home away from home in Bulawayo\nResponse from Shannon\nSeptember 2025\nThank you Ngoni for the kind review, looking forward to hosting you again with your family 🌼.\nCaleb\nKilimanjaro Region, Tanzania\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed a few nights\nAwesome host! Cozy apartment. I will definitely be back.\nClara\nEngland, United Kingdom\nRating, 2 stars\n,\n·\nSeptember 2025\n,\n·\nStayed one night\nHist needs to give accurate details\nLast Teddy\nVictoria Falls, Zimbabwe\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed a few nights\nAwesome place and very close to everything\nResponse from Shannon\nAugust 2025\nThank you so much Teddy for the kind review, looking forward to hosting you again 🌼",
@@ -1320,7 +1394,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1618,
     "lng": 28.5879,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1283185286515173382",
@@ -1332,7 +1408,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 years hosting"
     },
-    "price": "Rochester House - Number 8",
+    "price": "$100",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1352,7 +1428,9 @@ window.LISTINGS = [
     ],
     "lat": -33.9243,
     "lng": 18.3812,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1288844967599033736",
@@ -1364,7 +1442,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$1936",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nWelcome to Messe Luxe — your peaceful, modern retreat in Victoria Falls, perfect for unwinding after a day exploring one of the world’s greatest natural wonders. Ideally located for both relaxation and adventure, this stylish apartment offers the perfect base for guests looking to explore the breathtaking Victoria Falls while enjoying modern comfort and privacy.\nAfter a day of sightseeing, or river experiences, return to a calm and beautifully designed space where you can truly unwind.\n\nThe space\n🌿 The Space\nThoughtfully curated with comfort in mind, this apartment features:\nBright, modern interiors with a clean, elegant finish\nTwo Comfortable bedrooms designed for restful nights\nA fully equipped kitchen for home-style meals and an icemaker after those hot walks\nA cozy living area perfect for relaxing or entertaining with air conditioning and a wide range of entertainment applications\nWhether you’re traveling as a couple, family, or small group, Messe Luxe offers a peaceful and secure environment to recharge.\n\n🌍 The Experience\nThis is more than just a stay — it’s your personal retreat in Victoria Falls.\nSpend your days exploring nearby attractions, then come back to:\nA quiet, secure setting\nA relaxing atmosphere away from the crowds\nThe comfort and consistency of a premium stay\n\n📍 Location\nConveniently situated near key attractions, restaurants, and activity hubs, making it easy to explore everything Victoria Falls has to offer while enjoying a tranquil place to return to.\n\nGuest access\n🔑 Guest Access\nGuests will have full and exclusive access to the entire apartment during their stay.\nThis includes:\nAll bedrooms\nLiving and dining areas\nFully equipped kitchen\nBathroom(s)\nPrivate outdoor spaces\nYou will not be sharing the space with other guests, ensuring complete privacy, comfort, and a true home-away-from-home experience.",
@@ -1391,7 +1469,9 @@ window.LISTINGS = [
     ],
     "lat": -17.9347,
     "lng": 25.8159,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1293291149802491856",
@@ -1429,7 +1509,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$108",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1453,7 +1533,9 @@ window.LISTINGS = [
     ],
     "lat": -33.9101,
     "lng": 18.4125,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1307852102345500239",
@@ -1465,7 +1547,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$224",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1480,7 +1562,9 @@ window.LISTINGS = [
     ],
     "lat": -20.17698987317895,
     "lng": 28.618632852417342,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1319005982074917710",
@@ -1492,7 +1576,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$160",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nEnjoy a stylish stay in the heart of Bulawayo! This 2-bedroom apartment (sleeps 5) features 2 queen beds, a sofa bed, and a modern bathroom. Cook using a gas cooker, relax with hot water, and stay powered with backup solar. Unlimited, ultra-fast STARLINK WiFi — perfect for work, streaming, or gaming. FREE NETFLIX. Just a 5-min walk to Queen’s Sports Club, town centre and entertainment areas.\n\nUNFORTUNATELY, THERE IS NO SECURE PARKING ONSITE. THERE IS SECURE GUARDED PAID PARKING ($2/night) NEARBY\n\nThe space\nA centrally located Apartment ideal for business, leisure, and family stays.\n\n2 double bedrooms, combined living/dining room.\n\nThis Apartment is conveniently located in the CBD, walking distance to Food Outlets, Grocery Shops, Banks, City Pool, Hospitals, Pharmacies, Leisure and Entertainment venues.\n\nWiFi and Security\n\nReliable water and Electricity supply\n\nThe space\nThe Apartment is located in a quiet and safe part of Bulawayo CBD. It has two large bedrooms. There is a large lounge/dining, a kitchen, a separate toilet and bathroom with a shower, with hot water. The Kitchen has a gas stove, microwave oven, and an electric kettle.\n\nGuest access\nGuests are to advise Thembie (our host) of their arrival time, and she will be waiting to welcome you at the apartment.\n\nGuests can use all the public places of the flat\n\nOther things to note\nUNFORTUNATELY, THERE IS NO SECURE PARKING ONSITE.\n\nThere are several parking sites 5 minutes from the apartment, where guests can park for a fee. (USUALLY $2/NIGHT).\n\nOur co-hosts will be happy to show you these.",
@@ -1518,7 +1602,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1456,
     "lng": 28.5867,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1327994369646555581",
@@ -1530,7 +1616,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": "Hosted by Peter 1 year hosting",
+    "price": "$112",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1553,7 +1639,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1836,
     "lng": 28.5864,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1328845785060656640",
@@ -1600,7 +1688,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$353",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1608,7 +1696,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -19.03233,
     "lng": 32.73618,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1340376158120461429",
@@ -1620,7 +1710,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": "•Uninterrupted Fast WiFi •Rooftop Pool •100m to Beach Perfectly positioned in Sea Point, this bright and airy studio apartment offers a thoughtfully designed space to relax and recharge as you explore all that Cape Town has to offer. If you need to recharge, take the elevator up to the rooftop deck, where you can chill by the communal pool with a good book or a cocktail while taking in spectacular panoramic views of Table Mountain and the endless Atlantic Ocean. The space Step into a luxurious 35m² Studio, where style meets functionality in perfect harmony. These thoughtfully designed spaces are a testament to modern innovation, offering an unparalleled living experience for any stay. that masterfully marries comfort with style, making it the ideal haven for both short and extended stays. The captivating open-plan design seamlessly merges the bedroom, kitchen and living areas, inviting you into a sophisticated yet cozy retreat featuring a plush bed and abundant storage, ensuring restful nights and clutter-free days. Unwind with your favorite shows on the Smart TV or channel your inner chef in the impeccably equipped kitchen. The sleek bathroom, complete with a modern walk-in shower, promises a spa-like experience every day. Nestled within the prestigious EIGHTY2 ON M, this residence not only offers unparalleled luxury but also supports your well-being with exclusive convenience of self-service laundry facilities, A breathtaking Rooftop Pool & Lounging area, and delightful Communal Spaces to socialize and unwind. This is your ultimate sanctuary, where elegance meets tranquility. Guest access EIGHTY2 ON M is exclusively available from Main Road, in Sea Point. Guests can enjoy peace of mind with 24/7 security, a dedicated concierge team and secure access control. Guests have access to their own private unit, as well as all shared spaces in the building, including the building's rooftop deck and pool, offering panoramic views! *Limited Paid parking Available subject to availability upon request at check-in Other things to note This property, and all other Airbnb's in Cape Town, experience loadshedding (scheduled power outages) regulated by the national power utility. To help minimise the impact this has on guests, this apartment has some measures in place for comfort: •A generator which will power all common areas, passage lights and elevators. •A portable power station which allow one to connect electrical devices (cell phones, laptops). •A UPS which backup the Wi-Fi allowing uninterrupted internet connection. •An LED light that will illuminate the apartment. •A concierge team to assist with notifications of scheduled power outages using a recommend mobile app.",
+    "price": "$101",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\n•Uninterrupted Fast WiFi\n•Rooftop Pool\n•100m to Beach\n\nPerfectly positioned in Sea Point, this bright and airy studio apartment offers a thoughtfully designed space to relax and recharge as you explore all that Cape Town has to offer.\n\nIf you need to recharge, take the elevator up to the rooftop deck, where you can chill by the communal pool with a good book or a cocktail while taking in spectacular panoramic views of Table Mountain and the endless Atlantic Ocean.\n\nThe space\nStep into a luxurious 35m² Studio, where style meets functionality in perfect harmony. These thoughtfully designed spaces are a testament to modern innovation, offering an unparalleled living experience for any stay. that masterfully marries comfort with style, making it the ideal haven for both short and extended stays. The captivating open-plan design seamlessly merges the bedroom, kitchen and living areas, inviting you into a sophisticated yet cozy retreat featuring a plush bed and abundant storage, ensuring restful nights and clutter-free days. Unwind with your favorite shows on the Smart TV or channel your inner chef in the impeccably equipped kitchen. The sleek bathroom, complete with a modern walk-in shower, promises a spa-like experience every day. Nestled within the prestigious EIGHTY2 ON M, this residence not only offers unparalleled luxury but also supports your well-being with exclusive convenience of self-service laundry facilities, A breathtaking Rooftop Pool & Lounging area, and delightful Communal Spaces to socialize and unwind. This is your ultimate sanctuary, where elegance meets tranquility.\n\nGuest access\nEIGHTY2 ON M is exclusively available from Main Road, in Sea Point. Guests can enjoy peace of mind with 24/7 security, a dedicated concierge team and secure access control. Guests have access to their own private unit, as well as all shared spaces in the building, including the building's rooftop deck and pool, offering panoramic views!\n\n*Limited Paid parking Available subject to availability upon request at check-in\n\nOther things to note\nThis property, and all other Airbnb's in Cape Town, experience loadshedding (scheduled power outages) regulated by the national power utility. To help minimise the impact this has on guests, this apartment has some measures in place for comfort:\n\n•A generator which will power all common areas, passage lights and elevators.\n•A portable power station which allow one to connect electrical devices (cell phones, laptops).\n•A UPS which backup the Wi-Fi allowing uninterrupted internet connection.\n•An LED light that will illuminate the apartment.\n•A concierge team to assist with notifications of scheduled power outages using a recommend mobile app.",
@@ -1630,7 +1720,9 @@ window.LISTINGS = [
     ],
     "lat": -33.9101,
     "lng": 18.3942,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1340531446626706718",
@@ -1642,7 +1734,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$160",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1656,7 +1748,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1361,
     "lng": 28.6008,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1344014537777184627",
@@ -1668,7 +1762,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$164",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nEscape to our delightful wooden cabin, perfectly nestled among majestic msasa trees and stunning granite outcrops.\n\nStep into the sunlounge and soak in the views over the pristine miombo forest, where you can unwind and enjoy a morning coffee while listening to the symphony of nature.\n\nThe towering granite monoliths of Susurumba guard this tranquil retreat, providing a breathtaking backdrop for your stay.\n\nHiking the trails starts at your front door followed by evenings in front of the fire.\n\nThe space\nThree bedrooms, two with queen beds and one with two singles.\nMainroom has ensuite.\nSolar system keeps the lights and plugs on at all times and stove has gas and electric options.\nSunlounge and main lounge areas with great outdoor area for eating with ready to go braai facilities.",
@@ -1682,7 +1776,9 @@ window.LISTINGS = [
     ],
     "lat": -18.3421,
     "lng": 32.6271,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1344944113683902041",
@@ -1694,7 +1790,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": "Hosted by Peter 1 year hosting",
+    "price": "$135",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1712,7 +1808,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18441507235569,
     "lng": 28.58701011003508,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1346246246707290388",
@@ -1724,7 +1822,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$224",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1741,7 +1839,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1987,
     "lng": 28.6022,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1353553049441193375",
@@ -1788,7 +1888,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": "Hosted by Peter 1 year hosting",
+    "price": "$120",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -1814,7 +1914,9 @@ window.LISTINGS = [
     ],
     "lat": -20.183264296931206,
     "lng": 28.58527731106075,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1354880899791738336",
@@ -1941,7 +2043,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": "Shared outdoor pool - available all year, open specific hours, infinity",
+    "price": "$494",
     "rating": null,
     "reviewsCount": null,
     "description": "Rare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked",
@@ -1956,7 +2058,9 @@ window.LISTINGS = [
     ],
     "lat": -29.8305,
     "lng": 31.0136,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "13816247",
@@ -1968,7 +2072,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$1431",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThe famous Victoria Falls is only 7 mins drive from this cosy apartment set in a wonderfully tranquil suburb.An ideal spot for those requiring a peaceful and relaxing holiday. We are on the Zimbabwean side.\n\nGuest access\nCaretaker Collen is always on-site to ensure your stay is smooth and enjoyable. Host Susan is readily available on the Airbnb platform for any inquiries. Additionally, Pride is on hand to assist with transfers, activities, and recommendations for the best places to visit in Victoria Falls.\n\nOther things to note\nOptional grocery and meal services for added ease. Just let us know what you need and we will take care of the rest.",
@@ -1978,7 +2082,9 @@ window.LISTINGS = [
     ],
     "lat": -17.93102,
     "lng": 25.81592,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1382424477905451761",
@@ -1990,7 +2096,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$346",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nWelcome to our stunning north-facing double-volume house in the heart of Melville! This light-filled space offers a perfect blend of comfort and style, featuring\n\nWarm, north facing, sunny:\n\n2 Bedrooms with queen beds plus a loft room with a single bed, ideal for families or groups.\n\nA modern open-plan kitchen, dining, and lounge area, perfect for relaxing or entertaining.\n\n\nStacking doors that open onto a spacious veranda with breathtaking 270-degree views of the surrounding area.\n\nThe space\nThe unit is ideal for the solo traveler, small families, a small group of friends, singles or couples. There are stairs on the property so possibly not suitable for small children.\n\nThe spacious airy living area is open plan with the modern fully equipped kitchen flowing into the well appointed seating and dinning area, which in turns flows onto the the patio. The double volume stack doors allows one to open up the unit onto the patio and invite nature in.\n\n\nThere are two bedrooms and two bathrooms with showers only, as well as a loft with a single bed. Bedroom one provides a queen bed with a compact on-suite bathroom with a shower. The other bedroom has a queen bed and has access to a large comfortable bathroom. The main bathroom enjoys a spacious shower.\nEach bedroom has a work station and ample cupboards.\n\nThe loft area overlooks the lounge and provides a fantastic view. We provide a work station and a single bed in this area. It can get a bit warm in this area so we provide a dedicated fan.\n\nThe north facing unit has expansive windows that allow the sunshine to flow in. This creates warmth in the winter and the unit is cool in summer especially with the stack doors set open allowing the breeze through. A gas heater, built in fire place also help to take the chill off in the winter. We provide a fan in the lounge area for those warmer summer days.\n\nThe Apartment is self-catering and self servicing, but to help get you started we provide a small quantity of coffee, tea, sugar, milk as well as some hand soap, dishwashing liquid and a lined kitchen Bin.\n\nFor longer stays we will arrange for change of linen on a weekly basis or by arrangement.\n\nGuest access\nGuests have exclusive use of this upper level unit and exclusive use of the patio which provides glorious views. From the bedrooms guests have access to a private small neat grassed area.\n\nThis is a split level semi detached unit.\nThere is a unit below that is separate from this, and has its own entrance. One will sometimes hear limited noise from the unit below.\n\nThere is a shared driveway and parking is shared with other users. The unit is accessed via a small flight of stairs. This is a steep narrow drive-way, but there is space to turn around your vehicle at the bottom, with some multi-point turns.\n\nOther things to note\nThis is a no smoking unit.\nAs there are other occupants on the property we ask for co-operation with noise levels etc.\nthank you.\n\nAccess to the property is via a gate: either the pedestrian gate or if you have a vehicle, with a remote. We ask that you ensure that this is closed at all times for security reasons. The drive way is narrow and steep, but still manageable.",
@@ -2009,7 +2115,9 @@ window.LISTINGS = [
     ],
     "lat": -26.175758312391707,
     "lng": 28.013545113154564,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1389297759205497942",
@@ -2021,7 +2129,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$129",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nOur spacious apartment with two bedrooms is suited for professionals travelling together or families in need of a quiet haven. Centrally located just off Rivonia Boulevard, Sandton.\n\nFeatures:\n- Complimentary high Speed Wi-Fi.\n- Back up water\n- Within walking distance to Rivonia Boulevard.\n- Fully furnished, fully equipped, self catering & serviced.\n- Two bedrooms furnished with Queen size bed and 2 x single.\n- Sofa, TV & dining room table.",
@@ -2042,7 +2150,9 @@ window.LISTINGS = [
     ],
     "lat": -26.0602,
     "lng": 28.0577,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1390338560272054249",
@@ -2054,7 +2164,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$113",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2070,7 +2180,9 @@ window.LISTINGS = [
     ],
     "lat": -20.195456182741932,
     "lng": 28.578550846206547,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1390349819574601925",
@@ -2082,7 +2194,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": "Decor 2",
+    "price": "$80",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nNeat and modest room in Fourwinds , a quiet surbub.\n\nEquipped with:\n\nHot shower\nMini bar fridge\nCloset\nDedicated workspace\nQueen bed\nKitchenette\n*A full kitchen is also available ,though it is shared\nElectricity backup\nWater backup\nMicrowave oven\nCuttlery\nShampoo ,lotion & soap\nWiFi\nKettle\n\nThe space\nThis spacious room with all the basics in place is part of a a series of identical rooms designed motel style.",
@@ -2097,7 +2209,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2141,
     "lng": 28.585,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1390370775748947851",
@@ -2109,7 +2223,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$114",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2123,7 +2237,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2141,
     "lng": 28.5849,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1390583541250937607",
@@ -2159,7 +2275,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$107",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2167,7 +2283,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -33.9103,
     "lng": 18.3954,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1392715988494872309",
@@ -2179,7 +2297,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$182",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2203,7 +2321,9 @@ window.LISTINGS = [
     ],
     "lat": -26.0885,
     "lng": 28.0627,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1393994759733616815",
@@ -2371,7 +2491,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": "September 2026",
+    "price": "$294",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.84 out of 5 from 32 reviews.\n4.84\nGuest favorite\nThis home is a guest favorite based on ratings, reviews, and reliability\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 88% of reviews\n5\n4 stars, 9% of reviews\n4\n3 stars, 3% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 4.9 out of 5 stars for accuracy\nAccuracy\n4.9\nRated 4.8 out of 5 stars for check-in\nCheck-in\n4.8\nRated 4.8 out of 5 stars for communication\nCommunication\n4.8\nRated 4.7 out of 5 stars for location\nLocation\n4.7\nRated 4.9 out of 5 stars for value\nValue\n4.9\n32 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -2394,7 +2514,9 @@ window.LISTINGS = [
     ],
     "lat": -20.182514148464566,
     "lng": 28.62452394884468,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1402314397837515170",
@@ -2443,7 +2565,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 months hosting"
     },
-    "price": "September 2026",
+    "price": "$120",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nMy place is close to family-friendly activities, the city center\n\nThe Matopos.\nShort drive from town..\n\nYou’ll love my place because of the kitchen, the comfy bed, the neighborhood, the coziness. The views and swimming pool..\n\nMy place is good for couples, solo adventurers, business travelers.\nI have got solar power, cottage has got inverter to run the TV and lights at all time. water tank is on all the time.\n\nThe space\nModern space, beautiful views and wonderful scenic nature.\n\nGuest access\nSwimming pool, viewing deck for sundowners. Relaxing lounges. Free parking. Gardens.",
@@ -2451,7 +2573,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.2089,
     "lng": 28.59053,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1402712893264982454",
@@ -2463,7 +2587,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$126",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2471,7 +2595,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.212045359160946,
     "lng": 28.591772521263913,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1403033697412569668",
@@ -2512,7 +2638,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$139",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nUnwind at this serene 4-bedroom Guest house, just 5km from the CBD and 2km from a local University. Ideal for groups, it features 4 bedrooms, all ensuite with queen beds, a full kitchen, an 8-seater dining area, a spacious lounge and a garden. Enjoy peace of mind with power/water backups, motion sensors, and a panic button for security.\n\nProperty has a live-in Caretaker, you may see him and his family on the yard.\n\nGuest access\nGuest have access to the kitchen, dining room , lounge, the patio and the outdoor garden.\n\nOther things to note\nKindly note that there is a live-in caretaker on the property. You may see him and his family in the yard, He is available and happy to assist as needed.",
@@ -2539,7 +2665,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1486,
     "lng": 28.6315,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1405370097820659680",
@@ -2551,7 +2679,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$185",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2572,7 +2700,9 @@ window.LISTINGS = [
     ],
     "lat": -20.13953101181641,
     "lng": 28.599575364964622,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1405848150402136046",
@@ -2584,7 +2714,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$1844",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2610,7 +2740,9 @@ window.LISTINGS = [
     ],
     "lat": -17.9347,
     "lng": 25.8159,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1410702412665818000",
@@ -2622,7 +2754,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$159",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2630,7 +2762,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.13,
     "lng": 28.6063,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1410709336377448993",
@@ -2642,7 +2776,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$159",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2657,7 +2791,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1301,
     "lng": 28.6062,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1411591824436140561",
@@ -2669,7 +2805,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": "Modern, design-led 35sqm apartment in a brand-new Sea Point development – one of Cape Town’s most sought-after seaside neighbourhoods. Just steps from the Promenade and under 5km from Bree Street’s food, wine and nightlife scene. Enjoy a rooftop pool with panoramic ocean, Lion’s Head and city views, plus a private balcony, lift access, Nespresso machine, curated honesty bar featuring Culture Wine Bar wines, record player, and premium towels & linens.",
+    "price": "$107",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2688,7 +2824,9 @@ window.LISTINGS = [
     ],
     "lat": -33.9142,
     "lng": 18.3913,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1417501128629429918",
@@ -2804,7 +2942,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": "Decor 8",
+    "price": "$125",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2821,7 +2959,9 @@ window.LISTINGS = [
     ],
     "lat": -20.105781633730743,
     "lng": 28.639382388840744,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1424606206785563895",
@@ -2853,7 +2993,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$99",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2875,7 +3015,9 @@ window.LISTINGS = [
     ],
     "lat": -20.0893,
     "lng": 28.6308,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1437723346769646794",
@@ -2887,7 +3029,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": "September 2026",
+    "price": "$116",
     "rating": null,
     "reviewsCount": null,
     "description": "Rare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked",
@@ -2903,7 +3045,9 @@ window.LISTINGS = [
     ],
     "lat": -15.3976,
     "lng": 28.4225,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1443430567149229975",
@@ -2915,7 +3059,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$240",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -2941,7 +3085,9 @@ window.LISTINGS = [
     ],
     "lat": -26.1067,
     "lng": 28.0633,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1444800639674263221",
@@ -2953,7 +3099,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$185",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.68 out of 5 stars.\n4.68\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 74% of reviews\n5\n4 stars, 21% of reviews\n4\n3 stars, 5% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.6 out of 5 stars for cleanliness\nCleanliness\n4.6\nRated 4.4 out of 5 stars for accuracy\nAccuracy\n4.4\nRated 4.8 out of 5 stars for check-in\nCheck-in\n4.8\nRated 4.8 out of 5 stars for communication\nCommunication\n4.8\nRated 4.6 out of 5 stars for location\nLocation\n4.6\nRated 4.7 out of 5 stars for value\nValue\n4.7\nGuest reviews mention\nHospitality\n11\nIndoor spaces\n3\nCondition\n2\nValue\n2\nCleanliness\n2\nComfort\n2\nLocation\n2\n19 reviews\nRatings sort order: Most relevant\nMost relevant\nMarble\n6 months on Airbnb\nRating, 5 stars\n,\n·\nFebruary 2026\n,\n·\nStayed over a week\nMdu was very friendly and of course I can’t forget Norbert who helped my family with whatever we needed. Place is great, full house, private. Mdue was always ready to help with whatever we needed and responded fast to solve whatever inquiry. \nThank you 🙏🏿 for letting us in your beautiful home. \nDefinitely recommend if you need privacy and quietness\nIntegrity\nHarare, Zimbabwe\nRating, 4 stars\n,\n·\nJune 2026\n,\n·\nStayed a few nights\nI had a great stay with Mdu. The host was very responsive and quick to act whenever an issue came up. They made sure everything was resolved promptly, which made the experience comfortable and stress-free. I highly recommend this place!\nLucy\n7 years on Airbnb\nRating, 5 stars\n,\n·\nMarch 2026\n,\n·\nStayed a few nights\nMdu's place is home from home. It is so beautiful ,  very spacious comfortable and well maintained .  The property is very clean and has everything you need to make you feel at  home.  It is in a lovely neighbourhood  and located  close to Bulawayo city! Norbert who looks after the property is SO lovely , very polite  and  ever smiling!  He was always there opening the gate for us  and  truly made our stay comfortable. I would highly recommend this place  because it is such great value for money! You get so much  house for very little i think cheapest on airbnb for a four bedroomed home.\nResponse from Mdu\nApril 2026\nWow … thank you!! 🙏🏾\nFlo\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nStayed a few nights\nBeautiful place and very helpful caretaker and responsive host. Will definitely come back. Thank you Mdu.\nJoe\nMasvingo, Zimbabwe\nRating, 4 stars\n,\n·\nApril 2026\n,\n·\nStayed a few nights\nMdu is a nice host and his place is spacious. The kitchen stood out for me. Will definitely stay there again.\nPamela\nPretoria, South Africa\nRating, 4 stars\n,\n·\nAugust 2025\n,\n·\nStayed with kids\nWe had a pleasant stay at Mduduzi’s place, although our schedule was extremely busy with memorial preparations. The facility ended up being used mostly for sleeping, so we didn’t get to fully experience the house. That said, the gentleman who works at the property was incredibly helpful — truly handy and supportive — and assisted us greatly throughout our stay.\nResponse from Mdu\nAugust 2025\nPamela is a great customer to have. She left my Airbnb in great condition, and she and her family are always welcomed 🙏🏾\nLynnette\nHarare, Zimbabwe\nRating, 3 stars\n,\n·\nApril 2026\n,\n·\nStayed with kids\nBig place, great bones, good location but needs maintenance and new linen.\nResponse from Mdu\nMay 2026\nNoted\nTariro\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\n3 weeks ago\n,\n·\nStayed a few nights\nWe felt at home, a great place to be\nKudzaishe\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nOctober 2025\n,\n·\nStayed a few nights\nLoved the place it was clean and the caretaker was nice and very helpful. Definitely booking again the next time i visit Bulawayo.\nResponse from Mdu\nOctober 2025\nThank you Kudzi… hope to see you soon!!\nRegis\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nSeptember 2025\n,\n·\nStayed a few nights\nEnjoyed our stay at Mdu’s place. He’s a great host and he was very helpful in addressing the challenges we faced.\nHillary\n10 months on Airbnb\nRating, 5 stars\n,\n·\nJune 2026\n,\n·\nGroup trip\nGood place\nTanatswa\n4 years on Airbnb\nRating, 5 stars\n,\n·\nNovember 2025\n,\n·\nStayed a few nights\nGood host! Would definitely book again.\nFelix\n2 years on Airbnb\nRating, 5 stars\n,\n·\nSeptember 2025\n,\n·\nStayed a few nights\ngood value good customer service\nRosemary\n5 years on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed a few nights\nVery Homely and comfortable \nThank you for having us \nKind Regards\nWilbert\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nSeptember 2025\n,\n·\nStayed a few nights\nLarge and cosy place, an absolute catch\nResponse from Mdu\nOctober 2025\nThank you …hope to see you again!!\nPrascill\nHarare, Zimbabwe\nRating, 4 stars\n,\n·\nAugust 2025\n,\n·\nGroup trip\nHost was very responsive and check in was smooth\nMmene\nSaanen, Switzerland\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed a few nights\ngreat place\nTakudzwa\n2 years on Airbnb\nRating, 5 stars\n,\n·\nOctober 2025\n,\n·\nStayed one night\nGreat stay\nChenai\n10 months on Airbnb\nRating, 5 stars\n,\n·\nSeptember 2025\n,\n·\nGroup trip\n10/10",
@@ -2973,7 +3119,9 @@ window.LISTINGS = [
     ],
     "lat": -20.172262440408833,
     "lng": 28.63315794622129,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1449258114252871724",
@@ -2985,7 +3133,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$235",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3002,7 +3150,9 @@ window.LISTINGS = [
     ],
     "lat": -18.18345215191331,
     "lng": 32.845758010965646,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1449869442050082327",
@@ -3014,7 +3164,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$138",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3022,7 +3172,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -26.055766365895025,
     "lng": 28.06274662782904,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1453143949632917825",
@@ -3034,7 +3186,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$142",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3057,7 +3209,9 @@ window.LISTINGS = [
     ],
     "lat": -26.0516,
     "lng": 28.0579,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1455842450766017027",
@@ -3142,7 +3296,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 months hosting"
     },
-    "price": null,
+    "price": "$115",
     "rating": "4",
     "reviewsCount": "4",
     "description": null,
@@ -3159,7 +3313,9 @@ window.LISTINGS = [
     ],
     "lat": -20.107967414817157,
     "lng": 28.636795609273513,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1462968863279141245",
@@ -3171,7 +3327,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$1432",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3187,7 +3343,9 @@ window.LISTINGS = [
     ],
     "lat": -17.9317077249095,
     "lng": 25.815791169993982,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1465702514665204622",
@@ -3199,7 +3357,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$80",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nIf you love dogs and cats, then this is the place to be. We have a beautiful garden in which you can relax and have your sundowners! It is very peaceful even though we are close to town, restaurants, shopping centers, banks and local hospitals.\n\nThe space\nThis room is in our house with a shared bathroom, access to the kitchen and living room areas, and a lovely outdoor eating area.\n\nOur garden is green and lovely to relax in.\n\nAnd of course the dogs and cats will be with you all day if you are around.\n\nGuest access\nYou have your own room with access to a shared toilet and shower.\n\nYou also have access to our full kitchen and living room areas.\n\nDuring your stay\nI live in the house and am happy to tell you about the area and help you with getting settled into Bulawayo.\n\nOur dogs and cats will certainly want to interact with you as they also live in the house with us.\n\nOther things to note\nWe have two large German Shepards and two cats so you would need to be an animal lover to enjoy being here. They do have full access to the house but not to your room.",
@@ -3214,7 +3372,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18781,
     "lng": 28.58655,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1466852724117719668",
@@ -3253,7 +3413,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": "Decor 11",
+    "price": "$71",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThree Anchor Heart is nestled in the heart of Cape Town, offering a central location:\n- V&A Waterfront – 2.3 km\n- Signal Hill – 1.7 km\n- Table Mountain Aerial Cableway – 6.2 km\n- Cape Town Stadium – 1.2 km\n- Sea Point Promenade – 500 m\n- Bo-Kaap– 2.4 km\n- Oceans Aquarium – 2.2 km\n- Company’s Garden & South African Museum – 3.3 km\n- Clifton Beaches – 4.4 km\n- Camps Bay Beach – 6.5 km\n- Robben Island Ferry (from Wate rfront) – 2.3 km\n- Zeitz MOCAA – 2.7 km\n- District Six Museum – 4.2 km\n\nThe space\nThis stylish studio blends comfort and functionality in a clean, contemporary design. There are 8 micro apartments in this newly renovated building.\n\nThe space features:\nA queen bed neatly dressed in crisp white linen with a soft throw, creating a cozy and inviting sleeping area.\n\nGround apartments display modern tiles and suspended bulkhead ceilings.\n\nAn L-shaped kitchenette in the corner is compact yet well-appointed, including:\n\n- A fridge and microwave\n- Sleek cabinetry with ample storage\n- A sink and under-counter lighting\n- Basic appliances such as a 2 plate Smeg stove and kettle.\nEssential cookware included, perfect for preparing simple meals or snacks.\n\nA built-in desk/workspace by the large window provides natural light and is ideal for remote work or casual use.\n\nGenerous wardrobe space with modern black handles, offering both closed storage and open shelving for display or practical use.\n\nWooden features throughout add warmth and elegance, complementing the soft neutral palette of the room.\n\nGuest access\nYour room's front door has a Smart Access Yale lock, which uses biometrics, pin codes and digital tags.\n\nYou'll receive a code before you arrive to enter the building, and a second unique code for your room. The room code changes with each guest visit.",
@@ -3274,7 +3434,9 @@ window.LISTINGS = [
     ],
     "lat": -33.91,
     "lng": 18.398,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "14702462",
@@ -3306,7 +3468,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$125",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3340,7 +3502,9 @@ window.LISTINGS = [
     ],
     "lat": -20.198978268974447,
     "lng": 28.561783575744265,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "14768118",
@@ -3352,7 +3516,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": null,
+    "price": "$77",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nA homely loft apartment with an open plan lounge & kitchen.\nThe kitchen is well equipped with gas stove, fridge, & all utensils you need to cook. Upstairs loft bedroom has a comfy super king -size bed, great light, and ample storage space.\nThere is backup power via solar system, which powers lights, tv & wifi.\n\nWater supplied via an electricity powered borehole.\n\nThe Loft is located 3km from CBD & walking distance to shops\nThe Loft Apartment is not shared and has its own entrance.\n\nThe space\nCozy Loft apartment with a super king-size bed in the loft. Fresh, clean linen for a peaceful sleep, and ample storage space for your luggage.\n\nThe open plan kitchen and lounge makes the studio apartment a relaxing place after a long trip or a busy day at work. There is a tv in the lounge with DSTV, comfortable couches to stretch on. The kitchen is well equipped with a gas stove, fridge, toaster, electric jug, microwave, & all the crockery required for a quick meal or a simple cup of coffee .\n\nThe bathroom has an enclosed shower and toilet. Hot water is provided via a solar/electricity geyser.\n\nThe access to the apartment is via an electric gate. A caretaker on site is available to welcome you and answer all your queries to make your stay hustle free\n\nFree parking is available on site. There is a garden & pool for your relaxation. Both the pool and garden is shared with other guests\n\nGuest access\nThere is a private and enclosed patio that is accessible directly from. living room for use by the guest. In addition, there is a lush garden, and guests are free to stroll around and sit under the shady trees on the lawn\n\nOther things to note\nThe loft apartment has a solar/electricity combo geyser for hot water.\n\nParking for guests with their own car is on site. Access is via an electric gate.\n\nThere is a solar system that we use when there is a power outage. It powers the outside lights, wifi , loft lights, & TV. It also powers booster pump, which ensures that there is water from the 5,000L storange tank into the loft apartment for guests' use.\n\nThere is also an electric powered borehole, so water is always available\n\n(Note that you can not iron nor use the fridge when solar is in use)",
@@ -3376,7 +3540,9 @@ window.LISTINGS = [
     ],
     "lat": -20.13328,
     "lng": 28.62767,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1481947298670175418",
@@ -3388,7 +3554,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "11 months hosting"
     },
-    "price": null,
+    "price": "$129",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 5 out of 5 stars.\n5.0\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 100% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 5.0 out of 5 stars for cleanliness\nCleanliness\n5.0\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 5.0 out of 5 stars for check-in\nCheck-in\n5.0\nRated 4.0 out of 5 stars for communication\nCommunication\n4.0\nRated 5.0 out of 5 stars for location\nLocation\n5.0\nRated 5.0 out of 5 stars for value\nValue\n5.0\n3 reviews\nRatings sort order: Most relevant\nMost relevant\nNyasha Eric\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\n2 weeks ago\n,\n·\nStayed one night\nClean, safe and close to town environment! well kept and friendly housekeeper\nTinashe\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nApril 2026\n,\n·\nStayed a few nights\nAmazing stay and really close to great locations. The outside shower was a beautiful touch to the space.\nDoreen\n10 years on Airbnb\nRating, 5 stars\n,\n·\nNovember 2025\n,\n·\nStayed a few nights\nGreat place .\nResponse from Rumbidzai\nDecember 2025\nThank you Doreen, it was a privilege to host you x",
@@ -3415,7 +3581,9 @@ window.LISTINGS = [
     ],
     "lat": -20.17566,
     "lng": 28.59235,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1482045493837348834",
@@ -3427,7 +3595,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "2 years hosting"
     },
-    "price": "September 2026",
+    "price": "$188",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 5.0 out of 5 from 6 reviews.\n5.0\nGuest favorite\nThis home is a guest favorite based on ratings, reviews, and reliability\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 100% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 5.0 out of 5 stars for cleanliness\nCleanliness\n5.0\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 5.0 out of 5 stars for check-in\nCheck-in\n5.0\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 4.8 out of 5 stars for location\nLocation\n4.8\nRated 5.0 out of 5 stars for value\nValue\n5.0\n6 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -3448,7 +3616,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18644560483,
     "lng": 28.600863689505196,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1486843303395012881",
@@ -3460,7 +3630,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "1 year hosting"
     },
-    "price": "Private pool - available all year, open 24 hours",
+    "price": "$270",
     "rating": null,
     "reviewsCount": null,
     "description": "Your price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average",
@@ -3492,7 +3662,9 @@ window.LISTINGS = [
     ],
     "lat": -26.115,
     "lng": 28.0635,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1488954130297118028",
@@ -3504,7 +3676,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": "September 2026",
+    "price": "$97",
     "rating": null,
     "reviewsCount": null,
     "description": "Your price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average",
@@ -3527,7 +3699,9 @@ window.LISTINGS = [
     ],
     "lat": -20.143812781695676,
     "lng": 28.584723699535544,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1490586977568974779",
@@ -3576,7 +3750,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "10 months hosting"
     },
-    "price": "Add a night for $57",
+    "price": "$156",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3594,7 +3768,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1133,
     "lng": 28.6046,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1498408472755871631",
@@ -3606,7 +3782,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 months hosting"
     },
-    "price": null,
+    "price": "$213",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3635,7 +3811,9 @@ window.LISTINGS = [
     ],
     "lat": -20.178,
     "lng": 28.6235,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1505730880753327812",
@@ -3679,7 +3857,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 months hosting"
     },
-    "price": null,
+    "price": "$178",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3702,7 +3880,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1587,
     "lng": 28.5811,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1511843480601646210",
@@ -3714,7 +3894,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "10 months hosting"
     },
-    "price": null,
+    "price": "$164",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3728,7 +3908,9 @@ window.LISTINGS = [
     ],
     "lat": -20.143447283937043,
     "lng": 28.599926005696325,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1516721171969624991",
@@ -3740,7 +3922,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 months hosting"
     },
-    "price": null,
+    "price": "$104",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3755,7 +3937,9 @@ window.LISTINGS = [
     ],
     "lat": -20.22416774515677,
     "lng": 28.616838698100562,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1517091691459149003",
@@ -3767,7 +3951,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "10 months hosting"
     },
-    "price": null,
+    "price": "$135",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 5.0 out of 5 from 8 reviews.\n5.0\nGuest favorite\nThis home is a guest favorite based on ratings, reviews, and reliability\nLearn more\nLearn more\n5 of 7 items showing\nOverall rating\n5 stars, 100% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 5.0 out of 5 stars for cleanliness\nCleanliness\n5.0\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 5.0 out of 5 stars for check-in\nCheck-in\n5.0\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 4.9 out of 5 stars for location\nLocation\n4.9\nRated 5.0 out of 5 stars for value\nValue\n5.0\n8 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -3789,7 +3973,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18333,
     "lng": 28.64445,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1520426885746405963",
@@ -3899,7 +4085,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "7 months hosting"
     },
-    "price": "September 2026",
+    "price": "$150",
     "rating": null,
     "reviewsCount": null,
     "description": "Your price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average",
@@ -3932,7 +4118,9 @@ window.LISTINGS = [
     ],
     "lat": -15.4074,
     "lng": 28.3121,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1538342669555653937",
@@ -3964,7 +4152,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "7 years hosting"
     },
-    "price": null,
+    "price": "$176",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -3985,7 +4173,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18611,
     "lng": 28.60783,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1544257667974244318",
@@ -4059,7 +4249,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$107",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nStay comfortably with 2 bedrooms with ensuites inside the house and access to all other common spaces get to also enjoy the outside beautiful views the big swimming pool and relax with your family or friends .\n\nGuest access\nkitchen\nsitting room\nswimming pool\noutside sitting area",
@@ -4077,7 +4267,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18694,
     "lng": 28.64059,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1546238661298088322",
@@ -4121,7 +4313,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$107",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4129,7 +4321,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -33.9115,
     "lng": 18.393,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1548211512446913383",
@@ -4141,7 +4335,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "10 months hosting"
     },
-    "price": null,
+    "price": "$135",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.57 out of 5 stars.\n4.57\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 86% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 14% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.7 out of 5 stars for cleanliness\nCleanliness\n4.7\nRated 4.9 out of 5 stars for accuracy\nAccuracy\n4.9\nRated 4.6 out of 5 stars for check-in\nCheck-in\n4.6\nRated 4.7 out of 5 stars for communication\nCommunication\n4.7\nRated 5.0 out of 5 stars for location\nLocation\n5.0\nRated 4.7 out of 5 stars for value\nValue\n4.7\n7 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -4163,7 +4357,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18329,
     "lng": 28.64431,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1548510123961105862",
@@ -4175,7 +4371,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "8 months hosting"
     },
-    "price": null,
+    "price": "$139",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4197,7 +4393,9 @@ window.LISTINGS = [
     ],
     "lat": -20.15751,
     "lng": 28.58807,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1551406669968392969",
@@ -4209,7 +4407,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 months hosting"
     },
-    "price": "September 2026",
+    "price": "$575",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4235,7 +4433,9 @@ window.LISTINGS = [
     ],
     "lat": -29.8702,
     "lng": 31.0494,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1552125818800826166",
@@ -4247,7 +4447,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$122",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4274,7 +4474,9 @@ window.LISTINGS = [
     ],
     "lat": -26.070787610197026,
     "lng": 28.051536135040372,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1555495963926963600",
@@ -4312,7 +4514,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$438",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4326,7 +4528,9 @@ window.LISTINGS = [
     ],
     "lat": -18.96434,
     "lng": 32.66885,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1562188870566653562",
@@ -4364,7 +4568,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "11 months hosting"
     },
-    "price": "An immaculate, fully furnished one-bed en-suite apartment situated on the 9th floor offering stunning views in the heart of the vibrant energy of Sandton. Sandton Skye is perfectly positioned with top-tier amenities at your doorstep offering the ultimate in lifestyle, comfort and convenience. The space Apartment Features Spacious open plan main bed en-suite. Open plan seating area with stunning views Sleek fully equipped modern kitchen Premium high end finishes Fully air-conditioned apartment One basement parking Exclusive amenities include 24-hour concierge, restaurant, cocktail bar, gym, pool, 24hour security & high speed fiber Sandton Skye offers the guests • 24 hour Concierge • The Codfather Restaurant • Sushi Bar • Indoor/outdoor Cocktail Bar • Gym • Outdoor Pool • 24 hr Guardhouse & Security • High Speed Fibre • Temperature controlled air-conditioning • Housekeeping & laundry available • Secure Basement Parking Guest access Guests arrive at the front entrance and can check in at the front desk. Key cards will be issued to access their apartment. Guests will be directed to the allocated basement parking from which they can take the elevators to the 9th floor to access apartment 910 Other things to note Sandton Skye is situated in the main hub of Sandton. Ubers are accessible to get anywhere and the main Gautrain is within a 3 min drive.",
+    "price": "$278",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nAn immaculate, fully furnished one-bed en-suite apartment situated on the 9th floor offering stunning views in the heart of the vibrant energy of Sandton. Sandton Skye is perfectly positioned with top-tier amenities at your doorstep offering the ultimate in lifestyle, comfort and convenience.\n\nThe space\nApartment Features\nSpacious open plan main bed en-suite.\nOpen plan seating area with stunning views\nSleek fully equipped modern kitchen\nPremium high end finishes\nFully air-conditioned apartment\nOne basement parking\n\nExclusive amenities include 24-hour concierge, restaurant, cocktail bar, gym, pool, 24hour security & high speed fiber\n\n\nSandton Skye offers the guests\n• 24 hour Concierge\n• The Codfather Restaurant\n• Sushi Bar\n• Indoor/outdoor Cocktail Bar\n• Gym\n• Outdoor Pool\n• 24 hr Guardhouse & Security\n• High Speed Fibre\n• Temperature controlled air-conditioning\n• Housekeeping & laundry available\n• Secure Basement Parking\n\nGuest access\nGuests arrive at the front entrance and can check in at the front desk.\nKey cards will be issued to access their apartment.\nGuests will be directed to the allocated basement parking from which they can take the elevators to the 9th floor to access apartment 910\n\nOther things to note\nSandton Skye is situated in the main hub of Sandton. Ubers are accessible to get anywhere and the main Gautrain is within a 3 min drive.",
@@ -4380,7 +4584,9 @@ window.LISTINGS = [
     ],
     "lat": -26.0989,
     "lng": 28.0534,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1564963281771807850",
@@ -4392,7 +4598,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "7 months hosting"
     },
-    "price": null,
+    "price": "$285",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nExperience contemporary elegance in this modern 3-bedroom all–en-suite home in Bryanston, Sandton. With sleek design, spacious living areas, a private garden, and a sparkling pool, it offers luxury and comfort. Enjoy free high-speed WiFi, secure on-site parking, air-conditioning, and a backup water supply — the perfect blend of style, privacy, and convenience. Clean architectural lines, tasteful furnishings, and abundant natural light create an atmosphere of elegance.\n\nThe space\nLocated in the leafy suburb of Brynston, Sandton , Elysia Complex at 81 Grosvenor Rd places you in one of Johannesburg’s most sought-after neighborhoods. You’ll be just minutes away (7.7km) from Sandton City, Nelson Mandela Square, top restaurants, cafes, and business hubs, making it an ideal location for both family holiday, leisure and corporate travel.\n\nGuests also have access to excellent building amenities, which may include:\n• Secure complex with 24/7 security\n• Quite neighborhood\n• Swimming pool\n• Secure parking\n\nWhether you’re visiting Sandton for business meetings, a weekend getaway, or a longer stay, Unit 21 offers a perfect balance of luxury, comfort, and convenience. Enjoy the vibrant energy of the city while returning to a peaceful, stylish space designed to make you feel at home.\n\nHighlights:\n• Prime Sandton location\n• Elegant, modern interior 3 beds in suite.\n• 3x King-size bed with premium linens\n• High-speed Wi-Fi and Smart TV\n• Secure building\n• Ideal for family, business or leisure travelers\n\nBook your stay at Unit 21, Elysia Complex and experience upscale living in the heart of Sandton.\n\nOther things to note\nCheck-In Process\n\nWe aim to make your arrival as smooth and effortless as possible.\n\nOn arrival Purity (Housekeeper) will be there for you to give you access and handover keys for the house.\n\nIf you are driving, there is a garage which accommodates 2 vehicles.\n\nThe entire process is designed to be fast, secure, and hassle-free, allowing you to settle in and start enjoying your stay right away.\n\nIf you expect to arrive late or need assistance during your arrival, we are always available to assist and ensure everything goes smoothly.",
@@ -4418,7 +4624,9 @@ window.LISTINGS = [
     ],
     "lat": -26.058,
     "lng": 28.018,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1568155897551478299",
@@ -4465,7 +4673,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "8 months hosting"
     },
-    "price": "September 2026",
+    "price": "$116",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nStay at Esperanza Homes in our private Ensuite Room, featuring your own attached bathroom! Located in Bulawayo, we offer a secure, cozy retreat. Enjoy a comfortable double bed and access to a modern shared kitchen and free parking. Perfect for solo travelers or couples seeking privacy and value. Experience warm hospitality and a restful sleep in your home away from home.\n\nThe space\nWelcome to Esperanza Homes - Where Luxury Meets Comfort in Bulawayo\n\nExperience the perfect blend of modern amenities and warm hospitality in the heart of Barham Green. Whether you're traveling solo or with company, Esperanza Homes offers a serene retreat with everything you need for a comfortable stay.\n\nAccommodation:\n\nChoose from our 5 beautifully appointed bedrooms:\n- 2 Ensuite Rooms: Private luxury with your own bathroom featuring shower, bathtub, and toilet. One room has a queen-size bed, the other a comfortable double bed.\n- 3 Standard Rooms: Cozy doubles with access to well-maintained shared facilities including a full bathroom (shower, tub, toilet) plus a separate guest toilet for added convenience.\n\nRoom Features:\n- 32-inch Smart TV with open view in every room\n- Fresh linens and comfortable bedding\n- Ample natural light and bright, welcoming spaces\n\nProperty Amenities:\n\nUninterrupted Comfort: Solar backup power, gas geysers for instant hot water 24/7, and dual water supply (borehole + council water) ensure you never experience disruptions.\n\nStay Connected: Unlimited high-speed WiFi throughout the property.\n\nSelf-Catering Kitchen: Fully equipped communal kitchen for preparing your meals at your convenience.\n\nPersonalized Service: Our friendly housekeeper and receptionist, Siphenduliwe, assists with check-in and is available to help make your stay seamless.\n\nLocated in the peaceful and secure Barham Green neighborhood, Esperanza Homes is your ideal home away from home in Bulawayo.\n\nGuest access\nAs an ensuite guest, you'll enjoy:\n\nPrivate Spaces:\n- Your own bedroom with lock for privacy and security\n- Private ensuite bathroom (shower, bathtub, and toilet) - no sharing required\n- Personal 32-inch Smart TV\n\nShared Spaces:\n- Full access to the communal kitchen equipped with appliances, cookware, and utensils\n- Outdoor spaces and garden areas\n- Parking facilities\n\nUtilities & Amenities:\n- Unlimited WiFi throughout the property\n- 24/7 hot water via gas geysers\n- Solar backup ensuring uninterrupted power\n\nOn-Site Support:\nSiphenduliwe, our housekeeper and receptionist, is available during business hours to assist with any needs or questions.\n\nYou'll have the perfect balance of private retreat and shared spaces, ideal for both relaxation and socializing with other guests if you choose.\n\nDuring your stay\nDuring Your Stay\n\nIf you need any assistance, have questions, or require anything during your stay, please contact:\n\nSiphenduliwe Mlotshwa\nHousekeeper & Receptionist\n\nSiphenduliwe is available on-site to help with:\n- Check-in and check-out procedures\n- Questions about the property and amenities\n- Local recommendations and directions\n- Any maintenance or housekeeping needs\n- General assistance to make your stay comfortable\n\nWe're here to ensure you have a wonderful stay at Esperanza Homes!\n\nOther things to note\nHouse Type\n- This is a private room in a shared guesthouse, not an entire property\n- Bathroom is ensuite (private to your room)\n- Kitchen, common areas, and grounds are shared with other guests\n\nWhat's Not Included\n- Meals are not provided\n- Personal toiletries (bring your own)\n\nEmergency contact number provided upon booking confirmation",
@@ -4479,7 +4687,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1927,
     "lng": 28.5702,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1578964210986150392",
@@ -4549,7 +4759,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "7 months hosting"
     },
-    "price": "Experience the pinnacle of urban luxury in this designer 2-bedroom apartment with the main bedroom en-suited, located in the upscale suburb of Sandton. The Sandton Royal offers stylish, high-end home designed for comfort, ideal for families, couples, and business travelers. •Stone away from Sandton City Mall & Nelson Mandela Sq ( 5-10mins dr) •Fast WiFi and Netflix •Free Bev & Treats •Fully equipped on-site gym. •Sparkling swimming pool • Security:24/7 controlled access and free secure parking The space I have integrated the floating bed and motorized curtains to emphasize the high-tech, luxury feel of your Sandton apartment. The Space: Ultra-Modern Luxury in Sandton Step into a sophisticated sanctuary featuring cutting-edge design and premium comfort. The living area is defined by motorized curtains for effortless light control, while the bedroom features a stunning floating bed for a true high-end aesthetic. Quick Amenities Summary 🛏️ Sleeping & Comfort: •Floating Queen Bed in the 2nd suite for a modern, airy feel. • Luxury Queen bed, both with premium linens. • Motorized curtains in the lounge for ultimate convenience. • Blackout curtains in bedrooms for a perfect night’s sleep. • 🚿 Spa-Style Bathrooms: • Main en-suite with a deep soaking tub and luxury rain shower. • Second modern bathroom with a premium rain shower. • 🍳 Designer Kitchen: • State-of-the-art modern appliances (Oven, Fridge, Microwave). • Equipped with a dishwasher and full culinary set. • 📶 Tech & Entertainment: • Top-range, high-speed WiFi (uncapped). • Smart TV with Netflix pre-installed. • Dedicated workspace for business travelers. 🏢 Building Perks (Free): • Access to the on-site gym and swimming pool. • 24/7 security and secure parking. • Full laundry facilities (Washer/Dryer). Guest access To ensure a seamless arrival at Unit 128 The Sandton Royal , please follow these simple steps: 1. Entering the Complex • Security Gate: Upon arrival, please inform the security personnel at the main gate that you are checking into Unit 128. • Access Code: You will receive a unique Complex Access Code via SMS/email within 12-24hrs before check in. You will use this code at the gate for both entry and exit throughout your stay. • Parking: Ask Security guard for parking, he will direct you to your free designated secure parking bay reserved specifically for Unit 128. 2. Entering the Apartment • Smart Lock: No physical keys are required. You will be provided with a Smart Door Lock Code. How to use: •Simply tap the WiFi sign button on the door lock(key pad), digital numbers will pop up. •Enter your code on the keypad followed by # . \"Once inside, please help yourself to our complimentary treats! You'll find cold water in the fridge, along with tea and coffee to help you settle in. ☕️\".",
+    "price": "$115",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nExperience the pinnacle of urban luxury in this designer 2-bedroom apartment with the main bedroom en-suited, located in the upscale suburb of Sandton. The Sandton Royal offers stylish, high-end home designed for comfort, ideal for families, couples, and business travelers.\n\n•Stone away from Sandton City Mall & Nelson Mandela Sq ( 5-10mins dr)\n•Fast WiFi and Netflix\n•Free Bev & Treats\n•Fully equipped on-site gym.\n•Sparkling swimming pool\n• Security:24/7 controlled access and free secure parking\n\nThe space\nI have integrated the floating bed and motorized curtains to emphasize the high-tech, luxury feel of your Sandton apartment.\n\nThe Space:\nUltra-Modern Luxury in Sandton\nStep into a sophisticated sanctuary featuring cutting-edge design and premium comfort. The living area is defined by motorized curtains for effortless light control, while the bedroom features a stunning floating bed for a true high-end aesthetic.\nQuick Amenities Summary\n\n🛏️ Sleeping & Comfort:\n•Floating Queen Bed in the 2nd suite for a modern, airy feel.\n• Luxury Queen bed, both with premium linens.\n• Motorized curtains in the lounge for ultimate convenience.\n• Blackout curtains in bedrooms for a perfect night’s sleep.\n• 🚿 Spa-Style Bathrooms:\n• Main en-suite with a deep soaking tub and luxury rain shower.\n• Second modern bathroom with a premium rain shower.\n• 🍳 Designer Kitchen:\n• State-of-the-art modern appliances (Oven, Fridge, Microwave).\n• Equipped with a dishwasher and full culinary set.\n• 📶 Tech & Entertainment:\n• Top-range, high-speed WiFi (uncapped).\n• Smart TV with Netflix pre-installed.\n• Dedicated workspace for business travelers.\n\n🏢 Building Perks (Free):\n• Access to the on-site gym and swimming pool.\n• 24/7 security and secure parking.\n• Full laundry facilities (Washer/Dryer).\n\nGuest access\nTo ensure a seamless arrival at Unit 128 The Sandton Royal , please follow these simple steps:\n\n1. Entering the Complex\n• Security Gate: Upon arrival, please inform the security personnel at the main gate that you are checking into Unit 128.\n\n• Access Code:\nYou will receive a unique Complex Access Code via SMS/email within 12-24hrs before check in. You will use this code at the gate for both entry and exit throughout your stay.\n\n• Parking:\nAsk Security guard for parking, he will direct you to your free designated secure parking bay reserved specifically for Unit 128.\n\n2. Entering the Apartment\n\n• Smart Lock:\nNo physical keys are required. You will be provided with a Smart Door Lock Code.\nHow to use:\n•Simply tap the WiFi sign button on the door lock(key pad), digital numbers will pop up.\n•Enter your code on the keypad followed by # .\n\n\"Once inside, please help yourself to our complimentary treats! You'll find cold water in the fridge, along with tea and coffee to help you settle in. ☕️\".",
@@ -4578,7 +4788,9 @@ window.LISTINGS = [
     ],
     "lat": null,
     "lng": null,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-global-median"
   },
   {
     "id": "1584253293889642593",
@@ -4652,7 +4864,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$122",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4667,7 +4879,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16769964012923,
     "lng": 28.600202570975675,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1590713072479730079",
@@ -4679,7 +4893,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "6 months hosting"
     },
-    "price": null,
+    "price": "$70",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nSurrounded by a beautiful garden, this modern self contained guesthouse offers the perfect balance of comfort, tranquility and relaxation.\n\nWhether you are on a business trip , weekend away or long term stay, the space has been carefully curated to feel like your second home.\n\nAmenities\nSolar power for uninterrupted power supply\nBack up water supply on site\nAutomated gate ( shared access)\nSmart TV with DSTV\n\n5 min drive to nearest grocery store.\n12 min drive to CBD.",
@@ -4695,7 +4909,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2216,
     "lng": 28.6058,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1596565220543585509",
@@ -4825,7 +5041,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 months hosting"
     },
-    "price": null,
+    "price": "$102",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4850,7 +5066,9 @@ window.LISTINGS = [
     ],
     "lat": -20.161122840208687,
     "lng": 28.478741895519203,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1615162709003280950",
@@ -4888,7 +5106,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 months hosting"
     },
-    "price": null,
+    "price": "$131",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nExperience space, comfort, and convenience in this beautifully maintained 4 bedroom home, ideally located in the quiet suburb of Hillside, Bulawayo. Just 10 minutes from the city centre, this spacious property offers the perfect balance between peaceful living and easy access to everything you need and comes with secure water, electricity and washing machine.\n\nThe space\nThis spacious and well-maintained 4-bedroom home offers a comfortable and relaxing environment, perfect for families, groups, or business travellers visiting Bulawayo. The house features generous living spaces, a fully equipped kitchen, and comfortable bedrooms designed to make guests feel at home.\n\nGuests can enjoy a bright and welcoming living area, ideal for relaxing after a long day out. The kitchen is fully functional and equipped for preparing meals, while the dining area provides a great space to enjoy them together.\n\nThe property sits is located in the peaceful suburb of Hillside, offering plenty of outdoor space and secure parking. With reliable water supply, washing machine and electricity, guests can enjoy a hassle-free stay with essential amenities always available.\n\nGuest access\nCheck in with staff",
@@ -4906,7 +5124,9 @@ window.LISTINGS = [
     ],
     "lat": -20.20482573721115,
     "lng": 28.58167184210354,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1618025609801737165",
@@ -4918,7 +5138,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 months hosting"
     },
-    "price": "September 2026",
+    "price": "$170",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nA cosy cottage nestled in a cul-de-sac in the leafy, quiet, and upmarket area of Burnside. Enjoy close proximity to top restaurants, beautiful vistas, abundant birdlife, and scenic views.\nThis self-contained, fully furnished self-catering unit features a double bedroom, bathroom, fitted kitchen combined with a lounge area, and a loft bedroom.\n\nThe space\nA beautiful thatch under stone cottage comprising of a combined modern kitchen and lounge, a big bedroom that fits 2 double beds, a generously sized loft bedroom that fits a double bed, a bathroom with a shower and tub plus a wonderful garden.\nWake up to birdsongs, beautiful views, fresh air and a relaxed atmosphere. Free access to nearby Hillside Dams conservancy for nature walks, rock paintings etc.",
@@ -4938,7 +5158,9 @@ window.LISTINGS = [
     ],
     "lat": -20.208,
     "lng": 28.618,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1629529334730777810",
@@ -4950,7 +5172,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$309",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4964,7 +5186,9 @@ window.LISTINGS = [
     ],
     "lat": -18.0933,
     "lng": 32.8442,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1634173599098056567",
@@ -4976,7 +5200,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 months hosting"
     },
-    "price": null,
+    "price": "$152",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -4996,7 +5220,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2077340497427,
     "lng": 28.634646700339108,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1636917533396142596",
@@ -5008,7 +5234,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 months hosting"
     },
-    "price": "September 2026",
+    "price": "$117",
     "rating": null,
     "reviewsCount": null,
     "description": "Rare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked",
@@ -5030,7 +5256,9 @@ window.LISTINGS = [
     ],
     "lat": -15.4032,
     "lng": 28.4222,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1639033590980494044",
@@ -5071,7 +5299,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 months hosting"
     },
-    "price": null,
+    "price": "$161",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5087,7 +5315,9 @@ window.LISTINGS = [
     ],
     "lat": -20.12922,
     "lng": 28.60406,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1639701832584767067",
@@ -5099,7 +5329,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 months hosting"
     },
-    "price": null,
+    "price": "$130",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nKick back and relax in this calm, serene yet centrally located space. The perfect base for exploring the city as it is only 5km from the city center. Enjoy the spacious green garden or relax indoors and enjoy the unlimited wifi, smart tv with YouTube, Netflix and DSTV. Never worry about power cuts, solar powered backup. Maximum security covered by Safeguard Rapid Response.\n\nThe space\nProperty is secure, fully alarmed and covered by Safeguard Rapid Response. Self check in available till late. Solar power back up so there are no power cut worries. Purified water through a reverse osmosis system available.\n3 cozy bedrooms with spacious fitted wardrobes and full length mirrors . 1 bathroom with a walk in shower and toilet plus an additional seperate toilet. Living room, dining room, kitchen and laundry room.\n\nGuest access\nThe whole house is available for use except the 4th bedroom which is locked and used for storage. A small pantry is also used for storage of extra supplies and solar system equipment.\n\nOther things to note\nWe do not compromise on Safety and Security for your peace of mind so you can rest assured.",
@@ -5124,7 +5354,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1249,
     "lng": 28.6069,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1642867655871756195",
@@ -5167,7 +5399,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 months hosting"
     },
-    "price": null,
+    "price": "$134",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5181,7 +5413,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1731,
     "lng": 28.584,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1652361718441455083",
@@ -5245,7 +5479,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "10 years hosting"
     },
-    "price": null,
+    "price": "$1360",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5271,7 +5505,9 @@ window.LISTINGS = [
     ],
     "lat": -17.92617,
     "lng": 25.81921,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1662548712349206519",
@@ -5283,7 +5519,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 months hosting"
     },
-    "price": null,
+    "price": "$153",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nA stylish and spacious 1-bed cottage offering comfort, security, and complete reliability. Enjoy solar power, borehole water, fast Wi-Fi, and a modern kitchen with gas and electric cooking. The warm, beautifully furnished bedrooms create a relaxing stay. Located on a secure gated property with private parking and a peaceful garden, close to local shops and just 10–15 minutes from Bulawayo city centre. Ideal for families and business travellers.\n\nThe space\nOne bedroom cottage. One queen size bed. Sofa bed in the sitting room.",
@@ -5300,7 +5536,9 @@ window.LISTINGS = [
     ],
     "lat": -20.19227,
     "lng": 28.6455,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "16639729",
@@ -5346,7 +5584,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 months hosting"
     },
-    "price": null,
+    "price": "$94",
     "rating": null,
     "reviewsCount": null,
     "description": "No rating yet\nAverage rating will appear after 3 reviews\nHow reviews work\nHow reviews work\nDetailed ratings will appear once more guests have reviewed this place.\n1 review\nRatings sort order: Most relevant\nMost relevant",
@@ -5364,7 +5602,9 @@ window.LISTINGS = [
     ],
     "lat": -20.20872742888781,
     "lng": 28.576531560962582,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1664560569191703429",
@@ -5403,7 +5643,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$324",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5425,7 +5665,9 @@ window.LISTINGS = [
     ],
     "lat": -26.17931,
     "lng": 27.99766,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1668013611131248637",
@@ -5437,7 +5679,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$102",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5453,7 +5695,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1925,
     "lng": 28.6253,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1668795774551788542",
@@ -5465,7 +5709,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": null,
+    "price": "$141",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5484,7 +5728,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1724,
     "lng": 28.5867,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1669249006641148803",
@@ -5558,7 +5804,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$163",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5575,7 +5821,9 @@ window.LISTINGS = [
     ],
     "lat": -20.142607791995538,
     "lng": 28.59570906387496,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1672719306880109548",
@@ -5685,7 +5933,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 months hosting"
     },
-    "price": null,
+    "price": "$130",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5704,7 +5952,9 @@ window.LISTINGS = [
     ],
     "lat": -20.19424,
     "lng": 28.64188,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1676793191599275882",
@@ -5716,7 +5966,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": "September 2026",
+    "price": "$149",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5731,7 +5981,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1267,
     "lng": 28.6393,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1677118160583189715",
@@ -5743,7 +5995,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 years hosting"
     },
-    "price": null,
+    "price": "$112",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5758,7 +6010,9 @@ window.LISTINGS = [
     ],
     "lat": -15.41688,
     "lng": 28.37373,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1678156948412723324",
@@ -5846,7 +6100,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$136",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 5 out of 5 stars.\n5.0\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 100% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 5.0 out of 5 stars for cleanliness\nCleanliness\n5.0\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 5.0 out of 5 stars for check-in\nCheck-in\n5.0\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 5.0 out of 5 stars for location\nLocation\n5.0\nRated 5.0 out of 5 stars for value\nValue\n5.0\n4 reviews\nRatings sort order: Most relevant\nMost relevant\nThembi\n10 months on Airbnb\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nGroup trip\nThis place was perfect for our trip. It was spacious, clean, and had a lovely atmosphere. The host made sure we had everything we needed and communication was excellent. We truly enjoyed our time and would definitely come back.\nGraeme\nPretoria, South Africa\nRating, 5 stars\n,\n·\n3 weeks ago\n,\n·\nStayed one night\nWilfred was a great host. Finding the apartment as advertised builds my trust in the Airbnb community of hosts. Thank you Wilfred for making this an uncomfortable although short stay. Highly rate you as host and your apartment was what you promised.\nMarc\nPortland, Oregon\nRating, 5 stars\n,\n·\n4 weeks ago\n,\n·\nGroup trip\nWilfred was a good host, and the apartment served us well.\nLindinkosi\nBoksburg, South Africa\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nStayed a few nights\nGood service",
@@ -5865,7 +6119,9 @@ window.LISTINGS = [
     ],
     "lat": -26.0515,
     "lng": 28.0607,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1683486362146091908",
@@ -5877,7 +6133,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 months hosting"
     },
-    "price": null,
+    "price": "$133",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5896,7 +6152,9 @@ window.LISTINGS = [
     ],
     "lat": -20.12938648555547,
     "lng": 28.608170730433404,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1684030235531488296",
@@ -5937,7 +6195,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$115",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -5952,7 +6210,9 @@ window.LISTINGS = [
     ],
     "lat": null,
     "lng": null,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-global-median"
   },
   {
     "id": "1685422246069357202",
@@ -5964,7 +6224,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "8 months hosting"
     },
-    "price": null,
+    "price": "$117",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.75 out of 5 stars.\n4.75\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 75% of reviews\n5\n4 stars, 25% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 5.0 out of 5 stars for cleanliness\nCleanliness\n5.0\nRated 4.8 out of 5 stars for accuracy\nAccuracy\n4.8\nRated 4.2 out of 5 stars for check-in\nCheck-in\n4.2\nRated 4.5 out of 5 stars for communication\nCommunication\n4.5\nRated 4.5 out of 5 stars for location\nLocation\n4.5\nRated 5.0 out of 5 stars for value\nValue\n5.0\nGuest reviews mention\nCleanliness\n2\nLocation\n2\nHospitality\n2\n4 reviews\nRatings sort order: Most relevant\nMost relevant\nNathalie\n8 years on Airbnb\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nStayed one night\nBooked for family who were attending a funeral, it was a last minute booking and the hosts were helpful, responsive. \nFamily was so happy, place clean and freshly painted. \nWould highly recommend.\nTafadzwa\n3 years on Airbnb\nRating, 5 stars\n,\n·\nMay 2026\n,\n·\nStayed a few nights\nl enjoyed my stay, very clean and peaceful. Host was very friendly. Highly recommend, definitely home away from home.\nFreedom\nHarare, Zimbabwe\nRating, 4 stars\n,\n·\n3 weeks ago\n,\n·\nStayed one night\nGreat location. Close to town.\nXiangquan\n4 months on Airbnb\nRating, 5 stars\n,\n·\nJune 2026\n,\n·\nStayed a few nights\nThe location is very convenient, and the facilities are complete. It's very cost-effective and suitable for long-term stays.\nTranslated  Show original",
@@ -5982,7 +6242,9 @@ window.LISTINGS = [
     ],
     "lat": -20.144385181984305,
     "lng": 28.58864107956901,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1685980885442907568",
@@ -5994,7 +6256,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": "September 2026",
+    "price": "$82",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nNeat and modest room in a quiet surbub equipped with:\n\nHot shower\nMini bar fridge\nCloset\nDedicated workspace\nQueen bed\nKitchenette\n*A full kitchen is also available ,though it is shared\nElectricity backup\nWater backup\nMicrowave oven\nCuttlery\nShampoo ,lotion & soap\nWiFi\nKettle",
@@ -6012,7 +6274,9 @@ window.LISTINGS = [
     ],
     "lat": -20.213327863039545,
     "lng": 28.585142460346578,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1686679323247299857",
@@ -6142,7 +6406,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "2 months hosting"
     },
-    "price": null,
+    "price": "$134",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6170,7 +6434,9 @@ window.LISTINGS = [
     ],
     "lat": -20.175584468455035,
     "lng": 28.584662161538052,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1694355731857035007",
@@ -6182,7 +6448,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 months hosting"
     },
-    "price": null,
+    "price": "$134",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6198,7 +6464,9 @@ window.LISTINGS = [
     ],
     "lat": -20.172400880161206,
     "lng": 28.58330685487006,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1695611769564543010",
@@ -6237,7 +6505,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 month hosting"
     },
-    "price": null,
+    "price": "$111",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6258,7 +6526,9 @@ window.LISTINGS = [
     ],
     "lat": -20.119,
     "lng": 28.6314,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1696930840348447795",
@@ -6296,7 +6566,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$194",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nEnjoy a cosy experience at this centrally-located 2 bedroomed townhouse in a secure gated community. Stylishly furnished and ideal for business visitors or small families\n\nThe space\nA cozy 2 bedroomed semidetached townhouse unit in a gated community that boasts of a dining room, lounge and full kitchen. The bathroom has a tub and shower 🚿\n\nGuest access\nYou can enjoy access to use the back yard space and should you require outdoor BBQ grill, a portable one is available upon request.",
@@ -6319,7 +6589,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1608,
     "lng": 28.6131,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1700227322218648996",
@@ -6354,7 +6626,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": "Warm & Cosy Flat Nr1, 5 min from Sandton CBD!",
+    "price": "$242",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6366,7 +6638,9 @@ window.LISTINGS = [
     ],
     "lat": -26.1054,
     "lng": 28.0308,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1701533457485082976",
@@ -6378,7 +6652,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 month hosting"
     },
-    "price": null,
+    "price": "$84",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6397,7 +6671,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1291,
     "lng": 28.5352,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1703616912880322331",
@@ -6409,7 +6685,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 month hosting"
     },
-    "price": null,
+    "price": "$103",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6437,7 +6713,9 @@ window.LISTINGS = [
     ],
     "lat": -33.9364,
     "lng": 18.4056,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1705116727252823462",
@@ -6506,7 +6784,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$163",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6525,7 +6803,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2028,
     "lng": 28.6074,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1711678029298015770",
@@ -6576,7 +6856,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 month hosting"
     },
-    "price": "Average rating will appear after 3 reviews",
+    "price": "$162",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6595,7 +6875,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18,
     "lng": 28.6286,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1713010066296922199",
@@ -6607,7 +6889,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 month hosting"
     },
-    "price": "September 2026",
+    "price": "$77",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6627,7 +6909,9 @@ window.LISTINGS = [
     ],
     "lat": -20.122,
     "lng": 28.5169,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1716115551349246653",
@@ -6689,7 +6973,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": "The Olive Residence | 3BR, Pool, Boma & Coffee Bar",
+    "price": "$113",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nWelcome to The Olive Residence. Our home features 3 bedrooms, 2 full bathrooms, and a guest bathroom. The property offers a garage for 2 vehicles.\n\nEnjoy your morning coffee from our fully stocked coffee station, spend sunny afternoons by the sparkling swimming pool, or unwind in the evening around the cozy boma/fire pit under the stars.\n\nFor an even more relaxing experience, a private chef is available upon request to prepare breakfast, lunch, and dinner at an additional cost.",
@@ -6707,7 +6991,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2178,
     "lng": 28.6059,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1726117942584665483",
@@ -6719,7 +7005,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "6 years hosting"
     },
-    "price": "Hosted by Never 6 years hosting",
+    "price": "$130",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6742,7 +7028,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1948,
     "lng": 28.5986,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1726120074783326417",
@@ -6754,7 +7042,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "6 years hosting"
     },
-    "price": "Hosted by Never 6 years hosting",
+    "price": "$130",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6768,7 +7056,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1948,
     "lng": 28.5986,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1728896313488195896",
@@ -6811,7 +7101,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 months hosting"
     },
-    "price": "September 2026",
+    "price": "$93",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6835,7 +7125,9 @@ window.LISTINGS = [
     ],
     "lat": -20.0911,
     "lng": 28.6393,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1732472175850628197",
@@ -6847,7 +7139,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$102",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6868,7 +7160,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2249,
     "lng": 28.6344,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1733324608648465687",
@@ -6913,7 +7207,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$81",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -6929,7 +7223,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2,
     "lng": 28.5744,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "1737473318002127292",
@@ -6998,7 +7294,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "9 years hosting"
     },
-    "price": "$0 today · Free cancellation before August 6",
+    "price": "$121",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7006,7 +7302,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.19448,
     "lng": 28.59236,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "18302620",
@@ -7084,7 +7382,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": "September 2026",
+    "price": "$426",
     "rating": null,
     "reviewsCount": null,
     "description": "Rare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked",
@@ -7096,7 +7394,9 @@ window.LISTINGS = [
     ],
     "lat": -29.8715,
     "lng": 31.05127,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "20828940",
@@ -7108,7 +7408,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "9 years hosting"
     },
-    "price": null,
+    "price": "$95",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7116,7 +7416,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.21166,
     "lng": 28.57699,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "20985339",
@@ -7128,7 +7430,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$154",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7138,7 +7440,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1912,
     "lng": 28.6255,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "22032766",
@@ -7172,7 +7476,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$144",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nOur studio apartment opens up onto a 40sq meter balcony with a panoramic view of the Hout Bay Valley and the Helderberg mountains beyond. Large sliding doors disappear into the walls creating an unimpeded indoor/outdoor flow while the elevated position protects your privacy. The open plan bathroom faces onto an enclosed secret garden which includes a frame-less glass shower. The unit has a fully equipped kitchenette and is serviced daily except weekends and public holidays.\n\nThe space\nThere is a secret garden leading off the bathroom. The front of the studio has glass doors which are seamless and disappear when open into cavity walls. The studio is protected with external beams ensuring your safety. The best of all are the views which are unsurpassed and just simply outrageously beautiful. There is a gas barbeque on a wide patio with outside furniture\n\nGuest access\nThis is a stand alone unit and you will have access to the entire studio and surrounding garden\n\nOther things to note\nWe have solar and battery power so are not affected by power outages.\nThere are beautiful mountain walks outside our back gate, which take you to a view point overlooking Llundudno. We are approximately 15 minutes from the city but enjoy a village atmosphere. There are some spectacular wine farms in the close vicinity.",
@@ -7183,7 +7487,9 @@ window.LISTINGS = [
     ],
     "lat": -34.0152,
     "lng": 18.3483,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "26221875",
@@ -7234,7 +7540,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "8 years hosting"
     },
-    "price": "September 2026",
+    "price": "$107",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nFeel welcomed and relax in this beautiful garden apartment with a contemporary feel. Offering a perfect blend of modern comfort and style. Ideal for couples, friends and small families.\n\nSituated just minutes away from the V&A Waterfront, Sea Point Promenade, and local cafes and restaurants, this apartment is perfect for exploring the vibrant lifestyle of Cape Town.\n\nThe apartment is safe and secure with a tag system to get in and out.\n\nThe space\nThis modern 2 bedroom apartment is sunny, spacious and offers ultimate convenience and comfort. Open plan lounge and dining area lead out onto a generous sized garden. Full HD TV and High speed fibre connection.\n\nThe kitchen is fully equipped with fridge, microwave, dishwasher, oven and hob. Nespresso coffee machine and pods.\n\nThe master bedroom has a queen sized bed, a lovely study desk and opens up to the garden and patio area with café style table and chairs. Second bedroom has two single beds with loads of cupboard space. Both bedrooms with ceiling fans.\n\nThe bathroom has a lovely sized shower and washing machine. Parking available in the automated garage and off street parking.\n\nGuest access\nGuest can have access to the apartment, garden and garage. Entrance to the apartment is gained through the main entrance or the top entrance of the building. Remote control gate access to the lock up garage.\nThe apartment is safe and secure with a tag system to get in and out.\n\nOther things to note\nThere is a secure lock up garage that can be accessed. The garage will only suit sedan type vehicles as the roof is lower than a standard garage. Additional street parking available in front of the building.\nThe apartment is safe and secure and access tags and keys will be given to the guests. There is a self check-in facility available.",
@@ -7263,7 +7569,9 @@ window.LISTINGS = [
     ],
     "lat": -33.9087,
     "lng": 18.3995,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "32968138",
@@ -7295,7 +7603,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "7 years hosting"
     },
-    "price": null,
+    "price": "$186",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.57 out of 5 stars.\n4.57\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 74% of reviews\n5\n4 stars, 11% of reviews\n4\n3 stars, 11% of reviews\n3\n2 stars, 3% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.5 out of 5 stars for cleanliness\nCleanliness\n4.5\nRated 4.6 out of 5 stars for accuracy\nAccuracy\n4.6\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 4.8 out of 5 stars for communication\nCommunication\n4.8\nRated 4.9 out of 5 stars for location\nLocation\n4.9\nRated 4.7 out of 5 stars for value\nValue\n4.7\nGuest reviews mention\nHospitality\n19\nLocation\n8\nCleanliness\n7\nWifi\n3\nCondition\n3\nQuiet\n3\nNearby\n5\nCheck-in\n2\nKitchen\n2\nLong stay\n3\n35 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -7310,7 +7618,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16092,
     "lng": 28.6103,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "38475168",
@@ -7322,7 +7632,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "7 years hosting"
     },
-    "price": null,
+    "price": "$108",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7330,7 +7640,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -34.04537,
     "lng": 18.44247,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "39333474",
@@ -7342,7 +7654,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "8 years hosting"
     },
-    "price": null,
+    "price": "$215",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nRustic stone walls with modern conveniences in an African setting.\nAmazing scenic views.\n\nThe space\nOverlooking a typical rural African landscape and hazy blue mountains, lies a place so calm and so filled with peace. Welcome to Zumbane. The lodge is rustic yet modern. It sleep four people and provides a sense of being in the wild but has your modern conveniences. Our veranda proves to be the perfect place to lose yourself in a book or watch the sun set as you feel the strength of its glow on your cheeks. We have the perfect landscape for hiking, from short walks around the property to climbing the highest mountain in Zimbabwe. Feel free to enjoy a selection of herbal teas from our complimentary tea station.\n\nDue to the Covid-19, we have taken extra care to enhance our cleaning routine.We are disinfecting frequently touched surfaces between reservations. This includes outside areas and furniture.\n\nEach lodge has a sanitizer station by the main entrance and we encourage guests to sanitize before entering and when going out.\n\nEntrance to the lodges is very controlled. Only booked guests and staff are allowed on the 5 Acre property.",
@@ -7360,7 +7672,9 @@ window.LISTINGS = [
     ],
     "lat": -18.21937,
     "lng": 32.74663,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "39484703",
@@ -7372,7 +7686,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "7 years hosting"
     },
-    "price": null,
+    "price": "$120",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.33 out of 5 stars.\n4.33\nThis home is in the bottom 10% of eligible listings based on ratings, reviews, and reliability\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 65% of reviews\n5\n4 stars, 15% of reviews\n4\n3 stars, 13% of reviews\n3\n2 stars, 3% of reviews\n2\n1 stars, 5% of reviews\n1\nRated 4.3 out of 5 stars for cleanliness\nCleanliness\n4.3\nRated 4.4 out of 5 stars for accuracy\nAccuracy\n4.4\nRated 4.4 out of 5 stars for check-in\nCheck-in\n4.4\nRated 4.4 out of 5 stars for communication\nCommunication\n4.4\nRated 4.2 out of 5 stars for location\nLocation\n4.2\nRated 4.4 out of 5 stars for value\nValue\n4.4\nGuest reviews mention\nHospitality\n20\nFamily\n6\nValue\n5\nCleanliness\n6\nWifi\n2\nComfort\n4\nCheck-in\n2\nQuiet\n3\nIndoor spaces\n3\nLocation\n4\n40 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -7382,7 +7696,9 @@ window.LISTINGS = [
     ],
     "lat": -20.10826,
     "lng": 28.64063,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "40124123",
@@ -7394,7 +7710,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "9 years hosting"
     },
-    "price": null,
+    "price": "$243",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7402,7 +7718,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -18.33383,
     "lng": 32.54112,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "4040223",
@@ -7414,7 +7732,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": null,
+    "price": "$117",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7434,7 +7752,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18823,
     "lng": 28.58148,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "40562538",
@@ -7570,7 +7890,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": null,
+    "price": "$169",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThis is a spacious 3 bedroomed apartment with morden finishings.The apartment boasts of a fully equipped kitchen,complete with washing machine/dryer.There is secure parking for 2 cars,uncapped wifi ,Netflix ,DSTV & outdoor braai spot.There is back up power(solar) and water.The apartment is centrally located in Bradfield,within close proximity to restaurants,a shopping centre which has Food lovers,PnP,fuel station ,ZITF,KFC,Pizza hut-all which are within walking distance(5 minute walk).\n\nThe space\nThe apartment boasts of a comfortable chic living area that is exquisitely furnished.The space allows you to unwind and relax after a long day.The living room has a Smart TV with Netflix,Showmax,PrimeTv,AppleTv,unlimited wifi and a neat dining area.The apartment is equipped with back up power(solar) and water.\n\nGuest access\nGuests have access to the entire apartment and will be provided with own keys and electric gate remote.The apartment also has an alarm installed in and outside the house to provide ultimate security.Apartment Hosts are on call 24/7 should you need any assistance.\n\nOther things to note\nThe kitchen is fully equipped with fitted appliances and all necessary equipment-double toaster,microwave,stove and oven,letters,2 in 1 washing machine/dryer,fridge and necessary utensils you would expect to see in a kitchen.\nComplementary teas and coffee are at your disposal.",
@@ -7596,7 +7916,9 @@ window.LISTINGS = [
     ],
     "lat": -20.17464,
     "lng": 28.5934,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "46850141",
@@ -7608,7 +7930,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "9 years hosting"
     },
-    "price": "September 2026",
+    "price": "$294",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThis modern, creative space is one of two hidden gems in the leafy suburb of Westville (also see Yellow Room at The Hidden Lookout)\nUp high in the trees, our space is a tranquil, beautiful, simple space, perfect for a break from the city, but close enough to everything to still have fun!\nIf you are coming for business we have a fast and dependable WiFi & work station & GENERATOR if necessary.\n\nThe space\nIt’s like our own little complex. Original house on the front with another Bnb attached (The Sunny Corner)\n“The Hidden Lookout” at the back. “The Yellow Room” on the right, “The Green Room” on the left. We stay in the middle.\n\nYour Condo has: Sml fridge, microwave, kettle, toaster, cutlery, crockery, towels, toilet paper, coffee, tea, sugar, sml milk bottle of water & 2 rusks\n\nGuest access\nYour private room is yours to enjoy with a slice of balcony to watch the eagles soar.\n\nOther things to note\nThe Querks of “New” living:\n\nCurtains! Who needs those! Wake up with the sun, watch the stars & city lights twinkle. The closest people are 2km away, so to them you look like an Ant 🐜\n\nOh my Gosh! No TV!\nYes! Connect with your partner & nature, make this time count! We do have fast WIFI tho.\n\nThe people who share a wall have children, so you may hear them if you are lucky 😉 Let it be a reminder to condomise 😉\n\nThe toilet & shower are “Open Plan” 😳 …. be open with your partner, or go for a walk.\n\nI must wash dishes & brush teeth in the same basin!!! Just wash the dishes and wipe the counter after dinner, it’s a great habit to form 😉",
@@ -7620,7 +7942,9 @@ window.LISTINGS = [
     ],
     "lat": -29.85074,
     "lng": 30.89994,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "47153197",
@@ -7632,7 +7956,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": null,
+    "price": "$114",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\n3 bed guesthouse. This booking is for the entire house. Wifi included. Early check in will be accommodated where possible.\n\nAlso available are refreshments, self catering food items for you to prepare your English breakfast, and full meals including chicken and organic vegetables fresh from the garden in the premises.\n\nGuests (sleeping over or not) beyond the number specified in the booking will need to be approved by the host.",
@@ -7640,7 +7964,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.22484,
     "lng": 28.60589,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "47205635",
@@ -7652,7 +7978,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "9 years hosting"
     },
-    "price": "September 2026",
+    "price": "$159",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.64 out of 5 stars.\n4.64\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 71% of reviews\n5\n4 stars, 21% of reviews\n4\n3 stars, 7% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.5 out of 5 stars for cleanliness\nCleanliness\n4.5\nRated 4.4 out of 5 stars for accuracy\nAccuracy\n4.4\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 4.9 out of 5 stars for communication\nCommunication\n4.9\nRated 4.9 out of 5 stars for location\nLocation\n4.9\nRated 4.6 out of 5 stars for value\nValue\n4.6\nGuest reviews mention\nPool\n2\nHospitality\n8\nAmenities\n3\nOutdoor spaces\n2\nLocation\n3\nComfort\n2\nAccuracy\n2\n14 reviews\nRatings sort order: Most relevant\nMost relevant\nKeith\n8 years on Airbnb\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed a few nights\nBulawayo best spot for sure! Has everything you need & staff are excellent!\nBruce\n13 years on Airbnb\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed about a week\nThis was our third visit to Adams place and as usual everything was lovely. Joel was on hand in case we needed anything and left us to enjoy the peaceful surroundings.\nKeith\n8 years on Airbnb\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed about a week\nGreat few days at Adam’s cottage as always. We come back every year and it feels like a second home. Highly recommend\nGamaliel\n8 years on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed a few nights\nLoved my stay and would definitely recommend.\nPatience\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nJune 2025\n,\n·\nStayed one night\nIt was refreshing and had beautiful scenery\nKeith\n8 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2024\n,\n·\nStayed over a week\nHad a lovely long stay at Adam's place once again. We always come back to stay here as it's comfortable, secure and private with great amenities. The staff are great as well and Adam is very responsive and flexible. Lovely experience overall as always\nAli\n8 years on Airbnb\nRating, 5 stars\n,\n·\nDecember 2022\n,\n·\nStayed over a week\nOur extended stay at The Best Cottage was literally ‘The Best’! The staff were attentive (nothing was too much trouble), the bed is super comfy, the grounds are wonderful, location perfect and the cottage has everything you need for on or off grid living! We loved it so much we have already booked to come back!\nNgoni\n5 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2024\n,\n·\nStayed a few nights\nVery cosy accommodations. Well done Adam.\nSevry\n3 years on Airbnb\nRating, 4 stars\n,\n·\nApril 2023\n,\n·\nStayed a few nights\nMy stay was good, staff very friendly and my needs were met on time. Easy location and near city Centre. Not happy with bedroom location though,which was upstairs and different from the advert.\nRonald\nNew York, New York\nRating, 3 stars\n,\n·\nJuly 2022\n,\n·\nStayed one night\nPros\n* host is very friendly and communicative\n* location near CBD\nCons\n* property is in disrepair\n* pictures aren’t accurate and for the same price you can better spots\nResponse from Adam\nAugust 2022\nSorry to hear this. What exactly did you find to be in disrepair? Property is 100% intact from our observations.\nJulia\nZürich, Switzerland\nRating, 5 stars\n,\n·\nSeptember 2022\n,\n·\nStayed a few nights\nFantastic, very spacious cottage with lots of seating options and a nice terrace, as well as access to the pool. We loved our stay in Bulawayo. Very nice staff.\nKudakwashe\nHarare, Zimbabwe\nRating, 4 stars\n,\n·\nDecember 2022\n,\n·\nStayed a few nights\nGreat stay, beautiful garden with pool\nTinashe\nHarare, Zimbabwe\nRating, 4 stars\n,\n·\nAugust 2022\n,\n·\nStayed a few nights\nlovely place. Good communication as always.\nWilliam\n3 years on Airbnb\nRating, 5 stars\n,\n·\nJune 2023\n,\n·\nStayed a few nights\nGreat Stay",
@@ -7660,7 +7986,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.16785,
     "lng": 28.60457,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "47278323",
@@ -7672,7 +8000,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": "September 2026",
+    "price": "$132",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThe Place on Oak is nestled in a cozy location in Suburbs, Bulawayo, 800m away from the City Centre. Ideal to refresh and relax whether on holiday or on business. An ideal home away from home\n\nThe space\nThe Place on Oak is a new and vibrant cottage boasting of modern finishes, in a quiet and tranquil location. Its cozy and has all the necessary features to allow for an ideal home away from home. With high speed internet, Netflix, Showmax, YouTube, and many more for quiet nights in.The Place also boasts of a fully equiped kitchen, and an outdoor designated braai area for those cool summer nights.\n\nGuest access\nGuests have full access to the garden and full access to the washing machine",
@@ -7685,7 +8013,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16548,
     "lng": 28.5931,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "48358182",
@@ -7697,7 +8027,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$116",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7709,7 +8039,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1486,
     "lng": 28.6312,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "48387008",
@@ -7811,7 +8143,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": "September 2026",
+    "price": "$125",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.82 out of 5 stars.\n4.82\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 85% of reviews\n5\n4 stars, 13% of reviews\n4\n3 stars, 3% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.8 out of 5 stars for cleanliness\nCleanliness\n4.8\nRated 4.9 out of 5 stars for accuracy\nAccuracy\n4.9\nRated 4.8 out of 5 stars for check-in\nCheck-in\n4.8\nRated 4.8 out of 5 stars for communication\nCommunication\n4.8\nRated 4.8 out of 5 stars for location\nLocation\n4.8\nRated 4.8 out of 5 stars for value\nValue\n4.8\n71 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -7824,7 +8156,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16376,
     "lng": 28.59265,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "51544429",
@@ -7836,7 +8170,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$169",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7844,7 +8178,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -26.0207,
     "lng": 28.0344,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "519559890609765942",
@@ -7856,7 +8192,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$99",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -7868,7 +8204,9 @@ window.LISTINGS = [
     ],
     "lat": -20.13824,
     "lng": 28.61692,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "52219266",
@@ -7920,7 +8258,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "6 years hosting"
     },
-    "price": null,
+    "price": "$111",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.73 out of 5 stars.\n4.73\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 76% of reviews\n5\n4 stars, 21% of reviews\n4\n3 stars, 3% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.6 out of 5 stars for cleanliness\nCleanliness\n4.6\nRated 4.7 out of 5 stars for accuracy\nAccuracy\n4.7\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 4.9 out of 5 stars for communication\nCommunication\n4.9\nRated 5.0 out of 5 stars for location\nLocation\n5.0\nRated 4.8 out of 5 stars for value\nValue\n4.8\nGuest reviews mention\nOutdoor spaces\n13\nLocation\n16\nFamily\n10\nHospitality\n17\nPool\n3\nCleanliness\n8\nAmenities\n5\nNearby\n5\nComfort\n4\nIndoor spaces\n4\n33 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -7936,7 +8274,9 @@ window.LISTINGS = [
     ],
     "lat": -20.19665,
     "lng": 28.59064,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "52370692",
@@ -7968,7 +8308,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": "September 2026",
+    "price": "$88",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nKeep it simple at this peaceful and centrally-located place. Perfect gate away for quick business trip or a weekend away. This unit is located in the quiet leafy Surbubs close to the city Center . It is ideally located across the road from 2 great restaurants, shops and amenities are less than a 5 minutes drive away.With modern finishes and thoughtful amenities guest comfort is our top priority.\n\nThe space\nThis unit is ideally located next to great restaurants. And it is just 800m away from the city.\n\nGuest access\nGuests have access to a cool leafy garden ideal for those hot summer nights\n\nOther things to note\nThere are three other units on the property but each separate from the others, each with their own private garden and designated parking spots",
@@ -7982,7 +8322,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16381,
     "lng": 28.5928,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "52730757",
@@ -7994,7 +8336,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": "This is an ultra modern, incredibly spacious (200 sqm), split-level flat (2 floors) with double-glazed windows for quiet sleeping, and aircon throughout. Luxurious and modern finishes define this space. Fully equipped kitchen. Four flat-screen TVs and a large book library. Fast speed 100Mbps internet. Two large secure parking bays. Our building is not subject to rolling blackouts - the ELECTRICITY IS ALWAYS ON! The building is ultra secure with 24x7 security at front entrance and garage. The space You will absolutely love this flat with its modern, beautifully designed, large living spaces. There are two lounges with couches and TVs: a smaller lounge upstairs and a super-sized living room downstairs. A large open plan kitchen and spacious dining room occupy the main floor. Two luxurious bedrooms upstairs are at opposite ends of the second floor and provide total privacy from one another. One bedroom is ensuite, with a large shower, a bath and a private, fully enclosed toilet. The second spacious bathroom with its own toilet, sink and shower is located on the main floor. The kitchen is fully equipped with a 6-burner gas stove, a Bosch electric oven, an LG microwave, a pressure cooker, a Nespresso machine, a blender and other small appliances and cookware. This 9-window corner flat, with a long entrance-hallway, is far removed from the rest of the building and offers seclusion, comfort and serenity. Guest access The whole flat and two dedicated parking bays are completely yours during your stay. There is a lovely roof top garden where you can smoke if you are a smoker. Please note there is no smoking in the flat. Other things to note A few important items of note: 1. Due to the two-storey layout and open staircase banisters child-safety in this flat is limited. If you have small children they will need to be supervised as they ascend or descend the stairs. 2. The main bedroom has a low ceiling beam when entering and exiting the room. In addition, there is an opening in the corner of the room with a wall ladder that leads down to the floor below. This was purposefully designed and built for children visitors to the flat to have a climbing wall and provides many hours of entertainment. Caution should be exercised around the opening. 3. This is a two bedroom with 3 king size beds. The spacious master bedroom has 2 king size beds, and therefore allows 2 out of the 4 guests to sleep in their own individual beds. The king-sized bed in the second bedroom sleeps 2 guests in comfort. If 6 guests are booking this flat please take care to read the next point carefully :) ... 4. Although we welcome 6 guests to reside in this flat, this flat is best suited for 4 adults and 2 children/teenagers (or 3 adults and 3 children/teenagers, for a total of 6 people). Because two out of the three kind size bed share the spacious master bedroom (as per the detailed pictures) we strongly recommend that at least 2 out of the 6 guests are children or young adults. It has been our experience that 6 grown adults will not enjoy this space due to the shared sleeping arrangement in the master bedroom. This spacious 200 SQM, 2-storey flat is INCREDIBLY comfortable for 4 or fewer adults, or 4 adults plus 2 children. 5. Unfortunately there are no early check-ins or late check-outs. This flat is usually fully booked and we require a 10am - 2pm window to prepare the flat to our high standards. You can, however, drop off your luggage after 10am on the day of your arrival or leave it with us for safe keeping after your 10am check-out.",
+    "price": "$76",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThis is an ultra modern, incredibly spacious (200 sqm), split-level flat (2 floors) with double-glazed windows for quiet sleeping, and aircon throughout. Luxurious and modern finishes define this space. Fully equipped kitchen. Four flat-screen TVs and a large book library. Fast speed 100Mbps internet. Two large secure parking bays. Our building is not subject to rolling blackouts - the ELECTRICITY IS ALWAYS ON! The building is ultra secure with 24x7 security at front entrance and garage.\n\nThe space\nYou will absolutely love this flat with its modern, beautifully designed, large living spaces. There are two lounges with couches and TVs: a smaller lounge upstairs and a super-sized living room downstairs. A large open plan kitchen and spacious dining room occupy the main floor. Two luxurious bedrooms upstairs are at opposite ends of the second floor and provide total privacy from one another. One bedroom is ensuite, with a large shower, a bath and a private, fully enclosed toilet. The second spacious bathroom with its own toilet, sink and shower is located on the main floor. The kitchen is fully equipped with a 6-burner gas stove, a Bosch electric oven, an LG microwave, a pressure cooker, a Nespresso machine, a blender and other small appliances and cookware. This 9-window corner flat, with a long entrance-hallway, is far removed from the rest of the building and offers seclusion, comfort and serenity.\n\nGuest access\nThe whole flat and two dedicated parking bays are completely yours during your stay. There is a lovely roof top garden where you can smoke if you are a smoker. Please note there is no smoking in the flat.\n\nOther things to note\nA few important items of note:\n\n1. Due to the two-storey layout and open staircase banisters child-safety in this flat is limited. If you have small children they will need to be supervised as they ascend or descend the stairs.\n\n2. The main bedroom has a low ceiling beam when entering and exiting the room.\n\nIn addition, there is an opening in the corner of the room with a wall ladder that leads down to the floor below. This was purposefully designed and built for children visitors to the flat to have a climbing wall and provides many hours of entertainment. Caution should be exercised around the opening.\n\n3. This is a two bedroom with 3 king size beds. The spacious master bedroom has 2 king size beds, and therefore allows 2 out of the 4 guests to sleep in their own individual beds. The king-sized bed in the second bedroom sleeps 2 guests in comfort.\n\nIf 6 guests are booking this flat please take care to read the next point carefully :) ...\n\n4. Although we welcome 6 guests to reside in this flat, this flat is best suited for 4 adults and 2 children/teenagers (or 3 adults and 3 children/teenagers, for a total of 6 people).\n\nBecause two out of the three kind size bed share the spacious master bedroom (as per the detailed pictures) we strongly recommend that at least 2 out of the 6 guests are children or young adults.\n\nIt has been our experience that 6 grown adults will not enjoy this space due to the shared sleeping arrangement in the master bedroom. This spacious 200 SQM, 2-storey flat is INCREDIBLY comfortable for 4 or fewer adults, or 4 adults plus 2 children.\n\n5. Unfortunately there are no early check-ins or late check-outs. This flat is usually fully booked and we require a 10am - 2pm window to prepare the flat to our high standards. You can, however, drop off your luggage after 10am on the day of your arrival or leave it with us for safe keeping after your 10am check-out.",
@@ -8020,7 +8362,9 @@ window.LISTINGS = [
     ],
     "lat": -33.9208,
     "lng": 18.4238,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "53018198",
@@ -8032,7 +8376,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "8 years hosting"
     },
-    "price": null,
+    "price": "$215",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8047,7 +8391,9 @@ window.LISTINGS = [
     ],
     "lat": -18.21274,
     "lng": 32.73655,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "53204801",
@@ -8059,7 +8405,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$140",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8079,7 +8425,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1586,
     "lng": 28.5888,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "53588647",
@@ -8091,7 +8439,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$110",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.75 out of 5 stars.\n4.75\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 84% of reviews\n5\n4 stars, 12% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 2% of reviews\n2\n1 stars, 1% of reviews\n1\nRated 4.8 out of 5 stars for cleanliness\nCleanliness\n4.8\nRated 4.7 out of 5 stars for accuracy\nAccuracy\n4.7\nRated 4.7 out of 5 stars for check-in\nCheck-in\n4.7\nRated 4.8 out of 5 stars for communication\nCommunication\n4.8\nRated 4.8 out of 5 stars for location\nLocation\n4.8\nRated 4.7 out of 5 stars for value\nValue\n4.7\nGuest reviews mention\nHospitality\n69\nLocation\n51\nCleanliness\n28\nComfort\n18\nWifi\n10\nNearby\n17\nValue\n12\nAccuracy\n10\nBathroom\n7\nFamily\n10\n134 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -8107,7 +8455,9 @@ window.LISTINGS = [
     ],
     "lat": -15.4036,
     "lng": 28.324,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "53778016",
@@ -8119,7 +8469,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "1 year hosting"
     },
-    "price": null,
+    "price": "$125",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8142,7 +8492,9 @@ window.LISTINGS = [
     ],
     "lat": -20.089845263006058,
     "lng": 28.653601465298465,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "53910939",
@@ -8221,7 +8573,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$143",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8237,7 +8589,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1539,
     "lng": 28.586,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "54019554",
@@ -8249,7 +8603,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "8 years hosting"
     },
-    "price": null,
+    "price": "$459",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8264,7 +8618,9 @@ window.LISTINGS = [
     ],
     "lat": -18.95438,
     "lng": 32.67775,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "54152819",
@@ -8276,7 +8632,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$258",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nRelax with the whole family at this peaceful place with breathtaking bush views. Perfect for those who want to disconnect and take in nature. Nestled in a scenic valley with access to a dam and wildlife. Located in Juliusdale, approximately 40kms before Nyanga town.\n\nThe space\n4-bedrooms, 3-bathrooms, full-kitchen and combined living and dining area. Bedroom 2 is up a flight of stairs so is not suitable for wheel-chair users or those with mobility issues. Ample outdoor space for barbequing, lounging and taking in views. Bathrooms have also recently been renovated!",
@@ -8293,7 +8649,9 @@ window.LISTINGS = [
     ],
     "lat": -18.22066,
     "lng": 32.74692,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "54172090",
@@ -8305,7 +8663,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": null,
+    "price": "$131",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.73 out of 5 stars.\n4.73\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 77% of reviews\n5\n4 stars, 20% of reviews\n4\n3 stars, 3% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.8 out of 5 stars for cleanliness\nCleanliness\n4.8\nRated 4.9 out of 5 stars for accuracy\nAccuracy\n4.9\nRated 4.7 out of 5 stars for check-in\nCheck-in\n4.7\nRated 4.8 out of 5 stars for communication\nCommunication\n4.8\nRated 4.8 out of 5 stars for location\nLocation\n4.8\nRated 4.7 out of 5 stars for value\nValue\n4.7\n94 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -8318,7 +8676,9 @@ window.LISTINGS = [
     ],
     "lat": -20.16532,
     "lng": 28.59142,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "548941524194285405",
@@ -8356,7 +8716,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$102",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8364,7 +8724,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -33.96438,
     "lng": 18.38219,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "601279062249043825",
@@ -8376,7 +8738,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$169",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8387,7 +8749,9 @@ window.LISTINGS = [
     ],
     "lat": -20.17939,
     "lng": 28.59775,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "602828484863576421",
@@ -8399,7 +8763,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "8 years hosting"
     },
-    "price": null,
+    "price": "$186",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nKick back and relax in this calm, stylish space. With tranquil surroundings this Cosy modern cottage has all you need for a comfortable stay fully equipped kitchen and bar Dstv WiFi and private access onto the property.\n\nThe space\nThe cottage is modern and well furnished with all you need to make your stay comfortable\n\nThe cottage has its one private entrance gate and parking space for one vehicle\n\nGuests can enjoy the peace and tranquillity in the quiet suburb",
@@ -8407,7 +8771,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.2019,
     "lng": 28.6107,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "611904668168720124",
@@ -8419,7 +8785,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "6 years hosting"
     },
-    "price": null,
+    "price": "$211",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8429,7 +8795,9 @@ window.LISTINGS = [
     ],
     "lat": -20.196,
     "lng": 28.6033,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "616557195823870303",
@@ -8441,7 +8809,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": null,
+    "price": "$132",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8464,7 +8832,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1476,
     "lng": 28.6165,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "617247311468688812",
@@ -8476,7 +8846,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": null,
+    "price": "$79",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nThis unique place has a style of its own.\nEnjoy your stay in this compact studio apartment designed for sleeping, eating & dining.\n\nThe kitchenette is fully equipped with a gas hob, mini fridge, & microwave. There is a separate bathroom with a shower.\n\nTV with DSTV (cable TV) is available, as well as wifi access.\n\nFor backup electricity, there is a solar system\n\nThe studio apartment is attached to the main house, with its own outside entrance, & parking on site.\n\nThe space\nMafiris Studio is a bedsitter fully equipped for an enjoyable stay. In one room, you can cook , dine, and sleep, and there is a separate bathroom with a shower.\n\nTV with DSTV access is available for guest entertainment, as well as wifi access\n\nThere is solar for when there is a power outage as well as a fuel powered generator . Hot water for showering is via an electric/solar geyser\n\nMafiris Studio is attached to the main house but has its own outside entrance\n\nGuest access\nThere is a garden that is shared by all 4 units at the property. Guests can relax and take a walk around the garden . As the garden is shared by all guests in different units, we ask our guests to be considerate in terms of maintaining low noise levels so that other guests are not disturbed\n\nOther things to note\nThe studio has a solar/electricity combo geyser for hot water.\n\nParking for guests with their own car is on site. Access is via an electric gate.\n\nThere is a solar system that we use when there is a power outage. It powers the outside lights, wifi , Studio lights, & TV. It also powers booster pump, which ensures that there is water from the 5,000L storange tank into the Studio for guests' use.\n\nThere is also an electric powered borehole, so water is always available\n\n(note that you can not iron nor use the fridge when solar is in use)",
@@ -8495,7 +8865,9 @@ window.LISTINGS = [
     ],
     "lat": -20.14671,
     "lng": 28.61717,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "631676532019339144",
@@ -8507,7 +8879,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$88",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.68 out of 5 stars.\n4.68\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 89% of reviews\n5\n4 stars, 0% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 11% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 4.7 out of 5 stars for accuracy\nAccuracy\n4.7\nRated 4.7 out of 5 stars for check-in\nCheck-in\n4.7\nRated 4.7 out of 5 stars for communication\nCommunication\n4.7\nRated 4.7 out of 5 stars for location\nLocation\n4.7\nRated 4.5 out of 5 stars for value\nValue\n4.5\nGuest reviews mention\nHospitality\n6\nCleanliness\n4\nLocation\n4\nWifi\n2\nComfort\n3\nDecor\n2\nAccuracy\n2\nKitchen\n2\n19 reviews\nRatings sort order: Most relevant\nMost relevant\nLee\n2 years on Airbnb\nRating, 5 stars\n,\n·\nAugust 2025\n,\n·\nStayed a few nights\nWill definitely be using again\nNqobile\n2 years on Airbnb\nRating, 5 stars\n,\n·\nFebruary 2025\n,\n·\nStayed a few nights\nVery clean, quiet and safe\nSimphiwe\n3 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2024\n,\n·\nStayed one night\nThe bnb was exactly as described - the open floor planning and decor was homey. It felt very cozy and was a great place to relax. Jessie was fantastic - she was very accommodating and responsive.\nHighly recommend this Airbnb for a peaceful stay near the Cbd \n**Would I recommend?** Yes\nMiyamoto\nBunkyo City, Japan\nRating, 5 stars\n,\n·\nOctober 2023\n,\n·\nStayed over a week\nThe room is clean and well-equipped with kitchen utensils, a solar backup, and clean linens. The room attendant was very accommodating and flexible. I highly recommend staying at Jessie's place. I will definitely return. Thank you, Jessie!\nBarbara\n7 years on Airbnb\nRating, 2 stars\n,\n·\nMay 2024\n,\n·\nStayed a few nights\nThe property is nice and clean. One issue we encountered and it spoiled our stay.  The electricity finished and the generator did not work. The caretaker failed to buy electricity tokens. We were forced to go to bed early. The next day she gave us an only gas stand/stove. We couldn’t prepare breakfast on the stand as it was unsafe. She bought tokens for electricity but couldn’t slot them because she needed to go next door to it. It was so stressful as it was our last day and needed to get to the airport early. So we left without electricity being restored. \nThe Wifi did not work for one gadget. The caretaker said it was very slow when we enquired.\nIf these issues are sorted out it’s a property l can book again or recommend to family and friends visiting Byo.\nResponse from Jessie\nMay 2024\nThe review above is not an accurate account. The electricity went off due to load shedding, which is a city council measure to reduce electrify usage. We have a working solar backup system, which works very well. When electricity went off that evening, the solar system did not kick in as usual. An electrician was called and he noticed that someone had tempered/pressed a button which prevented the system from kicking in when electricity went off as designed, It’s not clear who tempered with the system on that very night, but the housekeeper was only called when the solar did not kick in and she called the electrician, who attended first thing in the morning, but unfortunately the guests had left for the airport.\nI have spoken to the housekeeper and on that particular day, there were no issues with the WIFI speed and she does not recall speaking to the guests about it or the guests reporting any issues with WIFI speed.\nReviews should be an accurate account and reflection of events to be fair, rather than an inaccurate account.\nTshepo\n4 years on Airbnb\nRating, 5 stars\n,\n·\nDecember 2022\n,\n·\nStayed a few nights\nJessie is a wonderful person..despite having mixed bookings she went out of her way and made sure that I have a place to stay, which was not only convenient to find but also a stone away from CBD.\nI highly recommend using Jessie for whatever trips you have abroad.\nMe and my friends absolutely loved the place as well as their friendly hostess ‘Shelyn’, I will certainly use the place whenever I have Bulawayo trips..🥰😍\nDeliwe\n8 years on Airbnb\nRating, 5 stars\n,\n·\nSeptember 2022\n,\n·\nStayed over a week\nMy son and l enjoyed staying in  this beautiful home. The place was clean, beautiful specious rooms . Perfect deco, was very impressed.  I would definitely recommend this place to anyone. We absolutely enjoyed our stay.  We experienced no power cuts, excellent service from the house keeper,  full use of intenet, etc. As  a wheelchair user I was able to access the whole house with no problems.\nPatrick Luke\n11 years on Airbnb\nRating, 2 stars\n,\n·\nSeptember 2022\nThe house is generally accurate to the listing and located not too far to walk to shops and restaurants. \nIn my experience the house was not very private as the main gate is shared with a cottage directly behind the house.  \nunfortunately the people in the cottage tend to use the house as their own and on one occasion accessed the house to use the washing machine without asking or telling me.\nin my case communication was non existent and I received no reply regarding the check in process.  Also the house was not vacated when I arrived and I waited until 1800 in the driveway until the house was ready. \nhaving said that, I could still reccomend the property as a good place to stay as the house is fine and the people are nice. just that it is not particularly private.\nResponse from Jessie\nOctober 2022\nThe details of the content of the above review have been discussed with housekeeper and are not entirely representative of the service during the stay as indicated in the review. There was a challenge with local network access due to the server being off line, hence was unable to communicate effectively with the guest, however the housekeeper was present at the property during this time to welcome the guest upon arrival. There was also an unforeseen delay on check in times due to delays in the previous guest that day, checking out late by approximatley 35minutes.\n\nThere is a housekeeper who stays in the cottage, which is located separately from the airbnb house. The housekeeper is present, to welcome guests and provide any support the guests may require during their stay. The housekeeper, does not use the airbnb accommodation in anyway for their own needs and will only enter the house, if request is placed by the guest, if they require any help or support during their stay.\nNyarai\nGauteng, South Africa\nRating, 5 stars\n,\n·\nAugust 2022\n,\n·\nStayed over a week\nThis place is amazing, host is super amazing and home away from home. Neat, comfortable and highly recommended. Would come back over and over again\nJenni\nVictoria Falls, Zimbabwe\nRating, 5 stars\n,\n·\nJuly 2022\n,\n·\nStayed a few nights\nLovely accommodation that has everything you need for a short stay and it's close to shops and restaurants.\nJordan Takudzwa\nGrahamstown, South Africa\nRating, 5 stars\n,\n·\nJuly 2022\n,\n·\nStayed a few nights\nI enjoyed my stay. it is conveniently located to all the areas I needed to visit be it business or pleasure\nEnita\n8 years on Airbnb\nRating, 5 stars\n,\n·\nMay 2022\nbeautiful newly renovated . great place to stay with all the family. my kids loved the cookies. thanks Jessie 😊\nGobe\nGaborone, Botswana\nRating, 5 stars\n,\n·\nSeptember 2022\n,\n·\nStayed one night\nwonderful,  comfortable and a beautiful home.\nShepherd\nPretoria, South Africa\nRating, 5 stars\n,\n·\nAugust 2022\n,\n·\nStayed a few nights\nvery neat place that's close to Bulawayo CBD\nPrivinn\n9 years on Airbnb\nRating, 5 stars\n,\n·\nDecember 2022\nGreat place!\nMiah\nZimbabwe\nRating, 5 stars\n,\n·\nAugust 2022\n,\n·\nStayed a few nights\nGreat place to be 🔥\nNkululeko\n9 years on Airbnb\nRating, 5 stars\n,\n·\nJuly 2022\nAwesome\nIsabelle\nHarare, Zimbabwe\nRating, 5 stars\n,\n·\nJuly 2022\n,\n·\nStayed with kids\nLovely unit\nAmanda\nCape Town, South Africa\nRating, 5 stars\n,\n·\nJune 2022\n,\n·\nStayed a few nights\nA cost, homely place to stay",
@@ -8517,7 +8889,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1766,
     "lng": 28.5943,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "638247430730009887",
@@ -8529,7 +8903,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$117",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8567,7 +8941,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1462,
     "lng": 28.6238,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "638350336787298596",
@@ -8604,7 +8980,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "10 years hosting"
     },
-    "price": "Private outdoor pool - available all year, open 24 hours, saltwater",
+    "price": "$432",
     "rating": null,
     "reviewsCount": null,
     "description": "Rare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked\nRare find! This place is usually booked",
@@ -8622,7 +8998,9 @@ window.LISTINGS = [
     ],
     "lat": -29.8327,
     "lng": 31.0072,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "736255895313607684",
@@ -8634,7 +9012,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$126",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8642,7 +9020,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.17587,
     "lng": 28.59403,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "7371949",
@@ -8654,7 +9034,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$119",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8662,7 +9042,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.2187,
     "lng": 28.58715,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "761238992595915495",
@@ -8674,7 +9056,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$180",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8701,7 +9083,9 @@ window.LISTINGS = [
     ],
     "lat": -20.14585,
     "lng": 28.62376,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "766322463684962125",
@@ -8713,7 +9097,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$126",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.33 out of 5 stars.\n4.33\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 33% of reviews\n5\n4 stars, 67% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.7 out of 5 stars for cleanliness\nCleanliness\n4.7\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 5.0 out of 5 stars for check-in\nCheck-in\n5.0\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 4.3 out of 5 stars for location\nLocation\n4.3\nRated 5.0 out of 5 stars for value\nValue\n5.0\n3 reviews\nRatings sort order: Most relevant\nMost relevant\nBelinda\nBulawayo, Zimbabwe\nRating, 5 stars\n,\n·\nDecember 2025\n,\n·\nStayed one night\nJudith's Place is more than an accommodation; it is a true sanctuary. From the beautifully curated decor to the warm, genuine hospitality, every detail felt thoughtfully placed. It offers a rare blend of peaceful retreat and feeling perfectly at home. An exceptional and rejuvenating experience.\nMitchell\n2 years on Airbnb\nRating, 4 stars\n,\n·\nDecember 2025\n,\n·\nStayed one night\nWe enjoyed our stay and Judith was a pleasant host\nTian\n10 years on Airbnb\nRating, 4 stars\n,\n·\nApril 2026\n,\n·\nStayed one night\nConvenient for daily life, close to the supermarket, and the housekeeper is friendly and welcoming.\nTranslated  Show original",
@@ -8728,7 +9112,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1935,
     "lng": 28.5953,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "766338757452475087",
@@ -8740,7 +9126,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$122",
     "rating": null,
     "reviewsCount": null,
     "description": "No rating yet\nAverage rating will appear after 3 reviews\nHow reviews work\nHow reviews work\nDetailed ratings will appear once more guests have reviewed this place.\n2 reviews\nRatings sort order: Most relevant\nMost relevant\nYves\n10 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2026\n,\n·\nStayed about a week\nThe room is located in a guest house with a common kitchen you can use. The wifi is good, and the room is clean. The guest house is quiet. The area in general in very quiet. There are grocery stores just across the street, so it s very conveniently located. The women working at the guest house are very helpful and very pleasant. I would definitely stay here again if I come back to Bulawayo.\nKeith\n8 years on Airbnb\nRating, 5 stars\n,\n·\nApril 2023\n,\n·\nStayed a few nights\nGreat hosts and convenient location. Good value for money, would recommend",
@@ -8754,7 +9140,9 @@ window.LISTINGS = [
     ],
     "lat": -20.19448,
     "lng": 28.59427,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "766360596801797158",
@@ -8766,7 +9154,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$125",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8774,7 +9162,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.19377,
     "lng": 28.59556,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "793315324134644383",
@@ -8808,7 +9198,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$139",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.79 out of 5 stars.\n4.79\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 79% of reviews\n5\n4 stars, 21% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 4.8 out of 5 stars for accuracy\nAccuracy\n4.8\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 4.9 out of 5 stars for communication\nCommunication\n4.9\nRated 4.5 out of 5 stars for location\nLocation\n4.5\nRated 4.7 out of 5 stars for value\nValue\n4.7\nGuest reviews mention\nHospitality\n16\nCleanliness\n11\nOutdoor spaces\n5\nAccuracy\n4\nWifi\n3\nIndoor spaces\n5\nComfort\n4\nValue\n4\nBathroom\n3\nLocation\n4\n33 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -8816,7 +9206,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.13509,
     "lng": 28.65113,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "818592117932950771",
@@ -8848,7 +9240,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$102",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8856,7 +9248,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.11534,
     "lng": 28.61807,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "833739784557116723",
@@ -8868,7 +9262,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$410",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8876,7 +9270,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -18.95925,
     "lng": 32.6509,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "836256359099902606",
@@ -8888,7 +9284,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": "Modern 3 BR 2BA Near City Center w/ Solar",
+    "price": "$221",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8913,7 +9309,9 @@ window.LISTINGS = [
     ],
     "lat": -20.17822,
     "lng": 28.61672,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "854958614279284172",
@@ -8945,7 +9343,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$165",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nCharming guest suite with private bathroom, kitchenette, and cozy sleep area. Enjoy a home-like experience with backup solar, borehole water, and Safeguard alarm security. Amenities include Starlink WiFi, DSTV, workspace/dining table, fully equipped kitchenette, comfortable queen-size bed, and sleeper couch. Conveniently located near Pick n Pay, Food Lovers, and just a 5-10 minute drive from Bulawayo city center. Everything you need for a comfortable stay!\n\nThe space\nWhether you need a space to work or dine, the studio provides a comfortable workspace/dining table. You’ll have a restful sleep on the queen-size bed, and there’s also a sleeper couch available for additional guests.\n\nThe kitchen is well-equipped, ensuring you have all the tools and appliances you need to prepare your own meals. We’ve also provided tableware, so you can enjoy your culinary creations. Everything in the studio is thoughtfully designed to provide a pleasant and convenient experience.\n\nThe small private bathroom has been carefully designed with a focus on luxury and comfort. Every detail, from the white towels to the shower gel , has been meticulously chosen to provide an upscale experience , with a rain shower head which offers the perfect oasis for your personal pampering.\n\nGuest access\nSituated within a property that includes three separate houses, two of which are also listed on Airbnb .\nAs our guest, you'll have access to a shared charming gazebo which is the perfect spot to relax and unwind, and it also offers braai/bbq facilities for those who enjoy outdoor cooking and dining. You can savor delicious meals while enjoying the beautiful garden surroundings.\nParking areas are available on the premises, ensuring a convenient and secure place for your vehicle during your stay.",
@@ -8961,7 +9359,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18173,
     "lng": 28.59635,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "864515774368467592",
@@ -8973,7 +9373,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "4 years hosting"
     },
-    "price": null,
+    "price": "$151",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -8990,7 +9390,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18167,
     "lng": 28.59557,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "870925918021422239",
@@ -9002,7 +9404,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$170",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -9029,7 +9431,9 @@ window.LISTINGS = [
     ],
     "lat": -20.2043,
     "lng": 28.6425,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "876158557049904442",
@@ -9041,13 +9445,11 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "5 years hosting"
     },
-    "price": null,
+    "price": "$116",
     "rating": null,
     "reviewsCount": null,
-    "description": "Your price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average\nYour price is below the 60-day average",
-    "amenities": [
-      "Your price is below the 60-day average"
-    ],
+    "description": "About this space\nWelcome to our stunning luxury Airbnb house, where every detail has been carefully considered to ensure your stay is an unforgettable experience.\n\nThe open-plan living area features plush designer furnishings and large glass doors open onto a private patio.\n\nEach of the bedrooms is a peaceful oasis, featuring sumptuous linens, comfortable mattresses, and luxurious amenities.\n\nAdditional amenities include high-speed internet, a state-of-the-art entertainment system, full dstv, Netflix and more\n\nThe space\nThe property is spacious with open plan living area and spacious bedrooms. The folding doors open all the way such that you can braai and relax on the patio and at the same time interact with other people in the house. The property has back up water and back up electricity. There are 3 bedrooms and 2 baths. Security fence and alarm plus a safe for your peace of mind!\n\nGuest access\nEntire house",
+    "amenities": [],
     "images": [
       "data/listings/876158557049904442/images/image_001.jpg",
       "data/listings/876158557049904442/images/image_002.jpg",
@@ -9065,7 +9467,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1486,
     "lng": 28.6312,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "876679941765948214",
@@ -9077,7 +9481,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$265",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nWelcome to our stunning luxury Airbnb house, where every detail has been carefully considered to ensure your stay is an unforgettable experience.\n\nThe open-plan living area features plush designer furnishings and large glass doors open onto a private patio.\n\nEach of the bedrooms is a peaceful oasis, featuring sumptuous linens, comfortable mattresses, and luxurious amenities.\n\nAdditional amenities include high-speed internet, a state-of-the-art entertainment system, full dstv, Netflix and more\n\nThe space\nThe property is spacious with open plan living area and spacious bedrooms. The folding doors open all the way such that you can braai and relax on the patio and at the same time interact with other people in the house. The property has back up water and back up electricity. There are 3 bedrooms and 2 baths. Security fence and alarm plus a safe for your peace of mind!\n\nGuest access\nEntire house",
@@ -9089,7 +9493,9 @@ window.LISTINGS = [
     ],
     "lat": -20.18014,
     "lng": 28.62824,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "876823622283553789",
@@ -9101,7 +9507,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$87",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nPerfect for families or groups, enjoy this spacious fully renovated farmhouse in a huge 4 acre garden. Four bedrooms with option to book an additional en-suite flat with kitchenette and a second 3 bed cottage. Plenty to do with a big screen TV and fireplace, pool and barbecue and lounge area (pool shared with a private second cottage) or explore the big rocks and look out over the city. Quiet and private but still close to town and shops. Secure water and electricity (solar).\n\nThe space\nA full house with all you need, shared huge garden with private cottage (can be booked together).",
@@ -9119,7 +9525,9 @@ window.LISTINGS = [
     ],
     "lat": -20.20593,
     "lng": 28.58911,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "877239467367982409",
@@ -9131,7 +9539,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$142",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -9139,7 +9547,9 @@ window.LISTINGS = [
     "images": [],
     "lat": -20.21717,
     "lng": 28.56682,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "879430024018255535",
@@ -9151,7 +9561,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": null,
+    "price": "$190",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -9166,7 +9576,9 @@ window.LISTINGS = [
     ],
     "lat": -20.155,
     "lng": 28.5922,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "882495661040549090",
@@ -9178,7 +9590,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": null
     },
-    "price": null,
+    "price": "$146",
     "rating": null,
     "reviewsCount": null,
     "description": null,
@@ -9190,7 +9602,9 @@ window.LISTINGS = [
     ],
     "lat": -20.1858,
     "lng": 28.5929,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "889840434521852442",
@@ -9241,7 +9655,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": "September 2026",
+    "price": "$114",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nOur newly refurbished, elegant Deluxe rooms with a super king size bed combined chic with contemporary comfort. Soothing, stylish décor is marked\n\nSleeps two adults\n\nCheck In: 14:00 hours\nCheck Out: 11AM\nRoom size: 258 sq. ft / 24 sq. m (average)\nFree Wi-Fi (room & common areas)\nFree parking\n40”Smart Television with Chromecast\nMalin + Goetz bathroom amenities\nBed linen\nShower\nSleeps two adults\nLiving room sofas with a coffee table\nNear the town centre\nSwimming pool\n\nThe space\nCottage 3 has got an Ensuite bathroom, with a walk in shower, lounge with sofas, coffee table and a television. The kitchen has got a fridge freezer, cooker, microwave, kettle and a toaster. The cottage has got a small veranda .\n\nGuest access\nGuest are able to use the pool\n\nOther things to note\nWiFi password will be available in the lounge.\nPlease make a request for special occasions such as birthdays, honeymoon or Valentine’s day for decorations as uploaded on the pictures of the bedroom",
@@ -9263,7 +9677,9 @@ window.LISTINGS = [
     ],
     "lat": -20.205,
     "lng": 28.5664,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "911563176584659023",
@@ -9340,7 +9756,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "3 years hosting"
     },
-    "price": "September 2026",
+    "price": "$180",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nEnjoy a stylish experience at this centrally-located apartment that is 21kms (13 miles) away from the BUQ International Airport and 35kms (22 miles) from Matopos National Park. It is in close proximity to restaurants, fast food outlets, supermarkets and pharmacies.\n\nThe space\nEnjoy waking up in the city with the scenic views of the jacaranda trees while having a cup of coffee/tea by the balcony/verandah.\n\nThe kitchen is fully equipped to make your stay more comfortable. It has all necessary gadgets. Access to a wide range of entertainment from Netflix,Hulu and DSTV Full booking,with unlimited WiFi\n\nGuest access\nYou will have access to the whole apartment",
@@ -9361,7 +9777,9 @@ window.LISTINGS = [
     ],
     "lat": -20.14804,
     "lng": 28.58874,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "952778802780835777",
@@ -9407,7 +9825,7 @@ window.LISTINGS = [
       "superhost": true,
       "yearsHosting": "9 years hosting"
     },
-    "price": null,
+    "price": "$115",
     "rating": null,
     "reviewsCount": null,
     "description": "Rated 4.98 out of 5 from 84 reviews.\n4.98\nGuest favorite\nThis home is in the top 10% of eligible listings based on ratings, reviews, and reliability\nHow reviews work\nHow reviews work\n5 of 7 items showing\nOverall rating\n5 stars, 98% of reviews\n5\n4 stars, 2% of reviews\n4\n3 stars, 0% of reviews\n3\n2 stars, 0% of reviews\n2\n1 stars, 0% of reviews\n1\nRated 4.9 out of 5 stars for cleanliness\nCleanliness\n4.9\nRated 5.0 out of 5 stars for accuracy\nAccuracy\n5.0\nRated 4.9 out of 5 stars for check-in\nCheck-in\n4.9\nRated 5.0 out of 5 stars for communication\nCommunication\n5.0\nRated 4.9 out of 5 stars for location\nLocation\n4.9\nRated 4.9 out of 5 stars for value\nValue\n4.9\nGuest reviews mention\nPool\n17\nHospitality\n62\nOutdoor spaces\n16\nLocation\n20\nNearby\n11\nIndoor spaces\n15\nCleanliness\n16\nWalkability\n10\nLaundry\n10\nAccuracy\n10\n84 reviews\nRatings sort order: Most relevant\nMost relevant",
@@ -9433,7 +9851,9 @@ window.LISTINGS = [
     ],
     "lat": null,
     "lng": null,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-global-median"
   },
   {
     "id": "9753471",
@@ -9445,7 +9865,7 @@ window.LISTINGS = [
       "superhost": false,
       "yearsHosting": "11 years hosting"
     },
-    "price": null,
+    "price": "$117",
     "rating": null,
     "reviewsCount": null,
     "description": "About this space\nUnique Safari-style lodges on the outskirts of Bulawayo within easy reach of Chipangali Wildlife Orphanage and the main Bulawayo /Johannesburg highway.\n\nThe space\nChaparral lodges are an oasis , set in rural farmlands on the outskirts of Bulawayo. The lodges are safari themed and all furnished and equipped to a high standard .\nOur cleaner is available daily .\n\nGuest access\nLodge 1 - Accommodates 4 persons max .\nOne double bed , and two single beds upstairs .\nThis lodge has an old fashioned type bath in the bathroom.\nFully fitted and equipped kitchen\n\nLodge 2 - Accommodates 5 persons max .\nUpstairs are 2 single beds and downstairs we have two single beds plus a sleeper couch .\nThis lodge has a downstairs shower in the bathroom.\nFully fitted and equipped kitchen\n\nLodge 3\nIdeal for a family - this lodge has two bedrooms with a communal bathroom.\nBedroom 1 has a large king size bed . Sleeps 2\nBedroom 2 has two single beds .\nFully equipped kitchen for self catering .\nWe are renovating this lodge at present .\n\nThatched Rondavel - Sleeps 2 max .\n2 single beds .\nHas a separate shower/ loo . Does not have its own kitchen .\n\nMain house - Bedroom in a separate private wing with two single bed in the bedroom and adjacent large corner bath and wet room.\n\nOther things to note\nThe kitchens are fully fitted and equipped for self-catering . Barbecue facilities are near the pool . Barbecue wood will be provided as an extra charge .\nWe have reasonable mobile phone signal at the property but do not have Internet as yet .\n\nSafety features - Night guard on patrol",
@@ -9455,7 +9875,9 @@ window.LISTINGS = [
     ],
     "lat": -20.22657,
     "lng": 28.76079,
-    "areaLabel": "Zimbabwe"
+    "areaLabel": "Zimbabwe",
+    "priceEstimated": true,
+    "priceBasis": "predicted-comps"
   },
   {
     "id": "9876788",
